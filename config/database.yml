@@ -29,4 +29,8 @@ test:
 # ensure the database is located in a persisted volume.
 production:
   <<: *default
+  database: d2ehcrmqsikn0h
+  username: ucj7jnljc0df2m
+  password: <%= ENV['p7273d7608261ea4d356b0bcdba4b79844db7d61e835ccc0cb8c7ae7890e4e019'] %>
+  host: <%= ENV['cc0gj7hsrh0ht8.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com'] %>
   # database: path/to/persistent/storage/production.sqlite3
