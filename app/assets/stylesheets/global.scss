@@ -10,6 +10,13 @@ $red: #FF7664;
 
 
 /* global styles */
+html,
+    body {
+    height: 100%;
+    background-color: #000000;
+}
+
+
 .nicolada__wrapper {
     h1, h2, h3, h4, h5 {
         font-family: "Bricolage Grotesque", serif;
@@ -324,6 +331,7 @@ header {
 /* projects home */
 
 .projects-home__wrapper {
+    background-color: $white;
     padding: 72px 0px;
     border-bottom: 3px solid $black;
     overflow: hidden;
@@ -340,11 +348,7 @@ header {
             max-height: 768px;
         }
         .projects-home__arrow {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: absolute;
-            z-index: 100;
             right: 0;
             bottom: 0;
             width: 16%;
@@ -460,6 +464,7 @@ header {
 /* about home */
 
 .about-home__wrapper {
+    background-color: $white;
     height: 500px;
     overflow: hidden;
     background-image: url("about-bg.png");
@@ -553,6 +558,7 @@ header {
 }
 
 .brands-home__wrapper {
+    background-color: $white;
     overflow: hidden;
     padding: 72px 0px;
     border-bottom: 3px solid $black;
