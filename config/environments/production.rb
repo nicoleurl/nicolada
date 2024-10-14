@@ -101,6 +101,5 @@ Rails.application.configure do
   # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
   config.hosts << "nicolada.com"
   config.hosts << "www.nicolada.com"
-
-
+  config.hosts << "nicolada-b7aedbd0bba5.herokuapp.com"
 end
