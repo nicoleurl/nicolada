@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Nicolada" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= favicon_link_tag 'favicon-bw.ico' %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+  
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css", "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200", "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-brand">
+          <%= link_to image_tag("nicolada_logo.png"), "", class: "header__logo" %>
+          <div class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-vertical">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="navbar-menu" id="navbar-vertical">
+          <div class="navbar-start">
+              <%= link_to "UX/UI Design", "", class: "navbar-item header__link" %>           
+              <%= link_to "Graphic Design", "", class: "navbar-item header__link" %>     
+              <%= link_to "About", "", class: "navbar-item header__link" %>          
+              <%= link_to "Skills", "", class: "navbar-item header__link" %>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="btn__wrapper">
+                <%= button_to "Contact", "", class: "btn" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="nicolada__wrapper">
+      <%= yield %>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8">
+            <div class="columns is-variable is-3">
+              <div class="column is-3-desktop is-4-tablet">
+                <h6>Work</h6>
+                  <ul>
+                      <li>
+                        <%= link_to "UX/UI Design", "", class: "footer__link" %>
+                      </li>
+                      <li>
+                        <%= link_to "Graphic Design", "", class: "footer__link" %>
+                      </li>
+                  </ul>
+
+              </div>
+              <div class="column is-2-desktop is-3-tablet">
+                <h6>About</h6>
+                  <ul>
+                    <li>
+                      <%= link_to "About", "", class: "footer__link" %>
+                    </li>
+                    <li>
+                      <%= link_to "Skills", "", class: "footer__link" %>
+                    </li>
+                  </ul>
+              </div>
+              <div class="column is-3-desktop is-4-tablet">
+                <h6>Connect</h6>
+                  <ul>
+                    <li>
+                      <%= link_to "Contact", "", class: "footer__link" %>
+                    </li>
+                    <li>
+                      <%= link_to "LinkedIn", "", class: "footer__link" %>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <%= link_to image_tag("nicolada_logo.png"), "", class: "footer__logo" %>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

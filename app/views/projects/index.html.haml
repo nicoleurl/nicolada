@@ -1,0 +1,261 @@
+.hero__wrapper
+    .container
+        .hero__text
+            .h2
+                .columns.is-variable.is-gapless.is-multiline
+                    .column.is-narrow-desktop.is-12-touch.hero__wave-wrapper
+                        = image_tag 'wave.svg', alt: 'wave', class: 'wave-wrapper__wave-img'
+                    .column.is-narrow-desktop.is-12-touch.hero__small-text
+                        %p Hi, my name is Nicole Redacted and I'm a...
+            %h1.hero__big-text
+                #hero__variable-text
+                %span
+                    Designer &
+                %br
+                    Front End Developer
+
+.projects-home__wrapper
+    .container
+        %h3 Projects
+        .columns.is-variable.is-5
+            .column.is-4-desktop.is-6-tablet
+                = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
+                    .projects-home__cover-wrapper
+                        = inline_svg('project-cover.svg')
+                        .projects-home__arrow.purple
+                            = inline_svg('arrow.svg')
+                    .project-home__project-summary
+                        %h4 Project title
+                        %p.projects-home__project-description
+                            Website redesign for Island Finance, the leading company in personal loans in Puerto Rico. 
+            .column.is-4-desktop.is-6-tablet
+                = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
+                    .projects-home__cover-wrapper
+                        = inline_svg('project-cover.svg')
+                        .projects-home__arrow.green 
+                            = inline_svg('arrow.svg')
+                    .project-home__project-summary
+                        %h4 Project title
+                        %p.projects-home__project-description
+                            Website redesign for Island Finance, the leading company in personal loans in Puerto Rico. 
+            .column.is-4-desktop.is-hidden-tablet-only	
+                = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
+                    .projects-home__cover-wrapper
+                        = inline_svg('project-cover.svg')
+                        .projects-home__arrow.yellow
+                            = inline_svg('arrow.svg')
+                    .project-home__project-summary
+                        %h4 Project title
+                        %p.projects-home__project-description
+                            Website redesign for Island Finance, the leading company in personal loans in Puerto Rico.
+        .btn__wrapper
+            = link_to "View All Projects", "http://www.google.com", :class => "btn"
+
+
+.scrolling-text__wrapper
+    .scrolling-text__items
+        .scrolling-text__item
+            %p
+                UX/UI design
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Front End Development
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Art Direction
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Branding
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Advertising
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Marketing
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Social Media
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Typography
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                UX Research
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+    .scrolling-text__items
+        .scrolling-text__item
+            %p
+                UX/UI design
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Front End Development
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Art Direction
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Branding
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Advertising
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Marketing
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Social Media
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                Typography
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+            %p
+                UX Research
+            %span
+                = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
+        
+.about-home__wrapper
+    .container
+        .columns.is-veriable.is-gapless
+            .column.is-6
+                .about-home__text-wrapper
+                    %h3 About Me
+                    %p
+                        My name is Nicole Redacted and I'm currently based in New York. My main areas of focus are Graphic and UX/UI Design and Front End Develop. 
+                    .btn__wrapper
+                        = link_to "Find out more", "http://www.google.com", :class => "btn"
+            .column.is-6
+
+.services-home__wrapper
+    .container
+        .columns
+            .column.is-6
+                .services-home__title-wrapper
+                    %h2 Creating unique experiences
+                    .btn__wrapper.is-hidden-mobile
+                        = link_to "View All Skills", "http://www.google.com", :class => "btn"
+            .column.is-6
+                .services-home__list-wrapper
+                    .columns.is-mobile.is-centered
+                        .column.is-6
+                            %ul
+                                %li UX Research
+                                %li UX/UI Design
+                                %li Front End Development
+                                %li User Testing
+                                %li SEO
+
+                        .column.is-6
+                            %ul
+                                %li Art Direction
+                                %li Branding
+                                %li Advertisement
+                                %li Typography
+                                %li Social Media
+        .btn__wrapper.is-hidden-tablet
+            = link_to "View All Skills", "http://www.google.com", :class => "btn"
+.brands-home__wrapper
+    .container
+        %h3 Brands
+        .columns.is-multiline.is-variable.is-6.is-mobile.is-centered
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'titos-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'bacardi-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'bm-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'redds-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'os-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'kinder-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'brookfield-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'drh-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'badbunny-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'cultura-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'uber-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'ath-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'evertec-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'cricket-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'att-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'kia-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'wyndham-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'marriot-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'lo-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'loreal-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourthd-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'chat-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'share-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-one-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'bv-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'if-logo.png', alt: '-', class: 'logo-img'
+            .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
+                .brands-home__img-wrapper
+                    = image_tag 'triples-logo.png', alt: '-', class: 'logo-img'
+
+.contact-home__wrapper
+    .container
+        %h2 Ready to work together?
+        .btn__wrapper
+            = link_to "Get Started", "http://www.google.com", :class => "btn"
+
+        
+
+
