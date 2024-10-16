@@ -57,8 +57,8 @@ group :test do
 end
 
 gem "haml"
-gem "sassc-rails", "~> 2.0.0"
-gem "bulma-rails", "~> 0.8.0"
+gem "sassc-rails", "~> 2.1.2"
+gem "bulma-rails", "~> 1.0.2"
 
 group :production do
   gem "pg"
