@@ -41,6 +41,8 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "sqlite3", ">= 1.4"
 end
 
 group :development do
@@ -55,14 +57,9 @@ group :test do
 end
 
 gem "haml"
-gem "sassc-rails", '~> 2.0.0'
-gem "bulma-rails", "~> 0.8.0"
-
-group :development do
-  gem "sqlite3", ">= 1.4"
-end
+gem "sassc-rails", "~> 2.1.2"
+gem "bulma-rails", "~> 1.0.2"
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
-
