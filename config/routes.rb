@@ -14,6 +14,5 @@ Rails.application.routes.draw do
   resources :projects
 
   root "projects#index"
-  get '/about' => 'projects#about'
-
+  get "/about" => "projects#about"
 end
