@@ -341,10 +341,11 @@ header {
         position: relative;
         width: 100%;
         height: fit-content;
-        svg {
+        img {
             display: block;
-            max-width: 768px;
-            max-height: 768px;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
         .projects-home__arrow {
             position: absolute;
@@ -611,3 +612,5 @@ header {
     0% {transform: translateX(0%);}
     100% {transform: translateX(-100%);}
 }
+
+@import url(_about.scss);
