@@ -10,7 +10,8 @@ window.onload = function() {
 
     newHeader();
     setInterval(newHeader, 1500);
-};
+    
+  };
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -32,3 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+window.onload = function() {
+
+    var contactwords = ["meaningful", "fun", "creative", "impactful", "daring", "exciting", "original"];
+    var lastheader = -1;
+
+    function contactHeader() {
+      if (++lastheader >= contactwords.length)
+          lastheader = 0;
+      document.getElementById("contact__variable-text").innerText = contactwords[lastheader];
+    }
+
+    contactHeader();
+    setInterval(contactHeader, 1500);
+};
+

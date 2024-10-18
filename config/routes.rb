@@ -15,4 +15,8 @@ Rails.application.routes.draw do
 
   root "projects#index"
   get "/about" => "projects#about"
+  get "/graphic-design" => "projects#graphic_design"
+  get "/ux-ui" => "projects#ux_ui"
+  get "/contact" => "projects#contact"
+  get "/graphic-design/cause-x-effect", to: "projects/graphic_design#cause_x_effect", as: "cause_x_effect"
 end

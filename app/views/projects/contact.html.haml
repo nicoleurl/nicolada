@@ -1,0 +1,23 @@
+.contact__wrapper
+    .container
+        %h1
+            %span
+                Reach out to
+            %br
+                create something
+                %span#contact__variable-text
+        .columns.is-mobile
+            .column.is-3-desktop.is-4-tablet.is-6-mobile
+                .contact__text-wrapper
+                    %p Nicole Salazar
+                    %p New York City, NY
+                    %p itsnicolada@gmail.com
+                    %p +1 (787) 989-0210
+
+            .column.is-3-desktop.is-4-tablet.is-6-mobile
+                .contact__link-wrapper
+                    = link_to "Email Me", "", :class => "contact__email-link"
+                    = link_to "Call Me", "", :class => "contact__phone-link"
+                    = link_to "LinkedIn", "", :class => "contact__linkedin-link"
+                    = link_to "Download CV", "", :class => "contact__cv-link"
+            
