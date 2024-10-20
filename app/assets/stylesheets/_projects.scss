@@ -29,6 +29,7 @@ $ipink: #A00251;
                 display: flex;
                 flex-direction: row;
                 .project-details__tag {
+                    border: 2px solid;
                     font-family: "Inter", sans-serif;
                     font-weight: 600;
                     font-size: 14px;
@@ -109,6 +110,9 @@ $ipink: #A00251;
                 }
                 p {
                     letter-spacing: 4px;
+                    &.uppercase {
+                        text-transform: uppercase;
+                    }
                     @media (max-width: 1023px) {
                         font-size: 15px;
                         letter-spacing: 2px;
@@ -152,6 +156,8 @@ $ipink: #A00251;
         }
     }
     .project-details__colors-wrapper {
+        border-top: 2px solid $cxegreen;
+        border-bottom: 2px solid $cxegreen;
         h3, h4, p {
             font-family: "Montserrat", sans-serif;
         }
@@ -223,3 +229,72 @@ $ipink: #A00251;
         color: $ipink;
     }
 }
+
+/* Everybody is Free */
+
+.project__everybodys-free {
+    .project-details__cover-wrapper {
+        background-image: url("everybodysfree-cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 2px solid $black;
+        @media (max-width: 768px) {
+            background-image: url("everybodysfree-cover-mobile.png");
+        }
+    }
+    .project-details__tags-wrapper {
+        .project-details__tag {
+            color: $black;
+            border: 2px solid $black
+        }
+    }
+    .project-details__colors-wrapper {
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
+        .project-details_font {
+            &.font1 {
+                h3, h4, p {
+                    font-family: "Barlow Semi Condensed", sans-serif;
+                    font-weight: 700;
+                    font-style: italic;
+                }
+            }
+            &.font2 {
+                h3, h4, p {
+                    font-family: "Barlow", sans-serif;
+                    font-weight: 400;
+                }
+            }
+            &.font3 {
+                padding-top: 10px;
+                img {
+                    max-height: 100px;
+                }
+            }
+        }
+        .columns.project-details__columns {
+            height: 100%;
+            min-height: 250px;
+        }
+        .project-details_color {
+            height: 100%;
+            border-radius: 16px;
+            &.color1 {
+                background-color: #000000;
+                color: $white;
+            }
+            &.color2 {
+                background-color: #FFFFFF;
+                border: 2px solid $black;
+            }
+        }
+    }
+    .project-details__gallery-wrapper {
+        text-align: center;
+        .shadow-img {
+            box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
