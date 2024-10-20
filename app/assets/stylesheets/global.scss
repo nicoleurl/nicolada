@@ -7,6 +7,7 @@ $purple: #9067F3;
 $blue: #4431FE;
 $yellow: #FECE00;
 $red: #FF7664;
+$gray: #8E8E8E;
 
 
 /* global styles */
@@ -327,9 +328,9 @@ header {
     }
 }
 
-/* projects home */
+/* projects */
 
-.projects-home__wrapper {
+.projects__wrapper {
     background-color: $white;
     padding: 72px 0px;
     border-bottom: 3px solid $black;
@@ -337,7 +338,7 @@ header {
     @media (max-width: 1023px) {
         padding: 32px;
     }
-    .projects-home__cover-wrapper {
+    .projects__cover-wrapper {
         position: relative;
         width: 100%;
         height: fit-content;
@@ -347,7 +348,7 @@ header {
             width: 100%;
             object-fit: contain;
         }
-        .projects-home__arrow {
+        .projects__arrow {
             position: absolute;
             right: 0;
             bottom: 0;
@@ -378,7 +379,7 @@ header {
             }
             &.pink {
                 circle {
-                    background-color: $pink;
+                    fill: $pink;
                 }
             }
             &.purple {
@@ -402,17 +403,35 @@ header {
         font-size: 32px;
         margin-bottom: 32px;
     }
-    .project-home__project-summary {
+    .project__project-summary {
         position: relative;
         h4 {
             font-family: "Bricolage Grotesque", serif;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 24px;
             padding: 12px 0px;
 
         }
     }
+    .tags__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .tags__project-tag {
+            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 16px;
+            border: 1.5px solid lightgray;
+            font-family: "Inter", sans-serif;
+            font-weight: 600;
+            color: $gray;
+            margin: 16px 8px 16px 0px;
+            &:last-child {
+                margin: 16px 0px;
+            }
+        }
 
+    }
 }
 
 /* moving text */
@@ -614,3 +633,5 @@ header {
 }
 
 @import url(_about.scss);
+@import url(_contact.scss);
+@import url(_projects.scss);
