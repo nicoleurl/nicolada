@@ -31,7 +31,7 @@
     <header>
       <div class="navbar">
         <div class="navbar-brand">
-          <%= link_to image_tag("nicolada_logo.png"), "", class: "header__logo" %>
+          <%= link_to image_tag("nicolada_logo.png"), "/", class: "header__logo" %>
           <div class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navbar-vertical">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -41,15 +41,15 @@
         </div>
         <div class="navbar-menu" id="navbar-vertical">
           <div class="navbar-start">
-              <%= link_to "UX/UI Design", "", class: "navbar-item header__link" %>           
-              <%= link_to "Graphic Design", "", class: "navbar-item header__link" %>     
-              <%= link_to "About", "", class: "navbar-item header__link" %>          
-              <%= link_to "Skills", "", class: "navbar-item header__link" %>
+              <%= link_to "UX/UI Design", "/ux-ui", class: "navbar-item header__link" %>           
+              <%= link_to "Graphic Design", "/graphic-design", class: "navbar-item header__link" %>     
+              <%= link_to "About", "/about", class: "navbar-item header__link" %>          
+              <%= link_to "Contact", "/contact", class: "navbar-item header__link" %>
           </div>
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="btn__wrapper">
-                <%= button_to "Contact", "", class: "btn" %>
+                <%= button_to "Resume", "", class: "btn" %>
               </div>
             </div>
           </div>
@@ -70,10 +70,10 @@
                 <h6>Work</h6>
                   <ul>
                       <li>
-                        <%= link_to "UX/UI Design", "", class: "footer__link" %>
+                        <%= link_to "UX/UI Design", "/ux-ui", class: "footer__link" %>
                       </li>
                       <li>
-                        <%= link_to "Graphic Design", "", class: "footer__link" %>
+                        <%= link_to "Graphic Design", "/graphic-design", class: "footer__link" %>
                       </li>
                   </ul>
 
@@ -82,10 +82,7 @@
                 <h6>About</h6>
                   <ul>
                     <li>
-                      <%= link_to "About", "", class: "footer__link" %>
-                    </li>
-                    <li>
-                      <%= link_to "Skills", "", class: "footer__link" %>
+                      <%= link_to "About", "/about", class: "footer__link" %>
                     </li>
                   </ul>
               </div>
@@ -93,7 +90,7 @@
                 <h6>Connect</h6>
                   <ul>
                     <li>
-                      <%= link_to "Contact", "", class: "footer__link" %>
+                      <%= link_to "Contact", "/contact", class: "footer__link" %>
                     </li>
                     <li>
                       <%= link_to "LinkedIn", "", class: "footer__link" %>
@@ -103,7 +100,7 @@
             </div>
           </div>
           <div class="column is-4">
-            <%= link_to image_tag("nicolada_logo.png"), "", class: "footer__logo" %>
+            <%= link_to image_tag("nicolada_logo.png"), "/", class: "footer__logo" %>
           </div>
 
         </div>

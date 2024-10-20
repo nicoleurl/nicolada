@@ -1,0 +1,43 @@
+$black: #000000;
+$blue: #4431FE;
+
+.contact__wrapper {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-image: url(contact-page-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    @media (max-width: 1023px) {
+        align-items: flex-start;
+        padding: 40px 32px;
+        background-image: url("contact-page-bg-touch.png");
+    }
+    h1 {
+        font-size: 72px;
+        color: $black;
+        line-height: 1.1;
+        margin-bottom: 40px;
+        @media (max-width: 1023px) {
+            line-height: 1.2;
+        }
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+    }
+    .contact__text-wrapper {
+        p {
+            margin-bottom: 12px;
+            color: $black;
+        }
+    }
+    .contact__link-wrapper{
+        a {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+}

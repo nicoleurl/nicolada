@@ -14,39 +14,39 @@
                 %br
                     Front End Developer
 
-.projects-home__wrapper
+.projects__wrapper
     .container
         %h3 Projects
         .columns.is-variable.is-5
             .column.is-4-desktop.is-6-tablet
                 = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
-                    .projects-home__cover-wrapper
+                    .projects__cover-wrapper
                         = inline_svg('project-cover.svg')
-                        .projects-home__arrow.purple
+                        .projects__arrow.green 
                             = inline_svg('arrow.svg')
-                    .project-home__project-summary
+                    .project__project-summary
                         %h4 Project title
-                        %p.projects-home__project-description
+                        %p.projects__project-description
                             Website redesign for Island Finance, the leading company in personal loans in Puerto Rico. 
             .column.is-4-desktop.is-6-tablet
                 = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
-                    .projects-home__cover-wrapper
+                    .projects__cover-wrapper
                         = inline_svg('project-cover.svg')
-                        .projects-home__arrow.green 
+                        .projects__arrow.green 
                             = inline_svg('arrow.svg')
-                    .project-home__project-summary
+                    .project__project-summary
                         %h4 Project title
-                        %p.projects-home__project-description
+                        %p.projects__project-description
                             Website redesign for Island Finance, the leading company in personal loans in Puerto Rico. 
             .column.is-4-desktop.is-hidden-tablet-only	
                 = link_to "http://www.google.com", :class => "project-button", :target => "blank" do
-                    .projects-home__cover-wrapper
+                    .projects__cover-wrapper
                         = inline_svg('project-cover.svg')
-                        .projects-home__arrow.yellow
+                        .projects__arrow.yellow
                             = inline_svg('arrow.svg')
-                    .project-home__project-summary
+                    .project__project-summary
                         %h4 Project title
-                        %p.projects-home__project-description
+                        %p.projects__project-description
                             Website redesign for Island Finance, the leading company in personal loans in Puerto Rico.
         .btn__wrapper
             = link_to "View All Projects", "http://www.google.com", :class => "btn"
@@ -139,7 +139,7 @@
                     %p
                         My name is Nicole Redacted and I'm currently based in New York. My main areas of focus are Graphic and UX/UI Design and Front End Develop. 
                     .btn__wrapper
-                        = link_to "Find out more", "http://www.google.com", :class => "btn"
+                        = link_to "Find out more", "/about", :class => "btn"
             .column.is-6
 
 .services-home__wrapper
