@@ -9,6 +9,4 @@ class ProjectsController < ApplicationController
     end
     def contact
     end
-    def graphic_design_cause_x_effect
-    end
 end
