@@ -21,4 +21,5 @@ Rails.application.routes.draw do
   get "/graphic-design/cause-x-effect" => "projects/graphic_design#cause_x_effect", as: "cause_x_effect"
   get "/graphic-design/intimates" => "projects/graphic_design#intimates", as: "intimates"
   get "/graphic-design/everybodys-free" => "projects/graphic_design#everybodys_free", as: "everybodys_free"
+  get "/graphic-design/social-media" => "projects/graphic_design#social_media", as: "social_media"
 end

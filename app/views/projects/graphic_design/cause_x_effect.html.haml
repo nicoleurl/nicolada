@@ -1,32 +1,49 @@
+:css 
+    header {
+        background-color: #4E786A
+        }
+    header .navbar {
+        background-color: #4E786A
+    }
+    header .navbar .navbar-start .header__link:hover {
+        background-color: #4E786A
+    }
+    header .navbar .navbar-menu {
+        background-color: #4E786A
+    }
+    header .navbar .navbar-burger:hover {
+        background-color: #4E786A
+    }
+
 .project-details__wrapper.project__cause-x-effect
     .project-details__cover-wrapper
     .container
         .project-details__content-wrapper
             .project-details__introduction-wrapper
-                .project-details__tags-wrapper
-                    .project-details__tag.green
-                        Editorial Design
-                    .project-details__tag.green
-                        Branding
-                %h1.project-details__title.green
+                %h1.project-details__title
                     Cause x Effect
                 .columns
                     .column.is-7
-                        %p.project-details__introduction.green
-                            Editorial design for an experimental photography fanzine. The magazine includes dedicated sections for submissions, features, interviews, and techniques, each with its own distinct color and size to break away from traditional formats and lean into the experimental aspect of it. With a clean, minimalist layout, the design ensures that the photography remains the central focus.
-                    
+                        .project-details__intro-text-wrapper
+                            %p.project-details__introduction
+                                Editorial design for an experimental photography fanzine. The magazine includes dedicated sections for submissions, features, interviews, and techniques, each with its own distinct color and size to break away from traditional formats and lean into the experimental aspect of it. With a clean, minimalist layout, the design ensures that the photography remains the central focus.
+                            .project-details__tags-wrapper
+                                .project-details__tag.green
+                                    Editorial Design
+                                .project-details__tag.green
+                                    Branding
                     .column.is-3.is-offset-2
-                        .project-details__line.green
+                        .project-details__line
                             %h2.project-details__subtitle
                                 Role
                             %p.project-details__subtitle-text
                                 Art Direction, Editorial Design
-                        .project-details__line.green
+                        .project-details__line
                             %h2.project-details__subtitle
                                 Industry
                             %p.project-details__subtitle-text
                                 Photography
-                        .project-details__line.green
+                        .project-details__line
                             %h2.project-details__subtitle
                                 Tools
                             %p.project-details__subtitle-text
