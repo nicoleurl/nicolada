@@ -1,18 +1,28 @@
 :css 
     header {
-        background-color: #F2F2F2
+        background-color: #F2F2F2;
         }
     header .navbar {
-        background-color: #F2F2F2
+        background-color: #F2F2F2;
     }
     header .navbar .navbar-start .header__link:hover {
-        background-color: #F2F2F2
+        background-color: #F2F2F2;
     }
     header .navbar .navbar-menu {
-        background-color: #F2F2F2
+        background-color: #F2F2F2;
     }
     header .navbar .navbar-burger:hover {
-        background-color: #F2F2F2
+        background-color: #F2F2F2;
+    }
+
+    header .btn__wrapper .btn {
+        color: #F2F2F2
+    }
+
+    header .btn__wrapper .btn:hover {
+        background-color: #F2F2F2;
+        border: 3px solid #000000;
+        color: #000000;
     }
 
 .project-details__wrapper.project__intimates
@@ -60,3 +70,15 @@
                             “Wearing nice quality underwear or lingerie sets boost our confidence and self-esteem, even if no one sees it,” said Carolyn Mair, a behavioral psychologist, author of “The Psychology of Fashion” and founder of psychology.fashion.
                     .column.is-12
                         = image_tag "intimates-phrase.png"
+            .project-details__navigation-wrapper
+                .columns.is-mobile
+                    .column.is-3
+                        = link_to "/graphic-design/social-media", :class => "navigation-button" do
+                            %p.back-btn
+                                = image_tag "arrow-left", :class => "arrow-left"
+                                Back: Social Media
+                    .column.is-3.is-offset-6
+                        = link_to "/graphic-design/wyndham-grand-rio-mar", :class => "navigation-button" do
+                            %p.next-btn
+                                Next: Wyndham Grand Rio Mar
+                                =image_tag "arrow-right", :class => "arrow-right"

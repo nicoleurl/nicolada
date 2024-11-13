@@ -13,6 +13,7 @@ $gray: #8E8E8E;
 /* global styles */
 html,
     body {
+    scroll-behavior: smooth;
     background-color: #ffffff;
 }
 
@@ -88,13 +89,15 @@ header {
         .navbar-burger {
             color: #000000;
             &:hover {
-                background-color: darken($color: $beige, $amount: 0);
+                background-color: darken($color: $beige, $amount: 5);
             }
         }
         .navbar-brand {
             align-items: center;
-            img {
+            svg {
+                color: #000000;
                 max-width: 140px;
+                width: 100%;
             }
             @media (max-width: 1023px) {
                 padding: 20px 20px 20px 40px;
@@ -114,6 +117,11 @@ header {
                 border-bottom: 3px solid $black;
                 max-height: 400px;
                 transition: max-height 0.5s ease-in;
+                .btn {
+                    &:hover {
+                        background-color: darken($color: $beige, $amount: 5)
+                    }
+                }
             }
         }
         .navbar-item {
@@ -234,7 +242,7 @@ header {
             text-align: left;
             margin-top: 20px;
         }
-        img {
+        svg {
             max-width: 116px;
             display: inline-block;
         }
@@ -483,7 +491,7 @@ header {
 /* about home */
 
 .about-home__wrapper {
-    background-color: $white;
+    background-color: $beige;
     height: 500px;
     overflow: hidden;
     background-image: url("about-bg.png");
@@ -515,63 +523,6 @@ header {
             border-bottom: 3px solid $black;
             justify-content: flex-start;
             padding-top: 52px;
-        }
-    }
-}
-
-.services-home__wrapper {
-    overflow: hidden;
-    background-color: $yellow;
-    border-bottom: 3px solid $black;
-    padding: 72px 0px;
-    height: 400px;
-    @media (max-width: 1023px) {
-        padding: 32px;
-        height: auto;
-    }
-    .services-home__title-wrapper {
-        height: 230px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @media (max-width: 1023px) {
-            height: auto;
-        }
-        
-        h2 {
-            font-size: 52px;
-            line-height: 1.1;
-            @media (max-width: 1023px) {
-                font-size: 32px;
-                padding: 20px 0px
-            }
-        }
-        .btn__wrapper {
-            text-align: left;
-            .btn {
-                &:hover {
-                    background-color: $yellow;
-                }
-            }
-        }
-    }
-    .services-home__list-wrapper {
-        li {
-            font-size: 24px;
-            font-family: "Inter", sans-serif;
-            margin-bottom: 12px;
-            color: $black;
-            &:last-child {
-                margin-bottom: 0px;
-            }
-            @media (max-width: 1023px) {
-                font-size: 20px;
-            }
-            @media (max-width: 728px) {
-                &:last-child {
-                    margin-bottom: 20px;
-                }
-            }
         }
     }
 }
@@ -635,3 +586,4 @@ header {
 @import url(_about.scss);
 @import url(_contact.scss);
 @import url(_projects.scss);
+@import url(_case_studies.scss);
