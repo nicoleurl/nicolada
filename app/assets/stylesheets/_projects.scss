@@ -15,6 +15,7 @@ $ipink: #A00251;
 .project-details__wrapper {
     .project-details__cover-wrapper{
         height: 400px;
+        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             height: 300px;
         }
@@ -25,48 +26,44 @@ $ipink: #A00251;
             @media (max-width: 768px) {
                 padding: 24px 0px ;
             }
-            .project-details__tags-wrapper {
-                display: flex;
-                flex-direction: row;
-                .project-details__tag {
-                    font-family: "Inter", sans-serif;
-                    font-weight: 600;
-                    font-size: 14px;
-                    padding: 4px 12px;
-                    margin-right: 8px;
-                    border-radius: 12px;
-                    &:last-child{
-                        margin-right: 0px;
-                    }
-                    &.green {
-                        color: $cxegreen;
-                        border: 2px solid $cxegreen;
-                    }
-                }
-            }
             h1 {
                 font-size: 40px;
-                margin-top: 32px;
-                &.green {
-                    color: $cxegreen;
-                }
             }
-            .project-details__introduction {
-                margin-top: 20px;
-                &.green {
-                    color: $cxegreen;
+            .project-details__intro-text-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .project-details__introduction {
+                    margin-top: 20px;
+                }
+                .project-details__tags-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 32px;
+                    .project-details__tag {
+                        border: 2px solid;
+                        font-family: "Inter", sans-serif;
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding: 4px 12px;
+                        margin-right: 8px;
+                        border-radius: 12px;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        &.green {
+                            color: $cxegreen;
+                            border: 2px solid $cxegreen;
+                        }
+                    }
                 }
             }
             .project-details__line {
-                margin-bottom: 12px;
+                margin-top: 20px;
                 font-size: 14px;
                 h2 {
                     text-transform: uppercase;
-                }
-                &.green {
-                    h2, p {
-                        color: $cxegreen;
-                    }
+                    font-weight: 700;
                 }
             }
         }
@@ -109,6 +106,9 @@ $ipink: #A00251;
                 }
                 p {
                     letter-spacing: 4px;
+                    &.uppercase {
+                        text-transform: uppercase;
+                    }
                     @media (max-width: 1023px) {
                         font-size: 15px;
                         letter-spacing: 2px;
@@ -145,13 +145,13 @@ $ipink: #A00251;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-top: 2px solid $cxegreen;
-        border-bottom: 2px solid $cxegreen;
         @media (max-width: 768px) {
             background-image: url("causexeffect-cover-mobile.png");
         }
     }
     .project-details__colors-wrapper {
+        border-top: 2px solid $cxegreen;
+        border-bottom: 2px solid $cxegreen;
         h3, h4, p {
             font-family: "Montserrat", sans-serif;
         }
@@ -215,11 +215,163 @@ $ipink: #A00251;
     .project-details__tags-wrapper {
         color: $ipink;
         .project-details__tag {
-            color: $ipink;
-            border: 2px solid $ipink;
+            color: darken($color: $pink, $amount: 40);
+            border: 2px solid darken($color: $pink, $amount: 40);
         }
     }
-    .project-details__title, .project-details__introduction, .project-details__line, .project-details__subtitle{
-        color: $ipink;
+}
+
+/* Everybody is Free */
+
+.project__everybodys-free {
+    .project-details__cover-wrapper {
+        background-image: url("everybodysfree-cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 2px solid $black;
+        @media (max-width: 768px) {
+            background-image: url("everybodysfree-cover-mobile.png");
+        }
+    }
+    .project-details__tags-wrapper {
+        .project-details__tag {
+            color: $black;
+            border: 2px solid $black
+        }
+    }
+    .project-details__colors-wrapper {
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
+        .project-details_font {
+            &.font1 {
+                h3, h4, p {
+                    font-family: "Barlow Semi Condensed", sans-serif;
+                    font-weight: 700;
+                    font-style: italic;
+                }
+            }
+            &.font2 {
+                h3, h4, p {
+                    font-family: "Barlow", sans-serif;
+                    font-weight: 400;
+                }
+            }
+            &.font3 {
+                padding-top: 10px;
+                img {
+                    max-height: 100px;
+                }
+            }
+        }
+        .columns.project-details__columns {
+            height: 100%;
+            min-height: 250px;
+        }
+        .project-details_color {
+            height: 100%;
+            border-radius: 16px;
+            &.color1 {
+                background-color: #000000;
+                color: $white;
+            }
+            &.color2 {
+                background-color: #FFFFFF;
+                border: 2px solid $black;
+            }
+        }
+    }
+    .project-details__gallery-wrapper {
+        text-align: center;
+        .shadow-img {
+            box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+/* social media */
+
+.project__social-media {
+    .project-details__cover-wrapper {
+        background-image: url("socialmedia-cover.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (max-width: 768px) {
+            background-image: url("socialmedia-cover-mobile.png");
+        }
+    }
+    .project-details__introduction-wrapper {
+        .project-details__tags-wrapper {
+            .project-details__tag {
+                color: darken($color: $purple, $amount: 40);
+                border: 2px solid darken($color: $purple, $amount: 40);
+            }
+        }
+    }
+    .project-details__company-wrapper {
+        border-top: 2px solid $black;
+        padding-top: 72px;
+        h3 {
+            font-size: 28px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+        }
+        .project-details__description-wrapper {
+            margin-bottom: 72px;
+            h4 {
+                margin-top: 16px;
+            }
+            p {
+                margin-bottom: 12px;
+            }
+            ul {
+                li {
+                    margin-top: 16px;
+                    margin-left: 30px;
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    strong {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+        }
+        .project-details__scope-wrapper {
+            h4 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            li {
+                margin-top: 8px;
+                font-size: 14px;
+            }
+        }
+        .project-details__gallery-wrapper {
+            .gallery__img-wrapper {
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%;
+                overflow: hidden;
+                .gallery__media {
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+        }
+        &.gallery__company3 {
+            .gallery__media {
+                border: 2px solid lighten($color: #8E8E8E, $amount: 40);
+            }
+        }
     }
 }

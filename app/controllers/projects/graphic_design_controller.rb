@@ -3,4 +3,8 @@ class Projects::GraphicDesignController < ApplicationController
   end
   def intimates
   end
+  def everybodys_free
+  end
+  def social_media
+  end
 end
