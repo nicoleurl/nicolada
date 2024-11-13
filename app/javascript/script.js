@@ -1,5 +1,6 @@
 document.addEventListener('turbo:load', () => {
-  // Header for the hero section
+  
+    // Header for the hero section
   const variableHero = document.querySelector('#hero__variable-text');
   if (variableHero) {
       const headers = ["UX/UI", "Graphic", "Product", "Brand", "Website"];

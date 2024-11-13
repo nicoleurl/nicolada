@@ -67,3 +67,6 @@ gem "bulma-rails", "~> 1.0.2"
 group :production do
   gem "pg"
 end
+gem 'jquery-rails'
+gem 'swiper-rails'
+

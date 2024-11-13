@@ -7,4 +7,8 @@ class Projects::GraphicDesignController < ApplicationController
   end
   def social_media
   end
+  def wyndham
+  end
+  def ocean_spray
+  end
 end

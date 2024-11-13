@@ -15,6 +15,16 @@
         background-color: #E7DDFB
     }
 
+    header .btn__wrapper .btn {
+        color: #E7DDFB;
+    }
+
+    header .btn__wrapper .btn:hover {
+        background-color: #E7DDFB;
+        border: 3px solid #000000;
+        color: #000000;
+    }
+
 
 .project-details__wrapper.project__social-media
     .project-details__cover-wrapper
@@ -390,4 +400,17 @@
                                         = image_tag "bm-pic15", :class => "gallery__media"
                                 .column.is-3-desktop.is-4-tablet.is-6-mobile
                                     .gallery__img-wrapper
-                                        = image_tag "bm-pic16", :class => "gallery__media"     
+                                        = image_tag "bm-pic16", :class => "gallery__media"
+            .project-details__navigation-wrapper
+                .columns.is-mobile
+                    .column.is-3
+                        = link_to "/graphic-design/cause-x-effect", :class => "navigation-button" do
+                            %p.back-btn
+                                = image_tag "arrow-left", :class => "arrow-left"
+                                Back: Cause x Effect
+                    .column.is-3.is-offset-6
+                        = link_to "/graphic-design/intimates", :class => "navigation-button" do
+                            %p.next-btn
+                                Next: Intimates
+                                =image_tag "arrow-right", :class => "arrow-right"
+

@@ -22,4 +22,8 @@ Rails.application.routes.draw do
   get "/graphic-design/intimates" => "projects/graphic_design#intimates", as: "intimates"
   get "/graphic-design/everybodys-free" => "projects/graphic_design#everybodys_free", as: "everybodys_free"
   get "/graphic-design/social-media" => "projects/graphic_design#social_media", as: "social_media"
+  get "/graphic-design/wyndham-grand-rio-mar" => "projects/graphic_design#wyndham", as: "wyndham"
+  get "/graphic-design/ocean-spray" => "projects/graphic_design#ocean_spray", as: "ocean_spray"
+  get "/ux-ui/island-finance-web" => "projects/ux_ui#if_web", as: "if_web"
+
 end
