@@ -15,6 +15,16 @@
         background-color: #FFFFFF
     }
 
+    header .btn__wrapper .btn {
+        color: #FFFFFF;
+    }
+
+    header .btn__wrapper .btn:hover {
+        background-color: #FFFFFF;
+        border: 3px solid #000000;
+        color: #000000;
+    }
+
 
 .project-details__wrapper.project__everybodys-free
     .project-details__cover-wrapper
@@ -95,5 +105,17 @@
                 .columns
                     .column.is-12
                         = image_tag "everybodys-free-poster.png"
+            .project-details__navigation-wrapper
+                .columns.is-mobile
+                    .column.is-3
+                        = link_to "/graphic-design/wyndham-grand-rio-mar", :class => "navigation-button" do
+                            %p.back-btn
+                                = image_tag "arrow-left", :class => "arrow-left"
+                                Back: Wyndham Grand Rio Mar
+                    .column.is-3.is-offset-6
+                        = link_to "/graphic-design/ocean-spray", :class => "navigation-button" do
+                            %p.next-btn
+                                Next: Ocean Spray
+                                =image_tag "arrow-right", :class => "arrow-right"
                     
                 

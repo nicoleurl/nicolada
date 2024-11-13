@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+ruby '3.3.5'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -45,6 +45,10 @@ group :development, :test do
   gem "sqlite3", ">= 1.4"
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -63,3 +67,6 @@ gem "bulma-rails", "~> 1.0.2"
 group :production do
   gem "pg"
 end
+gem 'jquery-rails'
+gem 'swiper-rails'
+

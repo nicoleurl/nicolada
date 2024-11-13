@@ -1,0 +1,118 @@
+.project-details__wrapper.project__wyndham
+    .project-details__cover-wrapper
+    .container
+        .project-details__content-wrapper
+            .project-details__introduction-wrapper
+                %h1.project-details__title
+                    Wyndham Grand Rio Mar
+                .columns
+                    .column.is-7-desktop.is-8-tablet
+                        .project-details__intro-text-wrapper
+                            %p.project-details__introduction
+                                A marketing campaign for Wyndham Grand Rio Mar which aimed to attract travelers to Río Grande while showcasing the advantages of the hotel's location. In the aftermath of Hurricane Maria, the resort — which was severely damaged during the storm — underwent a significant transformation. The campaign encouraged guests to rediscover Wyndham Grand Rio Mar and immerse themselves in a revitalized paradise, something away from their usual world. This initiative celebrated resilience and positioned the hotel as a serene escape.
+                            .project-details__tags-wrapper
+                                .project-details__tag
+                                    Marketing
+                                .project-details__tag
+                                    Advertising
+                                .project-details__tag
+                                    Social Media
+                                .project-details__tag
+                                    Offline
+                    .column.is-3.is-offset-2-desktop.is-offset-1-tablet
+                        .project-details__line
+                            %h2.project-details__subtitle
+                                Role
+                            %p.project-details__subtitle-text
+                                Art Direction, Graphic Design
+                        .project-details__line
+                            %h2.project-details__subtitle
+                                Industry
+                            %p.project-details__subtitle-text
+                                Hotels & Hospitality
+                        .project-details__line
+                            %h2.project-details__subtitle
+                                Tools
+                            %p.project-details__subtitle-text
+                                Illustrator, Photoshop
+            .project-details__gallery-wrapper
+                .columns.is-multiline
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "poster-1", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "poster-2", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "poster-3", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "poster-4", :class => "gallery__media"
+                .column.is-12
+                    %p.projects__middle-paragraph
+                        The campaign reimagined the hotel as a captivating new world. By framing images within squares to resemble windows, we provided a glimpse into this oasis. Each square invited viewers to peer into the hotel, highlighting the accommodations, stunning landscapes, and exceptional amenities that awaited on the other side.
+                .columns.is-multiline
+                    .column.is-12
+                        .project-details__img-wrapper
+                            = image_tag "billboard-1", :class => "gallery__media"
+                    .column.is-4
+                        .project-details__img-wrapper
+                            = image_tag "billboard-2", :class => "gallery__media billboard"
+                    .column.is-8
+                        .project-details__img-wrapper
+                            = image_tag "billboard-3", :class => "gallery__media billboard"
+                .columns.is-multiline
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "stories-01", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "stories-03", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "stories-02", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "stories-04", :class => "gallery__media"
+                    .column.is-12
+                        %p.projects__middle-paragraph
+                            Building on the concept of a serene escape, the campaign introduced 15-second social media videos showcasing the landscapes nearby, such as El Yunque, the beach, sunrises, and the clouds viewed from your hotel balcony. Each video invited viewers to take a momentary break from their scrolling to relax and be transported into the tranquil beauty of the surroundings, allowing them to experience the essence of what it feels like to stay at the hotel.
+                -# .columns.is-centered.is-vcentered
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "timelapse-2", :class => "gallery__media timelapse"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "timelapse-1", :class => "gallery__media"
+                    .column.is-3
+                        .project-details__img-wrapper
+                            = image_tag "timelapse-3", :class => "gallery__media timelapse"
+                .columns.is-multiline
+                    .column.is-12
+                        %p.projects__middle-paragraph
+                            Throughout transformation, Wyndham Grand Rio Mar expanded its rebuilding efforts to benefit the surrounding community. In support of this initiative, we curated a list of 100 must-do experiences at one of TIME's 100 World's Greatest Places, designed for social media engagement and encouraging UGC. This list, crafted from a local perspective, provides unique insights into Puerto Rican life, revealing hidden gems and activities that only residents would know. By showcasing the advantages of staying in Río Grande over other popular tourist destinations, this effort not only enhanced the hotel’s image but also reinforced its commitment to supporting the local community.
+                    .column.is-6
+                        .project-details__img-wrapper
+                            = image_tag "bucket-list-02", :class => "gallery__media bucket-list"
+                    .column.is-6
+                        .project-details__img-wrapper
+                            = image_tag "bucket-list-01", :class => "gallery__media bucket-list"
+                    .column.is-6
+                        .project-details__img-wrapper
+                            = image_tag "bucket-list-04", :class => "gallery__media bucket-list"
+                    .column.is-6
+                        .project-details__img-wrapper
+                            = image_tag "bucket-list-03", :class => "gallery__media bucket-list"
+            .project-details__navigation-wrapper
+                .columns.is-mobile
+                    .column.is-3
+                        = link_to "/graphic-design/intimates", :class => "navigation-button" do
+                            %p.back-btn
+                                = image_tag "arrow-left", :class => "arrow-left"
+                                Back: Intimates
+                    .column.is-3.is-offset-6
+                        = link_to "/graphic-design/everybodys-free", :class => "navigation-button" do
+                            %p.next-btn
+                                Next: Everybody is Free
+                                =image_tag "arrow-right", :class => "arrow-right"

@@ -1,18 +1,46 @@
 :css 
     header {
-        background-color: #4E786A
+        background-color: #4E786A;
         }
     header .navbar {
-        background-color: #4E786A
+        background-color: #4E786A;
     }
     header .navbar .navbar-start .header__link:hover {
-        background-color: #4E786A
+        background-color: #4E786A;
     }
     header .navbar .navbar-menu {
-        background-color: #4E786A
+        background-color: #4E786A;
     }
     header .navbar .navbar-burger:hover {
-        background-color: #4E786A
+        background-color: #4E786A;
+    }
+
+    header .navbar .navbar-start .header__link {
+        color: #FFFFFF !important;
+    }
+
+    header .navbar .navbar-brand svg {
+        color: #FFFFFF;
+    }
+
+    header .btn__wrapper .btn {
+        background-color: #FFFFFF;
+        color: #4E786A;
+        border: 3px solid #FFFFFF
+    }
+
+    header .btn__wrapper .btn:hover {
+        background-color: #4E786A;
+        border: 3px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+
+    header .navbar .navbar-burger {
+        color: #FFFFFF;
+    }
+
+    header .navbar .navbar-menu.is-active {
+        border-bottom: 3px solid #FFFFFF;
     }
 
 .project-details__wrapper.project__cause-x-effect
@@ -137,4 +165,17 @@
                             = image_tag "causexeffect-p12.png"
                     .column.is-6
                         = image_tag "causexeffect-p13.png"
-                
+            .project-details__navigation-wrapper
+                .columns.is-mobile
+                    .column.is-3
+                        = link_to "/graphic-design/ocean-spray", :class => "navigation-button" do
+                            %p.back-btn
+                                = image_tag "arrow-left", :class => "arrow-left"
+                                Back: Ocean Spray
+                    .column.is-3.is-offset-6
+                        = link_to "/graphic-design/social-media", :class => "navigation-button" do
+                            %p.next-btn
+                                Next: Social Media
+                                =image_tag "arrow-right", :class => "arrow-right"
+
+            
