@@ -5,14 +5,14 @@ $blue: #4431FE;
     height: 550px;
     display: flex;
     align-items: center;
-    background-image: url(contact-page-bg.png);
+    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-page-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
     @media (max-width: 1023px) {
         align-items: flex-start;
         padding: 40px 32px;
-        background-image: url("contact-page-bg-touch.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-page-bg-touch.png");
     }
     h1 {
         font-size: 72px;

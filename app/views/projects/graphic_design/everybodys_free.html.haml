@@ -38,10 +38,7 @@
                         .project-details__intro-text-wrapper
                             %p.project-details__introduction
                                 Editorial design project for a 1,000-word manifesto, designed for easy distribution on an 11x17-inch white page, making it easy to read and share. The selected manifesto was "Advice, Like Youth, Probably Just Wasted on the Young," an article by Mary Schmich that gained viral popularity and was later transformed into the song "Everybody's Free (to Wear Sunscreen)" by Baz Luhrmann. Emphasizing the idea of "visual rhythm" to follow that of the song's, the final product became a small book that unfolded as the reader progressed, ending in a poster.
-                            .project-details__tags-wrapper
-                                .project-details__tag
-                                    Editorial Design
-                    .column.is-3.is-offset-2
+                    .column.is-4.is-offset-1
                         .project-details__line
                             %h2.project-details__subtitle
                                 Role
@@ -92,30 +89,32 @@
             .project-details__gallery-wrapper
                 .columns
                     .column.is-6
-                        = image_tag "everybodys-free-cover.png", :class => "shadow-img"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-cover.png", :class => "shadow-img"
                     .column.is-6
                         .projects__img-wrapper
-                            = image_tag "everybodys-free-back.png", :class => "shadow-img"
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-back.png", :class => "shadow-img"
                 .columns
                     .column.is-12
                         %p.projects__middle-text
                 .columns
                     .column.is-12
-                        = image_tag "everybodys-free-open.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-open.png"
                 .columns
                     .column.is-12
-                        = image_tag "everybodys-free-poster.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-poster.png"
             .project-details__navigation-wrapper
                 .columns.is-mobile
-                    .column.is-3
+                    .column.is-4
                         = link_to "/graphic-design/wyndham-grand-rio-mar", :class => "navigation-button" do
                             %p.back-btn
                                 = image_tag "arrow-left", :class => "arrow-left"
-                                Back: Wyndham Grand Rio Mar
-                    .column.is-3.is-offset-6
+                                %span.is-hidden-touch
+                                    Back: Wyndham Grand Rio Mar
+                    .column.is-4.is-offset-4
                         = link_to "/graphic-design/ocean-spray", :class => "navigation-button" do
                             %p.next-btn
-                                Next: Ocean Spray
+                                %span.is-hidden-touch
+                                    Next: Ocean Spray
                                 =image_tag "arrow-right", :class => "arrow-right"
                     
                 

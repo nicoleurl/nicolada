@@ -50,17 +50,12 @@
             .project-details__introduction-wrapper
                 %h1.project-details__title
                     Cause x Effect
-                .columns
+                .columns.is-centered.is-variable.is-6
                     .column.is-7
                         .project-details__intro-text-wrapper
                             %p.project-details__introduction
-                                Editorial design for an experimental photography fanzine. The magazine includes dedicated sections for submissions, features, interviews, and techniques, each with its own distinct color and size to break away from traditional formats and lean into the experimental aspect of it. With a clean, minimalist layout, the design ensures that the photography remains the central focus.
-                            .project-details__tags-wrapper
-                                .project-details__tag.green
-                                    Editorial Design
-                                .project-details__tag.green
-                                    Branding
-                    .column.is-3.is-offset-2
+                                Editorial design for an experimental photography fanzine. The magazine includes dedicated sections for submissions, features, interviews, and techniques, with each section showcasing its own distinct color palette and varying sizes, effectively breaking away from traditional formats and embracing the experimental aspect of the publication. This use of color and form not only adds visual interest but also enhances the reader's experience by guiding them through the content in a dynamic way. With a clean, minimalist layout, the design ensures that the photography remains the central focus, allowing the images to breathe and engage the audience, while simultaneously inviting them to explore the diverse perspectives and insights of the featured artists.
+                    .column.is-4.is-offset-1
                         .project-details__line
                             %h2.project-details__subtitle
                                 Role
@@ -76,7 +71,6 @@
                                 Tools
                             %p.project-details__subtitle-text
                                 InDesign, Illustrator
-                        
             .project-details__colors-wrapper
                 .columns
                     .column.is-6
@@ -126,56 +120,66 @@
             .project-details__gallery-wrapper
                 .columns
                     .column.is-6
-                        = image_tag "causexeffect-p1.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p1.png"
                     .column.is-6
                         .projects__img-wrapper
-                            = image_tag "causexeffect-p2.png"
-                            = image_tag "causexeffect-p3.png"
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p2.png"
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p3.png"
                 .columns
                     .column.is-6
-                        = image_tag "causexeffect-p4.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p4.png"
                     .column.is-6
-                        = image_tag "causexeffect-p5.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p5.png"
+                .project-details__description-wrapper
+                    .columns.is-variable.is-6
+                        .column.is-4
+                            %h5 Design
+                            %h3 Layout
+                        .column.is-8
+                            %p.projects__middle-text
+                                Although the layout is minimalist, it employs an unconventional grid that aligns with the theme, giving the magazine a modern and original feel. This design choice breaks away from traditional magazine formats like the magazine encourages people to do in photography.
                 .columns
-                    .column.is-12
-                        %p.projects__middle-text
-                            Although the layout is minimalist, it employs an unconventional grid that aligns with the theme, giving the magazine a modern and original feel. This design choice breaks away from traditional magazine formats like the magazine encourages people to do in photography.
-                .columns
                     .column.is-6
-                        = image_tag "causexeffect-p6.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p6.png"
                     .column.is-6
-                        = image_tag "causexeffect-p7.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p7.png"
                 .columns
                     .column.is-12
                         .projects__img-wrapper
-                            = image_tag "causexeffect-p8.png"
-                .columns
-                    .column.is-12
-                        %p.projects__middle-text
-                            The magazine utilizes a six-column grid for greater creative freedom. This structure allows for content to span multiple rows, or just one row, offering bigger arrangement possibilities for presenting information.
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p8.png"
+                .project-details__description-wrapper
+                    .columns.is-variable.is-6
+                        .column.is-4
+                            %h5 Design
+                            %h3 Grid
+                        .column.is-8
+                            %p.projects__middle-text
+                                The magazine utilizes a six-column grid for greater creative freedom. This structure allows for content to span multiple rows, or just one row, offering bigger arrangement possibilities for presenting information.
                 .columns
                     .column.is-6
-                        = image_tag "causexeffect-p9.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p9.png"
                     .column.is-6
-                        = image_tag "causexeffect-p10.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p10.png"
                 .columns
                     .column.is-6
                         .projects__img-wrapper
-                            = image_tag "causexeffect-p11.png"
-                            = image_tag "causexeffect-p12.png"
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p11.png"
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p12.png"
                     .column.is-6
-                        = image_tag "causexeffect-p13.png"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-p13.png"
             .project-details__navigation-wrapper
                 .columns.is-mobile
                     .column.is-3
                         = link_to "/graphic-design/ocean-spray", :class => "navigation-button" do
                             %p.back-btn
                                 = image_tag "arrow-left", :class => "arrow-left"
-                                Back: Ocean Spray
+                                %span.is-hidden-touch
+                                    Back: Ocean Spray
                     .column.is-3.is-offset-6
                         = link_to "/graphic-design/social-media", :class => "navigation-button" do
                             %p.next-btn
-                                Next: Social Media
+                                %span.is-hidden-touch
+                                    Next: Social Media
                                 =image_tag "arrow-right", :class => "arrow-right"
 
             

@@ -28,6 +28,8 @@ $ipink: #A00251;
             }
             h1 {
                 font-size: 40px;
+                line-height: 1;
+                margin-bottom: 32px;
                 @media (max-width: 768px) {
                     font-size: 32px;
                 }
@@ -36,34 +38,13 @@ $ipink: #A00251;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                .project-details__introduction {
-                    margin-top: 20px;
-                }
-                .project-details__tags-wrapper {
-                    display: flex;
-                    flex-direction: row;
-                    margin-top: 32px;
-                    .project-details__tag {
-                        border: 2px solid;
-                        font-family: "Inter", sans-serif;
-                        font-weight: 600;
-                        font-size: 14px;
-                        padding: 4px 12px;
-                        margin-right: 8px;
-                        border-radius: 12px;
-                        &:last-child{
-                            margin-right: 0px;
-                        }
-                        &.green {
-                            color: $cxegreen;
-                            border: 2px solid $cxegreen;
-                        }
-                    }
-                }
             }
             .project-details__line {
                 margin-top: 20px;
                 font-size: 14px;
+                &:first-child {
+                    margin-top: 0px;
+                }
                 h2 {
                     text-transform: uppercase;
                     font-weight: 700;
@@ -80,15 +61,24 @@ $ipink: #A00251;
                 flex-direction: column;
                 justify-content: space-between;
             }
+            .project-details__description-wrapper {
+                margin: 72px 0px;
+            }
             .projects__middle-text {
-                font-size: 24px;
-                text-align: center;
-                padding: 20px;
                 font-weight: 400;
-                line-height: 1.1;
                 @media (max-width: 768px) {
                     font-size: 16px;
                 }
+            }
+            h3 {
+                font-size: 28px;
+                line-height: 1.1;
+            }
+            h5 {
+                font-family: "Inter", sans-serif !important;
+                font-weight: 600; 
+                color: $gray !important;
+                font-size: 16px !important;
             }
         }
         .project-details__colors-wrapper {
@@ -141,7 +131,9 @@ $ipink: #A00251;
         .project-details__navigation-wrapper {
             margin-bottom: 32px;
             .navigation-button {
+
                 p {
+                    padding: 20px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -175,18 +167,18 @@ $ipink: #A00251;
             }
         }
     }
-}
+    }
 
 /* Cause x Effect */
 .project__cause-x-effect {
     .project-details__cover-wrapper {
         background-color: #4E786A;
-        background-image: url("causexeffect-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 768px) {
-            background-image: url("causexeffect-cover-mobile.png");
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover-mobile.png");
         }
     }
     .project-details__colors-wrapper {
@@ -245,19 +237,12 @@ $ipink: #A00251;
 .project__intimates {
     .project-details__cover-wrapper {
         background-color: #F2F2F2;
-        background-image: url("intimates-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 768px) {
-            background-image: url("intimates-cover-mobile.png");
-        }
-    }
-    .project-details__tags-wrapper {
-        color: $ipink;
-        .project-details__tag {
-            color: darken($color: $pink, $amount: 40);
-            border: 2px solid darken($color: $pink, $amount: 40);
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover-mobile.png");
         }
     }
 }
@@ -267,19 +252,13 @@ $ipink: #A00251;
 .project__everybodys-free {
     .project-details__cover-wrapper {
         background-color: #FFFFFF;
-        background-image: url("everybodysfree-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border-bottom: 2px solid $black;
         @media (max-width: 768px) {
-            background-image: url("everybodysfree-cover-mobile.png");
-        }
-    }
-    .project-details__tags-wrapper {
-        .project-details__tag {
-            color: $black;
-            border: 2px solid $black
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover-mobile.png");
         }
     }
     .project-details__colors-wrapper {
@@ -336,20 +315,12 @@ $ipink: #A00251;
 .project__social-media {
     .project-details__cover-wrapper {
         background-color: #E7DDFB;
-        background-image: url("socialmedia-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialmedia-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 768px) {
-            background-image: url("socialmedia-cover-mobile.png");
-        }
-    }
-    .project-details__introduction-wrapper {
-        .project-details__tags-wrapper {
-            .project-details__tag {
-                color: darken($color: $purple, $amount: 40);
-                border: 2px solid darken($color: $purple, $amount: 40);
-            }
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialmedia-cover-mobile.png");
         }
     }
     .project-details__company-wrapper {
@@ -423,20 +394,12 @@ $ipink: #A00251;
 
 .project__wyndham {
     .project-details__cover-wrapper {
-        background-image: url("wyndham-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 768px) {
-            background-image: url("wyndham-cover-mobile.png");
-        }
-    }
-    .project-details__introduction-wrapper {
-        .project-details__tags-wrapper {
-            .project-details__tag {
-                color: #456369;
-                border: 2px solid #456369;
-            }
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover-mobile.png");
         }
     }
     .project-details__gallery-wrapper {
@@ -453,66 +416,51 @@ $ipink: #A00251;
                 box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
             }
         }
-        .projects__middle-paragraph {
-            font-size: 20px;
-            line-height: 1.3;
-            text-align: center;
-            max-width: 900px;
-            margin: 72px auto;
-            @media (max-width: 768px) {
-                margin: 20px auto 40px;
-                font-size: 16px;
-            }
-        }
     }
 }
 
-/* wyndham */
+/* ocean spray */
 
 .project__ocean-spray {
     .project-details__cover-wrapper {
         background-color: #BCD3E7;
-        background-image: url("ocean-spray-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/ocean-spray-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: 768px) {
-            background-image: url("ocean-spray-cover-mobile.png");
-        }
-    }
-    .project-details__introduction-wrapper {
-        .project-details__tags-wrapper {
-            .project-details__tag {
-                color: #03216A;
-                border: 2px solid #03216A;
-            }
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/ocean-spray-cover-mobile.png");
         }
     }
     .project-details__gallery-wrapper {
         h3 {
             margin: 0px;
-            text-align: center;
         }
-        .project-details_objectives-wrapper {
-            padding: 24px;
-            border: 2px solid #B11F24;
-            border-radius: 16px;
-            height: 100%;
-            img {
-                max-width: 40px;
-                display: block;
-                margin-left: 10px;
-            }
-            h4 {
-                font-size: 20px;
-                margin: 16px 10px;
-                color: #B11F24;
-            }
-            p { 
-                max-width: 350px;
-                margin: 0px auto 20px;
-            }
+        .project-details__objectives-wrapper {
+            background-color: $beige;
+            padding: 72px 0px;
+            margin: 72px 0px 124px;
+            .project-details_objectives {
+                padding: 24px;
+                border: 2px solid #000000;
+                border-radius: 16px;
+                height: 100%;
+                text-align: center;
+                img {
+                    max-width: 40px;
+                    display: block;
+                    margin: 20px auto;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin: 16px 10px;
+                }
+                p { 
+                    max-width: 350px;
+                    margin: 0px auto 20px;
+                }
 
+            }
         }
         .display {
             display: block;
