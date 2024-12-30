@@ -62,7 +62,7 @@ end
 
 gem "haml"
 gem "sassc-rails", "~> 2.1.2"
-gem "bulma-rails", "~> 1.0.2"
+gem "bulma-rails", "~> 1.0.3"
 
 group :production do
   gem "pg"
