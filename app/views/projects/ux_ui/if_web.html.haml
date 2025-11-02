@@ -22,7 +22,7 @@
                             %p.case-study__subtitle-text
                                 Adobe XD, Whimsical
                         .btn__wrapper
-                            = link_to "View Snap Summary", "/ux-ui", :class => "btn"
+                            = link_to "View Snap Summary", "/ux-ui/island-finance-web-abbreviated", :class => "btn"
                 .column.is-8.is-offset-1-desktop
                     .case-study__intro-text-wrapper
                         %p.case-study__introduction
@@ -87,7 +87,8 @@
                                     %li
                                         = link_to "High-fi Wireframes", "#highfi"
             
-        .case-study__industry-insights#insights
+        .case-study__industry-insights
+            .anchor#insights
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
@@ -132,7 +133,8 @@
                                     .case-study-quote
                                         %p "The average personal loan debt per borrower is $11,687 as of the second quarter of 2024."
             
-        .case-study__competitive-audit#audit
+        .case-study__competitive-audit
+            .anchor#audit
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
@@ -141,7 +143,8 @@
                     .column.is-8.is-offset-1-desktop
                         %p In order to assess the strengths and weaknesses of both direct and indirect competitors in the personal loan sector, I analyzed four websites dedicated to this industry. The goal was to gain insight into the current offerings, identify areas for enhancement, and uncover any gaps or unmet needs within the sector.
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-competition-analysis.png"
-        .case-study__user-interviews#interviews
+        .case-study__user-interviews
+            .anchor#interviews
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
@@ -163,7 +166,8 @@
                                 .column.is-6
                                     .case-study-quote
                                         %p "Phantom charges, and they want to charge surcharges for cashier errors. The cashier swiped the card for .10 cents less and they want to charge me $10 more for “allegedly” not having paid on time."
-        .case-study__problem-statement#problem
+        .case-study__problem-statement
+            .anchor#problem
             .container
                 .columns
                     .column.is-3
@@ -172,7 +176,8 @@
                     .column.is-8.is-offset-1-desktop
                         %p The necessity to upgrade Island Finance's banking app became clear after analyzing competitors and gathering user feedback. With an increasing demand for digital services among clients, this enhancement is crucial for the company's future growth.
                         %p The current website lacked essential features and made it difficult for users to perform tasks like calculating loan payments, making online payments, and accessing loan information. This led to confusion regarding their financial situations. Additionally, the outdated design reinforced the perception of Island Finance as a traditional and complicated company, which did not align with the company's brand image and value proposition.
-        .case-study__main-concerns#concerns
+        .case-study__main-concerns
+            .anchor#concerns
             .container
                 .columns
                     .column.is-3
@@ -242,7 +247,8 @@
                                         %p Operating under U.S. financial regulations and in a bilingual environment required a thoughtful content strategy. We kept things clear and compliant, but still warm and easy to understand.
 
 
-        .case-study__personas#personas
+        .case-study__personas
+            .anchor#personas
             .container
                 .case-study__personas-text
                     %h5 Users
@@ -258,7 +264,8 @@
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-couple.png"
                 .swiper-button-next
                 .swiper-button-prev
-        .case-study__project-goals#goals
+        .case-study__project-goals
+            .anchor#goals
             .container
                 .columns
                     .column.is-3
@@ -268,7 +275,8 @@
                         %p While the primary business objectives centered on maximizing user conversion and generating leads by clearly communicating the functionality of the application, we successfully identified the areas where these objectives intersected with that of users by using our research into Island Finance's customers.
                         %p Our goal was to enhance customer service by thoroughly reimagining and rebuilding the user journey based on Island Finance's user needs. We sought to position the company as a friendly and trustworthy partner in digital personal loans. The team's mission was to empower users to make informed financial choices and monitor their finances effectively, ultimately enhancing the overall quality of life for customers while still fulfilling the business's goals.
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-goals.png"
-        .case-study__brainstorming#brainstorming
+        .case-study__brainstorming
+            .anchor#brainstorming
             .container
                 .columns
                     .column.is-3
@@ -344,7 +352,8 @@
                             %p Add more CTAs through the website
                         .brainstorming-card.solutions
                             %p Good but not necessary: Make direct deposit of loan possible
-        .case-study__features#features
+        .case-study__features
+            .anchor#features
             .container
                 .columns
                     .column.is-3
@@ -354,7 +363,8 @@
                         %p
                             Based on the touchpoints and user needs identified during the empathizing phase, I developed a Product Feature Roadmap to outline key app features and guide upcoming design efforts.
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/features.png"
-        .case-study__information-architecture#architecture
+        .case-study__information-architecture
+            .anchor#architecture
             .container
                 .columns
                     .column.is-3
@@ -365,7 +375,8 @@
                             Taking into account the required features and the diverse needs of users seeking financial guidance and services, I created a map to illustrate the website’s structure. This map highlights how core pages and features are organized, and is designed to guide users smoothly through the site, making it easy to find tools, resources, and key financial information.
                 .information-architecture__chart
                     <iframe style="border: 15px solid #F1F4F7" width="100%" height="4000" src="https://whimsical.com/embed/UTRt4wq74AVbcxrP3uzFcM"></iframe>
-        .case-study__user-flows#flows
+        .case-study__user-flows
+            .anchor#flows
             .container
                 .columns
                     .column.is-3
@@ -379,11 +390,13 @@
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-2.png", :class => "user-flows__img"
                         %h4 Making a payment:
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.png", :class => "user-flows__img"
-        .case-study__lofi-wireframes#lowfi
+        .case-study__lofi-wireframes
+            .anchor#lowfi
             %h5 Design
             %h3 Lo-fi Wireframes
             = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/wireframes.png"
-        .case-study__desing-system#design
+        .case-study__desing-system
+            .anchor#design
             .container
                 .columns
                     .column.is-3
@@ -392,14 +405,15 @@
                     .column.is-8.is-offset-1
                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.png"
                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/style-guide-if.png"
-        .case-study__hifi-wireframes#highfi
+        .case-study__hifi-wireframes
+            .anchor#highfi
             .hifi-wireframes__main-visual
                 .container
                     %h5 High-fi Wireframes
                     %h3 Introducing Island Finance
                     %p A personal loan experience designed to feel simple, clear, and trustworthy. From the first screen to the final step, every detail was crafted to guide users smoothly and make financial decisions less intimidating.
                     .btn__wrapper
-                        = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn"
+                        = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn", :target => "blank"
                     .img__wrapper
                         = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Home.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
             .hifi-wireframes__loan-options
@@ -540,7 +554,7 @@
             .container
                 .columns.is-mobile
                     .column.is-12-tablet
-                        = link_to "/graphic-design/everybodys-free", :class => "navigation-button" do
+                        = link_to "/ux-ui/dr-harveys", :class => "navigation-button" do
                             %p.next-btn
                                 %span
                                     Next: Dr. Harvey's
