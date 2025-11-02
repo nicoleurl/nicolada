@@ -2,7 +2,7 @@
     .case-study__cover-wrapper
     .case-study__content-wrapper
         .container
-            .columns.is-centered.is-variable.is-6
+            .columns.is-centered.is-variable.is-6-desktop
                 .column.column.is-3
                     .case-study__details-wrapper
                         %h1 Island Finance Website
@@ -10,18 +10,20 @@
                             %h2.case-study__subtitle
                                 Role
                             %p.case-study__subtitle-text
-                                Art Direction, Editorial Design
+                                UX Research, Product Design, UX/UI Design
                         .case-study__details-line
                             %h2.case-study__subtitle
                                 Industry
                             %p.case-study__subtitle-text
-                                Photography
+                                Finance
                         .case-study__details-line
                             %h2.pcase-study__subtitle
                                 Tools
                             %p.case-study__subtitle-text
-                                InDesign, Illustrator
-                .column.is-8.is-offset-1
+                                Adobe XD, Whimsical
+                        .btn__wrapper
+                            = link_to "View Snap Summary", "/ux-ui", :class => "btn"
+                .column.is-8.is-offset-1-desktop
                     .case-study__intro-text-wrapper
                         %p.case-study__introduction
                             Island Finance has a long history in Puerto Rico, with its roots dating back to 1959. It has distinguished itself by playing a vital role in the economic development of Puerto Rico, successfully establishing itself as a leader in personal loans across the Island. Today, they have 49 branches all around the country.
@@ -35,7 +37,7 @@
             .container
                 .case-study__project-scope
                     %h3 Project Scope
-                    .columns.is-centered.is-variable.is-8
+                    .columns.is-centered.is-variable.is-8-desktop
                         .column.is-3
                             .case-study__step
                                 = inline_svg('discover-icon.svg')
@@ -55,9 +57,11 @@
                                     %li
                                         = link_to "Problem Statement", "#problem"
                                     %li 
-                                        = link_to "Project Goals", "#goals"
+                                        = link_to "Main Concerns", "#concerns"
                                     %li
                                         = link_to "User Personas", "#personas"
+                                    %li 
+                                        = link_to "Project Goals", "#goals"
                         .column.is-3
                             .case-study__step
                                 = inline_svg('ideate-icon.svg')
@@ -85,11 +89,11 @@
             
         .case-study__industry-insights#insights
             .container
-                .columns.is-variable.is-6
+                .columns.is-variable.is-6-desktop
                     .column.is-3
                         %h5 Industry Insights
                         %h3 Personal Loans
-                    .column.is-8.is-offset-1
+                    .column.is-8.is-offset-1-desktop
                         %p
                             As of Q2 2024, 23.9 million Americans owe a total of $246 billion in personal loans, with an average debt of $11,687 per borrower.
                             %span
@@ -114,7 +118,7 @@
                         %p Puerto Rico's unique status as a U.S. territory creates both opportunities and challenges for its banking industry. The local economy's ties to the U.S. influence regulations and market dynamics, while factors like trade agreements, federal policies, and recovery from natural disasters play crucial roles in the banking sector's health.
                         
                         .case-study__takeaways
-                            .columns.is-multiline.is-variable.is-3
+                            .columns.is-multiline.is-variable.is-3-desktop
                                 .column.is-6
                                     .case-study-quote
                                         %p "Customers in Puerto Rico are increasingly leaning towards digital banking solutions, driven by the convenience and efficiency they offer."
@@ -130,23 +134,23 @@
             
         .case-study__competitive-audit#audit
             .container
-                .columns.is-variable.is-6
+                .columns.is-variable.is-6-desktop
                     .column.is-3
                         %h5 Competitive Audit
                         %h3 Understanding the market
-                    .column.is-8.is-offset-1
+                    .column.is-8.is-offset-1-desktop
                         %p In order to assess the strengths and weaknesses of both direct and indirect competitors in the personal loan sector, I analyzed four websites dedicated to this industry. The goal was to gain insight into the current offerings, identify areas for enhancement, and uncover any gaps or unmet needs within the sector.
-                        = image_tag "if-competition-analysis"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-competition-analysis.png"
         .case-study__user-interviews#interviews
             .container
-                .columns.is-variable.is-6
+                .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 User Intervies
+                        %h5 User Interviews
                         %h3 Understanding users
-                    .column.is-9
+                    .column.is-8.is-offset-1
                         %p In order to comprehend users' experiences within Island Finance, we focused on their interactions and feedback with the business. Here's what they said:
                         .case-study__takeaways
-                            .columns.is-multiline.is-variable.is-3
+                            .columns.is-multiline.is-variable.is-3-desktop
                                 .column.is-6
                                     .case-study-quote
                                         %p "They should invest to improve the Banking Network Architecture with a good IT team to make it convenient enough for the customer. I genuinely do not recommend this or any other bank that does not have good IT service…"
@@ -165,9 +169,95 @@
                     .column.is-3
                         %h5 Challenges
                         %h3 Problem Statement
-                    .column.is-8.is-offset-1
+                    .column.is-8.is-offset-1-desktop
                         %p The necessity to upgrade Island Finance's banking app became clear after analyzing competitors and gathering user feedback. With an increasing demand for digital services among clients, this enhancement is crucial for the company's future growth.
                         %p The current website lacked essential features and made it difficult for users to perform tasks like calculating loan payments, making online payments, and accessing loan information. This led to confusion regarding their financial situations. Additionally, the outdated design reinforced the perception of Island Finance as a traditional and complicated company, which did not align with the company's brand image and value proposition.
+        .case-study__main-concerns#concerns
+            .container
+                .columns
+                    .column.is-3
+                        %h5 Main Concerns
+                        %h3 Key User Frustrations
+                    .column.is-8.is-offset-1-desktop
+                        %p Through our research and understanding of the problem, we identified the main areas that needed attention to improve navigation and boost overall customer satisfaction with the brand.
+                        .main-concerns__concerns-wrapper
+                            .columns.is-multiline.is-variable.is-8-desktop
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
+                                        %h4 Outdated Website
+                                        %p An outdated website and unreliable IT services raised red flags for clients, signaling a lack of trust and professionalism. These issues directly affect the company's credibility and ability to retain customers in a digital-first world.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-02.png"
+                                        %h4 Financial Literacy
+                                        %p Low financial literacy can make the personal loan process confusing and overwhelming, leading to missed details or poor decisions. Empowering customers with clear, accessible information builds confidence and encourages more responsible borrowing.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-05.png"
+                                        %h4 Trust
+                                        %p A lack of trust and transparency can make customers hesitant to apply for a personal loan, fearing hidden fees or unclear terms. This uncertainty slows down the decision-making process and can drive potential borrowers to look elsewhere.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
+                                        %h4 Digital Loan Management
+                                        %p The ability to manage loans digitally gives customers convenience, control, and confidence. Without it, the process feels outdated and frustrating, making it harder to stay on top of payments and reducing overall satisfaction.
+        .case-study__main-concerns-constraints
+            .container
+                .columns
+                    .column.is-3
+                        %h5 Main Concerns
+                        %h3 Design Constraints & Considerations
+                    .column.is-8.is-offset-1-desktop
+                        %p Alongside user frustrations, we encountered internal and contextual limitations that shaped the design direction. These challenges pushed us to make strategic trade-offs while ensuring the final product remained useful, trustworthy, and accessible.
+                        .main-concerns__concerns-wrapper
+                            .columns.is-multiline.is-variable.is-8-desktop
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/crane.png"
+                                        %h4 Outdated Infrastructure
+                                        %p The platform's legacy systems limited our ability to integrate advanced digital tools. We prioritized simple, scalable solutions that could offer real value without requiring deep backend overhauls.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/reuse.png"
+                                        %h4 Rebuilding Brand Credibility
+                                        %p Given the negative user sentiment around IT issues and transparency, every screen and interaction had to reinforce trust. We leaned into clean layouts, upfront explanations of fees, and clear action feedback to rebuild confidence in the platform.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/book-red.png"
+                                        %h4 Simplifying Financial Concepts
+                                        %p Instead of simply sharing information, we designed the experience to guide and teach along the way. Clear microcopy, helpful tooltips, and step-by-step flows made financial concepts easier to understand, reduced overwhelm, and helped users feel confident in their decisions.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/balance.png"
+                                        %h4 Regulatory & Bilingual Requirements
+                                        %p Operating under U.S. financial regulations and in a bilingual environment required a thoughtful content strategy. We kept things clear and compliant, but still warm and easy to understand.
+
+
+        .case-study__personas#personas
+            .container
+                .case-study__personas-text
+                    %h5 Users
+                    %h3 Personas
+                    %p Through our research, we developed three target user profiles, carefully considering their goals and frustrations. While the participants had diverse financial backgrounds and aspirations, they shared a common desire for a user-friendly website that promotes transparency and aids them in managing their loans and avoid unnecessary fees.
+            .swiper.personasSwiper
+                .swiper-wrapper
+                    .swiper-slide
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-christine.png"
+                    .swiper-slide
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-luis.png"
+                    .swiper-slide
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-couple.png"
+                .swiper-button-next
+                .swiper-button-prev
         .case-study__project-goals#goals
             .container
                 .columns
@@ -177,19 +267,282 @@
                     .column.is-8.is-offset-1
                         %p While the primary business objectives centered on maximizing user conversion and generating leads by clearly communicating the functionality of the application, we successfully identified the areas where these objectives intersected with that of users by using our research into Island Finance's customers.
                         %p Our goal was to enhance customer service by thoroughly reimagining and rebuilding the user journey based on Island Finance's user needs. We sought to position the company as a friendly and trustworthy partner in digital personal loans. The team's mission was to empower users to make informed financial choices and monitor their finances effectively, ultimately enhancing the overall quality of life for customers while still fulfilling the business's goals.
-                        = image_tag "if-goals"
-        .case-study__personas#personas
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-goals.png"
+        .case-study__brainstorming#brainstorming
             .container
-                .case-study__personas-text
-                    %h5 Users
-                    %h3 Persona
-            .swiper.personasSwiper
-                .swiper-wrapper
-                    .swiper-slide
-                        = image_tag "if-persona-christine"
-                    .swiper-slide
-                        = image_tag "if-persona-luis"
-                    .swiper-slide
-                        = image_tag "if-persona-couple"
-                .swiper-button-next
-                .swiper-button-prev
+                .columns
+                    .column.is-3
+                        %h5 Brainstorming
+                        %h3 Organizing Ideas and the solution
+                    .column.is-8.is-offset-1
+                        %p
+                            Considering our research and the goals and frustrations of our personas, I categorized the insights into four spectrums to aid in generating ideas.
+                .columns
+                    .column.is-3
+                        %h4 Opportunities
+                        .brainstorming-card.opportunities
+                            %p When nobody else can help you, you can come to us.
+                        .brainstorming-card.opportunities
+                            %p 24 hour decision
+                        .brainstorming-card.opportunities
+                            %p Calculate your loan without affecting your credit
+                        .brainstorming-card.opportunities
+                            %p Unsecured loans wont put your assets at risk
+                        .brainstorming-card.opportunities
+                            %p Up to 84 months to pay
+                        .brainstorming-card.opportunities
+                            %p More time to pay than a credit card
+                        .brainstorming-card.opportunities
+                            %p Online and automatic payment available
+                        .brainstorming-card.opportunities
+                            %p Good for consolidating debt
+                        .brainstorming-card.opportunities
+                            %p Application can be saved for later
+                    .column.is-3
+                        %h4 Pain Points
+                        .brainstorming-card.pain-points
+                            %p Outdated website
+                        .brainstorming-card.pain-points
+                            %p Clunky navigation
+                        .brainstorming-card.pain-points
+                            %p Calculator hidden in a different page
+                        .brainstorming-card.pain-points
+                            %p Information is hard to find and pages are hidden
+                        .brainstorming-card.pain-points
+                            %p No CTA except in navigation
+                        .brainstorming-card.pain-points
+                            %p No client portal
+                        .brainstorming-card.pain-points
+                            %p Inconsistent design
+                        .brainstorming-card.pain-points
+                            %p Some options are not available on mobile site
+                    .column.is-3
+                        %h4 Considerations
+                        .brainstorming-card.considerations
+                            %p People are sharing confidential information and security is very important
+                        .brainstorming-card.considerations
+                            %p A lot of people lack financial literacy and will have a lot of questions regarding charges involved in getting a loan
+                        .brainstorming-card.considerations
+                            %p Peopl want to be able to do everything online without commuting
+                        .brainstorming-card.considerations
+                            %p Need for transparency and being able to manage finances easily and online
+                        .brainstorming-card.considerations
+                            %p Need for automatization
+                    .column.is-3
+                        %h4 Solutions
+                        .brainstorming-card.solutions
+                            %p Update home page to include key points about personal loans and the process
+                        .brainstorming-card.solutions
+                            %p Add a calculator in the home page to gather leads
+                        .brainstorming-card.solutions
+                            %p Create a client portal for people to manage their loans digitally
+                        .brainstorming-card.solutions
+                            %p Rethink navigation menu
+                        .brainstorming-card.solutions
+                            %p Create a consistent design system
+                        .brainstorming-card.solutions
+                            %p Add more CTAs through the website
+                        .brainstorming-card.solutions
+                            %p Good but not necessary: Make direct deposit of loan possible
+        .case-study__features#features
+            .container
+                .columns
+                    .column.is-3
+                        %h5 Feature Roadmap
+                        %h3 Transforming needs into features
+                    .column.is-8.is-offset-1
+                        %p
+                            Based on the touchpoints and user needs identified during the empathizing phase, I developed a Product Feature Roadmap to outline key app features and guide upcoming design efforts.
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/features.png"
+        .case-study__information-architecture#architecture
+            .container
+                .columns
+                    .column.is-3
+                        %h5 Information Architecture
+                        %h3 Organizing information
+                    .column.is-8.is-offset-1
+                        %p
+                            Taking into account the required features and the diverse needs of users seeking financial guidance and services, I created a map to illustrate the website’s structure. This map highlights how core pages and features are organized, and is designed to guide users smoothly through the site, making it easy to find tools, resources, and key financial information.
+                .information-architecture__chart
+                    <iframe style="border: 15px solid #F1F4F7" width="100%" height="4000" src="https://whimsical.com/embed/UTRt4wq74AVbcxrP3uzFcM"></iframe>
+        .case-study__user-flows#flows
+            .container
+                .columns
+                    .column.is-3
+                        %h5 User Flows
+                        %h3 Identifying how users complete tasks
+                    .column.is-8.is-offset-1
+                        %p To truly support users, I needed to understand how they actually got things done, how they navigate, what they expect, and where they might hesitate. Mapping their steps helped us design flows that feel natural, supportive, and frustration-free.
+                        %h4 Applying for a loan through nav bar button:
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-1.png", :class => "user-flows__img"
+                        %h4 Applying for a loan through the calculator:
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-2.png", :class => "user-flows__img"
+                        %h4 Making a payment:
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.png", :class => "user-flows__img"
+        .case-study__lofi-wireframes#lowfi
+            %h5 Design
+            %h3 Lo-fi Wireframes
+            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/wireframes.png"
+        .case-study__desing-system#design
+            .container
+                .columns
+                    .column.is-3
+                        %h5 Design
+                        %h3 Design System & Style guide
+                    .column.is-8.is-offset-1
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.png"
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/style-guide-if.png"
+        .case-study__hifi-wireframes#highfi
+            .hifi-wireframes__main-visual
+                .container
+                    %h5 High-fi Wireframes
+                    %h3 Introducing Island Finance
+                    %p A personal loan experience designed to feel simple, clear, and trustworthy. From the first screen to the final step, every detail was crafted to guide users smoothly and make financial decisions less intimidating.
+                    .btn__wrapper
+                        = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn"
+                    .img__wrapper
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Home.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+            .hifi-wireframes__loan-options
+                .container
+                    %h4 Simplifying the Loan Decision Journey
+                    %p To make the decision-making process feel easy and transparent and help users feel supported, I designed this page to balance education, reassurance, and action. It starts by answering the first thing most users want to know: “Is this loan actually a good fit for me?” with a quick breakdown of the key benefits.
+                    %p From there, I added customer reviews to build trust. A simple “what you’ll need” checklist sets expectations early, reducing stress or potential abandonment later in the flow. The 3-step overview keeps the process approachable, and the FAQs address common concerns upfront so users don’t have to hunt for answers.
+                    .columns
+                        .column.is-4
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Options.jpg"
+                        .column.is-8
+                            .img__wrapper
+                                = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF+Loan.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+            .hifi-wireframes__loan-calculator.is-hidden-touch
+                .columns.is-variable.is-gapless
+                    .column.is-2-fullhd.is-3-widescreen
+                        .loan-calculator__text-wrapper
+                            %h4
+                                Designing a Win–Win
+                                %br
+                                Loan Calculator Experience
+                            %p I designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
+                    .column.is-5
+                        .img__wrapper
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
+                    .column.is-5-fullhd.is-4-widescreen
+                        .img__wrapper
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img"
+            .hifi-wireframes__loan-calculator.is-hidden-desktop
+                .columns.is-variable.is-multiline
+                    .column.is-12
+                        .loan-calculator__text-wrapper
+                            %h4
+                                Designing a Win–Win
+                                %br
+                                Loan Calculator Experience
+                            %p I designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
+                    .column.is-6
+                        .img__wrapper
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
+                    .column.is-6
+                        .img__wrapper
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img"
+            .hifi-wireframes__loan-application
+                .container
+                    .loan-application__text-wrapper
+                        %h4 Making Applications Feel Easy
+                        %p Form fatigue is common in financial applications, so I focused on making a step-by-step loan application that helps users see their progress and stay engaged. At the end, transparent fees and flexible loan options help users choose what best fits their needs and budget.
+                    .columns.is-multiline
+                        .column.is-8
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Loan+Information.png"
+                        .column.is-4.is-hidden-mobile
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Application.jpg"
+                        .column.is-6
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+About+You.png"
+                        .column.is-6
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Rate.png"
+            .hifi-wireframes__account
+                .container
+                    .columns.masonry
+                        .column.is-6
+                            .columns.is-multiline
+                                .column.is-12
+                                    .account__text-wrapper
+                                        %h4 Helping Users Stay in Control After Approval
+                                        %p To help users avoid feeling lost after their loan is approved and improve self-service, I designed a dashboard that gives them full visibility and control over their account. Users can easily track payments, review documents, manage autopay, and adjust settings, all in one space. This helps prevent missed payments and builds confidence in managing their finances.
+                                .column.is-12
+                                    .img__wrapper
+                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Dashboard.png"
+                                .column.is-12
+                                    .img__wrapper
+                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Payment.png"
+                        .column.is-6
+                            .img__wrapper
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.png"
+            .hifi-wireframes__other-services
+                .container
+                    .other-services__text-wrapper
+                        %h4 Creating Clarity Around Loan Coverage Options
+                        %p Users needed to understand protection options without feeling pressured. This design explains each plan clearly, showing coverage, eligibility, and how it works in just a few steps. The transparency improves trust—and helps the business encourage adoption naturally.
+                    .img__wrapper
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Payment-Protection.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+                    .other-services__section
+                        .columns.is-vcentered
+                            .column.is-4
+                                .other-services__text-wrapper-right
+                                    %h4 Making Big Purchases More Manageable
+                                    %p This Pay Over Time page makes financing feel simple and approachable by outlining key benefits, application requirements, and partner stores to help users shop confidently and encourage use.
+                            .column.is-8
+                                .img__wrapper
+                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Pay-Over-Time.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+                    .other-services__section
+                        .columns.is-vcentered
+                            .column.is-4.is-hidden-tablet
+                                .other-services__text-wrapper-left
+                                    %h4 Designing a Smooth Transition to Partner Providers
+                                    %p This page helps users learn about different coverage options and trusted partners in a clear, approachable way. Because these plans are offered through Island Finance's licensed partners, the collaboration adds credibility and reassurance. Once users find the right plan, they can continue to the provider's website.
+                            .column.is-8
+                                .img__wrapper
+                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Insurance.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+                            .column.is-4.is-hidden-mobile
+                                .other-services__text-wrapper-left
+                                    %h4 Designing a Smooth Transition to Partner Providers
+                                    %p This page helps users learn about different coverage options and trusted partners in a clear, approachable way. Because these plans are offered through Island Finance's licensed partners, the collaboration adds credibility and reassurance. Once users find the right plan, they can continue to the provider's website.
+            .hifi-wireframes__company
+                .container
+                    .company__text-wrapper
+                        %h4 Building Brand Credibility and Connection
+                        %p These pages were designed to strengthen trust and connection across the Island Finance ecosystem. The About and Press sections highlight the company's story, values, and community impact, reinforcing credibility through consistent visuals and tone. Branch and Contact pages make it easy for users to locate offices or reach support, addressing accessibility pain points and reducing friction. Job listings and the blog humanize the brand, showcasing growth, expertise, and real stories that build long-term recognition and loyalty.
+                    .img__wrapper.company__video
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-About-Us.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true" )
+                    .hifi-wireframes__masonry__wrapper
+                        .hifi-wireframes__company-masonry
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Contact+Us.png", :class => "masonry__img"
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Blog.png", :class => "masonry__img"
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Branches.png", :class => "masonry__img"
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Jobs.png", :class => "masonry__img"
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Press+%26+Media.png", :class => "masonry__img"
+                            .masonry-item
+                                .img__wrapper.masonry__img-wrapper
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Jobs+Listing.png", :class => "masonry__img"
+        .case-studies__navigation-wrapper.if-web
+            .container
+                .columns.is-mobile
+                    .column.is-12-tablet
+                        = link_to "/graphic-design/everybodys-free", :class => "navigation-button" do
+                            %p.next-btn
+                                %span
+                                    Next: Dr. Harvey's
+                                =image_tag "arrow-right", :class => "arrow-right"
+                        
