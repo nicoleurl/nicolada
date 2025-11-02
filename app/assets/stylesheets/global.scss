@@ -195,10 +195,12 @@ header {
             border-radius: 24px;
             display: inline-block;
             transition: 0.2s ease-in;
+            cursor: pointer;
             &:hover {
                 background-color: $beige;
                 border: 3px solid $black;
                 color: $black;
+                cursor: pointer;
             }
             &:active {
                 transform: scale(0.92);
@@ -215,6 +217,7 @@ header {
 .footer {
     background-color: $beige;
     overflow: hidden;
+    border-top: 3px solid black;
     h6 {
         text-transform: uppercase;
         font-family: "Inter", sans-serif;
@@ -341,7 +344,7 @@ header {
 .projects__wrapper {
     background-color: $white;
     padding: 72px 0px;
-    border-bottom: 3px solid $black;
+    border-top: 3px solid $black;
     overflow: hidden;
     @media (max-width: 1023px) {
         padding: 32px;
@@ -548,7 +551,6 @@ header {
 
 .contact-home__wrapper {
     overflow: hidden;
-    border-bottom: 3px solid $black;
     padding: 72px 0px;
     background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg.png");
     background-position: bottom right;

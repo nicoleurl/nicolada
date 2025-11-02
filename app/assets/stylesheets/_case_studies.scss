@@ -5,6 +5,7 @@ $pink: #F98DE2;
 $green: #ADEA07;
 $purple: #9067F3;
 $blue: #4431FE;
+$ifblue:#354a9c;
 $yellow: #FECE00;
 $red: #FF7664;
 $gray: #8E8E8E;
@@ -17,9 +18,13 @@ $ipink: #A00251;
 }
 
 .case-study__content-wrapper {
-    margin: 72px 0px;
+    margin: 72px 0px 0px;
     @media (max-width: 768px) {
-        padding: 24px 0px ;
+        padding: 24px 0px 0px;
+        margin: 20px 0px 0px;
+    }
+    .container {
+        padding: 16px;
     }
     h1 {
         font-size: 40px;
@@ -32,6 +37,9 @@ $ipink: #A00251;
     h3 {
         font-size: 28px;
         line-height: 1.1;
+        @media (max-width: 768px) {
+            margin-bottom: 0px !important;
+        }
     }
     h5 {
         font-family: "Inter", sans-serif !important;
@@ -45,6 +53,11 @@ $ipink: #A00251;
             margin-bottom: 0px;
         }
     }
+    .case-study__details-wrapper {
+        .btn__wrapper {
+            text-align: left;
+        }
+    }
     .case-study__details-line {
         margin-top: 20px;
         font-size: 14px;
@@ -56,6 +69,9 @@ $ipink: #A00251;
     .case-study__intro-text-wrapper {
         .case-study__introduction {
             margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
         }
     }
     .case-study__project-scope-wrapper {
@@ -83,8 +99,12 @@ $ipink: #A00251;
             svg {
             max-width: 50px;
             margin: 20px 0px 32px;
-            fill: #000000
+            fill: #354a9c;
             }
+        }
+        @media (max-width: 768px) {
+            padding: 24px 0px ;
+            margin: 20px 0px;
         }
     }
     .case-study__industry-insights {
@@ -95,6 +115,9 @@ $ipink: #A00251;
                 font-weight: 600;
             }
         }
+        @media (max-width: 768px) {
+            margin: 30px 0px;
+        }
     }
     .case-study__takeaways {
         .case-study-quote {
@@ -103,38 +126,295 @@ $ipink: #A00251;
             flex-direction: column;
             background-color: $beige;
             padding: 32px;
-            border-radius: 12px;
             height: 100%;
             p {
                 text-align: center;
                 margin-bottom: 0px;
+                margin-top: 0px;
             }
         }
     }
     .case-study__competitive-audit {
         margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
     }
     .case-study__user-interviews {
         margin: 72px 0px;
         overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
     }
+
     .case-study__problem-statement {
         background-color: $beige;
         border-top: 3px solid $black;
         border-bottom: 3px solid $black;
         padding: 72px 0px;
-        margin: 120px 0px;
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 30px 0px;
+        }
+    }
+    .case-study__main-concerns#concerns,.case-study__main-concerns-constraints {
+        margin: 72px 0px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 0px;
+        }
+        .main-concerns__concerns-wrapper {
+            padding: 32px 0px;
+            .main-concerns__concerns-box {
+                .concerns-box__img-wrapper{
+                    background-color: lighten($color: $ifblue, $amount: 50);
+                    max-width: 64px;
+                    max-height: 64px;
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 24px;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                    font-family: "Inter", sans-serif;
+                }
+            }
+        }
+    }
+    .case-study__personas {
+        margin: 72px 0px;
+        padding: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 0px;
+            padding: 32px 0px;
+        }
+        .case-study__personas-text {
+            h5, h3 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                margin: 0 auto;
+                max-width: 800px;
+                margin-bottom: 72px;
+                @media (max-width: 768px) {
+                    margin-bottom: 0px;
+                }
+            }
+
+        }
+        .personasSwiper {
+            position: relative;
+            @media (max-width: 768px) {
+                padding: 0px 0px 60px;
+            }
+            .swiper-slide {
+                margin: 20px auto;
+                border-radius: 32px;
+                box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.15);
+                transform: scale(.90);
+                transition: all .3s ease-in-out;
+                img {
+                    display: block;
+                    border-radius: 32px;
+                    @media (max-width: 768px) {
+                        border-radius: 16px;
+                     }
+                }
+                @media (max-width: 768px) {
+                   border-radius: 16px;
+                }
+            }
+            .swiper-backface-hidden .swiper-slide {
+                transform: scale(.90) translateZ(0);
+              }
+                      
+            .swiper-slide.swiper-slide-active {  
+            transform: scale(1) !important;
+            opacity: 1 !important;
+            }
+            
+            .swiper-backface-hidden .swiper-slide.swiper-slide-active {
+            transform: scale(1) translateZ(0) !important;
+            }
+            .swiper-button-prev {
+                position: absolute;
+                width: 100px;
+                left: -1px;
+                top: 0px;
+                height: 100%;
+                background: linear-gradient(90deg, #E9EEF9 -7.61%, rgba(233, 238, 249, 0.00) 100%);
+                &::after {
+                    font-size: 16px;
+                    color: #A5B9E6;
+                    padding: 15px 20px;
+                    background-color: #FFFFFF ;
+                    border-radius: 50px;
+                }
+                @media (max-width: 768px) {
+                    width: 70px;
+                }
+                @media (max-width: 550px) {
+                    background: none;
+                    top: 85%;
+                    height: auto;
+                }
+            }   
+            .swiper-button-next {
+                position: absolute;
+                width: 100px;
+                right: -1px;
+                top: 0px;
+                height: 100%;
+                background: linear-gradient(270deg, #E9EEF9 -7.61%, rgba(233, 238, 249, 0.00) 100%);
+                &::after {
+                    font-size: 16px;
+                    color: #A5B9E6;
+                    padding: 15px 20px;
+                    background-color: #FFFFFF;
+                    border-radius: 50px;
+                }
+                @media (max-width: 768px) {
+                    width: 70px;
+                }
+                @media (max-width: 550px) {
+                    background: none;
+                    top: 85%;
+                    height: auto;
+                }
+            }
+        }
     }
     .case-study__project-goals {
         margin: 72px 0px;
     }
-    .case-study__personas {
-        margin: 120px 0px;
+    .case-study__brainstorming {
+        margin: 72px 0px;
         padding: 72px 0px;
-        background-color: lighten($color: #A5B9E6, $amount: 15);
-        .case-study__personas-text {
-            h5, h3 {
-                text-align: center;
+        @media (max-width: 768px) {
+            margin: 0px;
+            padding: 0px;
+        }
+        h4 {
+            text-align: center;
+        }
+        .brainstorming-card {
+            padding: 32px;
+            border-radius: 12px;
+            margin: 20px 0px;
+            &.opportunities {
+                background-color: lighten($color: $blue, $amount: 30);
+            }
+            &.pain-points {
+                background-color: lighten($color: $red, $amount: 20);
+            }
+            &.considerations {
+                background-color: lighten($color: $yellow, $amount: 30);
+            }
+            &.solutions {
+                background-color: lighten($color: $green, $amount: 30);
+            }
+        }
+    }
+    .case-study__features {
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 16px 0px;
+        }
+    }
+    .case-study__information-architecture {
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 16px 0px;
+        }
+    }
+    .case-study__user-flows {
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 16px 0px;
+        }
+        .user-flows__img {
+            margin: 32px 0px;
+        }
+    }
+    .case-study__lofi-wireframes {
+        margin: 72px 0px;
+        padding: 72px 0px 0px;
+        background-color: #F5F5F5;
+        @media (max-width: 768px) {
+            margin: 16px 0px;
+            padding: 16px 0px 0px;
+        }
+        .container {
+            padding: 16px 16px 0px;
+        }
+        h5 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+            @media (max-width: 768px) {
+                margin-bottom: 16px !important;
+            }
+        }
+    }
+    .case-study__hifi-wireframes{
+        margin: 72px 0px 0px;
+        @media (max-width: 768px) {
+            margin: 16px 0px 0px;
+        }
+        h5 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .case-studies__navigation-wrapper {
+        padding-bottom: 32px;
+        &.if-web {
+            background-color: #F1F7FD;
+        }
+        .navigation-button {
+            p {
+                padding: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-weight: 600;
+                font-family: "Inter", sans-serif;
+            }
+            img {
+                display: inline-block;
+                max-width: 20px;
+            }
+            .arrow-right {
+                margin-left: 8px;
+            }
+            .arrow-left {
+                margin-right: 8px;
+            }
+            .back-btn {
+                justify-content: flex-start;
+                transition:  200ms ease-in-out;
+                &:hover {
+                    transform: rotate(01deg);
+                }
+            }
+            .next-btn {
+                justify-content: flex-end;
+                transition:  200ms ease-in-out;
+                &:hover {
+                    transform: rotate(-02deg);
+                }
             }
         }
     }
@@ -146,16 +426,264 @@ $ipink: #A00251;
 .case-study__content-wrapper {
     .case-study__project-scope {
         h3 {
-        color: $black
+            color: $ifblue;
+            @media (max-width: 768px) {
+                margin-bottom: 32px !important;
+            }
         }
         .case-study__step {
-            border: 2px solid $black;
+            border: 2px solid $ifblue;
             a {
-                color: $black;
-                border-bottom: 1px solid $black;
+                color: $ifblue;
+                border-bottom: 1px solid $ifblue;
             }
             h4 {
-                color: $black;
+                color: $ifblue;
+            }
+        }
+    }
+    .case-study__personas {
+        background-color: #E9EEF9;
+    }
+
+    .case-study__hifi-wireframes {
+        h4 {
+            margin-bottom: 16px;
+        }
+        p {
+            margin-bottom: 16px !important;
+            font-size: 14px;
+        }
+        .container {
+            padding: 16px 16px 0px;
+        }
+        .img__wrapper {
+            overflow: hidden;
+            box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            height: 100%;
+            width: 100%;
+            height: 100%;
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            video {
+                display: block;
+            }
+        }
+        .hifi-wireframes__main-visual {
+            background-color: #F1F7FD;
+            padding: 72px 0px 0px;
+            @media (max-width: 768px) {
+                padding: 16px 0px 0px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .btn {
+                &:hover {
+                    background-color: #F1F7FD !important;
+                }
+            }
+            .img__wrapper {
+                margin: 32px 16px 0px;
+                border-radius: 16px 16px 0px 0px;
+                @media (max-width: 768px) {
+                    margin: 32px 0px 0px;
+                }
+            }
+        }
+        .hifi-wireframes__loan-options {
+            margin: 72px 0px;
+            padding: 72px 0px;
+            @media (max-width: 768px) {
+                padding: 16px 0px;
+                margin: 16px 0px;
+            }
+            h4 {
+                text-align: center;
+            }
+            p {
+                margin-bottom: 48px;
+            }
+            img {
+                object-position: 60% 50%;
+            }
+        }
+        .hifi-wireframes__loan-calculator {
+            margin: 72px 0px;
+            padding: 72px 0px;
+            background-color: #FCF1EE;
+            @media (max-width: 1023px) {
+                padding: 32px 16px;
+                margin: 16px 0px;
+            }
+            .column {
+                margin-left: 32px !important;
+                @media (max-width: 1023px) {
+                    margin-left: 0px !important;
+                }
+            }
+            .loan-calculator__text-wrapper {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h4 {
+                    text-align: right;
+                }
+                p {
+                    text-align: right;
+                }
+                @media (max-width: 1023px) {
+                    h4 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .hifi__signup-img {
+                object-position: 0% 50%;
+            }
+        }
+        .hifi-wireframes__loan-application {
+            margin: 72px 0px;
+            @media (max-width: 768px) {
+                margin: 32px 0px;
+            }
+            .loan-application__text-wrapper {
+                margin-bottom: 48px;
+                h4 {
+                    text-align: center;
+                }
+            }
+
+        }
+        .hifi-wireframes__account {
+            margin: 72px 0px;
+            padding: 72px 0px;
+            background-color: #FFF9EF;
+            @media (max-width: 768px) {
+                margin: 16px 0px;
+                padding: 16px 0px 32px;
+            }
+            .columns {
+                &.masonry {
+                    align-items: flex-start;
+                }
+            }
+            .account__text-wrapper {
+                padding: 48px 0px;
+                @media (max-width: 768px) {
+                    padding: 16px;
+                }
+                h4 {
+                    text-align: right;
+                }
+                p {
+                    text-align: right;
+                }
+                @media (max-width: 768px) {
+                    h4 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .hifi-wireframes__other-services {
+            margin: 72px 0px;
+            .other-services__text-wrapper {
+                margin-bottom: 32px;
+                h4 {
+                    text-align: center;
+                }
+            }
+            .other-services__section {
+                padding: 144px 0px 0px;
+                @media (max-width: 768px) {
+                    padding: 32px 0px 0px;
+                }
+
+            }
+            .other-services__text-wrapper-left {
+                h4 {
+                    text-align: left;
+                }
+                p {
+                    text-align: left;
+                }
+                @media (max-width: 768px) {
+                    h4 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            .other-services__text-wrapper-right {
+                h4 {
+                    text-align: right;
+                }
+                p {
+                    text-align: right;
+                }
+                @media (max-width: 768px) {
+                    h4 {
+                        text-align: center;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .hifi-wireframes__company {
+            margin: 72px 0px 0px;
+            padding: 72px 0px 0px;
+            background-color: #F1F7FD;
+            @media (max-width: 768px) {
+                margin: 0px;
+                padding: 32px 0px 32px;
+            }
+            .company__video {
+                margin-bottom: 32px;
+            }
+            .company__text-wrapper {
+                margin-bottom: 48px;
+                h4 {
+                    text-align: center;
+                }
+            }
+            .hifi-wireframes__masonry__wrapper {
+                padding: 2px;
+                mask-image: linear-gradient(to bottom, black 82%, transparent 100%);
+                @media (max-width: 768px) {
+                    mask-image: none;
+                    padding: 0px;
+                }
+                .hifi-wireframes__company-masonry {
+                    column-count: 1; 
+                    column-gap: 32px;
+                    .masonry-item {
+                        break-inside: avoid;
+                        margin-bottom: 16px;
+                    }
+                    @media (min-width: 768px) {
+                        column-count: 2;
+                    }
+                    @media (min-width: 1024px) {
+                        column-count: 3;
+                    }
+                }
             }
         }
     }
