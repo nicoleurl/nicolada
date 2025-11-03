@@ -27,5 +27,4 @@ Rails.application.routes.draw do
   get "/ux-ui/island-finance-web" => "projects/ux_ui#if_web", as: "if_web"
   get "/ux-ui/island-finance-web-abbreviated" => "projects/ux_ui#if_web_short", as: "if_web_short"
   get "/ux-ui/dr-harveys" => "projects/ux_ui#dr_harveys", as: "dr_harveys"
-
 end

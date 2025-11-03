@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '3.3.5'
+ruby "3.3.5"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -46,7 +46,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'rails_12factor'
+  gem "rails_12factor"
 end
 
 group :development do
@@ -67,6 +67,5 @@ gem "bulma-rails", "~> 1.0.2"
 group :production do
   gem "pg"
 end
-gem 'jquery-rails'
-gem 'swiper-rails'
-
+gem "jquery-rails"
+gem "swiper-rails"
