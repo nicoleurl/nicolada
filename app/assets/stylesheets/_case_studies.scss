@@ -151,7 +151,7 @@ $ipink: #A00251;
         }
     }
 
-    .case-study__problem-statement {
+    .case-study__problem-statement,.case-study__short-introduction {
         background-color: $beige;
         border-top: 3px solid $black;
         border-bottom: 3px solid $black;
@@ -161,7 +161,15 @@ $ipink: #A00251;
             margin: 30px 0px;
         }
     }
-    .case-study__main-concerns#concerns,.case-study__main-concerns-constraints {
+
+    .case-study__short-introduction {
+        .short-introduction__section {
+            margin: 32px 0px 32px;
+        }
+
+    }
+
+    .case-study__main-concerns,.case-study__main-concerns-constraints {
         margin: 72px 0px;
         overflow: hidden;
         @media (max-width: 768px) {
@@ -326,6 +334,19 @@ $ipink: #A00251;
         @media (max-width: 768px) {
             margin: 16px 0px;
         }
+        .case-study-feature {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: $beige;
+            padding: 32px;
+            height: 100%;
+            p {
+                text-align: center;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+        }
     }
     .case-study__information-architecture {
         margin: 72px 0px;
@@ -385,6 +406,9 @@ $ipink: #A00251;
         padding-bottom: 32px;
         &.if-web {
             background-color: #F1F7FD;
+        }
+        &.if-web-short {
+            background-color: #FFF9EF;
         }
         .navigation-button {
             p {
@@ -578,6 +602,12 @@ $ipink: #A00251;
             .columns {
                 &.masonry {
                     align-items: flex-start;
+                }
+            }
+            &.short {
+                margin: 72px 0px 0px;
+                @media (max-width: 768px) {
+                    margin: 16px 0px 0px;
                 }
             }
             .account__text-wrapper {
