@@ -150,7 +150,7 @@ GEM
     google-protobuf (4.33.0-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
-    haml (7.0.1)
+    haml (7.0.2)
       temple (>= 0.8.2)
       thor
       tilt
