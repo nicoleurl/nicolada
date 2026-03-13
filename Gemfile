@@ -68,4 +68,3 @@ group :production do
   gem "pg"
 end
 gem "jquery-rails"
-gem "swiper-rails"
