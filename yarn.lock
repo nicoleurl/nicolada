@@ -7,7 +7,7 @@ jquery@^3.7.1:
   resolved "https://registry.npmjs.org/jquery/-/jquery-3.7.1.tgz"
   integrity sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==
 
-swiper@^11.1.14:
-  version "11.1.14"
-  resolved "https://registry.npmjs.org/swiper/-/swiper-11.1.14.tgz"
-  integrity sha512-VbQLQXC04io6AoAjIUWuZwW4MSYozkcP9KjLdrsG/00Q/yiwvhz9RQyt0nHXV10hi9NVnDNy1/wv7Dzq1lkOCQ==
+swiper@^12.1.2:
+  version "12.1.2"
+  resolved "https://registry.npmjs.org/swiper/-/swiper-12.1.2.tgz"
+  integrity sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==
