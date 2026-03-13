@@ -1,0 +1,37 @@
+.projects__wrapper
+    .container
+        %h3 UX/UI Projects
+        .columns.is-multiline.is-variable.is-6
+            .column.is-4-desktop.is-6-tablet
+                = link_to "/ux-ui/island-finance-web", :class => "project-button", :target => "blank" do
+                    .projects__cover-wrapper
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/if-web.png', alt: 'Island Finance Case Study'
+                        .projects__arrow.blue
+                            = inline_svg('arrow.svg')
+                    .project__project-summary
+                        %h4 Island Finance
+                        %p.projects__project-description
+                            Marketing campaign for Ocean Spray designed to introduce the brand to health-conscious consumers and promote its wholesome benefits. 
+                .tags__wrapper
+                    .tags__project-tag
+                        UX Research
+                    .tags__project-tag
+                        UX/UI Design
+                    .tags__project-tag
+                        Branding
+                    
+            .column.is-4-desktop.is-6-tablet
+                = link_to "/ux-ui/dr-harveys", :class => "project-button", :target => "blank" do
+                    .projects__cover-wrapper
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-preview.png', alt: 'Intimates'
+                        .projects__arrow.yellow
+                            = inline_svg('arrow.svg')
+                    .project__project-summary
+                        %h4 Dr. Harvey's
+                        %p.projects__project-description
+                            Fanzine design for Cause x Effect, an innovative magazine dedicated to exploring the art of experimental photography.
+                .tags__wrapper
+                    .tags__project-tag
+                        UX/UI Design
+                    .tags__project-tag
+                        User Testing
