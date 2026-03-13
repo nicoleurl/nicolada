@@ -11,6 +11,7 @@ $red: #FF7664;
 $gray: #8E8E8E;
 $cxegreen: #4E786A;
 $ipink: #A00251;
+$harveyspink: #9F3879;
 
 .case-study__cover-wrapper {
     height: 700px;
@@ -54,7 +55,7 @@ $ipink: #A00251;
         }
     }
     .anchor {
-        scroll-margin-top: -400px;
+        scroll-margin-top: 100px;
     }
     .case-study__details-wrapper {
         .btn__wrapper {
@@ -99,11 +100,6 @@ $ipink: #A00251;
                     }
                 }
             }
-            svg {
-            max-width: 50px;
-            margin: 20px 0px 32px;
-            fill: #354a9c;
-            }
         }
         @media (max-width: 768px) {
             padding: 24px 0px ;
@@ -130,6 +126,7 @@ $ipink: #A00251;
             background-color: $beige;
             padding: 32px;
             height: 100%;
+            border-radius: 16px;
             p {
                 text-align: center;
                 margin-bottom: 0px;
@@ -209,7 +206,7 @@ $ipink: #A00251;
                 text-align: center;
                 margin: 0 auto;
                 max-width: 800px;
-                margin-bottom: 72px;
+                margin-bottom: 32px;
                 @media (max-width: 768px) {
                     margin-bottom: 0px;
                 }
@@ -383,6 +380,9 @@ $ipink: #A00251;
                 margin-bottom: 16px !important;
             }
         }
+        img {
+            display: block;
+        }
     }
     .case-study__hifi-wireframes{
         margin: 72px 0px 0px;
@@ -450,274 +450,871 @@ $ipink: #A00251;
 
 
 /* island finance web */
-.case-study__content-wrapper {
-    .case-study__project-scope {
-        h3 {
-            color: $ifblue;
-            @media (max-width: 768px) {
-                margin-bottom: 32px !important;
-            }
-        }
-        .case-study__step {
-            border: 2px solid $ifblue;
-            a {
-                color: $ifblue;
-                border-bottom: 1px solid $ifblue;
-            }
-            h4 {
-                color: $ifblue;
-            }
-        }
-    }
-    .case-study__personas {
-        background-color: #E9EEF9;
-    }
-
-    .case-study__hifi-wireframes {
-        h4 {
-            margin-bottom: 16px;
-        }
-        p {
-            margin-bottom: 16px !important;
-            font-size: 14px;
-        }
-        .container {
-            padding: 16px 16px 0px;
-        }
-        .img__wrapper {
-            overflow: hidden;
-            box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.25);
-            border-radius: 8px;
+.case-study__wrapper.case-study__if-web {
+    .case-study__cover-wrapper {
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        .if-web__hero-desktop, .if-web__hero-mobile {
             height: 100%;
             width: 100%;
-            height: 100%;
-            img {
-                display: block;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+        .if-web__hero-mobile {
+            object-position: 50% 0% !important;
+        }
+    }
+    .case-study__content-wrapper {
+        .case-study__project-scope {
+            h3 {
+                color: $ifblue;
+                @media (max-width: 768px) {
+                    margin-bottom: 32px !important;
+                }
             }
-            video {
-                display: block;
+            svg {
+                max-width: 50px;
+                margin: 20px 0px 32px;
+                fill: #354a9c;
+                }
+            .case-study__step {
+                border: 2px solid $ifblue;
+                a {
+                    color: $ifblue;
+                    border-bottom: 1px solid $ifblue;
+                }
+                h4 {
+                    color: $ifblue;
+                }
             }
         }
-        .hifi-wireframes__main-visual {
-            background-color: #F1F7FD;
-            padding: 72px 0px 0px;
-            @media (max-width: 768px) {
-                padding: 16px 0px 0px;
+        .case-study__personas {
+            background-color: #E9EEF9;
+        }
+
+        .case-study__hifi-wireframes {
+            h4 {
+                margin-bottom: 16px;
             }
             p {
-                font-size: 16px;
+                margin-bottom: 16px !important;
+                font-size: 14px;
             }
-            .btn {
-                &:hover {
-                    background-color: #F1F7FD !important;
-                }
+            .container {
+                padding: 16px 16px 0px;
             }
             .img__wrapper {
-                margin: 32px 16px 0px;
-                border-radius: 16px 16px 0px 0px;
+                overflow: hidden;
+                box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 8px;
+                height: 100%;
+                width: 100%;
+                img {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                video {
+                    display: block;
+                }
+            }
+            .hifi-wireframes__main-visual {
+                background-color: #F1F7FD;
+                padding: 72px 0px 0px;
                 @media (max-width: 768px) {
-                    margin: 32px 0px 0px;
+                    padding: 16px 0px 0px;
+                }
+                p {
+                    font-size: 16px;
+                }
+                .btn {
+                    &:hover {
+                        background-color: #F1F7FD !important;
+                    }
+                }
+                .img__wrapper {
+                    margin: 32px 16px 0px;
+                    border-radius: 16px 16px 0px 0px;
+                    @media (max-width: 768px) {
+                        margin: 32px 0px 0px;
+                    }
+                }
+            }
+            .hifi-wireframes__loan-options {
+                margin: 72px 0px;
+                padding: 72px 0px;
+                @media (max-width: 768px) {
+                    padding: 16px 0px;
+                    margin: 16px 0px;
+                }
+                h4 {
+                    text-align: center;
+                }
+                p {
+                    margin-bottom: 48px;
+                }
+                img {
+                    object-position: 60% 50%;
+                }
+            }
+            .hifi-wireframes__loan-calculator {
+                margin: 72px 0px;
+                padding: 72px 0px;
+                background-color: #FCF1EE;
+                @media (max-width: 1023px) {
+                    padding: 32px 16px;
+                    margin: 16px 0px;
+                }
+                .column {
+                    margin-left: 32px !important;
+                    @media (max-width: 1023px) {
+                        margin-left: 0px !important;
+                    }
+                }
+                .loan-calculator__text-wrapper {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h4 {
+                        text-align: right;
+                    }
+                    p {
+                        text-align: right;
+                    }
+                    @media (max-width: 1023px) {
+                        h4 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+                .hifi__signup-img {
+                    object-position: 0% 50%;
+                }
+            }
+            .hifi-wireframes__loan-application {
+                margin: 72px 0px;
+                @media (max-width: 768px) {
+                    margin: 32px 0px;
+                }
+                .loan-application__text-wrapper {
+                    margin-bottom: 48px;
+                    h4 {
+                        text-align: center;
+                    }
+                }
+
+            }
+            .hifi-wireframes__account {
+                margin: 72px 0px;
+                padding: 72px 0px;
+                background-color: #FFF9EF;
+                @media (max-width: 768px) {
+                    margin: 16px 0px;
+                    padding: 16px 0px 32px;
+                }
+                .columns {
+                    &.masonry {
+                        align-items: flex-start;
+                    }
+                }
+                &.short {
+                    margin: 72px 0px 0px;
+                    @media (max-width: 768px) {
+                        margin: 16px 0px 0px;
+                    }
+                }
+                .account__text-wrapper {
+                    padding: 48px 0px;
+                    @media (max-width: 768px) {
+                        padding: 16px;
+                    }
+                    h4 {
+                        text-align: right;
+                    }
+                    p {
+                        text-align: right;
+                    }
+                    @media (max-width: 768px) {
+                        h4 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .hifi-wireframes__other-services {
+                margin: 72px 0px;
+                .other-services__text-wrapper {
+                    margin-bottom: 32px;
+                    h4 {
+                        text-align: center;
+                    }
+                }
+                .other-services__section {
+                    padding: 144px 0px 0px;
+                    @media (max-width: 768px) {
+                        padding: 32px 0px 0px;
+                    }
+
+                }
+                .other-services__text-wrapper-left {
+                    h4 {
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                    }
+                    @media (max-width: 768px) {
+                        h4 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+                .other-services__text-wrapper-right {
+                    h4 {
+                        text-align: right;
+                    }
+                    p {
+                        text-align: right;
+                    }
+                    @media (max-width: 768px) {
+                        h4 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .hifi-wireframes__company {
+                margin: 72px 0px 0px;
+                padding: 72px 0px 0px;
+                background-color: #F1F7FD;
+                @media (max-width: 768px) {
+                    margin: 0px;
+                    padding: 32px 0px 32px;
+                }
+                .company__video {
+                    margin-bottom: 32px;
+                }
+                .company__text-wrapper {
+                    margin-bottom: 48px;
+                    h4 {
+                        text-align: center;
+                    }
+                }
+                .hifi-wireframes__masonry__wrapper {
+                    padding: 2px;
+                    mask-image: linear-gradient(to bottom, black 82%, transparent 100%);
+                    @media (max-width: 768px) {
+                        mask-image: none;
+                        padding: 0px;
+                    }
+                    .hifi-wireframes__company-masonry {
+                        column-count: 1; 
+                        column-gap: 32px;
+                        .masonry-item {
+                            break-inside: avoid;
+                            margin-bottom: 16px;
+                        }
+                        @media (min-width: 768px) {
+                            column-count: 2;
+                        }
+                        @media (min-width: 1024px) {
+                            column-count: 3;
+                        }
+                    }
                 }
             }
         }
-        .hifi-wireframes__loan-options {
-            margin: 72px 0px;
-            padding: 72px 0px;
-            @media (max-width: 768px) {
-                padding: 16px 0px;
-                margin: 16px 0px;
+    }
+}
+
+/* Dr. Harvey's */
+.case-study__dr-harveys {
+    .case-study__content-wrapper {
+        .case-study__project-scope-wrapper {
+            background-color: #FCEFF3;
+        }
+        .case-study__project-scope {
+            h3 {
+                color: $harveyspink;
+                @media (max-width: 768px) {
+                    margin-bottom: 32px !important;
+                }
             }
+            svg {
+                max-width: 50px;
+                margin: 20px 0px 32px;
+                fill: #9F3879;
+                }
+            .case-study__step {
+                border: 2px solid $harveyspink;
+                a {
+                    color: $harveyspink;
+                    border-bottom: 1px solid $harveyspink;
+                }
+                h4 {
+                    color: $harveyspink;
+                }
+            }
+        }
+        .case-study-quote {
+            background-color: lighten($color: #FDF5CC, $amount: 5);
+        }
+        .case-study__problem-statement {
+            background-color: lighten($color: #D3DFB6, $amount: 11);
+        }
+        .case-study__personas {
+            background-color: #E9F2FF;
+        }
+        .case-study__hifi-wireframes {
             h4 {
-                text-align: center;
+                margin-bottom: 16px;
             }
             p {
-                margin-bottom: 48px;
+                margin-bottom: 16px !important;
+                font-size: 14px;
             }
-            img {
-                object-position: 60% 50%;
+            .container {
+                padding: 16px 16px 0px;
             }
-        }
-        .hifi-wireframes__loan-calculator {
-            margin: 72px 0px;
-            padding: 72px 0px;
-            background-color: #FCF1EE;
-            @media (max-width: 1023px) {
-                padding: 32px 16px;
-                margin: 16px 0px;
-            }
-            .column {
-                margin-left: 32px !important;
-                @media (max-width: 1023px) {
-                    margin-left: 0px !important;
+            .hifi-wireframes__main-visual {
+                background-color: #E9AAC8;
+                padding: 72px 0px 0px;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                    padding: 16px 0px 0px;
                 }
-            }
-            .loan-calculator__text-wrapper {
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                h4 {
-                    text-align: right;
+                h5 {
+                    color: #FBEEF4 !important;
+                }
+                h3 {
+                    color: #FFFFFF
                 }
                 p {
-                    text-align: right;
+                    color: #FFFFFF;
                 }
-                @media (max-width: 1023px) {
-                    h4 {
-                        text-align: center;
+                .img__wrapper {
+                    margin: 32px 16px 0px;
+                    box-shadow: 0 -2px 4px 1px rgba(0, 0, 0, 0.25);
+                    @media (max-width: 768px) {
+                        margin: 32px 0px 0px;
                     }
-                    p {
-                        text-align: center;
+                    video {
+                        display: block;
                     }
                 }
             }
-            .hifi__signup-img {
-                object-position: 0% 50%;
-            }
-        }
-        .hifi-wireframes__loan-application {
-            margin: 72px 0px;
-            @media (max-width: 768px) {
-                margin: 32px 0px;
-            }
-            .loan-application__text-wrapper {
-                margin-bottom: 48px;
-                h4 {
-                    text-align: center;
-                }
-            }
-
-        }
-        .hifi-wireframes__account {
-            margin: 72px 0px;
-            padding: 72px 0px;
-            background-color: #FFF9EF;
-            @media (max-width: 768px) {
-                margin: 16px 0px;
-                padding: 16px 0px 32px;
-            }
-            .columns {
-                &.masonry {
-                    align-items: flex-start;
-                }
-            }
-            &.short {
-                margin: 72px 0px 0px;
-                @media (max-width: 768px) {
-                    margin: 16px 0px 0px;
-                }
-            }
-            .account__text-wrapper {
+            .hifi-wireframes__section-description {
+                background-color: #FFFFFF;
                 padding: 48px 0px;
-                @media (max-width: 768px) {
-                    padding: 16px;
-                }
                 h4 {
-                    text-align: right;
-                }
-                p {
-                    text-align: right;
-                }
-                @media (max-width: 768px) {
-                    h4 {
-                        text-align: center;
-                    }
-                    p {
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .hifi-wireframes__other-services {
-            margin: 72px 0px;
-            .other-services__text-wrapper {
-                margin-bottom: 32px;
-                h4 {
+                    font-size: 24px;
                     text-align: center;
                 }
+                p {
+                    max-width: 1080px;
+                }
             }
-            .other-services__section {
-                padding: 144px 0px 0px;
-                @media (max-width: 768px) {
-                    padding: 32px 0px 0px;
+            .hifi-wireframes__sign-up {
+                .column__sign-up {
+                    background-color: #E9AAC8;
+                }
+                .column__log-in {
+                    background-color: #9F3879;
+                }
+                .img__wrapper {
+                    padding: 56px;
+                    @media (max-width: 768px) {
+                        padding: 16px;
+                    }
+                    img {
+                        display: block;
+                        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+            .hifi-wireframes__home-existing-user {
+                padding: 72px 32px;
+                background-color: #e9aac8;
+                background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Main+BG-Pink.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 100%;
+                .img__wrapper {
+                    display: block;
+                    max-width: 70%;
+                    margin: 0 auto;
+                    video {
+                        transform: translateZ(0);
+                        will-change: transform;
+                    }
+                    @media (max-width: 768px) {
+                        max-width: 100%
+                    }
+                }
+            }
+            .hifi-wireframes__mobile-menu {
+                display: inline-block;
+                height: 100vh;
+                width: 100%;
+                @media (max-width: 800px) {
+                    height: auto;
+                    width: 100%;
+                }
+                .img__wrapper {
+                    display: block;
+                    padding: 72px 32px;
+                    margin: 0 auto;
+                    height: 100vh;
+                    width: 100%;
+                    
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 800px) {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+                .column-left {
+                    background-color: #E9AAC8;
+                    width: 100%;
+                }
+                .column-right {
+                    background-color: #FFFAFB;
+                    width: 100%;
+                }
+            }
+            .hifi-wireframes__education {
+                .feed-fresh__desktop {
+                    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Main+BG-Green.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 100%;
+                    padding: 72px;
+                    @media (max-width: 1215px) {
+                        padding: 32px;
+                    }
+                    .img__wrapper {
+                        display: block;
+                        max-width: 75%;
+                        margin: 0 auto;
+                        video {
+                            display: block;
+                        }
+                    }
+                }
+                .feed-fresh__mobile {
+                    height: 100vh;
+                    width: 100%;
+                    display: block;
+                    @media (max-width: 768px) {
+                        height: 100%;
+                    }
+                    .brand__img {
+                        width: 100%;
+                        height: 100vh;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 70% 50%;
+                        }
+                        @media (max-width: 768px) {
+                            height: 100%;
+                            img {
+                                display: block;
+                            }
+                        }
+                    }
+                    .feed-fresh__mobile-home {
+                        background-color: #3E8B48;
+                        width: 100%;
+                        .img__wrapper {
+                            display: block;
+                            padding: 72px 32px;
+                            margin: 0 auto;
+                            height: 100vh;
+                            width: 100%;
+                            @media (max-width: 768px) {
+                                height: 100%;
+                            }
+                            img {
+                                display: block;
+                                height: 100%;
+                                width: auto;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+                .feed-fresh__mobile-scroll {
+                    background-color: #F6F8F1;
+                    padding: 72px;
+                    .feed-fresh__img-2 {
+                        padding-top: 150px;
+                    }
+                    .feed-fresh__img-3 {
+                        padding-top: 50px;
+                    }
+                    .feed-fresh__img-4 {
+                        padding-top: 200px;
+                    }
+                    @media (max-width: 768px) {
+                        padding: 16px;
+                        .feed-fresh__img-2 {
+                            padding-top: 0px;
+                        }
+                        .feed-fresh__img-3 {
+                            padding-top: 0px;
+                        }
+                        .feed-fresh__img-4 {
+                            padding-top: 0px;
+                        }
+                    }
+                }
+                .education__company {
+                    background-color: #99C355;
+                    padding: 72px 0px;
+                    .img__wrapper {
+                        video {
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        padding: 16px;
+                    }
                 }
 
+                .company__reviews {
+                    .columns {
+                        align-items: stretch;
+                    }
+                    .column {
+                        display: flex;
+                    }
+                    .company-reviews__success-stories {
+                        background-color: #F6F8F1;
+                        padding: 72px 72px 0px;
+                        overflow: hidden;
+                        img {
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                        @media (max-width: 768px) {
+                            padding: 32px 32px 0px 32px;
+                        }
+                    }
+                    .company-reviews__all-reviews {
+                        background-color: #3E8B48;
+                        padding: 72px 72px 0px;
+                        overflow: hidden;
+                        img {
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                        @media (max-width: 768px) {
+                            padding: 32px 32px 0px 32px;
+                        }
+                    }
+                    .brand__img {
+                        position: relative;
+                        width: 100%;
+                        img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        }
+                    }
+                }
+                .company__blog {
+                    background-color: #D3DFB6;
+                    padding: 72px;
+                    .company-blog__mobile {
+                        padding-top: 24px;
+                    }
+                    @media (max-width: 768px) {
+                        padding: 16px;
+                        .company-blog__mobile {
+                            padding-top: 0px;
+                        }
+                    }
+                }
             }
-            .other-services__text-wrapper-left {
-                h4 {
-                    text-align: left;
-                }
-                p {
-                    text-align: left;
-                }
-                @media (max-width: 768px) {
-                    h4 {
-                        text-align: center;
+            .hifi-wireframes__product-discovery {
+                .product-discovery__matchmaker {
+                    background-color: #9BCEF6;
+                    .img__wrapper {
+                        height: 100%;
+                        width: 100%;
+                        .matchmaker__img4 {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 100% 50%;
+                            padding: 16px 16px 72px 0px;
+                            @media (max-width: 768px) {
+                                padding: 16px;
+                            }
+                        }
+                        .matchmaker__img1, .matchmaker__img2, .matchmaker__img3 {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                            padding: 72px 16px 16px 16px;
+                            @media (max-width: 768px) {
+                                padding: 16px;
+                            }
+                        }
+                        .matchmaker__img7 {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 0% 50%;
+                            padding: 16px 0px 72px 16px;
+                            @media (max-width: 768px) {
+                                padding: 16px;
+                            }
+                        }
+                        .matchmaker__img5, .matchmaker__img6 {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                            padding: 16px 16px 72px;
+                            @media (max-width: 768px) {
+                                padding: 16px;
+                            }
+                        }
                     }
-                    p {
-                        text-align: center;
+                }
+                .product-discovery__all-products {
+                    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Main+BG-Blue.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 100%;
+                    padding: 72px 0px;
+                    @media (max-width: 768px) {
+                        padding: 32px 0px;
+                    }
+                    .img__wrapper {
+                        video {
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+                .product-discovery__product-details {
+                    background-color: #2F73AA;
+                    .img__wrapper {
+                        padding: 120px 32px 0px 64px;
+                        @media (max-width: 768px) {
+                            padding: 32px
+                        }
+                        img {
+                            display: block;
+                        }
+                        .product-details__img {
+                            margin-top: 315px;
+                            @media (max-width: 768px) {
+                               margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+                .product-discovery__store-finder {
+                    background-color: #9BCEF6;
+                    video {
+                        display: block;
+                    }
+                    .img__wrapper {
+                        width: 100%;
+                        height: 100%;
+                        .store-finder__img {
+                            padding: 72px 0px;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            object-position: 0% 50%;
+                            @media (max-width: 768px) {
+                                padding: 32px;
+                            }
+                        }
+                        .store-finder__video {
+                            padding: 72px 32px;
+                            @media (max-width: 768px) {
+                                padding: 32px 32px 0px 32px;
+                            }
+                        }
                     }
                 }
             }
-            .other-services__text-wrapper-right {
-                h4 {
-                    text-align: right;
-                }
-                p {
-                    text-align: right;
-                }
-                @media (max-width: 768px) {
-                    h4 {
-                        text-align: center;
+            .hifi-wireframes__conversions {
+                .conversions__free-trial {
+                    padding: 72px 32px;
+                    background-color: #F6C94B;
+                    @media (max-width: 768px) {
+                        padding: 32px;
                     }
-                    p {
-                        text-align: center;
+                    .img__wrapper {
+                        video {
+                            margin: 0 auto;
+                            max-height: 90vh;
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+                .conversions__free-trial-mobile {
+                    width: 100%;
+                    .brand__img {
+                        height: 100%;
+                        width: 100%;
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        }
+                    }
+                    .free-trial-mobile__mockups {
+                        height: 100%;
+                        padding: 72px;
+                        background-color: #FDF5CC;
+                        @media (max-width: 768px) {
+                            padding: 32px;
+                        }
+                    }
+                }
+                .conversions__upsell-cart {
+                    .columns {
+                        align-items: stretch;
+                    }
+                    .column {
+                        display: flex;
+                    }
+                    .upsell-cart__mockups {
+                        background-color: #FFEC8B;
+                        padding: 72px 72px 72px 0px;
+                        @media (max-width: 768px) {
+                            padding: 0px;
+                        }
+                        .img__wrapper {
+                            width: 100%;
+                            height: 100%;
+                            img {
+                                display: block;
+                                @media (max-width: 768px) {
+                                    padding: 72px;
+                                }
+                            }
+                            .upsell-img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: 100% 50%;
+                                box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                                padding: 0px;
+                            }
+                        }
+                    }
+                    .brand__img {
+                        height: 100%;
+                        width: 100%;
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        }
+                    }
+                }
+                .conversions__upsell-checkout {
+                    background-color: #F6C94B;
+                    padding: 72px 0px;
+                }
+                .conversions__checkout {
+                    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Main+BG-Yellow.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 50% 100%;
+                    max-height: 100vh;
+                    .img__wrapper {
+                        padding: 72px 0px;
+                        video {
+                            height: calc(100vh - 300px);
+                            width: auto;
+                            margin: 0 auto;
+                            display: block;
+                            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25);
+                        }
+                        @media (max-width: 1240px) {
+                            padding: 16px 32px 32px 32px ;
+                            video {
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+                .conversions__post-checkout {
+                    background-color: #F6C94B;
+                    padding: 72px 0px;
+                }
+            }
+            .hifi-wireframes__support {
+                .support__customer-service {
+                    background-color: #E9AAC8;
+                    padding: 72px 32px;
+                    @media (max-width: 1240px) {
+                        padding: 32px;
+                    }
+                }
+                .support__contact {
+                    background-color: #9F3879;
+                    .img__wrapper {
+                        padding: 32px;;
+                    }
+                    .brand__img {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                        }
                     }
                 }
             }
         }
-        .hifi-wireframes__company {
-            margin: 72px 0px 0px;
-            padding: 72px 0px 0px;
-            background-color: #F1F7FD;
-            @media (max-width: 768px) {
-                margin: 0px;
-                padding: 32px 0px 32px;
-            }
-            .company__video {
-                margin-bottom: 32px;
-            }
-            .company__text-wrapper {
-                margin-bottom: 48px;
-                h4 {
-                    text-align: center;
-                }
-            }
-            .hifi-wireframes__masonry__wrapper {
-                padding: 2px;
-                mask-image: linear-gradient(to bottom, black 82%, transparent 100%);
-                @media (max-width: 768px) {
-                    mask-image: none;
-                    padding: 0px;
-                }
-                .hifi-wireframes__company-masonry {
-                    column-count: 1; 
-                    column-gap: 32px;
-                    .masonry-item {
-                        break-inside: avoid;
-                        margin-bottom: 16px;
-                    }
-                    @media (min-width: 768px) {
-                        column-count: 2;
-                    }
-                    @media (min-width: 1024px) {
-                        column-count: 3;
-                    }
-                }
-            }
+        .case-studies__navigation-wrapper {
+            padding: 16px;
         }
     }
 }
