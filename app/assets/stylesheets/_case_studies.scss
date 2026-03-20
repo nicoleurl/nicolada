@@ -338,6 +338,7 @@ $harveyspink: #9F3879;
             background-color: $beige;
             padding: 32px;
             height: 100%;
+            border-radius: 16px;
             p {
                 text-align: center;
                 margin-bottom: 0px;
@@ -744,6 +745,20 @@ $harveyspink: #9F3879;
 
 /* Dr. Harvey's */
 .case-study__dr-harveys {
+    .case-study__cover-wrapper {
+        overflow: hidden;
+        height: 600px;
+        width: 100%;
+        .if-web__hero-desktop, .if-web__hero-mobile {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+        .if-web__hero-mobile {
+            object-position: 50% 0% !important;
+        }
+    }
     .case-study__content-wrapper {
         .case-study__project-scope-wrapper {
             background-color: #FCEFF3;
@@ -771,7 +786,7 @@ $harveyspink: #9F3879;
                 }
             }
         }
-        .case-study-quote {
+        .case-study-quote, .case-study-feature {
             background-color: lighten($color: #FDF5CC, $amount: 5);
         }
         .case-study__problem-statement {
@@ -779,6 +794,15 @@ $harveyspink: #9F3879;
         }
         .case-study__personas {
             background-color: #E9F2FF;
+        }
+        .case-study__lofi-wireframes {
+            background-color: #000000;
+            h5 {
+                color: lightgray;
+            }
+            h3 {
+                color: #FFFFFF;
+            }
         }
         .case-study__hifi-wireframes {
             h4 {

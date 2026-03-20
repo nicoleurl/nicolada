@@ -250,6 +250,13 @@ header {
             display: inline-block;
         }
     }
+    .footer_signature {
+        text-align: right;
+        @media (max-width: 768px) {
+            text-align: left;
+            margin-top: 20px;
+        }
+    }
 
 }
 

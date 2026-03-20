@@ -5,4 +5,6 @@ class Projects::UxUiController < ApplicationController
     end
     def dr_harveys
     end
+    def dr_harveys_short
+    end
 end
