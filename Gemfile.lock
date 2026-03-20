@@ -149,7 +149,7 @@ GEM
     google-protobuf (4.33.2-x86_64-linux-musl)
       bigdecimal
       rake (>= 13)
-    haml (7.1.0)
+    haml (7.2.0)
       temple (>= 0.8.2)
       thor
       tilt
@@ -382,7 +382,7 @@ GEM
     stringio (3.2.0)
     temple (0.10.4)
     thor (1.5.0)
-    tilt (2.6.1)
+    tilt (2.7.0)
     timeout (0.4.4)
     tsort (0.2.0)
     turbo-rails (2.0.20)
