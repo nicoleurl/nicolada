@@ -4,4 +4,3 @@
 //= link_tree ../../../vendor/javascript .js
 //= link jquery.js
 //= link jquery_ujs.js
-//= link swiper.js
