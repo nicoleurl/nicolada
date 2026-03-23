@@ -16,7 +16,10 @@ html,
     scroll-behavior: smooth;
     background-color: #ffffff;
 }
-
+* {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 .nicolada__wrapper {
     h1, h2, h3, h4, h5 {
@@ -529,6 +532,7 @@ header {
         margin-left: 8%;
         p {
             max-width: 500px;
+            color: #000;
         }
         .btn__wrapper {
             text-align: left;
