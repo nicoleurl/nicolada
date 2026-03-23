@@ -503,37 +503,47 @@ header {
 
 .about-home__wrapper {
     background-color: $beige;
-    height: 500px;
-    overflow: hidden;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/about-bg.png");
-    background-position: top 0 left 50vw;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-bottom: 3px solid $black;
-    @media (max-width: 1023px) {
-        padding: 0px 32px;
-    }
-    @media (max-width: 768px) {
-        background-position: 50% 350px;
+    .image-wrapper {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border-left: 3px solid $black;
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 768px) {
+                background-position: 50% 350px;
+                border-top: 3px solid $black;
+            }
+        }
     }
     .about-home__text-wrapper {
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 500px;
-        padding-right: 15px;
-        border-right: 3px solid $black;
+        padding: 32px;
+        margin-left: 8%;
         p {
             max-width: 500px;
         }
         .btn__wrapper {
             text-align: left;
         }
+        @media (max-width: 1120px) {
+            margin-left: 0px;
+        }
         @media (max-width: 768px) {
             border-right: none;
-            border-bottom: 3px solid $black;
             justify-content: flex-start;
-            padding-top: 52px;
+            padding: 32px;
+            height: 100%;
+            p {
+                max-width: 100%;
+            }
         }
     }
 }
