@@ -1,0 +1,670 @@
+// Text
+$char: #2A2A2A;
+$text-primary: #444;
+$text-secondary: #555;
+$text-muted-1: #666;
+$text-muted-2: #777;
+$text-muted-3: #888;
+$text-muted-4: #aaa;
+$text-muted-5: #bbb;
+$text-weak: #A32D2D;
+$text-mid: #8B5A00;
+$text-good: #1E6B2B;
+
+
+// Borders and dividers
+$border-card: #E8E4DC;
+$border-default: #E0DDD6;
+$border-light: #DDD8CE;
+
+// Backgrounds
+$bg-offwhite: #F5F0E8;
+$bg-table-alt: #FAFAF7;
+$bg-white: #fff;
+$beige: #FFF9EF;
+
+//PRO
+$dark-green: #2B4D30;
+$mid-green: #1A6B1A;
+$pr-green-bright: #5BA632;
+$pr-yellow-green: #B7CE3A;
+$pr-teal: #1A9090;
+$pr-amber: #F5B922;
+$pr-coral: #F26B52;
+$pr-blue: #1E8FD5;
+$pr-purple: #6066A8;
+$pr-offwhite: #F5F0E8;
+$pr-charcoal: #2A2A2A;
+
+// Dr. Harvey's
+$drh-blue-dark: #243153;
+$drh-blue: #2F73AA;
+$drh-blue-light: #9BCEF6;
+$drh-blue-200: #E9F2FF;
+$drh-blue-50: #F7FAFE;
+$drh-pink: #9F3879;
+$drh-pink-light: #E9AAC8;
+$drh-pink-100: #FCEFF3;
+$drh-pink-50: #FFFAFB;
+$drh-green: #3E8B48;
+$drh-green-light: #D3DFB6;
+$drh-green-50: #F6F8F1;
+$drh-yellow: #F6C94B;
+$drh-yellow-light: #FDF5CC;
+$drh-yellow-50: #FFFAF2;
+$drh-offwhite: #F6F8F1;
+
+// Island Finance
+$if-navy: #1E2660;
+$if-navy-light: #354A9C;
+$if-blue: #A5CFEF;
+$if-peach: #E9AC6A;
+$if-coral: #E7673F;
+$if-offwhite: #F0F4FA;
+
+
+.case-study__cover-wrapper {
+    height: 700px;
+    background-color: #000000;
+}
+
+.case-study__content-wrapper {
+    margin: 72px 0px 0px;
+    @media (max-width: 768px) {
+        padding: 24px 0px 0px;
+        margin: 20px 0px 0px;
+    }
+    .container {
+        padding: 16px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 32px;
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 1.1;
+        color: $char;
+        @media (max-width: 768px) {
+            margin-bottom: 0px !important;
+        }
+    }
+    h4 {
+        font-family: "DM Sans", sans-serif !important;
+    }
+    h5 {
+        font-family: "DM Sans", sans-serif !important;
+        font-weight: 600; 
+        color: $text-secondary !important;
+        font-size: 16px !important;
+    }
+    p {
+        font-family: "DM Sans", sans-serif !important;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    .anchor {
+        scroll-margin-top: 100px;
+    }
+    .case-study__details-wrapper {
+        .btn__wrapper {
+            text-align: left;
+        }
+    }
+    .eyebrow {
+        font-weight: 800;
+        font-family: "DM Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 4px;
+        &::before {
+            content: '✦';
+            margin-right: 5px;
+        }
+    }
+    .case-study__details-line {
+        margin-top: 20px;
+        font-size: 14px;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .case-study__introduction {
+            color: $char
+        }
+    }
+    .case-study__intro-text-wrapper {
+        .case-study__introduction {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .case-study__project-scope-wrapper {
+        background-color: $bg-offwhite;
+        padding: 72px 0px;
+        margin: 72px 0px 124px;
+        .case-study__step {
+            height: 100%;
+            border-radius: 16px;
+            text-align: center;
+            padding: 32px 16px;
+            h4 {
+                text-transform: uppercase;
+                font-size: 20px;
+                margin-bottom: 12px;
+                font-weight: 800;
+            }
+            ul {
+                li {
+                    margin-bottom: 4px;
+                    font-family: "DM Sans", sans-serif !important;
+                    &:last-child {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+            svg {
+                max-width: 50px;
+                margin: 20px 0px 32px;
+            }
+        }
+        @media (max-width: 768px) {
+            padding: 24px 0px ;
+            margin: 20px 0px;
+        }
+    }
+    .case-study__industry-insights {
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 30px 0px;
+        }
+        .industry-insights__section {
+            margin-bottom: 36px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .insights-header { 
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $char;
+            margin-bottom: 8px;
+        }
+        .industry-insights__stats {
+            margin-bottom: 20px;
+            .insights-bubble {
+                background-color: $bg-table-alt;
+                border-radius: 8px;
+                padding: 20px;
+                height: 100%;
+                .bubble-number {
+                    font-weight: 800;
+                    font-family: "DM Sans", sans-serif;
+                    font-size: 32px;
+                    text-align: center;
+                    margin-bottom: 0px;
+                    line-height: 1.2;
+                }
+                .bubble-label {
+                    font-size: 12px;
+                    font-family: "DM Sans", sans-serif;
+                    text-align: center;
+                    line-height: 1.1;
+                }
+            }
+        }
+        .industry-insights__bullets {
+            li {
+                font-family: "DM Sans", sans-serif;
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                span {
+                    font-weight: 700;
+                }
+                &::before {
+                    content: '✦';
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .case-study__competitive-audit {
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
+        .competitive-audit__pro-table {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            table {
+                width: 100%;
+                margin-bottom: 24px;
+                border-collapse: collapse;
+                font-size: 14px;
+                font-family: "DM Sans", sans-serif;
+                overflow-x: scroll;
+                th, td {
+                    padding: 10px 12px;
+                    text-align: left;
+                    border-bottom: 1px solid $border-default;
+                    font-weight: 700;
+                }
+                th {
+                    font-size: 11px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                }
+                tbody {
+                    td {
+                        &:nth-child(2) {
+                            color: $text-muted-3;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .competitive-audit__analysis {
+            margin-top: 32px;
+            .analysis__tier-1, .analysis__tier-2 {
+                margin-bottom: 48px;
+            }
+            .tier-title {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 800;
+            }
+            .analysis__card {
+                border: 2px solid $border-card;
+                border-radius: 8px;
+                padding: 20px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .card-label {
+                    padding: 4px 16px;
+                    font-size: 12px;
+                    display: inline-block;
+                    border-radius: 16px;
+                    margin-bottom: 16px;
+                    p {
+                        font-weight: 800;
+                    }
+                }
+                .card-title {
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                    font-weight: 800;
+                    line-height: 1.1;
+                }
+                .card-subtitle {
+                    font-size: 14px;
+                    color: $text-muted-3;
+                    margin-bottom: 16px;
+                }
+                .card-text {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+                .card-takeaway {
+                    background-color: $bg-offwhite;
+                    padding: 16px;
+                    border-radius: 8px;
+                    span {
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+    .case-study__user-interviews {
+        margin: 72px 0px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
+    }
+    .case-study__user-research {
+        margin: 72px 0px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
+        .user-research__user-bubble-wrapper {
+            .user-research__user-bubble {
+                padding: 24px;
+                background-color: $bg-table-alt;
+                border-radius: 16px;
+                .user-bubble__user {
+                    padding-right: 24px;
+                    border-right: 1px solid $border-default;
+                    height: 100%;
+                    .user-bubble__title {
+                        font-size: 16px;
+                        font-weight: 800;
+                        line-height: 1.1;
+                        margin-bottom: 8px;
+                    }
+                    .user-bubble__label {
+                        padding: 4px 16px;
+                        font-size: 12px;
+                        display: inline-block;
+                        border-radius: 16px;
+                        margin-bottom: 16px;
+                        font-weight: 800;
+                    }
+                    .user-bubble__number {
+                        font-size: 32px;
+                        font-weight: 800;
+                        margin-bottom: 0px;
+                        line-height: 1.1;
+                    }
+                    .user-bubble__description {
+                        font-size: 14px;
+                        color: $text-muted-2;
+                    }
+                }
+                .user-bubble__user-description {
+                    padding-left: 24px;
+                    .user-bubble__sub-title {
+                        color: $text-muted-2;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                    }
+                    ul {
+                        margin-bottom: 24px;
+                        li {
+                            padding-left: 16px;
+                            position: relative;
+                            margin-top: 8px;
+                            &::before {
+                                content: '•';
+                                position: absolute;
+                                left: 0;
+                                color: $pr-green-bright;
+                            }
+                        }
+                    }
+                    .user-bubble__takeaway {
+                        background-color: $bg-offwhite;
+                        border-radius: 8px;
+                        padding: 16px;
+                        span {
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .case-study__problem-statement,.case-study__short-introduction {
+        background-color: $beige;
+        border-top: 3px solid $char;
+        border-bottom: 3px solid $char;
+        padding: 72px 0px;
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            margin: 30px 0px;
+        }
+    }
+    .case-study__main-concerns,.case-study__main-concerns-constraints {
+        margin: 72px 0px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 0px;
+        }
+        .main-concerns__concerns-wrapper {
+            padding: 0px 0px 32px 0px;
+            .main-concerns__concerns-box {
+                .concerns-box__img-wrapper{
+                    max-width: 64px;
+                    max-height: 64px;
+                    padding: 16px;
+                    border-radius: 8px;
+                    margin-bottom: 24px;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+// PR Open
+.case-study__pr-open {
+    .eyebrow {
+        color: $pr-teal;
+        &::before {
+            color: $pr-teal;
+        }
+    }
+    .case-study__project-scope-wrapper {
+        h3 {
+            color: $dark-green !important;
+        }
+        .case-study__step {
+            border: 2px solid $dark-green;
+            a {
+                border-bottom: 1px solid $dark-green;
+                &:hover {
+                    color: $mid-green;
+                    border-bottom: 1px solid $mid-green; ;
+                }
+            }
+            h4 {
+                color: $dark-green;
+            }
+            ul {
+                li {
+                    color: $dark-green
+                }
+            }
+            svg {
+                fill: $dark-green
+            }
+        }
+    }
+    .case-study__industry-insights {
+        .industry-insights__stats {
+            .insights-bubble {
+                &.b1 {
+                    border: 3px solid $pr-green-bright;
+                }
+                &.b2 {
+                    border: 3px solid $pr-teal;
+                }
+                &.b3 {
+                    border: 3px solid $pr-amber;
+                }
+                &.b4 {
+                    border: 3px solid $pr-coral;
+                }
+                &.b5 {
+                    border: 3px solid $pr-blue;
+                }
+                &.b6 {
+                    border: 3px solid $pr-purple;
+                }
+            }
+        }
+
+        .industry-insights__bullets {
+            li {
+                &::before {
+                    color: $pr-green-bright;
+                }
+            }
+        }
+    }
+    .case-study__competitive-audit {
+        table {
+            thead {
+                background-color: $dark-green ;
+                th {
+                    color: $pr-offwhite;
+                }
+            }
+            tr {
+                &:nth-child(even) td {
+                    background: $bg-table-alt;
+                }
+            }
+            tbody {
+                td {
+                    &.weak {
+                        color: $text-weak;
+                    }
+                    &.mid {
+                        color: $text-mid;
+                    }
+                    &.good {
+                        color: $text-good;
+                    }
+                    &.na {
+                        color: $text-muted-2;
+                    }
+                }
+            }
+        }
+        .competitive-audit__analysis {
+            .tier-title {
+                color: $mid-green;
+                border-bottom: 2px solid $mid-green;
+            }
+            .analysis__card {
+                .card-label {
+                    &.coral {
+                        color: $pr-coral;
+                        background-color: lighten($color: $pr-coral, $amount: 30);
+                    }
+                    &.green {
+                        color: $mid-green;
+                        background-color: lighten($color: $mid-green, $amount: 65);
+                    }
+                    &.blue {
+                        color: $pr-blue;
+                        background-color: lighten($color: $pr-blue , $amount: 45);
+                    }
+                    &.yellow {
+                        color: #7A4D00;
+                        background-color: #FEF3D4;
+                    }
+                    &.teal {
+                        color: #0F6060;
+                        background-color: #DDF2F2;
+                    }
+                    &.beige {
+                        color: #5A5856;
+                        background-color: #FBF6EE;
+                    }
+                    &.purple {
+                        color: #4A4D97;
+                        background-color: #EEEEF9;
+                    }
+                }
+            }
+        }
+    }
+    .case-study__user-research {
+        margin: 72px 0px;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            margin: 20px 0px;
+        }
+        .user-research__user-bubble-wrapper {
+            .user-research__user-bubble {
+                margin-top: 32px;
+                &.green {
+                    border: 2px solid $pr-green-bright;
+                }
+                &.blue {
+                    border: 2px solid $pr-blue;
+                }
+                &.coral {
+                    border: 2px solid $pr-coral;
+                }
+                &.purple {
+                    border: 2px solid $pr-purple;
+                }
+                .user-bubble__user {
+                    .user-bubble__label {
+                        &.green {
+                            color: $mid-green;
+                            background-color: lighten($color: $mid-green, $amount: 65);
+                        }
+                        &.blue {
+                            color: $pr-blue;
+                            background-color: lighten($color: $pr-blue , $amount: 45);
+                        }
+                        &.coral {
+                            color: $pr-coral;
+                            background-color: lighten($color: $pr-coral, $amount: 30);
+                        }
+                        &.purple {
+                            color: #4A4D97;
+                            background-color: #EEEEF9;
+                        }
+                    }
+                }
+                .user-bubble__user-description {
+                    .user-bubble__sub-title {
+                        margin-bottom: 0px;
+                    }
+                    ul {
+                        li {
+                            &.green {
+                                &::before {
+                                    color: $pr-green-bright;
+                                }
+                            }
+                            &.blue {
+                                &::before {
+                                    color: $pr-blue;
+                                }
+                            }
+                            &.coral {
+                                &::before {
+                                    color: $pr-coral;
+                                }
+                            }
+                            &.purple {
+                                &::before {
+                                    color: $pr-purple;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .case-study__problem-statement,.case-study__short-introduction {
+        background-color: $bg-offwhite;
+    }
+    .case-study__main-concerns,.case-study__main-concerns-constraints {
+        .main-concerns__concerns-wrapper {
+            .main-concerns__concerns-box {
+                .concerns-box__img-wrapper{
+                    background-color: $bg-offwhite;
+                }
+            }
+        }
+    }
+}

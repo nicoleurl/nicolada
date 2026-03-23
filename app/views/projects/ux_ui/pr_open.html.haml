@@ -1,0 +1,628 @@
+.case-study__wrapper.case-study__pr-open
+    .case-study__cover-wrapper
+    .case-study__content-wrapper
+        .container
+            .columns.is-centered.is-variable.is-6-desktop
+                .column.column.is-3
+                    .case-study__details-wrapper
+                        %h1 Puerto Rico Open
+                        .case-study__details-line
+                            %h2.case-study__subtitle
+                                Role
+                            %p.case-study__subtitle-text
+                                UX Researcher, UX/UI Designer, Art Director
+                        .case-study__details-line
+                            %h2.case-study__subtitle
+                                Industry
+                            %p.case-study__subtitle-text
+                                Live Sports, Golf
+                        .case-study__details-line
+                            %h2.pcase-study__subtitle
+                                Tools
+                            %p.case-study__subtitle-text
+                                Figma, Whimsical
+                        .btn__wrapper
+                            = link_to "View Snap Summary", "/ux-ui/dr-harveys-abbreviated", :class => "btn"
+                .column.is-8.is-offset-1-desktop
+                    .case-study__intro-text-wrapper
+                        %p.case-study__introduction
+                            The Puerto Rico Open is the only PGA Tour event held on the island of Puerto Rico, and one of the few in the entire Caribbean. First played in 2008, it has grown into a 17-year fixture on the island's sporting and cultural calendar, hosted at Grand Reserve Golf Club in Río Grande.
+                        %p.case-study__introduction
+                            Beyond the competition, the PR Open functions as a significant economic and community institution: the 2025 edition was projected to inject $5.5 million into the local economy, generate over $700,000 in tax revenue, support 1,000 direct and indirect jobs, and book more than 2,500 hotel nights.
+                        %p.case-study__introduction
+                            The event markets itself under the tagline "Open for everyone," anchored by "El 19," an on-site food, bar, and music hub designed to make the tournament accessible to a broader local audience beyond traditional golf fans.
+                        %p.case-study__introduction
+                            To match the scale and cultural significance of the event, the website was redesigned to serve three distinct audiences at once: local Puerto Rican fans, golf tourists traveling to the island and diaspora fans watching remotely from the mainland. The project focused on creating a bilingual, mobile-first experience that could function as both a destination showcase and a live event hub, balancing the premium expectations of a PGA Tour audience with the warmth and local pride that makes the PR Open unlike any other stop on Tour.
+                        %p.case-study__introduction
+                            Note: The designs presented in this case study reflect the full website structure and content strategy developed through the research and design process. The final implemented product was adapted to meet client priorities and budget constraints. Some pages, features, and content sections were modified, consolidated, or deferred as a result.
+        .case-study__project-scope-wrapper
+            .container
+                .case-study__project-scope
+                    %h3 Project Scope
+                    .columns.is-centered.is-variable.is-8-desktop
+                        .column.is-3
+                            .case-study__step
+                                = inline_svg('discover-icon.svg')
+                                %h4 Discover
+                                %ul
+                                    %li
+                                        = link_to "Industry Insights", "#insights"
+                                    %li 
+                                        = link_to "Competitive Audit", "#audit"
+                                    %li
+                                        = link_to "User Research", "#users"
+                        .column.is-3
+                            .case-study__step
+                                = inline_svg('define-icon.svg')
+                                %h4 Define
+                                %ul
+                                    %li
+                                        = link_to "Problem Statement", "#problem"
+                                    %li 
+                                        = link_to "Main Concerns", "#concerns"
+                                    %li
+                                        = link_to "User Personas", "#personas"
+                                    %li 
+                                        = link_to "Project Goals", "#goals"
+                        .column.is-3
+                            .case-study__step
+                                = inline_svg('ideate-icon.svg')
+                                %h4 Ideate
+                                %ul
+                                    %li
+                                        = link_to "Brainstorming", "#brainstorming"
+                                    %li 
+                                        = link_to "Features Roadmap", "#features"
+                                    %li
+                                        = link_to "User Flows", "#flows"
+                        .column.is-3
+                            .case-study__step
+                                = inline_svg('design-icon.svg')
+                                %h4 Design
+                                %ul
+                                    %li
+                                        = link_to "Low-fi Wireframes", "#lowfi"
+                                    %li
+                                        = link_to "Design System", "#system"
+                                    %li
+                                        = link_to "Final Designs", "#highfi"
+        .case-study__industry-insights
+            .anchor#insights
+            .container
+                .columns.is-variable.is-6-desktop
+                    .column.is-3
+                        %p.eyebrow
+                            Industry Insights
+                        %h3
+                            Live Sports & Fan Behavior
+                    .column.is-8.is-offset-1-desktop
+                        .industry-insights__section
+                            %p.insights-header How fans consume sports today
+                            %p Sports consumption has shifted to multi-platform, always-on engagement. Fans no longer visit an event site once, they return across devices, in real time, throughout the entire tournament week.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                +34%
+                                            %p.bubble-label
+                                                increase in fans watching live sports on social media since 2020
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                62%
+                                            %p.bubble-label
+                                                of fans discovered a new sport through short-form video
+                                    .column
+                                        .insights-bubble.b3
+                                            %p.bubble-number
+                                                70%
+                                            %p.bubble-label
+                                                of fans 18–34 use social media while watching sports
+                            .industry-insights__bullets
+                                %ul
+                                    %li
+                                        %span
+                                            The site is a second screen.
+                                        Most visitors arrive on mobile, mid-event, while watching Golf Channel. Fast load times and real-time score access were prioritized from the start of the IA.
+                                    %li
+                                        %span
+                                            Content needs to travel.
+                                        With 62% of fans discovering new events through short-form video, every content piece, from leaderboard updates to player spotlights to El 19 moments, was designed as a shareable unit, not just a page.
+                                    %li
+                                        %span
+                                            The site is never done for the week.
+                                        The architecture accounts for pre-event, during-event, and post-event states, not a single static experience.
+                        .industry-insights__section
+                            %p.insights-header Who the golf audience is today
+                            %p Golf fans have a distinct profile that shaped content tone, navigation depth, and how the site balances premium positioning with accessibility.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b4
+                                            %p.bubble-number
+                                                74%
+                                            %p.bubble-label
+                                                of pgatour.com visitors are male, but the audience is diversifying rapidly
+                                    .column
+                                        .insights-bubble.b5
+                                            %p.bubble-number
+                                                28%
+                                            %p.bubble-label
+                                                of on-course golfers are people of color in 2024, a record high
+                                    .column
+                                        .insights-bubble.b6
+                                            %p.bubble-number
+                                                3×
+                                            %p.bubble-label
+                                                more likely to have household income over $100K
+                            .industry-insights__bullets
+                                %ul
+                                    %li
+                                        %span
+                                            The audience expects premium quality.
+                                        Golf fans skew high-income and are accustomed to well-produced digital experiences. A generic event site template would register as low-effort to this specific audience.
+                                    %li
+                                        %span
+                                            The sport is diversifying and the site should reflect that.
+                                        Record women and BIPOC participation in 2024 means the "Open for everyone" positioning is not just a tagline. The visual language, photography direction, and content tone need to back it up.
+                                    %li
+                                        %span
+                                            Bilingual is non-negotiable. 
+                                        The local Puerto Rican audience is Spanish-dominant, the diaspora is bilingual, and the tourist audience is English-first. The site needs to serve all three without making any group feel like an afterthought.
+                        .industry-insights__section
+                            %p.insights-header Online ticketing behavior
+                            %p Ticketing is the primary conversion goal of the site. Understanding how and when fans decide to buy shaped the homepage hierarchy, navigation, and how early the site needs to be informative.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                40%
+                                            %p.bubble-label
+                                                of sports fans prefer digital booking expecting a frictionless mobile flow
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                \-50%
+                                            %p.bubble-label
+                                                drop in last-minute ticket buyers between Jan 2023 and Jan 2025
+                                    .column
+                                        .insights-bubble.b3
+                                            %p.bubble-number
+                                                2×
+                                            %p.bubble-label
+                                                more likely for live event attendees to engage with branded on-site experiences
+                            .industry-insights__bullets
+                                %ul
+                                    %li
+                                        %span
+                                            The site needs to convert early, not just during tournament week.
+                                        Fans are buying months out. Ticket CTAs, pricing tiers, and key event information are visible and functional from the moment the site goes live.
+                                    %li
+                                        %span
+                                            Tier clarity drives conversion. 
+                                        40% of fans prefer digital booking, but only if the flow is frictionless. Clear ticket options, transparent pricing, and a seamless handoff to purchase were treated as core UX requirements.
+                                    %li
+                                        %span
+                                            In-person attendees are the highest-value audience.
+                                        People who show up are twice as likely to engage with branded experiences. The site's event-day experience, maps, schedules, El 19 info, and QR access, was designed for this segment specifically.
+                        .industry-insights__section
+                            %p.insights-header Personalization & experience expectations
+                            %p Fans arrive at an event site with a specific purpose. The local fan wants logistics. The tourist wants the full picture. The diaspora viewer wants the score. A good experience means none of them have to look hard.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b4
+                                            %p.bubble-number
+                                                70%
+                                            %p.bubble-label
+                                                of fans say enhanced digital experiences keep them more engaged with an event
+                                    .column
+                                        .insights-bubble.b5
+                                            %p.bubble-number
+                                                62%
+                                            %p.bubble-label
+                                                of fans prefer events that offer personalized interactive digital experiences
+                                    .column
+                                        .insights-bubble.b6
+                                            %p.bubble-number
+                                                90%
+                                            %p.bubble-label
+                                                of venue-attending fans who go online rely on cellular not venue Wi-Fi
+                            .industry-insights__bullets
+                                %ul
+                                    %li
+                                        %span
+                                            Three audiences, three entry points.
+                                        The local fan needs parking and El 19 schedules. The golf tourist needs course info and hotel packages. The diaspora viewer needs the live leaderboard. The IA was built so each finds what they need without friction.
+                                    %li
+                                        %span
+                                            Event-day mobile performance is the most critical moment.
+                                        Nearly all connected fans at the venue use cellular. Asset optimization, load speed, and lightweight page weight were treated as design requirements.
+                                    %li
+                                        %span
+                                            Better UX is a measurable outcome.
+                                        70% of fans say digital experience quality directly affects how engaged they stay with an event. This is the quantitative argument for investing in the design, as it has a documented impact on fan retention.
+        .case-study__competitive-audit
+            .anchor#audit
+            .container   
+                .columns.is-variable.is-6-desktop
+                    .column.is-3
+                        %p.eyebrow
+                            Competitive audit
+                        %h3
+                            Analogous References
+                    .column.is-8.is-offset-1-desktop    
+                        %p With no direct competitors, the audit benchmarks three groups: Caribbean PGA events with similar market positioning, PGA Tour sites with strong digital execution, and Puerto Rico's own sports and tourism digital presence as a tonal and visual reference.
+                        %p Across all sites, a few patterns emerge clearly. The sites that work best treat their charity and community mission as a primary brand story. Bilingual support is uniformly underexecuted across the golf tournament sites. The best sites stay editorially active year-round rather than only coming alive during tournament week. The fan experience and logistics content (maps, parking, what to bring, El 19 equivalent) is consistently underdesigned relative to its importance as a day-of use case. And every site in this list, with the exception of Discover Puerto Rico, has a visual identity that is functional but not distinctive. There is a real opportunity for the PR Open to be the most visually ownable event site in this comparison set.
+                .competitive-audit__pro-table
+                    %table
+                        %thead
+                            %tr
+                                %th site
+                                %th tier
+                                %th design quality
+                                %th bilingual
+                                %th charity
+                                %th fan ux
+                                %th year-round
+                        %tbody
+                            %tr
+                                %td Corales Puntacana
+                                %td Caribbean PGA
+                                %td.weak Weak
+                                %td.mid Partial
+                                %td.weak None
+                                %td.weak Weak
+                                %td.weak No
+                            %tr
+                                %td Bermuda Championship
+                                %td Caribbean PGA
+                                %td.mid Functional
+                                %td.weak None
+                                %td.good Strong
+                                %td.good Good
+                                %td.mid Partial
+                            %tr
+                                %td Sony Open Hawaii
+                                %td Caribbean PGA
+                                %td.mid Functional
+                                %td.weak Japanese Only
+                                %td.good Strong
+                                %td.mid Adequate
+                                %td.good Yes
+                            %tr
+                                %td WM Phoenix Open
+                                %td PGA Benchmark
+                                %td.good Strong
+                                %td.weak None
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Yes
+                            %tr
+                                %td Travelers Championship
+                                %td PGA Benchmark
+                                %td.mid Functional
+                                %td.weak None
+                                %td.good Good
+                                %td.mid Adequate
+                                %td.mid Partial
+                            %tr
+                                %td The Players Championship
+                                %td PGA Benchmark
+                                %td.good Excellent
+                                %td.weak None
+                                %td.weak Minimal
+                                %td.good Strong
+                                %td.good Yes
+                            %tr
+                                %td Discover Puerto Rico
+                                %td PR Reference
+                                %td.good Excellent
+                                %td.good Full EN/ES
+                                %td.na N/A
+                                %td.good Strong
+                                %td.good Yes
+                            %tr
+                                %td Cangrejeros de Santurce
+                                %td PR Reference
+                                %td.mid Functional
+                                %td.weak No
+                                %td.na N/A
+                                %td.mid Adequate
+                                %td.good Yes
+                            %tr
+                                %td LAAC Golf
+                                %td PR Reference
+                                %td.good Strong
+                                %td.mid Partial
+                                %td.na N/A
+                                %td.good Good
+                                %td.mid Partial
+                .competitive-audit__analysis
+                    .analysis__tier-1  
+                        %p.tier-title   
+                            Tier 1 — Caribbean PGA events
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.coral
+                                            %p Weakest reference
+                                        %p.card-title Corales Puntacana Championship
+                                        %p.card-subtitle Dominican Republic
+                                        %p.card-text
+                                            Lives as a subpage of the resort website. Minimal structure, dated design and no bilingual support. The fan experience, community programming, and charitable impact of the event are essentially invisible on the site. The tournament is treated as a resort amenity rather than a standalone brand.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            A tournament this significant needs its own identity, separate from the host property.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Best structure
+                                        %p.card-title Butterfield Bermuda Championship
+                                        %p.card-subtitle Bermuda
+                                        %p.card-text
+                                            The cleanest, most consistently maintained site in the group. The design is functional but not particularly distinctive. Clear navigation, with dedicated nav items and subpages for the charity section, fan experience page, and tournament map. The ticket flow breaks to a separate shop, creating an avoidable UX gap. There is no bilingual support.
+                                        .card-takeaway
+                                            %p
+                                                %span Takeaway:
+                                                Charity and fan experience deserve their own nav items, not subpages buried under event info.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.blue
+                                            %p Best Mission Framing
+                                        %p.card-title Sony Open in Hawaii
+                                        %p.card-subtitle Hawaii, USA
+                                        %p.card-text
+                                            Leads with its identity as a charity event, $26M raised for 350+ nonprofits is the homepage headline. Friends of Hawaii Charities is a top-level nav item. The photography is warm, community-forward, and feels genuine rather than generically tropical. Sustainability page. Slightly dated design but excellent content strategy.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Mission-forward framing makes the event feel bigger than the sport itself.
+                    .analysis__tier-2 
+                        %p.tier-title   
+                            Tier 2 — Caribbean PGA events
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Best overall
+                                        %p.card-title WM Phoenix Open
+                                        %p.card-subtitle Arizona, USA
+                                        %p.card-text
+                                            The benchmark. Strong editorial identity, comprehensive logistics, and charity foregrounded at every level. "Greatest Show on Golf" branding is consistent throughout. The site also handles the event lifecycle well: it stays active year-round with construction updates, charity news, and community content rather than going dark between tournaments.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Editorial commitment and a strong brand voice make for a great site that is more than just functional.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.yellow
+                                            %p Solid Community Model
+                                        %p.card-title Travelers Championship
+                                        %p.card-subtitle Connecticut, USA
+                                        %p.card-text
+                                            Comprehensive navigation. Strong charity integration. The site does a good job of communicating the community fabric of the event, which is the Travelers Championship's core identity. Clean but unremarkable design, and adequate mobile experience. Ticketmaster handoff is clean, and a tee time lookup tool serves fans well during tournament week.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Local identity and national credibility can coexist with the right content framing and structure.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.teal
+                                            %p Premium design reference
+                                        %p.card-title The Players Championship
+                                        %p.card-subtitle Florida, USA
+                                        %p.card-text
+                                            The highest design quality of any PGA Tour event site. Clean editorial layout, dedicated Plan Your Visit section, hole-by-hole course guide, hospitality inquiry flow, and champion history archive. Charity presence is minimal relative to its budget, but the UX execution is the standard to aim for.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Every section should feel intentionally designed rather than just populated with content.
+                    .analysis__tier-2 
+                        %p.tier-title   
+                            Tier 3 — Puerto Rico references
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Gold Standard
+                                        %p.card-title Discover Puerto Rico
+                                        %p.card-subtitle discoverpuertorico.com
+                                        %p.card-text
+                                            Navigation is organized around travelers needs. Best bilingual execution of any site reviewed with persistent EN/ES toggle switching the full site including navigation and CTAs. Photography is warm, human, and culturally specific. The Live Boricua campaign uses local voices to tell the island's story from the inside, the most relevant brand model for the PR Open's community-forward positioning.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            The PR Open should feel like it belongs in the same visual and tonal family as this site.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.purple
+                                            %p Local sports tone reference
+                                        %p.card-title Cangrejeros de Santurce
+                                        %p.card-subtitle cangrejeros.net
+                                        %p.card-text
+                                            Owned by Bad Bunny, Noah Assad, and Jonathan García since 2021, the Cangrejeros are the most culturally relevant active sports brand in Puerto Rico right now. Fully Spanish-first, community-forward in tone, and heavy on news and roster updates. Most useful as a reference for how Puerto Rican sports fandom sounds and feels in digital spaces.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            This is what authentic local Puerto Rican sports identity looks like online. The PR Open's Spanish-language content should borrow from this register, not just translate from the English version.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.blue
+                                            %p Best bilingual golf reference
+                                        %p.card-title Latin America Amateur Championship
+                                        %p.card-subtitle laacgolf.com
+                                        %p.card-text
+                                            The most polished bilingual golf tournament website in the Latin American market. Strong editorial design, live leaderboard, player profiles with national flags, video replays, and a dedicated championship section. Handles the Spanish/English balance without making either feel secondary.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            The closest example of what a well-resourced bilingual golf tournament site looks like. The leaderboard, player profiles, and video integration are all worth studying directly.
+        .case-study__user-research
+            .anchor#users
+            .container
+                .columns.is-variable.is-6-desktop
+                    .column.is-3
+                        %p.eyebrow
+                            Audience research
+                        %h3
+                            Understanding the Audience
+                    .column.is-8.is-offset-1
+                        %p Without formal user interviews, audience segments were built from PGA Tour fan demographics, Puerto Rico's official visitor profile, and the PR Open's own public-facing messaging. Four distinct groups emerged, each arriving at the site for different reasons and needing different things from it.
+                        .user-research__user-bubble-wrapper
+                            .user-research__user-bubble.green
+                                .columns.is-gapless
+                                    .column.is-3
+                                        .user-bubble__user
+                                            %p.user-bubble__title
+                                                Local Puerto Rican fans
+                                            %p.user-bubble__label.green
+                                                On-Island
+                                            %p.user-bubble__number
+                                                3.3M
+                                            %p.user-bubble__description
+                                                Island residents, Spanish-dominant
+                                    .column.is-9
+                                        .user-bubble__user-description
+                                            %p.user-bubble__sub-title
+                                                What they need
+                                            %ul
+                                                %li.green Ticket pricing and purchase, especially day passes
+                                                %li.green El 19 food, music, and entertainment schedule
+                                                %li.green Parking, gates, and logistics in Spanish
+                                                %li.green Rafa Campos updates and local player coverage
+                                            .user-bubble__takeaway
+                                                %span Design implication:
+                                                Bilingual from the start, mobile-first, El 19 as a primary content section not buried under Event Info.
+                            .user-research__user-bubble.blue
+                                .columns.is-gapless
+                                    .column.is-3
+                                        .user-bubble__user
+                                            %p.user-bubble__title
+                                                Golf tourists flying in
+                                            %p.user-bubble__label.blue
+                                                Off-Island
+                                            %p.user-bubble__number
+                                                2,500+
+                                            %p.user-bubble__description
+                                                hotel nights booked per tournament, majority from US mainland
+                                    .column.is-9
+                                        .user-bubble__user-description
+                                            %p.user-bubble__sub-title
+                                                What they need
+                                            %ul
+                                                %li.blue Course details, player field, and tournament format
+                                                %li.blue Hotel packages and Hyatt Regency information
+                                                %li.blue Things to do on the island before and after rounds
+                                                %li.blue Travel logistics: SJU airport, driving, shuttles
+                                            .user-bubble__takeaway
+                                                %span Design implication:
+                                                Premium destination framing, a robust Plan Your Visit section, and photography that sells the island as much as the tournament.
+                            .user-research__user-bubble.coral
+                                .columns.is-gapless
+                                    .column.is-3
+                                        .user-bubble__user
+                                            %p.user-bubble__title
+                                                Diaspora fans watching remotely
+                                            %p.user-bubble__label.coral
+                                                Remote
+                                            %p.user-bubble__number
+                                                5.8M
+                                            %p.user-bubble__description
+                                                Puerto Ricans on the US mainland
+                                    .column.is-9
+                                        .user-bubble__user-description
+                                            %p.user-bubble__sub-title
+                                                What they need
+                                            %ul
+                                                %li.coral Live leaderboard and real-time score access
+                                                %li.coral Broadcast schedule for Golf Channel, NBC Sports App
+                                                %li.coral Rafa Campos coverage and milestone moments
+                                                %li.coral Shareable highlights and social-ready content
+                                            .user-bubble__takeaway
+                                                %span Design implication:
+                                                Leaderboard accessible from every page during tournament week, bilingual content, emotional storytelling that connects this audience to home.
+                            .user-research__user-bubble.purple
+                                .columns.is-gapless
+                                    .column.is-3
+                                        .user-bubble__user
+                                            %p.user-bubble__title
+                                                Sponsors, media and press
+                                            %p.user-bubble__label.purple
+                                                Institutional
+                                            %p.user-bubble__number
+                                                25hrs
+                                            %p.user-bubble__description
+                                                Golf Channel broadcast coverage
+                                    .column.is-9
+                                        .user-bubble__user-description
+                                            %p.user-bubble__sub-title
+                                                What they need
+                                            %ul
+                                                %li.purple Press credential application and media contact
+                                                %li.purple Downloadable press releases and official assets
+                                                %li.purple Sponsor partner information and hospitality options
+                                                %li.purple Sponsorship inquiry path for prospective partners
+                                            .user-bubble__takeaway
+                                                %span Design implication:
+                                                A clear institutional navigation path that does not interfere with the fan-facing experience, something separate but accessible.
+        .case-study__problem-statement
+            .anchor#problem
+            .container
+                .columns
+                    .column.is-3
+                        %p.eyebrow
+                            Problem Statement
+                        %h3
+                            The Design Opportunity
+                    .column.is-8.is-offset-1-desktop
+                        %p The Puerto Rico Open is the only PGA Tour event in the Caribbean outside the Dominican Republic, hosted on an island with 5.8 million people in its diaspora, a world-class golf course, and 17 years of community investment behind it. None of that is visible in the current digital experience. The design opportunity was to build a site that reflects the scale of the event and the culture behind it. One that works as a live event hub for local fans on the ground, a destination showcase for golf tourists flying in, and a connection point for diaspora fans watching remotely from the mainland. All while giving the local Puerto Rican identity, community, and pride that surround the tournament the visibility they have always deserved.
+        .case-study__main-concerns
+            .anchor#concerns
+            .container
+                .columns
+                    .column.is-3
+                        %p.eyebrow
+                            Main concerns
+                        %h3
+                            Challenges & Constraints
+                    .column.is-8.is-offset-1-desktop
+                        .main-concerns__concerns-wrapper
+                            %p These four challenges shaped every major design decision in the project, from the information architecture to the content strategy to the visual language.
+                            .columns.is-multiline.is-variable.is-8-desktop
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/heart-icon.png"
+                                        %h4 Three audiences, one URL
+                                        %p The site needs to serve a local Spanish-dominant fan, a golf tourist researching hotel packages, and a diaspora viewer checking the leaderboard, all from the same homepage, without any of them feeling like they landed in the wrong place.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            %p 🌐
+                                        %h4 No bilingual foundation
+                                        %p The current site is English-first in a market where the local audience is Spanish-dominant and the diaspora is bilingual. Language is a structural requirement that affects every content decision, navigation label, and CTA on the site.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
+                                        %h4 A static site serving a live event
+                                        %p Golf Channel broadcasts all four rounds to 3.6 million households. The site needed to function as a live publication during tournament week, accounting for pre-event, during-event, and off-season states.
+                                .column.is-6
+                                    .main-concerns__concerns-box
+                                        .concerns-box__img-wrapper
+                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
+                                        %h4 Client scope and budget
+                                        %p The full recommended structure included pages and features that were modified or deferred. The designs in this case study reflect the complete recommended structure; the final product was adapted to align with client priorities.
