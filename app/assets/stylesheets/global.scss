@@ -11,15 +11,13 @@ $gray: #8E8E8E;
 
 
 /* global styles */
-html,
-    * {
-        -webkit-text-size-adjust: 100%;
-        text-size-adjust: 100%;
-    }
-    
+html,    
     body {
     scroll-behavior: smooth;
     background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    color: #000;
 }
 
 .nicolada__wrapper {
