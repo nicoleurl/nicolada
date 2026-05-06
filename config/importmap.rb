@@ -7,4 +7,4 @@ pin "jquery" # @3.7.1
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "ssr-window", to: "https://cdn.jsdelivr.net/npm/ssr-window@latest/ssr-window.esm.js"
 pin "script", to: "script.js"
-pin "swiper" # @12.1.2
+pin "swiper", to: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"

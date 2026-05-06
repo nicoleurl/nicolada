@@ -1,43 +1,12 @@
-:css 
-    header {
-        background-color: #F2F2F2;
-        }
-    header .navbar {
-        background-color: #F2F2F2;
-    }
-    header .navbar .navbar-start .header__link:hover {
-        background-color: #F2F2F2;
-    }
-    header .navbar .navbar-menu {
-        background-color: #F2F2F2;
-    }
-    header .navbar .navbar-burger:hover {
-        background-color: #F2F2F2;
-    }
-
-    header .btn__wrapper .btn {
-        color: #F2F2F2
-    }
-
-    header .btn__wrapper .btn:hover {
-        background-color: #F2F2F2;
-        border: 3px solid #000000;
-        color: #000000;
-    }
-
 .project-details__wrapper.project__intimates
     .project-details__cover-wrapper
     .container
         .project-details__content-wrapper
             .project-details__introduction-wrapper
-                %h1.project-details__title
-                    Intimates
                 .columns.is-centered.is-variable.is-6
-                    .column.is-7
-                        .project-details__intro-text-wrapper
-                            %p.project-details__introduction
-                                A serif experimental typeface inspired by 'Eames Century Modern' bold italic from House Industries. It originated as an exploration of female pleasure and happiness, showcasing different ways to represent these themes. While we all experience tough days or weeks, many women agree that wearing underwear we find beautiful can boost our confidence and improve our mood. This project reflects my personal approach to "putting on my (pretty) big girl panties" as a way to keep pushing forward and not give up after a challenging week.
-                    .column.is-4.is-offset-1
+                    .column.is-3
+                        %h1.project-details__title
+                            Intimates
                         .project-details__line
                             %h2.project-details__subtitle
                                 Role
@@ -53,12 +22,22 @@
                                 Tools
                             %p.project-details__subtitle-text
                                 Photoshop
+                    .column.is-8.is-offset-1-desktop
+                        .project-details__intro-text-wrapper
+                            %p.project-details__introduction
+                                A serif experimental typeface inspired by Eames Century Modern Bold Italic from House Industries, built entirely from photographs of pink underwear arranged and composed in Photoshop to form each character. Rather than designing digitally from scratch, each letter was constructed by physically shaping and capturing fabric, then assembling the photographs into a cohesive set spanning the full alphabet, numbers, and core symbols.
+                                %br
+                                %br
+                                The typeface originated as an exploration of female pleasure and happiness and the small, personal ways women push through difficult days. The concept draws from the idea of "putting on your pretty big girl panties" as an act of quiet resilience, turning something intimate and everyday into a design system.
+                                %br
+                                %br
+                                The letterforms are soft and chunky with generous curves, spirals, and serif adornments that lean into femininity without abandoning structure. The italic angle adds a romantic quality while keeping the overall feel grounded and pragmatic, a balance that felt intentional given the subject matter. Color does a lot of the work too, with the pink of the fabric carrying warmth and personality across every character. The result is a typeface that is experimental in process, personal in concept, and cohesive enough to function as a complete type system.
             .project-details__gallery-wrapper
                 = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-letters.gif"
                 .project-details__description-wrapper
                     .columns.is-variable.is-6
                         .column.is-4
-                            %h5 Concept
+                            %p.eyebrow Concept
                             %h3 Quote
                         .column.is-8
                             %p.projects__middle-text
@@ -67,7 +46,7 @@
                 .project-details__description-wrapper
                     .columns.is-variable.is-6
                         .column.is-4
-                            %h5 Concept
+                            %p.eyebrow Concept
                             %h3 Quote
                         .column.is-8
                             %p.projects__middle-text

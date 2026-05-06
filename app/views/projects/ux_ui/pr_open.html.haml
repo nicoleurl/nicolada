@@ -1,5 +1,7 @@
 .case-study__wrapper.case-study__pr-open
-    .case-study__cover-wrapper
+    .container
+        .case-study__cover-wrapper
+            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/hero-desktop-drh.png", :class => "drh-web__hero-desktop is-hidden-mobile"
     .case-study__content-wrapper
         .container
             .columns.is-centered.is-variable.is-6-desktop
@@ -108,28 +110,28 @@
                                             %p.bubble-label
                                                 increase in fans watching live sports on social media since 2020
                                     .column
-                                        .insights-bubble.b2
+                                        .insights-bubble.b1
                                             %p.bubble-number
                                                 62%
                                             %p.bubble-label
                                                 of fans discovered a new sport through short-form video
                                     .column
-                                        .insights-bubble.b3
+                                        .insights-bubble.b1
                                             %p.bubble-number
                                                 70%
                                             %p.bubble-label
                                                 of fans 18–34 use social media while watching sports
                             .industry-insights__bullets
                                 %ul
-                                    %li
+                                    %li.b1
                                         %span
                                             The site is a second screen.
                                         Most visitors arrive on mobile, mid-event, while watching Golf Channel. Fast load times and real-time score access were prioritized from the start of the IA.
-                                    %li
+                                    %li.b1
                                         %span
                                             Content needs to travel.
                                         With 62% of fans discovering new events through short-form video, every content piece, from leaderboard updates to player spotlights to El 19 moments, was designed as a shareable unit, not just a page.
-                                    %li
+                                    %li.b1
                                         %span
                                             The site is never done for the week.
                                         The architecture accounts for pre-event, during-event, and post-event states, not a single static experience.
@@ -139,34 +141,34 @@
                             .industry-insights__stats
                                 .columns
                                     .column
-                                        .insights-bubble.b4
+                                        .insights-bubble.b2
                                             %p.bubble-number
                                                 74%
                                             %p.bubble-label
                                                 of pgatour.com visitors are male, but the audience is diversifying rapidly
                                     .column
-                                        .insights-bubble.b5
+                                        .insights-bubble.b2
                                             %p.bubble-number
                                                 28%
                                             %p.bubble-label
                                                 of on-course golfers are people of color in 2024, a record high
                                     .column
-                                        .insights-bubble.b6
+                                        .insights-bubble.b2
                                             %p.bubble-number
                                                 3×
                                             %p.bubble-label
                                                 more likely to have household income over $100K
                             .industry-insights__bullets
                                 %ul
-                                    %li
+                                    %li.b2
                                         %span
                                             The audience expects premium quality.
                                         Golf fans skew high-income and are accustomed to well-produced digital experiences. A generic event site template would register as low-effort to this specific audience.
-                                    %li
+                                    %li.b2
                                         %span
                                             The sport is diversifying and the site should reflect that.
                                         Record women and BIPOC participation in 2024 means the "Open for everyone" positioning is not just a tagline. The visual language, photography direction, and content tone need to back it up.
-                                    %li
+                                    %li.b2
                                         %span
                                             Bilingual is non-negotiable. 
                                         The local Puerto Rican audience is Spanish-dominant, the diaspora is bilingual, and the tourist audience is English-first. The site needs to serve all three without making any group feel like an afterthought.
@@ -176,13 +178,13 @@
                             .industry-insights__stats
                                 .columns
                                     .column
-                                        .insights-bubble.b1
+                                        .insights-bubble.b3
                                             %p.bubble-number
                                                 40%
                                             %p.bubble-label
                                                 of sports fans prefer digital booking expecting a frictionless mobile flow
                                     .column
-                                        .insights-bubble.b2
+                                        .insights-bubble.b3
                                             %p.bubble-number
                                                 \-50%
                                             %p.bubble-label
@@ -195,15 +197,15 @@
                                                 more likely for live event attendees to engage with branded on-site experiences
                             .industry-insights__bullets
                                 %ul
-                                    %li
+                                    %li.b3
                                         %span
                                             The site needs to convert early, not just during tournament week.
                                         Fans are buying months out. Ticket CTAs, pricing tiers, and key event information are visible and functional from the moment the site goes live.
-                                    %li
+                                    %li.b3
                                         %span
                                             Tier clarity drives conversion. 
                                         40% of fans prefer digital booking, but only if the flow is frictionless. Clear ticket options, transparent pricing, and a seamless handoff to purchase were treated as core UX requirements.
-                                    %li
+                                    %li.b3
                                         %span
                                             In-person attendees are the highest-value audience.
                                         People who show up are twice as likely to engage with branded experiences. The site's event-day experience, maps, schedules, El 19 info, and QR access, was designed for this segment specifically.
@@ -219,28 +221,28 @@
                                             %p.bubble-label
                                                 of fans say enhanced digital experiences keep them more engaged with an event
                                     .column
-                                        .insights-bubble.b5
+                                        .insights-bubble.b4
                                             %p.bubble-number
                                                 62%
                                             %p.bubble-label
                                                 of fans prefer events that offer personalized interactive digital experiences
                                     .column
-                                        .insights-bubble.b6
+                                        .insights-bubble.b4
                                             %p.bubble-number
                                                 90%
                                             %p.bubble-label
                                                 of venue-attending fans who go online rely on cellular not venue Wi-Fi
                             .industry-insights__bullets
                                 %ul
-                                    %li
+                                    %li.b4
                                         %span
                                             Three audiences, three entry points.
                                         The local fan needs parking and El 19 schedules. The golf tourist needs course info and hotel packages. The diaspora viewer needs the live leaderboard. The IA was built so each finds what they need without friction.
-                                    %li
+                                    %li.b4
                                         %span
                                             Event-day mobile performance is the most critical moment.
                                         Nearly all connected fans at the venue use cellular. Asset optimization, load speed, and lightweight page weight were treated as design requirements.
-                                    %li
+                                    %li.b4
                                         %span
                                             Better UX is a measurable outcome.
                                         70% of fans say digital experience quality directly affects how engaged they stay with an event. This is the quantitative argument for investing in the design, as it has a documented impact on fan retention.
@@ -256,7 +258,7 @@
                     .column.is-8.is-offset-1-desktop    
                         %p With no direct competitors, the audit benchmarks three groups: Caribbean PGA events with similar market positioning, PGA Tour sites with strong digital execution, and Puerto Rico's own sports and tourism digital presence as a tonal and visual reference.
                         %p Across all sites, a few patterns emerge clearly. The sites that work best treat their charity and community mission as a primary brand story. Bilingual support is uniformly underexecuted across the golf tournament sites. The best sites stay editorially active year-round rather than only coming alive during tournament week. The fan experience and logistics content (maps, parking, what to bring, El 19 equivalent) is consistently underdesigned relative to its importance as a day-of use case. And every site in this list, with the exception of Discover Puerto Rico, has a visual identity that is functional but not distinctive. There is a real opportunity for the PR Open to be the most visually ownable event site in this comparison set.
-                .competitive-audit__pro-table
+                .competitive-audit__table
                     %table
                         %thead
                             %tr
@@ -349,7 +351,7 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.coral
-                                            %p Weakest reference
+                                            %p Weakest Reference
                                         %p.card-title Corales Puntacana Championship
                                         %p.card-subtitle Dominican Republic
                                         %p.card-text
@@ -362,15 +364,15 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.green
-                                            %p Best structure
+                                            %p Best Structure
                                         %p.card-title Butterfield Bermuda Championship
                                         %p.card-subtitle Bermuda
                                         %p.card-text
                                             The cleanest, most consistently maintained site in the group. The design is functional but not particularly distinctive. Clear navigation, with dedicated nav items and subpages for the charity section, fan experience page, and tournament map. The ticket flow breaks to a separate shop, creating an avoidable UX gap. There is no bilingual support.
-                                        .card-takeaway
-                                            %p
-                                                %span Takeaway:
-                                                Charity and fan experience deserve their own nav items, not subpages buried under event info.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Charity and fan experience deserve their own nav items, not subpages buried under event info.
                             .column
                                 .analysis__card
                                     .card-top
@@ -392,7 +394,7 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.green
-                                            %p Best overall
+                                            %p Best Overall
                                         %p.card-title WM Phoenix Open
                                         %p.card-subtitle Arizona, USA
                                         %p.card-text
@@ -418,7 +420,7 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.teal
-                                            %p Premium design reference
+                                            %p Premium Design Reference
                                         %p.card-title The Players Championship
                                         %p.card-subtitle Florida, USA
                                         %p.card-text
@@ -427,7 +429,7 @@
                                         %p
                                             %span Takeaway:
                                             Every section should feel intentionally designed rather than just populated with content.
-                    .analysis__tier-2 
+                    .analysis__tier-3 
                         %p.tier-title   
                             Tier 3 — Puerto Rico references
                         .columns
@@ -448,7 +450,7 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.purple
-                                            %p Local sports tone reference
+                                            %p Local Sports Tone Reference
                                         %p.card-title Cangrejeros de Santurce
                                         %p.card-subtitle cangrejeros.net
                                         %p.card-text
@@ -461,7 +463,7 @@
                                 .analysis__card
                                     .card-top
                                         .card-label.blue
-                                            %p Best bilingual golf reference
+                                            %p Best Bilingual Golf Reference
                                         %p.card-title Latin America Amateur Championship
                                         %p.card-subtitle laacgolf.com
                                         %p.card-text
@@ -605,24 +607,948 @@
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/heart-icon.png"
+                                            %p
+                                                🧭
                                         %h4 Three audiences, one URL
                                         %p The site needs to serve a local Spanish-dominant fan, a golf tourist researching hotel packages, and a diaspora viewer checking the leaderboard, all from the same homepage, without any of them feeling like they landed in the wrong place.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            %p 🌐
+                                            %p
+                                                🌐
                                         %h4 No bilingual foundation
                                         %p The current site is English-first in a market where the local audience is Spanish-dominant and the diaspora is bilingual. Language is a structural requirement that affects every content decision, navigation label, and CTA on the site.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
+                                            %p
+                                                📡
                                         %h4 A static site serving a live event
                                         %p Golf Channel broadcasts all four rounds to 3.6 million households. The site needed to function as a live publication during tournament week, accounting for pre-event, during-event, and off-season states.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
+                                            %p
+                                                💼
                                         %h4 Client scope and budget
                                         %p The full recommended structure included pages and features that were modified or deferred. The designs in this case study reflect the complete recommended structure; the final product was adapted to align with client priorities.
+        .case-study__personas
+            .anchor#personas
+            .container
+                .case-study__personas-text
+                    %p.eyebrow Users
+                    %h3 Personas
+                    %p Four personas were built from PGA Tour fan demographics, Puerto Rico's visitor profile, and the PR Open's own audience data. Each represents a distinct entry point, content need, and emotional register.
+            .swiper.personasSwiper
+                .swiper-wrapper
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The Local Socialite
+                                    %p.swiper-persona__description
+                                        Carla is a 34-year-old sales rep from Carolina who has been going to the PR Open for the past few years. She goes for the atmosphere, the music, and the food at El 19. The golf is part of the experience, but so is seeing everyone she knows there. She picks up a day pass, usually on Saturday, and makes a day of it with her partner and friends. It's one of those events where showing up feels like part of being from Puerto Rico.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Find affordable day pass tickets
+                                                %li Know what is happening at El 19
+                                                %li Get parking and logistics in Spanish
+                                                %li Get good photos for Instagram
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Site is English-only and feels foreign
+                                                %li El 19 schedule is missing
+                                                %li Ticket purchase feels complicated
+                                                %li No Spanish-language social content
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            34
+                                        %p.demographics__line
+                                            %span Location:
+                                            Carolina, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Sales Representative
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, two kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Goes one day, usually Saturday. Comes for El 19, the vibe, and the photo.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Whatsapp
+                                            %li Facebook
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Golf Tourist
+                                    %p.swiper-persona__description
+                                        James is a 52-year-old financial advisor from Atlanta who attends two or three PGA Tour events a year. He found out about the PR Open through Golf Channel and has been considering going for two years. He books well in advance and wants the full experience: host hotel, course time, all four days.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Book hotel, tickets, and a tee time
+                                                %li Understand the course and field
+                                                %li Find things to do on the island
+                                                %li Access hospitality options
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Destination content is missing
+                                                %li Hotel partnerships is not visible
+                                                %li No course guide or hole preview
+                                                %li Hospitality options are hard to find
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            52
+                                        %p.demographics__line
+                                            %span Location:
+                                            Atlanta, GA
+                                        %p.demographics__line
+                                            %span Job:
+                                            Financial Advisor
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, kids in college
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Booking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Sports Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p First-time attendee. Books 3–4 months in advance. High-value, high-intent.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li PGA Tour app
+                                            %li Golf Channel
+                                            %li TripAdvisor
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Diaspora Fan
+                                    %p.swiper-persona__description
+                                        Miguel is a 41-year-old nurse from Orlando, originally from Bayamón. He watches the PR Open every year on Golf Channel as a way of staying connected to home, especially since Rafa Campos started winning. He shares highlights with family on WhatsApp and thinks about attending every year.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Follow the live leaderboard
+                                                %li Find the broadcast schedule
+                                                %li Share Rafa Campos moments
+                                                %li Feel connected to the island
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Leaderboard is hard to find
+                                                %li No Spanish content made for him
+                                                %li Highlights not easily shareable
+                                                %li Broadcast schedule not available
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            41
+                                        %p.demographics__line
+                                            %span Location:
+                                            Orlando, FL
+                                        %p.demographics__line
+                                            %span Job:
+                                            Registered nurse
+                                        %p.demographics__line
+                                            %span Family:
+                                            Single, family on the island
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Sports Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Watches all four rounds on Golf Channel. Visits the site during tournament week for scores.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Whatsapp
+                                            %li Instagram
+                                            %li Golf Channel app
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 04
+                                    %p.swiper-persona__name
+                                        The Press Contact
+                                    %p.swiper-persona__description
+                                        Andrea is a 37-year-old sports journalist from San Juan who covers the PR Open every year with a standing press credential. She accesses the site to download official materials, find contacts, and pull stats for her coverage. She is time-pressed during tournament week and frustrated when press resources are buried under fan content.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Access credentials and contacts quickly
+                                                %li Download official assets
+                                                %li Find accurate stats and field info
+                                                %li Locate sponsor inquiry information
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Media section is hard to find
+                                                %li No downloadable asset library
+                                                %li Stats require cross-referencing
+                                                %li Sponsor contacts not public
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            37
+                                        %p.demographics__line
+                                            %span Location:
+                                            San Juan, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Sports Journalist
+                                        %p.demographics__line
+                                            %span Family:
+                                            Partner, no kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Research Tools
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Credentialed press. On site all four days. Uses the site as a reference tool throughout.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Twitter / X
+                                            %li PGA Tour media portal
+                                            %li LinkedIn
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The Local Socialite
+                                    %p.swiper-persona__description
+                                        Carla is a 34-year-old sales rep from Carolina who has been going to the PR Open for the past few years. She goes for the atmosphere, the music, and the food at El 19. The golf is part of the experience, but so is seeing everyone she knows there. She picks up a day pass, usually on Saturday, and makes a day of it with her partner and friends. It's one of those events where showing up feels like part of being from Puerto Rico.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Find affordable day pass tickets
+                                                %li Know what is happening at El 19
+                                                %li Get parking and logistics in Spanish
+                                                %li Get good photos for Instagram
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Site is English-only and feels foreign
+                                                %li El 19 schedule is missing
+                                                %li Ticket purchase feels complicated
+                                                %li No Spanish-language social content
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            34
+                                        %p.demographics__line
+                                            %span Location:
+                                            Carolina, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Sales Representative
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, two kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Goes one day, usually Saturday. Comes for El 19, the vibe, and the photo.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Whatsapp
+                                            %li Facebook
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Golf Tourist
+                                    %p.swiper-persona__description
+                                        James is a 52-year-old financial advisor from Atlanta who attends two or three PGA Tour events a year. He found out about the PR Open through Golf Channel and has been considering going for two years. He books well in advance and wants the full experience: host hotel, course time, all four days.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Book hotel, tickets, and a tee time
+                                                %li Understand the course and field
+                                                %li Find things to do on the island
+                                                %li Access hospitality options
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Destination content is missing
+                                                %li Hotel partnerships is not visible
+                                                %li No course guide or hole preview
+                                                %li Hospitality options are hard to find
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            52
+                                        %p.demographics__line
+                                            %span Location:
+                                            Atlanta, GA
+                                        %p.demographics__line
+                                            %span Job:
+                                            Financial Advisor
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, kids in college
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Booking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Sports Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p First-time attendee. Books 3–4 months in advance. High-value, high-intent.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li PGA Tour app
+                                            %li Golf Channel
+                                            %li TripAdvisor
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Diaspora Fan
+                                    %p.swiper-persona__description
+                                        Miguel is a 41-year-old nurse from Orlando, originally from Bayamón. He watches the PR Open every year on Golf Channel as a way of staying connected to home, especially since Rafa Campos started winning. He shares highlights with family on WhatsApp and thinks about attending every year.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Follow the live leaderboard
+                                                %li Find the broadcast schedule
+                                                %li Share Rafa Campos moments
+                                                %li Feel connected to the island
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Leaderboard is hard to find
+                                                %li No Spanish content made for him
+                                                %li Highlights not easily shareable
+                                                %li Broadcast schedule not available
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            41
+                                        %p.demographics__line
+                                            %span Location:
+                                            Orlando, FL
+                                        %p.demographics__line
+                                            %span Job:
+                                            Registered nurse
+                                        %p.demographics__line
+                                            %span Family:
+                                            Single, family on the island
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Sports Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Watches all four rounds on Golf Channel. Visits the site during tournament week for scores.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Whatsapp
+                                            %li Instagram
+                                            %li Golf Channel app
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12
+                            .column.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 04
+                                    %p.swiper-persona__name
+                                        The Press Contact
+                                    %p.swiper-persona__description
+                                        Andrea is a 37-year-old sports journalist from San Juan who covers the PR Open every year with a standing press credential. She accesses the site to download official materials, find contacts, and pull stats for her coverage. She is time-pressed during tournament week and frustrated when press resources are buried under fan content.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Access credentials and contacts quickly
+                                                %li Download official assets
+                                                %li Find accurate stats and field info
+                                                %li Locate sponsor inquiry information
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Media section is hard to find
+                                                %li No downloadable asset library
+                                                %li Stats require cross-referencing
+                                                %li Sponsor contacts not public
+
+                            .column.is-4-fullhd.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            37
+                                        %p.demographics__line
+                                            %span Location:
+                                            San Juan, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Sports Journalist
+                                        %p.demographics__line
+                                            %span Family:
+                                            Partner, no kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Research Tools
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Event relationship
+                                        .relationship__summary
+                                            %p Credentialed press. On site all four days. Uses the site as a reference tool throughout.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Twitter / X
+                                            %li PGA Tour media portal
+                                            %li LinkedIn
+                .swiper-button-next.is-hidden-touch
+                .swiper-button-prev.is-hidden-touch
+        .case-study__project-goals
+            .anchor#goals
+            .container
+                .columns
+                    .column.is-3
+                        %p.eyebrow
+                            Objectives
+                        %h3
+                            Revewing Project Goals
+                    .column.is-8.is-offset-1
+                        %p
+                            The Puerto Rico Open's business goals around ticket sales, tourism growth, and brand credibility were only achievable if the site actually worked for the people visiting it. Our goal was to identify where those interests converged and design toward that intersection, building an experience that serves fans, drives attendance, and reflects the cultural significance of the event all at once.
+                        .project-goals__graph
+                            .columns
+                                .column
+                                    .graph__business-title
+                                        %p Business goals
+                                .column
+                                    .graph__mutual-title
+                                        %p Project goals
+                                .column
+                                    .graph__user-title
+                                        %p User goals
+                            .columns.is-vcentered.graph-columns
+                                .column
+                                    .graph__business-goals
+                                        %ul
+                                            %li Drive ticket sales
+                                            %li Increase tourism
+                                            %li Strengthen brand
+                                            %li Grow broadcast reach
+                                            %li Sponsor visibility
+                                .column
+                                    .graph__mutual-goals
+                                        %ul
+                                            %li Bilingual site
+                                            %li Cultural pride
+                                            %li Live event hub
+                                            %li Premium design
+                                .column
+                                    .graph__user-goals
+                                        %ul
+                                            %li Find info fast
+                                            %li Buy tickets easily
+                                            %li Live scores
+                                            %li Feel represented
+                                            %li Discover the island
+        .case-study__brainstorming
+            .anchor#brainstorming
+            .container
+                .columns
+                    .column.is-3
+                        %p.eyebrow Brainstorming
+                        %h3 Organizing Ideas & the Solution
+                    .column.is-8.is-offset-1
+                        %p Insights from research and personas were categorized into four areas to guide the design direction and feature decisions.
+                .columns
+                    .column.is-3
+                        %h4 Opportunities
+                        .brainstorming-card.opportunities
+                            %p Only PGA Tour event in the Caribbean outside the Dominican Republic
+                        .brainstorming-card.opportunities
+                            %p Rafa Campos as a nationally beloved storytelling anchor
+                        .brainstorming-card.opportunities
+                            %p El 19 as a non-golf entry point for local audiences
+                        .brainstorming-card.opportunities
+                            %p 5.8M diaspora fans with emotional connection to the island
+                        .brainstorming-card.opportunities
+                            %p $4.2M in charitable giving as an underutilized brand asset
+                        .brainstorming-card.opportunities
+                            %p Golf participation at record highs nationally
+                    .column.is-3
+                        %h4 Pain Points
+                        .brainstorming-card.pain-points
+                            %p Site is English-only in a Spanish-dominant market
+                        .brainstorming-card.pain-points
+                            %p El 19 has almost no digital presence
+                        .brainstorming-card.pain-points
+                            %p No destination content for golf tourists
+                        .brainstorming-card.pain-points
+                            %p No leaderboard during tournament week
+                        .brainstorming-card.pain-points
+                            %p Community and charity impact invisible
+                        .brainstorming-card.pain-points
+                            %p Ticket process unclear and not mobile optimized
+                        .brainstorming-card.pain-points
+                            %p No live event content
+                    .column.is-3
+                        %h4 Considerations
+                        .brainstorming-card.considerations
+                            %p Bilingual content must feel native, not translated
+                        .brainstorming-card.considerations
+                            %p Site has three distinct states: pre-event, tournament week, off-season
+                        .brainstorming-card.considerations
+                            %p Photography depends on client-supplied culturally specific imagery
+                        .brainstorming-card.considerations
+                            %p Local fans browse primarily on mobile under LTE conditions
+                        .brainstorming-card.considerations
+                            %p Client scope and budget affect which pages are built first
+                    .column.is-3
+                        %h4 Solutions
+                        .brainstorming-card.solutions
+                            %p Persistent bilingual EN/ES toggle across every page
+                        .brainstorming-card.solutions
+                            %p El 19 as a dedicated primary section
+                        .brainstorming-card.solutions
+                            %p Robust Plan Your Visit section for golf tourists
+                        .brainstorming-card.solutions
+                            %p Leaderboard in persistent nav during tournament week
+                        .brainstorming-card.solutions
+                            %p Community and charity section at homepage level
+                        .brainstorming-card.solutions
+                            %p Mobile-first IA with fast load as a core requirement
+                        .brainstorming-card.solutions
+                            %p Section with live news and videos of event
+        .case-study__features
+            .anchor#features
+            .container
+                .columns
+                    .column.is-3
+                        %p.eyebrow Features roadmap
+                        %h3 Transforming Needs Into Features
+                    .column.is-8.is-offset-1
+                        %p Informed by audience needs, pain points, and project goals, this feature set prioritizes experiences that reduce friction for all three audience segments, drive ticket conversions, and reflect the cultural significance of the event.
+                .features__features-table
+                    %table
+                        %thead
+                            %tr
+                                %th Page / Feature
+                                %th Priority
+                                %th Description
+                                %th Goal
+                        %tbody
+                            %tr
+                                %td Homepage
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Hero with event dates, ticket CTA, and a live state that adapts between pre-event countdown, tournament week leaderboard, and post-event highlights. Featured player section with Rafa Campos emphasis, El 19 preview, sponsor strip, and news feed.
+                                %td.goal
+                                    %span.attendance Drive Attendance
+                                    %br
+                                    %span.coverage Live Coverage
+                            %tr
+                                %td Tickets
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Clear tier breakdown with pricing, inclusions, and direct purchase flow. Day passes, weekly packages, and hospitality tiers visible from launch. FAQ covering parking, accessibility, and what to bring.
+                                %td.goal
+                                    %span.attendance Drive Attendance
+                                    %br
+                                    %span.fans Fan Experience
+                            %tr
+                                %td Leaderboard
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Live scoring integrated with PGA Tour data feed. Accessible from homepage and persistent nav during tournament week. Round-by-round scoring, cut line, and final results archived after the event.
+                                %td.goal
+                                    %span.coverage Live Coverage
+                                    %br
+                                    %span.culture Cultural Identity
+                            %tr
+                                %td Schedule
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Full four-day tee time schedule, pro-am, and practice rounds. El 19 entertainment schedule lives here alongside the golf schedule. Broadcast schedule with Golf Channel times for remote viewers.
+                                %td.goal
+                                    %span.fans Fan Experience
+                                    %br
+                                    %span.coverage Live Coverage
+                            %tr
+                                %td El 19 / Experience
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Dedicated page for El 19: food, bar, and music hub. Entertainment lineup, food and drink options, atmosphere photography. Primary conversion tool for local non-golf fans.
+                                %td.goal
+                                    %span.fans Fan Experience
+                                    %br
+                                    %span.attendance Drive Attendance
+                                    %br
+                                    %span.culture Cultural Identity
+                            %tr
+                                %td Plan Your Visit
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Comprehensive logistics for tourists and locals. Getting there from SJU, parking, gates, accessibility, hotel packages with Hyatt Regency, and a Puerto Rico travel guide for golf tourists extending their trip.
+                                %td.goal
+                                    %span.destination Destination Showcase
+                                    %br
+                                    %span.fans Fan Experience
+                            %tr
+                                %td Players
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Tournament field with player cards and world rankings. Rafa Campos gets a featured profile. Past champions archive. Updated annually as the field is confirmed.
+                                %td.goal
+                                    %span.culture Cultural Identity
+                                    %br
+                                    %span.coverage Live Coverage
+                            %tr
+                                %td The Event
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Tournament format, history, prize purse, FedEx Cup points, and broadcast info for first-time visitors. The only PGA Tour event in Puerto Rico story lives here alongside a charitable impact section.
+                                %td.goal
+                                    %span.credibility Build Credibility
+                                    %br
+                                    %span.community Community
+                            %tr
+                                %td Course
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Hole-by-hole guide with yardages, aerial course map, and resort information for golf tourists who want to play before or after the tournament.
+                                %td.goal
+                                    %span.destination Destination Showcase
+                                    %br
+                                    %span.credibility Build Credibility
+                            %tr
+                                %td Community	
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Dedicated section for nonprofit partners, Kids PRO program, and the $4.2M in charitable giving since 2008. Front-facing visibility, not a corporate social responsibility afterthought.
+                                %td.goal
+                                    %span.culture Cultural Identity
+                                    %br
+                                    %span.community Community
+                            %tr
+                                %td Press and Media
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Credential application, press contact, downloadable media assets, official logos, and press releases. Separate from fan-facing content with a clear path from the main navigation.
+                                %td.goal
+                                    %span.credibility Build Credibility
+                            %tr
+                                %td Social feed integration	
+                                %td.phase
+                                    %span.p3 P3 — Nice to Have
+                                %td Live Instagram or Twitter feed on the homepage during tournament week. Keeps the site feeling active without requiring manual content updates. Shareable highlight units for the diaspora audience.
+                                %td.goal
+                                    %span.coverage Live Coverage
+                                    %br
+                                    %span.culture Cultural Identity
+                                
+                                
+                                
+                                

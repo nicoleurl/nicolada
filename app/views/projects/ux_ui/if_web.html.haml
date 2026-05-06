@@ -1,8 +1,6 @@
 .case-study__wrapper.case-study__if-web
     .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/ifweb-hero.png", :class => "if-web__hero-desktop is-hidden-mobile"
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/ifweb-hero-mobile.png", :class => "if-web__hero-mobile is-hidden-tablet"
-
+        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/ifcover.png", :class => "cover__img if-web__hero"
     .case-study__content-wrapper
         .container
             .columns.is-centered.is-variable.is-6-desktop
@@ -95,175 +93,845 @@
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 Industry Insights
+                        %p.eyebrow Industry Insights
                         %h3 Personal Loans
                     .column.is-8.is-offset-1-desktop
-                        %p
-                            As of Q2 2024, 23.9 million Americans owe a total of $246 billion in personal loans, with an average debt of $11,687 per borrower.
-                            %span
-                                Most borrowers (51.3%) use personal loans to consolidate debt or refinance credit cards,
-                            while 8.1% use them for everyday bills and 7.2% for home improvements.
-
-                        %p
-                            Traditional banks are projected to dominate this market, expecting a volume of $15.34 billion in 2024, with growth to $19.80 billion by 2029 in Puerto Rico.
-                            %span
-                                Banks which have a long-established presence and offer a wide range of financial services,
-                            will and currently hold a significant share of the market in Puerto Rico.
-
-                        %p
-                            There are two significant emerging trends in banking. The first trend is the
-                            %span
-                                emphasis on financial inclusion,
-                            with banks reaching out to underserved communities and offering tailored products. The second trend being
-                            %span
-                                shift toward digital solutions
-                            to cater to a tech-savvy population, reflecting a global trend in banking.
-
-                        %p Puerto Rico's unique status as a U.S. territory creates both opportunities and challenges for its banking industry. The local economy's ties to the U.S. influence regulations and market dynamics, while factors like trade agreements, federal policies, and recovery from natural disasters play crucial roles in the banking sector's health.
-                        
-                        .case-study__takeaways
-                            .columns.is-multiline.is-variable.is-3-desktop
-                                .column.is-6
-                                    .case-study-quote
-                                        %p "Customers in Puerto Rico are increasingly leaning towards digital banking solutions, driven by the convenience and efficiency they offer."
-                                .column.is-6
-                                    .case-study-quote
-                                        %p "Most borrowers (51.3%) take out a personal loan to consolidate debt or refinance credit cards. The next most popular uses for a personal loan are paying for everyday bills (8.1%) and home improvements (7.2%)."
-                                .column.is-6
-                                    .case-study-quote
-                                        %p "Banks which offer a wide range of financial services, will and currently hold a significant share of the market in Puerto Rico."
-                                .column.is-6
-                                    .case-study-quote
-                                        %p "The average personal loan debt per borrower is $11,687 as of the second quarter of 2024."
-            
+                        .industry-insights__section
+                            %p.insights-header The personal loans market
+                            %p Understanding the personal loan landscape in Puerto Rico and the US shaped decisions around content hierarchy, trust signals, and the digital experience. Borrowers arrive skeptical and the site needs to earn their confidence before they ever see a form.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                $246B
+                                            %p.bubble-label
+                                                total personal loan debt among 23.9 million Americans as of Q2 2024
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                51%
+                                            %p.bubble-label
+                                                of borrowers use personal loans to consolidate debt or refinance credit cards
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                $11,687
+                                            %p.bubble-label
+                                                average personal loan debt per borrower in the US as of Q2 2024
+                            .industry-insights__bullets
+                                %ul
+                                    %li.b1
+                                        %span
+                                            Borrowers research before they commit.
+                                        Personal loans are not impulse decisions. Users arrive skeptical, which means trust signals, transparent APR communication, and clear product explanations are the primary conversion levers.
+                                    %li.b1
+                                        %span
+                                            Debt consolidation drives demand.
+                                        With over half of borrowers using personal loans to consolidate debt or refinance, users arrive already under financial stress. The content's job is to make a complicated decision feel manageable.
+                                    %li.b1
+                                        %span
+                                            Puerto Rico's loan market is growing.
+                                        A projected personal loan market volume of $19.8B in Puerto Rico by 2029, combined with nearly $12,000 per borrower on average, signals increased competition. This raises the stakes for digital differentiation and brand credibility.
+                        .industry-insights__section
+                            %p.insights-header Digital banking behavior
+                            %p How users interact with financial institutions online shaped the navigation structure, trust architecture, and the loan calculator feature priority.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                67%
+                                            %p.bubble-label
+                                                of consumers prefer managing finances digitally over visiting a branch
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                72%
+                                            %p.bubble-label
+                                                of mobile banking users say they would switch providers for a better digital experience
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                40%
+                                            %p.bubble-label
+                                                of first-time borrowers say confusing digital interfaces have stopped them from completing a loan application
+                            .industry-insights__bullets
+                                %ul
+                                    %li.b2
+                                        %span
+                                            Trust is built before the application starts.
+                                        Users decide whether to trust a financial institution within seconds of landing. Visual credibility, clear navigation, and upfront fee transparency are the first conversion gates.
+                                    %li.b2
+                                        %span
+                                            Mobile is where the decision happens.
+                                        Puerto Rico's population skews toward mobile-first browsing. A loan calculator or application that breaks on mobile ends the session and sends the user to a competitor.
+                                    %li.b2
+                                        %span
+                                            Financial inclusion is reshaping how lenders think about product design.
+                                        For platforms like Island Finance, built from the start around the borrowers traditional banks turned away, financial inclusion is part of the foundation. That mission makes financial literacy a requirement, meaning the platform has a responsibility to educate first-time borrowers with content that builds confidence.
         .case-study__competitive-audit
             .anchor#audit
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 Competitive Audit
-                        %h3 Understanding the market
+                        %p.eyebrow Competitive Audit
+                        %h3 Understanding the Market
                     .column.is-8.is-offset-1-desktop
-                        %p In order to assess the strengths and weaknesses of both direct and indirect competitors in the personal loan sector, I analyzed four websites dedicated to this industry. The goal was to gain insight into the current offerings, identify areas for enhancement, and uncover any gaps or unmet needs within the sector.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-competition-analysis.png"
+                        %p To assess Island Finance's position in the personal loan space, six direct and indirect competitors were analyzed across usability, trust communication, digital features, and content clarity.
+                        %p The audit shows that across local banks and fintech lenders alike, soft-pull prequalification, transparent APR calculators, and fast automated decisions have become baseline expectations. The indirect competitors have set a bar that local Puerto Rico banks are actively racing to match. Banco Popular's recent digital loan platform and Oriental's educational content show the market moving toward clarity and accessibility. The opportunity for Island Finance is to close that digital gap before a platform like Kiwi, which serves the same market, does it first.
+                .competitive-audit__table
+                    %table
+                        %thead
+                            %tr
+                                %th Competition
+                                %th Type
+                                %th Design quality
+                                %th Trust signals
+                                %th Loan calculator
+                                %th Mobile UX
+                                %th Financial Literacy
+                        %tbody
+                            %tr
+                                %td FirstBank PR
+                                %td Direct
+                                %td.good Good
+                                %td.good Strong
+                                %td.good Yes
+                                %td.good Good
+                                %td.good Good
+                            %tr
+                                %td Oriental Bank
+                                %td Direct
+                                %td.mid Functional
+                                %td.good Strong
+                                %td.good Yes
+                                %td.mid Functional
+                                %td.good Strong
+                            %tr
+                                %td Banco Popular PR
+                                %td Direct
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Yes
+                                %td.good Strong
+                                %td.weak Weak
+                            %tr
+                                %td Kiwi Credito
+                                %td Direct
+                                %td.good Strong
+                                %td.weak Weak
+                                %td.weak No
+                                %td.good Strong
+                                %td.weak Weak
+                            %tr
+                                %td LendingClub
+                                %td Indirect
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Yes
+                                %td.good Strong
+                                %td.good Good
+                            %tr
+                                %td OneMain Financial
+                                %td Indirect
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Yes
+                                %td.good Strong
+                                %td.good Good
+                .competitive-audit__analysis
+                    .analysis
+                        %hr.if-divider
+                        .columns.is-multiline
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.navy
+                                            %p Strong Brand Presence
+                                        %p.card-title FirstBank Puerto Rico
+                                        %p.card-subtitle Direct Competitor
+                                        %p.card-text
+                                            Polished design with solid brand credibility and a well-organized product suite. The personal loan page leads with rates and benefits clearly, and the blog and "Watch and Learn" video section show investment in financial education. However, the loan product lives inside a large navigation ecosystem, and the application flow redirects to a third-party portal, creating a noticeable break in the experience.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            The loan journey loses continuity at the most critical moment. Island Finance can win by keeping the user in one seamless, focused flow.
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.beige
+                                            %p Educational Content Leader
+                                        %p.card-title Oriental Bank
+                                        %p.card-subtitle Direct Competitor
+                                        %p.card-text
+                                            One of the few local banks investing in financial literacy, with educational resources and a blog aimed at consumers of all ages. However, the site design is visually dated, with heavy navigation, image-based UI elements, and a personal loan page buried deep inside a broad product ecosystem. The experience feels institutional, not borrower-focused.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Clean navigation and a visible calculator are table stakes. Financial literacy content is the gap across the board.
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.blue
+                                            %p Market Leader
+                                        %p.card-title Banco Popular PR
+                                        %p.card-subtitle Direct Competitor
+                                        %p.card-text
+                                            The strongest digital experience among local competitors. Soft-pull prequalification, a loan calculator surfaced directly in the navigation, and same-day disbursement make the experience fast and transparent. As the island's largest bank, though, the experience is built for breadth, and the fine print is dense.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Large institutions sacrifice product-level clarity for ecosystem breadth. Island Finance can win on single-product focus and simplicity.    
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.orange
+                                            %p Shared Audience
+                                        %p.card-title Kiwi Credito
+                                        %p.card-subtitle Direct Competitor
+                                        %p.card-text
+                                            Targets the same underserved borrowers, with a clean, mobile-first flow and a credit builder product that appeals to first-time borrowers. With no loan calculator, financial education or physical presence, it doesn't do much to earn the borrower's trust. The site relies entirely on vague customer reviews. The design is generic and the loan ceiling is low.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Has the audience and the flow but not the depth. Island Finance has higher loan amounts, 49 branches, and a founding mission that Kiwi can't replicate.
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Digital Benchmark
+                                        %p.card-title LendingClub
+                                        %p.card-subtitle Indirect — US digital lending
+                                        %p.card-text
+                                            The benchmark for digital-first personal lending. Transparent rate display from the first page, an intuitive loan calculator, clear APR communication, and a step-by-step application flow that reduces anxiety at every stage.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Clearly communicates value before the application starts. It proves that surfacing rate ranges, soft-pull checks, and clear product info early removes hesitation.
+                            .column.is-4-desktop.is-6-tablet
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Hybrid Model Benchmark
+                                        %p.card-title OneMain Financial
+                                        %p.card-subtitle Indirect — US digital lending
+                                        %p.card-text
+                                            One of the few lenders combining a digital flow with physical branches. No minimum credit score, same-day funding, and a resource center with calculators and education content. The weak point is transparency: prequalification hides APR behind a hard credit pull, adding friction at the worst moment.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Hiding APR behind a hard credit pull creates hesitation. Clear rate ranges and terms should be displayed before the borrower commits to anything.
         .case-study__user-interviews
             .anchor#interviews
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 User Interviews
-                        %h3 Understanding users
+                        %p.eyebrow User Interviews
+                        %h3 Understanding Users
                     .column.is-8.is-offset-1
-                        %p In order to comprehend users' experiences within Island Finance, we focused on their interactions and feedback with the business. Here's what they said:
-                        .case-study__takeaways
+                        %p To understand how Island Finance customers experience the service, user feedback and reviews were analyzed for recurring themes. Four patterns emerged that directly shaped the design direction.
+                        .case-study__interview-quotes
                             .columns.is-multiline.is-variable.is-3-desktop
                                 .column.is-6
-                                    .case-study-quote
-                                        %p "They should invest to improve the Banking Network Architecture with a good IT team to make it convenient enough for the customer. I genuinely do not recommend this or any other bank that does not have good IT service…"
+                                    .case-study-quote.red
+                                        .case-study__quote-label.c1
+                                            %p Trust
+                                        %p "They should invest to improve the Banking Network Architecture with a good IT team to make it convenient enough for the customer. I genuinely do not recommend this or any other bank that does not have good IT service."
                                 .column.is-6
-                                    .case-study-quote
-                                        %p "I'm still paying a loan that I took out for 2,500, I ended up paying 5,000. The APR is 32.% Something that has to be taken into account, I didn't know because it was my first time. Don't borrow here."
+                                    .case-study-quote.blue
+                                        .case-study__quote-label.c2
+                                            %p Hidden Costs
+                                        %p "I'm still paying a loan that I took out for 2,500, I ended up paying 5,000. The APR is 32%. Something that has to be taken into account, I didn't know because it was my first time. Don't borrow here."
                                 .column.is-6
-                                    .case-study-quote
+                                    .case-study-quote.orange
+                                        .case-study__quote-label.c3
+                                            %p Clarity
                                         %p "They do not explain the difference between changing a debit date vs changing the loan payment date, which turns out to be two completely different things. It took 3 calls for someone to satisfactorily guide me."
                                 .column.is-6
-                                    .case-study-quote
-                                        %p "Phantom charges, and they want to charge surcharges for cashier errors. The cashier swiped the card for .10 cents less and they want to charge me $10 more for “allegedly” not having paid on time."
+                                    .case-study-quote.navy
+                                        .case-study__quote-label.c4
+                                            %p Digital Management
+                                        %p "Phantom charges, and they want to charge surcharges for cashier errors. The cashier swiped the card for .10 cents less and they want to charge me $10 more for allegedly not having paid on time."
+                        .case-study__interview-takeaways
+                            %ul
+                                %li
+                                    %span Digital reliability signals institutional competence.
+                                    Outdated IT infrastructure signals that the institution itself is unreliable. A modern, fast, well-functioning site directly changes how users perceive the company's credibility.
+                                %li
+                                    %span Trust and transparency are the core problem. 
+                                    Users feel misled about costs, fees, and how the product works. The redesign prioritizes upfront APR communication, clear fee disclosure, and plain-language explanations at every step.
+                                %li
+                                    %span Financial literacy gaps cause real harm.
+                                    Users do not understand product features, payment options, or how interest accrues. Educational content and plain-language definitions reduce confusion and prevent the negative experiences users described.
+                                %li
+                                    %span Digital self-service is a baseline expectation.
+                                    Users want to manage payments, check balances, and resolve issues without calling a branch.
         .case-study__problem-statement
             .anchor#problem
             .container
                 .columns
                     .column.is-3
-                        %h5 Challenges
+                        %p.eyebrow Challenges
                         %h3 Problem Statement
-                    .column.is-8.is-offset-1-desktop
-                        %p The necessity to upgrade Island Finance's banking app became clear after analyzing competitors and gathering user feedback. With an increasing demand for digital services among clients, this enhancement is crucial for the company's future growth.
+                    .column.is-8.is-offset-1
+                        %p The necessity to upgrade Island Finance's banking website became clear after analyzing competitors and gathering user feedback. With an increasing demand for digital services among clients, this enhancement is crucial for the company's future growth.
                         %p The current website lacked essential features and made it difficult for users to perform tasks like calculating loan payments, making online payments, and accessing loan information. This led to confusion regarding their financial situations. Additionally, the outdated design reinforced the perception of Island Finance as a traditional and complicated company, which did not align with the company's brand image and value proposition.
         .case-study__main-concerns
             .anchor#concerns
             .container
                 .columns
                     .column.is-3
-                        %h5 Main Concerns
-                        %h3 Key User Frustrations
-                    .column.is-8.is-offset-1-desktop
+                        %p.eyebrow Main Concerns
+                        %h3 Constraints and Considerations
+                    .column.is-8.is-offset-1
                         .main-concerns__concerns-wrapper
+                            %p Redesigning the Island Finance experience meant balancing real user frustrations with internal constraints that shaped what was possible. Together, these informed every design decision.
                             .columns.is-multiline.is-variable.is-8-desktop
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
-                                        %h4 Outdated Website
-                                        %p An outdated website and unreliable IT services raised red flags for clients, signaling a lack of trust and professionalism. These issues directly affect the company's credibility and ability to retain customers in a digital-first world.
+                                            %p 💻
+                                        %h4 Trust & Credibility
+                                        %p An outdated website and unreliable IT services raised red flags for clients, signaling a lack of professionalism. Every screen had to counter that through clean layouts, upfront fee explanations, and clear action feedback that rebuilt confidence in the platform.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-02.png"
+                                            %p 📚
                                         %h4 Financial Literacy
-                                        %p Low financial literacy can make the personal loan process confusing and overwhelming, leading to missed details or poor decisions. Empowering customers with clear, accessible information builds confidence and encourages more responsible borrowing.
+                                        %p Low financial literacy makes the loan process confusing and overwhelming. Rather than just presenting information, we designed the experience to guide and teach using plain copy and step-by-step flows to reduce overwhelm and encourage more responsible borrowing.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-05.png"
-                                        %h4 Trust
-                                        %p A lack of trust and transparency can make customers hesitant to apply for a personal loan, fearing hidden fees or unclear terms. This uncertainty slows down the decision-making process and can drive potential borrowers to look elsewhere.
+                                            %p 🤝
+                                        %h4 Transparency
+                                        %p Fear of hidden fees and unclear terms slows down decision-making and drives potential borrowers elsewhere. We made disclosures and loan terms a natural part of the flow, keeping things clear and compliant without feeling cold or bureaucratic.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
+                                            %p 📱
                                         %h4 Digital Loan Management
-                                        %p The ability to manage loans digitally gives customers convenience, control, and confidence. Without it, the process feels outdated and frustrating, making it harder to stay on top of payments and reducing overall satisfaction.
-        .case-study__main-concerns-constraints
-            .container
-                .columns
-                    .column.is-3
-                        %h5 Main Concerns
-                        %h3 Design Constraints & Considerations
-                    .column.is-8.is-offset-1-desktop
-                        %p Alongside user frustrations, we encountered internal and contextual limitations that shaped the design direction. These challenges pushed us to make strategic trade-offs while ensuring the final product remained useful, trustworthy, and accessible.
-                        .main-concerns__concerns-wrapper
-                            .columns.is-multiline.is-variable.is-8-desktop
-                                .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/crane.png"
-                                        %h4 Outdated Infrastructure
-                                        %p The platform's legacy systems limited our ability to integrate advanced digital tools. We prioritized simple, scalable solutions that could offer real value without requiring deep backend overhauls.
-                                .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/reuse.png"
-                                        %h4 Rebuilding Brand Credibility
-                                        %p Given the negative user sentiment around IT issues and transparency, every screen and interaction had to reinforce trust. We leaned into clean layouts, upfront explanations of fees, and clear action feedback to rebuild confidence in the platform.
-                                .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/book-red.png"
-                                        %h4 Simplifying Financial Concepts
-                                        %p Instead of simply sharing information, we designed the experience to guide and teach along the way with clear and simple copy and step-by-step guides.
-                                .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/balance.png"
-                                        %h4 Regulatory Requirements
-                                        %p Operating under U.S. financial regulations required a thoughtful content strategy. We kept things clear and compliant, but still warm and easy to understand.
-
-
+                                        %p Without the ability to manage loans digitally, the experience feels outdated and frustrating. Legacy infrastructure limited how far we could go, so we prioritized simple, scalable solutions that gave customers real convenience without requiring deep backend overhauls.
         .case-study__personas
             .anchor#personas
             .container
                 .case-study__personas-text
-                    %h5 Users
+                    %p.eyebrow Users
                     %h3 Personas
-                    %p Through our research, we developed three target user profiles, carefully considering their goals and frustrations. While the participants had diverse financial backgrounds and aspirations, they shared a common desire for a user-friendly website that promotes transparency and aids them in managing their loans and avoid unnecessary fees.
+                    %p Three personas were developed from user research and customer feedback to represent the primary Island Finance borrower segments, each with different circumstances but connected by the same need for accessible, trustworthy credit.
             .swiper.personasSwiper
                 .swiper-wrapper
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-christine.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Luis.jpeg", :class => "luis-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The First-Time Borrower
+                                    %p.swiper-persona__description
+                                        Luis is a 28-year-old retail supervisor from Bayamón who needs a personal loan to cover an unexpected car repair. He has never taken out a loan before and is anxious about the process. He browses on his phone and gets overwhelmed by financial jargon.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Understand exactly how much the loan will cost
+                                                %li Know what documents he needs before applying
+                                                %li Complete the application without visiting a branch
+                                                %li Feel confident he is not being misled
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li APR and total cost not visible upfront
+                                                %li Financial terms are confusing and unexplained
+                                                %li Application process requires branch visits
+                                                %li No way to calculate payments before applying
+
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            28
+                                        %p.demographics__line
+                                            %span Location:
+                                            Bayamón, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Retail supervisor
+                                        %p.demographics__line
+                                            %span Family:
+                                            Single
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p First-time borrower. Researching options before committing. Needs significant guidance through the process.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Whatsapp
+                                            %li Youtube 
+                                            %li Google Search
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-luis.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Carmen.jpeg", :class => "carmen-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Repeat Borrower
+                                    %p.swiper-persona__description
+                                        Carmen is a 42-year-old administrative assistant from San Juan who has had two previous loans with Island Finance. She is familiar with the process but frustrated by having to visit a branch for routine tasks. She manages her household budget carefully and wants to do everything online.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Check loan balance and payment history online
+                                                %li Make payments without visiting a branch
+                                                %li Apply for a new loan without repeating the full process
+                                                %li Get alerts before payment due dates
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Cannot manage her loan fully online
+                                                %li Branch visits for routine tasks waste her time
+                                                %li Site is slow and hard to navigate on mobile
+                                                %li No payment reminders or digital notifications
+
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            42
+                                        %p.demographics__line
+                                            %span Location:
+                                            San Juan, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Administrative assistant
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, two kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p Existing customer with two previous loans. Loyal but frustrated. High churn risk if digital experience does not improve.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Facebook
+                                            %li Whatsapp
+                                            %li Online Banking
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-persona-couple.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jose.jpeg", :class => "jose-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Debt Consolidator
+                                    %p.swiper-persona__description
+                                        José is a 35-year-old teacher from Ponce who has three credit cards with high interest rates and wants to consolidate them into a single personal loan with a lower APR. He is comfortable with digital tools and would prefer to complete the entire process online without human interaction unless necessary.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Compare APRs quickly without applying
+                                                %li Understand total savings from consolidating
+                                                %li Complete the application fully online
+                                                %li Get a decision without waiting days
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Rates not visible without submitting an application
+                                                %li No comparison tool or savings calculator
+                                                %li Application requires in-branch document submission
+                                                %li Approval timeline is unclear
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            35
+                                        %p.demographics__line
+                                            %span Location:
+                                            Ponce, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Teacher
+                                        %p.demographics__line
+                                            %span Family:
+                                            Partner, no kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p New customer comparing options. High intent but will switch to a competitor if the process has too much friction.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Google Search
+                                            %li Reddit
+                                            %li Banking apps
+                                            %li LinkedIn
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Luis.jpeg", :class => "luis-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The First-Time Borrower
+                                    %p.swiper-persona__description
+                                        Luis is a 28-year-old retail supervisor from Bayamón who needs a personal loan to cover an unexpected car repair. He has never taken out a loan before and is anxious about the process. He browses on his phone and gets overwhelmed by financial jargon.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Understand exactly how much the loan will cost
+                                                %li Know what documents he needs before applying
+                                                %li Complete the application without visiting a branch
+                                                %li Feel confident he is not being misled
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li APR and total cost not visible upfront
+                                                %li Financial terms are confusing and unexplained
+                                                %li Application process requires branch visits
+                                                %li No way to calculate payments before applying
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            28
+                                        %p.demographics__line
+                                            %span Location:
+                                            Bayamón, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Retail supervisor
+                                        %p.demographics__line
+                                            %span Family:
+                                            Single
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p First-time borrower. Researching options before committing. Needs significant guidance through the process.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Whatsapp
+                                            %li Youtube 
+                                            %li Google Search
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Carmen.jpeg", :class => "carmen-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Repeat Borrower
+                                    %p.swiper-persona__description
+                                        Carmen is a 42-year-old administrative assistant from San Juan who has had two previous loans with Island Finance. She is familiar with the process but frustrated by having to visit a branch for routine tasks. She manages her household budget carefully and wants to do everything online.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Check loan balance and payment history online
+                                                %li Make payments without visiting a branch
+                                                %li Apply for a new loan without repeating the full process
+                                                %li Get alerts before payment due dates
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Cannot manage her loan fully online
+                                                %li Branch visits for routine tasks waste her time
+                                                %li Site is slow and hard to navigate on mobile
+                                                %li No payment reminders or digital notifications
+
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            42
+                                        %p.demographics__line
+                                            %span Location:
+                                            San Juan, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Administrative assistant
+                                        %p.demographics__line
+                                            %span Family:
+                                            Married, two kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p Existing customer with two previous loans. Loyal but frustrated. High churn risk if digital experience does not improve.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Facebook
+                                            %li Whatsapp
+                                            %li Online Banking
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jose.jpeg", :class => "jose-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Debt Consolidator
+                                    %p.swiper-persona__description
+                                        José is a 35-year-old teacher from Ponce who has three credit cards with high interest rates and wants to consolidate them into a single personal loan with a lower APR. He is comfortable with digital tools and would prefer to complete the entire process online without human interaction unless necessary.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Compare APRs quickly without applying
+                                                %li Understand total savings from consolidating
+                                                %li Complete the application fully online
+                                                %li Get a decision without waiting days
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Rates not visible without submitting an application
+                                                %li No comparison tool or savings calculator
+                                                %li Application requires in-branch document submission
+                                                %li Approval timeline is unclear
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            35
+                                        %p.demographics__line
+                                            %span Location:
+                                            Ponce, PR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Teacher
+                                        %p.demographics__line
+                                            %span Family:
+                                            Partner, no kids
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Banking
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Finance Apps
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Loan relationship
+                                        .relationship__summary
+                                            %p New customer comparing options. High intent but will switch to a competitor if the process has too much friction.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Google Search
+                                            %li Reddit
+                                            %li Banking apps
+                                            %li LinkedIn
                 .swiper-button-next
                 .swiper-button-prev
         .case-study__project-goals
@@ -271,110 +939,246 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Objectives
-                        %h3 Revewing project goals
+                        %p.eyebrow Objectives
+                        %h3 Revewing Project Goals
                     .column.is-8.is-offset-1
-                        %p While the primary business objectives centered on maximizing user conversion and generating leads by clearly communicating the functionality of the application, we successfully identified the areas where these objectives intersected with that of users by using our research into Island Finance's customers.
-                        %p Our goal was to enhance customer service by thoroughly reimagining and rebuilding the user journey based on Island Finance's user needs. We sought to position the company as a friendly and trustworthy partner in digital personal loans. The team's mission was to empower users to make informed financial choices and monitor their finances effectively, ultimately enhancing the overall quality of life for customers while still fulfilling the business's goals.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-goals.png"
+                        %p Island Finance's business goals around conversion and digital adoption were only achievable if the site actually worked for the people visiting it. The goal was to identify where those interests converged and design toward that intersection.
+                        .project-goals__graph
+                            .columns
+                                .column
+                                    .graph__business-title
+                                        %p Business goals
+                                .column
+                                    .graph__mutual-title
+                                        %p Project goals
+                                .column
+                                    .graph__user-title
+                                        %p User goals
+                            .columns.is-vcentered.graph-columns
+                                .column
+                                    .graph__business-goals
+                                        %ul
+                                            %li Increase conversions
+                                            %li Boost repeat loans
+                                            %li Grow digital adoption
+                                            %li Build brand credibility
+                                            %li Expand digital channels
+                                .column
+                                    .graph__mutual-goals
+                                        %ul
+                                            %li Trust and transparency
+                                            %li Clear loan terms
+                                            %li Digital self-service
+                                            %li Educated borrowers
+                                .column
+                                    .graph__user-goals
+                                        %ul
+                                            %li Apply with confidence
+                                            %li Understand total cost
+                                            %li Manage loans online
+                                            %li No hidden surprises
+                                            %li Fast decisions
+
         .case-study__brainstorming
             .anchor#brainstorming
             .container
                 .columns
                     .column.is-3
-                        %h5 Brainstorming
-                        %h3 Organizing Ideas and the solution
+                        %p.eyebrow Brainstorming
+                        %h3 Organizing Ideas & the Solution
                     .column.is-8.is-offset-1
                         %p
-                            Considering our research and the goals and frustrations of our personas, I categorized the insights into four spectrums to aid in generating ideas.
+                            Insights from research and personas were categorized into four areas to guide the design direction and feature decisions.
                 .columns
                     .column.is-3
                         %h4 Opportunities
                         .brainstorming-card.opportunities
-                            %p When nobody else can help you, you can come to us.
+                            %p Biggest personal loan specialist on the island
+                        .brainstorming-card.opportunities
+                            %p 49 branches as a trust and reach asset
+                        .brainstorming-card.opportunities
+                            %p Strong brand recognition since 1959
+                        .brainstorming-card.opportunities
+                            %p Underserved digital self-service market
+                        .brainstorming-card.opportunities
+                            %p Financial literacy content gap accross competitors
+                        .brainstorming-card.opportunities
+                            %p Mobile-first audience with growing digital habits
                         .brainstorming-card.opportunities
                             %p 24 hour decision
-                        .brainstorming-card.opportunities
-                            %p Calculate your loan without affecting your credit
-                        .brainstorming-card.opportunities
-                            %p Unsecured loans wont put your assets at risk
-                        .brainstorming-card.opportunities
-                            %p Up to 84 months to pay
-                        .brainstorming-card.opportunities
-                            %p More time to pay than a credit card
-                        .brainstorming-card.opportunities
-                            %p Online and automatic payment available
-                        .brainstorming-card.opportunities
-                            %p Good for consolidating debt
-                        .brainstorming-card.opportunities
-                            %p Application can be saved for later
                     .column.is-3
                         %h4 Pain Points
                         .brainstorming-card.pain-points
-                            %p Outdated website
+                            %p APR and total cost not visible upfront
                         .brainstorming-card.pain-points
-                            %p Clunky navigation
+                            %p Finalizing an application & managing a loan requires branch visits
                         .brainstorming-card.pain-points
-                            %p Calculator hidden in a different page
+                            %p Application process has too many friction points
                         .brainstorming-card.pain-points
-                            %p Information is hard to find and pages are hidden
+                            %p Financial jargon with no explanation
                         .brainstorming-card.pain-points
-                            %p No CTA except in navigation
+                            %p Site is slow and breaks on mobile
                         .brainstorming-card.pain-points
-                            %p No client portal
+                            %p No payment calculator before applying
                         .brainstorming-card.pain-points
-                            %p Inconsistent design
-                        .brainstorming-card.pain-points
-                            %p Some options are not available on mobile site
+                            %p Hidden pages both on desktop and mobile
                     .column.is-3
                         %h4 Considerations
                         .brainstorming-card.considerations
-                            %p People are sharing confidential information and security is very important
+                            %p Financial content must comply with PR lending regulations
                         .brainstorming-card.considerations
-                            %p A lot of people lack financial literacy and will have a lot of questions regarding charges involved in getting a loan
+                            %p Spanish-dominant audience requires bilingual content
                         .brainstorming-card.considerations
-                            %p People want to be able to do everything online without commuting
+                            %p Many users have low financial literacy, plain language is required
                         .brainstorming-card.considerations
-                            %p Need for transparency and being able to manage finances easily and online
+                            %p Trust must be established before the application flow begins
                         .brainstorming-card.considerations
-                            %p Need for automatization
+                            %p Branch network should complement, not compete with, digital
                     .column.is-3
                         %h4 Solutions
                         .brainstorming-card.solutions
-                            %p Update home page to include key points about personal loans and the process
+                            %p Transparent APR and cost displayed on every loan page
                         .brainstorming-card.solutions
-                            %p Add a calculator in the home page to gather leads
+                            %p Loan calculator accessible from homepage
                         .brainstorming-card.solutions
-                            %p Create a client portal for people to manage their loans digitally
+                            %p Digital loan management dashboard
                         .brainstorming-card.solutions
-                            %p Rethink navigation menu
+                            %p Plain-language glossary for financial terms
                         .brainstorming-card.solutions
-                            %p Create a consistent design system
+                            %p Step-by-step application with progress indicators
                         .brainstorming-card.solutions
-                            %p Add more CTAs through the website
+                            %p Branch finder integrated into website
                         .brainstorming-card.solutions
-                            %p Good but not necessary: Make direct deposit of loan possible
+                            %p Offer ability to submit documents digitally and receive direct deposit without visiting branch
         .case-study__features
             .anchor#features
             .container
                 .columns
                     .column.is-3
-                        %h5 Feature Roadmap
-                        %h3 Transforming needs into features
+                        %p.eyebrow Feature Roadmap
+                        %h3 Transforming Needs into Features
                     .column.is-8.is-offset-1
                         %p
-                            Based on the touchpoints and user needs identified during the empathizing phase, I developed a Product Feature Roadmap to outline key app features and guide upcoming design efforts.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/features-if.png"
+                            Informed by user research, competitive gaps, and project goals, this feature set prioritizes experiences that build trust, reduce friction, and make personal lending accessible and transparent for all borrowers.
+                .features__features-table
+                    %table
+                        %thead
+                            %tr
+                                %th Page / Feature
+                                %th Priority
+                                %th Description
+                                %th Goal
+                        %tbody
+                            %tr
+                                %td Homepage
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Clear value proposition, loan calculator above the fold, visible trust signals, prominent CTA to start application. Bilingual EN/ES toggle persistent throughout.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Loan Calculator
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Interactive calculator allowing users to set loan amount and term, instantly showing monthly payment and total cost. Accessible from homepage and all loan product pages.
+                                %td.goal
+                                    %span.trust Build Trust
+                                    %br
+                                    %span.education Financial Literacy
+                            %tr
+                                %td Personal loans page
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Transparent APR range displayed upfront, clear eligibility requirements, plain-language explanation of how interest works, and a step-by-step guide to the application process before any form fields appear.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Application flow
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Step-by-step application with a clear progress indicator, plain-language form labels, contextual help text, document upload capability, and a clear timeline for approval. Mobile-optimized throughout.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.digital Digital First
+                            %tr
+                                %td Navigation
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Simple top navigation with loan products, branch finder, account login, and apply CTA always visible. Bilingual toggle persistent. No more than two levels of depth.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.digital Digital First
+                            %tr
+                                %td Branch finder
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Interactive map of all 49 Puerto Rico branches with address, hours, phone, and directions. As a stand alone page and integrated into the application flow as an option for users who want to complete documentation in person.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Account dashboard
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Digital loan management portal: balance, payment history, next due date, and online payment capability. Reduces branch traffic for routine tasks and is the most requested feature among existing customers.
+                                %td.goal
+                                    %span.digital Digital First
+                                    %br
+                                    %span.retention Retention
+                            %tr
+                                %td Financial literacy hub
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Educational content covering how personal loans work, APR explained plainly, debt consolidation guide, and a financial glossary. Positions Island Finance as a trustworthy partner, not just a lender.
+                                %td.goal
+                                    %span.trust Build Trust
+                                    %br
+                                    %span.education Financial Literacy
+                            %tr
+                                %td Payment reminders
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Email and SMS payment reminders before due dates, opt-in from the account dashboard. Directly addresses one of the most cited friction points in user feedback.
+                                %td.goal
+                                    %span.digital Digital First
+                                    %br
+                                    %span.retention Retention
+                            %tr
+                                %td Debt consolidation tool
+                                %td.phase
+                                    %span.p3 P3 — Nice to Have
+                                %td Interactive tool where users enter existing credit card balances and rates to see how much they would save consolidating into an Island Finance loan.
+                                %td.goal
+                                    %span.education Financial Literacy
+                                    %br
+                                    %span.conversion Drive Conversion
+                            %tr
+                                %td Live chat support
+                                %td.phase
+                                    %span.p3 P3 — Nice to Have
+                                %td Chat widget available during business hours for users with questions mid-application. Reduces abandonment for users who get stuck rather than calling a branch or leaving the site entirely.
+                                %td.goal
+                                    %span.conversion Drive Conversion
+                                    %br
+                                    %span.trust Build Trust
+        
         .case-study__information-architecture
             .anchor#architecture
             .container
                 .columns
                     .column.is-3
-                        %h5 Information Architecture
+                        %p.eyebrow Information Architecture
                         %h3 Organizing information
                     .column.is-8.is-offset-1
                         %p
-                            Taking into account the required features and the diverse needs of users seeking financial guidance and services, I created a map to illustrate the website's structure. This map highlights how core pages and features are organized, and is designed to guide users smoothly through the site, making it easy to find tools, resources, and key financial information.
+                            Taking into account the required features and the diverse needs of users seeking financial guidance and services, we created a map to illustrate the website's structure. This map highlights how core pages and features are organized, and is designed to guide users smoothly through the site, making it easy to find tools, resources, and key financial information.
                 .information-architecture__chart
                     <iframe style="border: 15px solid #F1F4F7" width="100%" height="4000" src="https://whimsical.com/embed/UTRt4wq74AVbcxrP3uzFcM"></iframe>
         .case-study__user-flows
@@ -382,10 +1186,10 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 User Flows
+                        %p.eyebrow User Flows
                         %h3 Identifying how users complete tasks
                     .column.is-8.is-offset-1
-                        %p To truly support users, I needed to understand how they actually got things done, how they navigate, what they expect, and where they might hesitate. Mapping their steps helped us design flows that feel natural, supportive, and frustration-free.
+                        %p To truly support users, we needed to understand how they actually got things done, how they navigate, what they expect, and where they might hesitate. Mapping their steps helped us design flows that feel natural, supportive, and frustration-free.
                         %h4 Applying for a loan through nav bar button:
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-1.png", :class => "user-flows__img"
                         %h4 Applying for a loan through the calculator:
@@ -394,7 +1198,7 @@
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.png", :class => "user-flows__img"
         .case-study__lofi-wireframes
             .anchor#lowfi
-            %h5 Design
+            %p.eyebrow Design
             %h3 Lo-fi Wireframes
             = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/wireframes.png"
         .case-study__desing-system
@@ -402,7 +1206,7 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Design
+                        %p.eyebrow Design
                         %h3 Design System & Style guide
                     .column.is-8.is-offset-1
                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.png"
@@ -411,25 +1215,26 @@
             .anchor#highfi
             .hifi-wireframes__main-visual
                 .container
-                    %h5 High-fi Wireframes
+                    %p.eyebrow High-fi Wireframes
                     %h3 Introducing Island Finance
                     %p A personal loan experience designed to feel simple, clear, and trustworthy. From the first screen to the final step, every detail was crafted to guide users smoothly and make financial decisions less intimidating.
                     .btn__wrapper
                         = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn", :target => "blank"
                     .img__wrapper
-                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Home.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Home.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
             .hifi-wireframes__loan-options
                 .container
                     %h4 Simplifying the Loan Decision Journey
-                    %p To make the decision-making process feel easy and transparent and help users feel supported, I designed this page to balance education, reassurance, and action. It starts by answering the first thing most users want to know: “Is this loan actually a good fit for me?” with a quick breakdown of the key benefits.
-                    %p From there, I added customer reviews to build trust. A simple “what you'll need” checklist sets expectations early, reducing stress or potential abandonment later in the flow. The 3-step overview keeps the process approachable, and the FAQs address common concerns upfront so users don’t have to hunt for answers.
+                    %p To make the decision-making process feel easy and transparent and help users feel supported, we designed this page to balance education, reassurance, and action. It starts by answering the first thing most users want to know: “Is this loan actually a good fit for me?” with a quick breakdown of the key benefits.
+                    %p From there, we added customer reviews to build trust. A simple “what you'll need” checklist sets expectations early, reducing stress or potential abandonment later in the flow. The 3-step overview keeps the process approachable, and the FAQs address common concerns upfront so users don't have to hunt for answers.
+                    %br
                     .columns
                         .column.is-4
                             .img__wrapper
                                 =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Options.jpg"
                         .column.is-8
                             .img__wrapper
-                                = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF+Loan.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                                = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Personal-Loans.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
             .hifi-wireframes__loan-calculator.is-hidden-touch
                 .columns.is-variable.is-gapless
                     .column.is-2-fullhd.is-3-widescreen
@@ -438,7 +1243,7 @@
                                 Designing a Win–Win
                                 %br
                                 Loan Calculator Experience
-                            %p I designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
+                            %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
                     .column.is-5
                         .img__wrapper
                             =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
@@ -453,7 +1258,7 @@
                                 Designing a Win–Win
                                 %br
                                 Loan Calculator Experience
-                            %p I designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
+                            %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
                     .column.is-6
                         .img__wrapper
                             =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
@@ -464,7 +1269,7 @@
                 .container
                     .loan-application__text-wrapper
                         %h4 Making Applications Feel Easy
-                        %p Form fatigue is common in financial applications, so I focused on making a step-by-step loan application that helps users see their progress and stay engaged. At the end, transparent fees and flexible loan options help users choose what best fits their needs and budget.
+                        %p Form fatigue is common in financial applications, so we focused on making a step-by-step loan application that helps users see their progress and stay engaged. At the end, transparent fees and flexible loan options help users choose what best fits their needs and budget.
                     .columns.is-multiline
                         .column.is-8
                             .img__wrapper
@@ -486,7 +1291,7 @@
                                 .column.is-12
                                     .account__text-wrapper
                                         %h4 Helping Users Stay in Control After Approval
-                                        %p To help users avoid feeling lost after their loan is approved and improve self-service, I designed a dashboard that gives them full visibility and control over their account. Users can easily track payments, review documents, manage autopay, and adjust settings, all in one space. This helps prevent missed payments and builds confidence in managing their finances.
+                                        %p To help users avoid feeling lost after their loan is approved and improve self-service, we designed a dashboard that gives them full visibility and control over their account. Users can easily track payments, review documents, manage autopay, and adjust settings, all in one space. This helps prevent missed payments and builds confidence in managing their finances.
                                 .column.is-12
                                     .img__wrapper
                                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Dashboard.png"
@@ -502,7 +1307,7 @@
                         %h4 Creating Clarity Around Loan Coverage Options
                         %p Users needed to understand protection options without feeling pressured. This design explains each plan clearly, showing coverage, eligibility, and how it works in just a few steps. The transparency improves trust—and helps the business encourage adoption naturally.
                     .img__wrapper
-                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Payment-Protection.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Payment-Protection.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
                     .other-services__section
                         .columns.is-vcentered
                             .column.is-4
@@ -511,7 +1316,7 @@
                                     %p This Pay Over Time page makes financing feel simple and approachable by outlining key benefits, application requirements, and partner stores to help users shop confidently and encourage use.
                             .column.is-8
                                 .img__wrapper
-                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Pay-Over-Time.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Pay-Over-Time.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
                     .other-services__section
                         .columns.is-vcentered
                             .column.is-4.is-hidden-tablet
@@ -520,7 +1325,7 @@
                                     %p This page helps users learn about different coverage options and trusted partners in a clear, approachable way. Because these plans are offered through Island Finance's licensed partners, the collaboration adds credibility and reassurance. Once users find the right plan, they can continue to the provider's website.
                             .column.is-8
                                 .img__wrapper
-                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Insurance.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                                    = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Insurance.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
                             .column.is-4.is-hidden-mobile
                                 .other-services__text-wrapper-left
                                     %h4 Designing a Smooth Transition to Partner Providers
@@ -531,7 +1336,7 @@
                         %h4 Building Brand Credibility and Connection
                         %p These pages were designed to strengthen trust and connection across the Island Finance ecosystem. The About and Press sections highlight the company's story, values, and community impact, reinforcing credibility through consistent visuals and tone. Branch and Contact pages make it easy for users to locate offices or reach support, addressing accessibility pain points and reducing friction. Job listings and the blog humanize the brand, showcasing growth, expertise, and real stories that build long-term recognition and loyalty.
                     .img__wrapper.company__video
-                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/IF-About-Us.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
+                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-About.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
                     .hifi-wireframes__masonry__wrapper
                         .hifi-wireframes__company-masonry
                             .masonry-item

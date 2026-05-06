@@ -13,11 +13,6 @@ $cxegreen: #4E786A;
 $ipink: #A00251;
 $harveyspink: #9F3879;
 
-.case-study__cover-wrapper {
-    height: 700px;
-    background-color: #000000;
-}
-
 .case-study__content-wrapper {
     margin: 72px 0px 0px;
     @media (max-width: 768px) {
@@ -120,15 +115,11 @@ $harveyspink: #9F3879;
     }
     .case-study__takeaways {
         .case-study-quote {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
             background-color: $beige;
             padding: 32px;
             height: 100%;
             border-radius: 16px;
             p {
-                text-align: center;
                 margin-bottom: 0px;
                 margin-top: 0px;
             }
@@ -142,7 +133,6 @@ $harveyspink: #9F3879;
     }
     .case-study__user-interviews {
         margin: 72px 0px;
-        overflow: hidden;
         @media (max-width: 768px) {
             margin: 20px 0px;
         }
@@ -168,12 +158,10 @@ $harveyspink: #9F3879;
 
     .case-study__main-concerns,.case-study__main-concerns-constraints {
         margin: 72px 0px;
-        overflow: hidden;
         @media (max-width: 768px) {
             margin: 0px;
         }
         .main-concerns__concerns-wrapper {
-            padding: 32px 0px;
             .main-concerns__concerns-box {
                 .concerns-box__img-wrapper{
                     background-color: lighten($color: $ifblue, $amount: 50);
@@ -184,117 +172,14 @@ $harveyspink: #9F3879;
                     margin-bottom: 24px;
                 }
                 h4 {
-                    font-size: 20px;
+                    font-size: 16px;
                     margin-bottom: 16px;
-                    font-family: "Inter", sans-serif;
+                    font-family: "DM Sans", sans-serif;
                 }
             }
         }
     }
-    .case-study__personas {
-        margin: 72px 0px;
-        padding: 72px 0px;
-        @media (max-width: 768px) {
-            margin: 0px;
-            padding: 32px 0px;
-        }
-        .case-study__personas-text {
-            h5, h3 {
-                text-align: center;
-            }
-            p {
-                text-align: center;
-                margin: 0 auto;
-                max-width: 800px;
-                margin-bottom: 32px;
-                @media (max-width: 768px) {
-                    margin-bottom: 0px;
-                }
-            }
-
-        }
-        .personasSwiper {
-            position: relative;
-            @media (max-width: 768px) {
-                padding: 0px 0px 60px;
-            }
-            .swiper-slide {
-                margin: 20px auto;
-                border-radius: 32px;
-                box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.15);
-                transform: scale(.90);
-                transition: all .3s ease-in-out;
-                img {
-                    display: block;
-                    border-radius: 32px;
-                    @media (max-width: 768px) {
-                        border-radius: 16px;
-                     }
-                }
-                @media (max-width: 768px) {
-                   border-radius: 16px;
-                }
-            }
-            .swiper-backface-hidden .swiper-slide {
-                transform: scale(.90) translateZ(0);
-              }
-                      
-            .swiper-slide.swiper-slide-active {  
-            transform: scale(1) !important;
-            opacity: 1 !important;
-            }
-            
-            .swiper-backface-hidden .swiper-slide.swiper-slide-active {
-            transform: scale(1) translateZ(0) !important;
-            }
-            .swiper-button-prev {
-                position: absolute;
-                width: 100px;
-                left: -1px;
-                top: 0px;
-                height: 100%;
-                background: linear-gradient(90deg, #E9EEF9 -7.61%, rgba(233, 238, 249, 0.00) 100%);
-                &::after {
-                    font-size: 16px;
-                    color: #A5B9E6;
-                    padding: 15px 20px;
-                    background-color: #FFFFFF ;
-                    border-radius: 50px;
-                }
-                @media (max-width: 768px) {
-                    width: 70px;
-                }
-                @media (max-width: 550px) {
-                    background: none;
-                    top: 85%;
-                    height: auto;
-                }
-            }   
-            .swiper-button-next {
-                position: absolute;
-                width: 100px;
-                right: -1px;
-                top: 0px;
-                height: 100%;
-                background: linear-gradient(270deg, #E9EEF9 -7.61%, rgba(233, 238, 249, 0.00) 100%);
-                &::after {
-                    font-size: 16px;
-                    color: #A5B9E6;
-                    padding: 15px 20px;
-                    background-color: #FFFFFF;
-                    border-radius: 50px;
-                }
-                @media (max-width: 768px) {
-                    width: 70px;
-                }
-                @media (max-width: 550px) {
-                    background: none;
-                    top: 85%;
-                    height: auto;
-                }
-            }
-        }
-    }
+    
     .case-study__project-goals {
         margin: 72px 0px;
     }
@@ -323,26 +208,6 @@ $harveyspink: #9F3879;
             }
             &.solutions {
                 background-color: lighten($color: $green, $amount: 30);
-            }
-        }
-    }
-    .case-study__features {
-        margin: 72px 0px;
-        @media (max-width: 768px) {
-            margin: 16px 0px;
-        }
-        .case-study-feature {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            background-color: $beige;
-            padding: 32px;
-            height: 100%;
-            border-radius: 16px;
-            p {
-                text-align: center;
-                margin-bottom: 0px;
-                margin-top: 0px;
             }
         }
     }
@@ -452,20 +317,6 @@ $harveyspink: #9F3879;
 
 /* island finance web */
 .case-study__wrapper.case-study__if-web {
-    .case-study__cover-wrapper {
-        overflow: hidden;
-        height: 600px;
-        width: 100%;
-        .if-web__hero-desktop, .if-web__hero-mobile {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-        .if-web__hero-mobile {
-            object-position: 50% 0% !important;
-        }
-    }
     .case-study__content-wrapper {
         .case-study__project-scope {
             h3 {
@@ -480,7 +331,7 @@ $harveyspink: #9F3879;
                 fill: #354a9c;
                 }
             .case-study__step {
-                border: 2px solid $ifblue;
+                border: 3px solid $ifblue;
                 a {
                     color: $ifblue;
                     border-bottom: 1px solid $ifblue;
@@ -545,7 +396,6 @@ $harveyspink: #9F3879;
             }
             .hifi-wireframes__loan-options {
                 margin: 72px 0px;
-                padding: 72px 0px;
                 @media (max-width: 768px) {
                     padding: 16px 0px;
                     margin: 16px 0px;
@@ -745,20 +595,6 @@ $harveyspink: #9F3879;
 
 /* Dr. Harvey's */
 .case-study__dr-harveys {
-    .case-study__cover-wrapper {
-        overflow: hidden;
-        height: 600px;
-        width: 100%;
-        .if-web__hero-desktop, .if-web__hero-mobile {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-        .if-web__hero-mobile {
-            object-position: 50% 0% !important;
-        }
-    }
     .case-study__content-wrapper {
         .case-study__project-scope-wrapper {
             background-color: #FCEFF3;
@@ -776,7 +612,7 @@ $harveyspink: #9F3879;
                 fill: #9F3879;
                 }
             .case-study__step {
-                border: 2px solid $harveyspink;
+                border: 3px solid $harveyspink;
                 a {
                     color: $harveyspink;
                     border-bottom: 1px solid $harveyspink;
@@ -785,12 +621,6 @@ $harveyspink: #9F3879;
                     color: $harveyspink;
                 }
             }
-        }
-        .case-study-quote, .case-study-feature {
-            background-color: lighten($color: #FDF5CC, $amount: 5);
-        }
-        .case-study__problem-statement {
-            background-color: lighten($color: #D3DFB6, $amount: 11);
         }
         .case-study__personas {
             background-color: #E9F2FF;

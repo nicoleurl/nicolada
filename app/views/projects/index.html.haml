@@ -21,7 +21,7 @@
             .column.is-4-desktop.is-6-tablet
                 = link_to "/ux-ui/island-finance-web", :class => "project-button" do
                     .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/if-web.png', alt: 'Island Finance Case Study'
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/ifpreview.png', alt: 'Island Finance Case Study'
                         .projects__arrow.blue
                             = inline_svg('arrow.svg')
                     .project__project-summary
@@ -31,8 +31,8 @@
             .column.is-4-desktop.is-6-tablet
                 = link_to "/ux-ui/dr-harveys", :class => "project-button" do
                     .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/drharveys.png', alt: 'Dr.Harveys Case Study'
-                        .projects__arrow.yellow
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/drhpreview.png', alt: 'Dr.Harveys Case Study'
+                        .projects__arrow.pink
                             = inline_svg('arrow.svg')
                     .project__project-summary
                         %h4 Dr. Harvey's
@@ -41,8 +41,8 @@
             .column.is-4-desktop.is-hidden-tablet-only	
                 = link_to "/graphic-design/ocean-spray", :class => "project-button" do
                     .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/oceanspray-preview.png', alt: 'Ocean Spray'
-                        .projects__arrow.pink
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/oceanspraypreview.png', alt: 'Ocean Spray'
+                        .projects__arrow.red
                             = inline_svg('arrow.svg')
                     .project__project-summary
                         %h4 Ocean Spray
@@ -131,18 +131,13 @@
                 = image_tag 'flower.png', alt: '-', class: 'scrolling-text__items-img'
         
 .about-home__wrapper
-    .columns.is-variable.is-gapless
-        .column.is-6
-            .about-home__text-wrapper
-                %h3 About Me
-                %p
-                    My name is Nicole Salazar, a designer and front end developer from Dominican Republic, based in New York. I specialize in Graphic and UX/UI Design and Front End Development. In over 6 years I've worked with a range of clients across wellness, finance, tech, and entertainment. Because I understand both sides of the process, I create work that is as thoughtful as it is functional. I bring a meticulous eye, a love for experimentation, and a commitment to creating work that is engaging, and leaves a lasting impression. 
-                .btn__wrapper
-                    = link_to "Find out more", "/about", :class => "btn"
-        .column.is-6
-            .image-wrapper
-                = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/about-bg.png"
-
+    .container 
+        .about-home__text-wrapper
+            %h3 I'm Nicole, a designer and front end developer from Dominican Republic, based in New York.
+            %p
+                I specialize in Graphic and UX/UI Design and Front End Development. In over 6 years I've worked with a range of clients across wellness, finance, tech, and entertainment. Because I understand both sides of the process, I create work that is as thoughtful as it is functional. I bring a meticulous eye, a love for experimentation, and a commitment to creating work that is engaging, and leaves a lasting impression. 
+            .btn__wrapper
+                = link_to "Get to Know Me", "/about", :class => "btn"
 .brands-home__wrapper
     .container
         %h3 Brands

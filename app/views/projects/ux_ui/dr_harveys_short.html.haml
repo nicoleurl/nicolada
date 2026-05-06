@@ -1,7 +1,6 @@
 .case-study__wrapper.case-study__dr-harveys
     .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/hero-desktop-drh.png", :class => "drh-web__hero-desktop is-hidden-mobile"
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/hero-mobile-drh.png", :class => "drh-web__hero-mobile is-hidden-tablet"
+        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drharveyscover.png", :class => "cover__img drh-web__hero"
     .case-study__content-wrapper
         .container
             .columns.is-centered.is-variable.is-6-desktop
@@ -45,21 +44,21 @@
                 .short-introduction__section
                     .columns.is-variable.is-6-desktop
                         .column.is-3
-                            %h5 Snapshot
+                            %p.eyebrow Snapshot
                             %h3 The User
                         .column.is-8.is-offset-1-desktop
                             %p Dr. Harvey's target audience is health-conscious pet owners who treat their animals as an extension of their own wellness lifestyle. The core buyer is a Millennial or Gen Z pet parent, aged 18–38. They're skeptical of conventional options, willing to pay a premium for clean-label, human-grade ingredients, and quick to do their research before buying. Higher-income households round out the audience, drawn in by the brand's transparency and premium positioning. What ties everyone together is a distrust of processed food, a demand for clean labels, and a genuine belief that better nutrition means a healthier, longer life for their pet.
                 .short-introduction__section
                     .columns.is-variable.is-6-desktop
                         .column.is-3
-                            %h5 Snapshot
+                            %p.eyebrow Snapshot
                             %h3 The Problem
                         .column.is-8.is-offset-1-desktop
                             %p This audience have high standards and low tolerance for anything that feels generic or salesy. They want enough information to feel confident but not so much that the page feels overwhelming. Trust has to be built visually, not just through copy, and since most of them are landing from social on mobile, the experience needs to hold up on a small screen. The challenge is making a handcrafted, ingredient-driven brand feel premium online without losing the warmth that makes it feel different.
                 .short-introduction__section    
                     .columns.is-variable.is-6-desktop
                         .column.is-3
-                            %h5 Snapshot
+                            %p.eyebrow Snapshot
                             %h3 The Importance
                         .column.is-8.is-offset-1-desktop
                             %p This redesign aimed to bring Dr. Harvey's digital presence in line with the premium, natural product it's known for. Beyond modernizing the look, it was an opportunity to build trust faster, speak more clearly to a health-conscious audience, and create an experience that holds up through mobile, where most buyers are discovering the brand.
@@ -68,44 +67,161 @@
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 Competitive Audit
+                        %p.eyebrow Competitive Audit
                         %h3 Understanding the market
                     .column.is-8.is-offset-1-desktop
-                        %p To understand how Dr. Harvey's compares within the pet nutrition and wellness space, we conducted a competitive audit of both direct and indirect competitors. The analysis focused on presentation, features and educational content. This helped reveal common strengths, areas where competitors fell short, and opportunities for Dr. Harvey's to stand out.
-                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/dr-harveys-market.png"
+                        %p Direct and indirect competitors in the holistic and natural pet food space were analyzed across product presentation, ingredient transparency, educational content, and shopping experience.
+                        %p The audit shows that across direct and indirect competitors alike, strong ingredient transparency, smooth product discovery, and educational content have become table stakes in the holistic pet food space. The opportunity for Dr. Harvey's is to close the design and UX gap before the brand's authentic story gets buried by competitors with bigger budgets and cleaner sites.
+                .competitive-audit__table
+                    %table
+                        %thead
+                            %tr
+                                %th Competitor
+                                %th Type
+                                %th Design quality
+                                %th Ingredient Transparency
+                                %th Educational Content
+                                %th Product Discovery
+                                %th Handcrafted Feel
+                        %tbody
+                            %tr
+                                %td The Honest Kitchen
+                                %td Direct
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Good
+                                %td.mid Partial
+                            %tr
+                                %td Open Farm
+                                %td Direct
+                                %td.good Excellent
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Strong
+                                %td.mid Partial
+                            %tr
+                                %td Chewy
+                                %td Indirect
+                                %td.good Good
+                                %td.mid Partial
+                                %td.weak Weak
+                                %td.good Excellent
+                                %td.weak None
+                            %tr
+                                %td Blue Buffalo
+                                %td Indirect
+                                %td.good Strong
+                                %td.mid Partial
+                                %td.mid Partial
+                                %td.good Strong
+                                %td.weak None
+                .competitive-audit__analysis
+                    .analysis__tier-1  
+                        %p.tier-title   
+                            Tier 1 — Direct Competitors
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.blue
+                                            %p Strongest Rival
+                                        %p.card-title The Honest Kitchen
+                                        %p.card-subtitle thehonestkitchen.com
+                                        %p.card-text
+                                            The closest competitor in positioning. Human-grade ingredients, strong educational content, and a clear brand story. Product pages lead with ingredients and feeding instructions. Their pet quiz is well-executed and reduces decision fatigue effectively.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Sets the standard for a transparent, education-first holistic pet food site. The redesign needs to match this quality while preserving Dr. Harvey's handcrafted, family-owned differentiation.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Best Design Quality
+                                        %p.card-title Open Farm
+                                        %p.card-subtitle openfarmpet.com
+                                        %p.card-text
+                                            The most visually polished site in the competitive set. Clean, modern, premium feel with strong sourcing transparency, with each product links to the specific farm it came from. Strong sustainability narrative throughout.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Premium visual quality and sourcing specificity are not mutually exclusive with warmth. You can look polished and still communicate genuine care.
+                    .analysis__tier-2 
+                        %p.tier-title   
+                            Tier 2 — Indirect Competitors
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.yellow
+                                            %p Discovery UX Reference
+                                        %p.card-title Chewy
+                                        %p.card-subtitle chewy.com
+                                        %p.card-text
+                                            Excellent product filtering and discovery. Brand feels corporate but the shopping experience is smooth. Lacks meaningful educational content for first-time buyers. The brand site must offer something Chewy cannot like deeper story, preparation guidance, and a direct community relationship.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Chewy dominates discovery but cannot offer a brand relationship. The opportunity is in everything a retailer cannot do: story, education, and community.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.pink
+                                            %p Mass Market Cautionary Tale
+                                        %p.card-title Blue Buffalo
+                                        %p.card-subtitle bluebuffalo.com
+                                        %p.card-text
+                                            The most recognized name in natural pet food, now owned by General Mills. The site is polished with strong product filtering and life-stage navigation, but the corporate ownership shows. Ingredient messaging is repetitive and surface-level, and the handcrafted identity is essentially gone.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Polish increased when it scaled up but the authenticity that holistic buyers respond to got diluted. Dr. Harvey's independence is a direct competitive advantage, but only if the site communicates it clearly.
         .case-study__user-interviews
             .anchor#users
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 User Research
+                        %p.eyebrow User Research
                         %h3 Understanding users
                     .column.is-8.is-offset-1
-                        %p To better understand the needs and behaviors of users interested in holistic pet nutrition, we analyzed industry research, customer feedback shared with Dr. Harvey's, and insights from past user testing. Here are the main conclusions:
-                        .case-study__takeaways
+                        %p To understand what Dr. Harvey's customers need from the site, industry research, customer feedback, and past user testing were analyzed. Four recurring themes emerged that directly shaped the design direction.
+                        .case-study__interview-quotes
                             .columns.is-multiline.is-variable.is-3-desktop
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Clarity
-                                        %p Users want clear, simple guidance on how to prepare and serve the products. Many feel uncertain about portions, mixing instructions, or how the food fits into their pet's routine.
+                                    .case-study-quote.green
+                                        .case-study__quote-label.c1
+                                            %p Clarity
+                                        %p Preparation confusion is the most commonly cited friction point. Customers who love the product frequently report needing external resources like YouTube videos, forums, or direct customer service to feel confident about portions and preparation before committing to a purchase.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Trustpilot, and pet food forums
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Emotional Connection
-                                        %p Buyers want to feel emotionally connected to the brands they choose. They're drawn to authenticity, care, and shared values around pet wellbeing.
+                                    .case-study-quote.pink
+                                        .case-study__quote-label.c2
+                                            %p Emotional Connection
+                                        %p Reviewers consistently describe Dr. Harvey's in personal, relationship-driven language. The founder story and family-owned identity surface repeatedly as reasons for trust. The gap between that emotional product experience and the website's ability to reflect it is a recurring theme.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Wag, and Hepper
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Ingredients
-                                        %p Users often check the ingredient list first to see what's in the product. This shows the importance of displaying ingredients near the top of the page and keeping them easy to find to build trust.
+                                    .case-study-quote.blue
+                                        .case-study__quote-label.c3
+                                            %p Ingredients
+                                        %p Ingredient quality is the primary purchase driver across reviews. Customers cite whole food ingredients, human-grade sourcing, and the absence of artificial additives as the deciding factors. When ingredient information is hard to find or buried, it stalls the decision entirely.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Dog Food Advisor, and Dogster
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Trust Signals
-                                        %p Users look for reassurance early in their journey. Visible trust signals such as certifications, vet endorsements, and customer reviews help them feel confident before exploring further.
+                                    .case-study-quote.yellow
+                                        .case-study__quote-label.c4
+                                            %p Trust Signals
+                                        %p Vet guidance comes up frequently in the context of specialized diets, kidney disease, and chronic conditions. Customers with health-specific needs actively look for professional endorsement or credentials before spending at this price point.
+                                        .case-study-quote__source
+                                            %p Observed across Trustpilot, Pet Health Pros, and Hepper
         .case-study__problem-statement
             .anchor#problem
             .container
                 .columns
                     .column.is-3
-                        %h5 Challenges
+                        %p.eyebrow Challenges
                         %h3 Problem Statement
                     .column.is-8.is-offset-1-desktop
                         %p Many shoppers do not fully understand what holistic pet food is or why it costs more than conventional options. Dr. Harvey's products are not an impulse buy but an intentional investment in a pet's long-term health, usually chosen after careful research and consideration. The challenge was to redesign the website to communicate this value clearly while keeping the brand's authentic, handcrafted feel. The site needed to make ingredient information, feeding guides, and educational content easy to find and search-friendly, helping new customers feel informed and confident. At the same time, the user experience had to support higher conversions and repeat purchases through clear, honest flows and thoughtful upsells, never resorting to pushy tactics. Finally, the mobile experience needed to be seamless, so loyal customers could easily reorder and manage their accounts anytime, anywhere.
@@ -114,79 +230,118 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Challenges
-                        %h3 Main Concerns
+                        %p.eyebrow Main Concerns
+                        %h3 Key Challenges
                     .column.is-8.is-offset-1-desktop
                         .main-concerns__concerns-wrapper
+                            %p Four recurring challenges from user research and competitive analysis shaped the design priorities for the redesign.
                             .columns.is-multiline.is-variable.is-8-desktop
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/heart-icon.png"
-                                        %h4 Authenticity
-                                        %p The design needed to feel warm, personal, and craft-inspired, not overly slick or generic, helping create a tone that feels personal, compassionate and transparent to build loyalty and turn purchases into a relationship rooted in trust.
+                                            %p 📋
+                                        %h4 Preparation complexity
+                                        %p Dr. Harvey's products require preparation: mixing, rehydrating, portioning. Users who don't understand how to prepare the food abandon the purchase. Preparation guides need to be central to the product page experience, not an afterthought.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-02.png"
-                                        %h4 Education
-                                        %p The site needs to educate without overwhelming. Clear visuals, step-by-step instructions, and real examples can reduce confusion and help users feel more confident about using the product correctly.
+                                            %p 🤍
+                                        %h4 Emotional authenticity
+                                        %p The brand's handcrafted, family-owned identity is its strongest differentiator. The previous site felt generic and didn't communicate the 40-year story or the personal care behind the products. Redesigning with warmth and authenticity was a core constraint.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
-                                        %h4 Sales Without Gimmicks
-                                        %p The goal was to boost trial sign-ups and sales while staying true to Dr. Harvey's transparent, no-gimmicks approach. This meant designing persuasive flows (like upsells and cart nudges) that felt honest, not manipulative.
+                                            %p 🔍
+                                        %h4 Information overload
+                                        %p Dr. Harvey's has a wide product range across multiple formats and dietary philosophies. Without clear filtering, categorization, and guided discovery, users get overwhelmed and default to familiar brands.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
-                                        %h4 Usability
-                                        %p The site needed a clear, frictionless checkout and account experience on all devices — making it easy to reorder, try new products, or manage auto-ship, without confusing interfaces or hidden barriers.
+                                            %p 💰
+                                        %h4 Trust at a premium price
+                                        %p Dr. Harvey's products cost significantly more than conventional pet food. At that price point, every trust signal matters like vet endorsements, certifications, sourcing transparency, customer reviews.
         .case-study__project-goals
             .anchor#goals
             .container
                 .columns
                     .column.is-3
-                        %h5 Objectives
+                        %p.eyebrow Objectives
                         %h3 Revewing project goals
                     .column.is-8.is-offset-1
-                        %p Dr. Harvey's primary business objectives centered on increasing conversions and building long-term customer loyalty through a shopping experience that felt as honest and handcrafted as the products themselves. Through user research, we identified where those objectives aligned with what pet owners actually needed from the site, and found that the two were closely matched. Customers who understood what they were buying, trusted the brand behind it, and could easily navigate to the right product for their pet were exactly the customers most likely to return.
-                        %p Our goal was to redesign the experience around that intersection: transparent ingredient information, intuitive product discovery, and a tone that educates without overwhelming, turning first-time visitors into confident, informed buyers and long-term advocates for the brand.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/dr-harveys-goals.png"
+                        %p Dr. Harvey's business goals around conversions and repeat purchases aligned closely with what users needed: a site that educates, builds trust, and makes shopping feel easy and authentic. The project focused on designing toward that intersection.
+                        .project-goals__graph
+                            .columns
+                                .column
+                                    .graph__business-title
+                                        %p Business goals
+                                .column
+                                    .graph__mutual-title
+                                        %p Project goals
+                                .column
+                                    .graph__user-title
+                                        %p User goals
+                            .columns.is-vcentered.graph-columns
+                                .column
+                                    .graph__business-goals
+                                        %ul
+                                            %li Increase conversions
+                                            %li Boost repeat loans
+                                            %li Build brand awareness
+                                            %li Grow autoship revenue
+                                            %li Grow upsale revenue
+                                            %li Boost CEO visits
+                                .column
+                                    .graph__mutual-goals
+                                        %ul
+                                            %li Trust and transparency
+                                            %li Seamless shopping
+                                            %li Educated customers
+                                            %li Long-term customers
+                                .column
+                                    .graph__user-goals
+                                        %ul
+                                            %li Shop with confidence
+                                            %li Transparent ingredients
+                                            %li Build trust in brand
+                                            %li Improve pet health
+                                            %li Find the right products
         .case-study__features
             .anchor#features
             .container
                 .columns
                     .column.is-3
-                        %h5 Features
+                        %p.eyebrow Features
                         %h3 Transforming needs into features
                     .column.is-8.is-offset-1
                         %p
                             Based on the user needs identified during the empathizing phase, we decided to focus on a few key features to enhance customer's experience.
-                        .columns.is-multiline.is-variable.is-3-desktop
-                            .column.is-6
-                                .case-study-feature
-                                    %h4 Redesigned Product Pages
-                                    %p Detailed but scannable pages that lead with ingredients, sourcing, and feeding instructions, making it easy for research-driven buyers to find what they need and convert.
-                            .column.is-6
-                                .case-study-feature
-                                    %h4 Trial Landing Page
-                                    %p  dedicated page offering a low-commitment entry point for new buyers, lowering the barrier for first-time customers who are curious but not ready to commit to a full order.
-                            .column.is-6
-                                .case-study-feature
-                                    %h4 Autoship
-                                    %p A seamless recurring order setup that rewards loyal customers with savings, keeping retention high among buyers who already love the product.
-                            .column.is-6
-                                .case-study-feature
-                                    %h4 Cross-Sell Moments
-                                    %p Personalized prompts at the cart and checkout stage that surface complementary products like supplements or treats, increasing average order value without feeling pushy.
+                .columns.is-multiline.is-variable.is-3-desktop
+                    .column.is-3-desktop.is-6-tablet
+                        .case-study-feature
+                            %h4.pink Pet profile quiz
+                            %h3 A guided entry point for first-time buyers
+                            %p An interactive quiz matching a dog's age, size, and dietary needs to the most suitable products. Reduces overwhelm and replaces a complex product range with a clear, personalized starting point.
+                    .column.is-3-desktop.is-6-tablet
+                        .case-study-feature
+                            %h4.green Product detail page
+                            %h3 Ingredients and preparation front and center
+                            %p Ingredient lists, feeding guides, and vet guidance visible before reviews. Directly addresses the most common reason customers leave before purchasing — not knowing how to prepare the food.
+                    .column.is-3-desktop.is-6-tablet
+                        .case-study-feature
+                            %h4.yellow Feeding Guides & Blog
+                            %h3 Build confidence and show up in search
+                            %p Educational content covering holistic nutrition, preparation instructions, ingredient benefits, and transition guidance. Keeps first-time buyers on site instead of sending them elsewhere, and positions Dr. Harvey's as an authority in searches buyers are already making.
+                    .column.is-3-desktop.is-6-tablet
+                        .case-study-feature
+                            %h4.blue Autoship & Subscriptions
+                            %h3 Make it easy to stay a customer
+                            %p Subscription and autoship options on all product pages with a clear savings callout. Directly addresses the biggest friction point for repeat buyers and reduces the chance a loyal customer drifts to a retailer for convenience.
         .case-study__user-flows
             .anchor#flows
             .container
                 .columns
                     .column.is-3
-                        %h5 User Flows
+                        %p.eyebrow User Flows
                         %h3 How users shop for dog food
                     .column.is-8.is-offset-1
                         %p To design an experience that actually works for dog owners, I needed to understand how they shop, what they know walking in, what they're unsure about, and where they might get stuck. Mapping these flows helped ensure every path feels intuitive and leads to the right food for their dog.
@@ -203,7 +358,7 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Design
+                        %p.eyebrow Design
                         %h3 Design System & Style guide
                     .column.is-8.is-offset-1
                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrHaveys-Colors.png"
@@ -212,7 +367,7 @@
             .anchor#highfi
             .hifi-wireframes__main-visual
                 .container
-                    %h5 High-fi Wireframes
+                    %p.eyebrow High-fi Wireframes
                     %h3 Introducing Dr. Harvey's
                     %p A refreshed experience built around clarity, warmth, and ease, guiding pet parents through intuitive paths, straightforward choices, and helpful information exactly when and where they need it.
                     .img__wrapper

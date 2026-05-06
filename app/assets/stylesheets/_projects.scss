@@ -10,14 +10,17 @@ $red: #FF7664;
 $gray: #595959;
 $cxegreen: #4E786A;
 $ipink: #A00251;
+$os-red: #b12024;
+$os-blue: #272f5e;
+$wyndham-red: #9b4939;
 
 
 .project-details__wrapper {
     .project-details__cover-wrapper{
-        height: 400px;
-        border-bottom: 2px solid $black;
+        height: 700px;
+        border-bottom: 3px solid $black;
         @media (max-width: 768px) {
-            height: 300px;
+            height: 400px;
         }
     }
     .project-details__content-wrapper {
@@ -49,6 +52,17 @@ $ipink: #A00251;
                     text-transform: uppercase;
                     font-weight: 700;
                 }
+            }
+        }
+        .eyebrow {
+            font-weight: 800;
+            font-family: "DM Sans", sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 4px;
+            &::before {
+                content: '✦';
+                margin-right: 5px;
             }
         }
         .project-details__gallery-wrapper {
@@ -171,12 +185,20 @@ $ipink: #A00251;
 
 /* Cause x Effect */
 .project__cause-x-effect {
+    border-top: 3px solid $black;
+    .eyebrow {
+        color: $cxegreen;
+        &::before {
+            color: $cxegreen;
+        }
+    }
     .project-details__cover-wrapper {
         background-color: #4E786A;
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-bottom: 3px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover-mobile.png");
         }
@@ -235,12 +257,20 @@ $ipink: #A00251;
 /* intimates */
 
 .project__intimates {
+    border: 3px solid $black;
+    .eyebrow {
+        color: $ipink;
+        &::before {
+            color: $ipink;
+        }
+    }
     .project-details__cover-wrapper {
         background-color: #F2F2F2;
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        color: 3px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover-mobile.png");
         }
@@ -313,15 +343,14 @@ $ipink: #A00251;
 /* social media */
 
 .project__social-media {
+    border-top: 3px solid $black;
     .project-details__cover-wrapper {
         background-color: #E7DDFB;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialmedia-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialscover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        @media (max-width: 768px) {
-            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialmedia-cover-mobile.png");
-        }
+        border-bottom: 3px solid $black;
     }
     .project-details__company-wrapper {
         border-top: 2px solid $black;
@@ -345,11 +374,32 @@ $ipink: #A00251;
             ul {
                 li {
                     margin-top: 16px;
-                    margin-left: 30px;
-                    list-style-type: disc;
-                    list-style-position: outside;
                     strong {
                         text-decoration: underline;
+                    }
+                    &::before {
+                        content: '✦';
+                        margin-right: 5px;
+                    }
+                    &.c1 {
+                        &::before {
+                            color: $green;
+                        }
+                    }
+                    &.c2 {
+                        &::before {
+                            color: $pink;
+                        }
+                    }
+                    &.c3 {
+                        &::before {
+                            color: $blue;
+                        }
+                    }
+                    &.c4 {
+                        &::before {
+                            color: $red;
+                        }
                     }
                 }
             }
@@ -393,14 +443,17 @@ $ipink: #A00251;
 /* wyndham */
 
 .project__wyndham {
+    .eyebrow {
+        color: $wyndham-red;
+        &::before {
+            color: $wyndham-red;
+        }
+    }
     .project-details__cover-wrapper {
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        @media (max-width: 768px) {
-            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover-mobile.png");
-        }
     }
     .project-details__gallery-wrapper {
         .project-details__img-wrapper {
@@ -422,52 +475,78 @@ $ipink: #A00251;
 /* ocean spray */
 
 .project__ocean-spray {
+    border-top: 3px solid $black;
+    .eyebrow {
+        color: $os-red;
+        &::before {
+            color: $os-red;
+        }
+    }
     .project-details__cover-wrapper {
         background-color: #BCD3E7;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/ocean-spray-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Ocean-spray-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        @media (max-width: 768px) {
-            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/ocean-spray-cover-mobile.png");
-        }
     }
     .project-details__gallery-wrapper {
         h3 {
             margin: 0px;
         }
         .project-details__objectives-wrapper {
-            background-color: $beige;
+            background-color: lighten($color: $os-red, $amount: 55);
             padding: 72px 0px;
-            margin: 72px 0px 124px;
+            h3 {
+                color: $os-red;
+            }
             .project-details_objectives {
                 padding: 24px;
-                border: 2px solid #000000;
+                border: 3px solid $os-red;
                 border-radius: 16px;
                 height: 100%;
                 text-align: center;
-                img {
-                    max-width: 40px;
+                svg {
+                    max-width: 50px;
                     display: block;
                     margin: 20px auto;
+                    fill: $os-red;
                 }
                 h4 {
+                    text-transform: uppercase;
                     font-size: 20px;
-                    margin: 16px 10px;
+                    margin-bottom: 12px;
+                    font-weight: 800;
+                    color: $os-red;
+                    font-family: "DM Sans", sans-serif !important;;
                 }
                 p { 
                     max-width: 350px;
                     margin: 0px auto 20px;
+                    color: $os-red;
                 }
 
             }
         }
         .display {
             display: block;
-            max-width: 800px;
             width: 100%;
-            margin: 72px auto 0px;
-
+        }
+        .ron-pon__wrapper {
+            .columns {
+                align-items: stretch;
+            }
+            .img-wrapper__ron-pon-cel {
+                background-color: $os-red;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                .ronpon-mock-img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: unset;
+                    object-fit: cover;
+                }
+            }
         }
         .project-details__img-wrapper {
             position: relative;

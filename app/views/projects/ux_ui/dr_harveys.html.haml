@@ -1,7 +1,6 @@
 .case-study__wrapper.case-study__dr-harveys
     .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/hero-desktop-drh.png", :class => "drh-web__hero-desktop is-hidden-mobile"
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/hero-mobile-drh.png", :class => "drh-web__hero-mobile is-hidden-tablet"
+        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drharveyscover.png", :class => "cover__img drh-web__hero"
     .case-study__content-wrapper
         .container
             .columns.is-centered.is-variable.is-6-desktop
@@ -97,83 +96,243 @@
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 Industry Insights
-                        %h3 Holistic Pet Food
+                        %p.eyebrow Industry Insights
+                        %h3 Holistic Pet Food & Buyer Behavior
                     .column.is-8.is-offset-1-desktop
-                        %p
-                            The global organic and natural pet food market is projected to reach USD 57.2 billion by 2033, up 82% from USD 31.4 billion in 2024. In the U.S., the pet food market generated USD 65.8 billion in 2024, with organic products accounting for USD 8.1 billion.
-                            %span This growth is driven by rising demand for minimally processed, human-grade nutrition that aligns with wellness trends.
-                        %p
-                            %span More pet owners now prioritize whole-food ingredients, clean labels, and sustainability.
-                            While dry food still holds 52% of the market, interest in frozen, raw, and custom meals is increasing,
-                            %span especially among Millennials and Gen Z. Many owners are willing to pay more for premium products,
-                            with average prices per unit rising steadily through 2028.
-                        %p
-                            %span More than half of millennial pet owners (55%) are open to trying holistic and natural supplements for their pets before using conventional medication, 
-                            compared to only 30% of owners aged 35 and older. In the U.S.,
-                            %span 51% of adults aged 18 to 34 are interested in treats with added nutrition, with the same share preferring natural meat treats. Organic pet food also appeals more to higher-income households, 
-                            with 6.3% of households earning USD 100,000 to 149,000 buying organic options compared to just 4% of all dog-owning households. 
-                            %span By 2035, dogs are expected to account for over half of the natural pet food market, driven by their larger nutritional needs, health concerns, and the strong emotional bond with their owners.
-                        %p
-                            Recent search trends reflect this shift:
-                            %span searches for low-calorie pet food rose by 113%, frozen and fresh options by 111%, and organic by 35%. Owners increasingly look for human-grade, non-GMO, sustainably sourced, and clean-label products, reinforcing the focus on healthier, more transparent, and premium pet nutrition.
-                        .case-study__takeaways
-                            .columns.is-multiline.is-variable.is-3-desktop
-                                .column.is-6
-                                    .case-study-quote
-                                        %p Clean-label ingredients are important to 10% of dog owners and 12% of cat owners. Functional ingredients are preferred by 12% of dog owners and 11% of cat owners. 
-                                .column.is-6
-                                    .case-study-quote
-                                        %p Market indicators suggest that dog owners tend to be more willing to spend on premium, organic and limited-ingredient types of food that mirror their own eating habits.
-                                .column.is-6
-                                    .case-study-quote
-                                        %p There is a notable focus on pet well-being, fueling the sales of different pet products, including organic pet food. Owners often prioritize the health of their pets and have a strong desire to help them lead healthy lives.
-                                .column.is-6
-                                    .case-study-quote
-                                        %p From 2025 to 2035, the market will evolve on AI-personalized, sustainability-driven, and functionality-driven natural nutrition platform by leveraging DNA-dedicated pet health applications, vet-moderated personalization and carbon-neutral ingredients.
+                        .industry-insights__section
+                            %p.insights-header The holistic pet food market
+                            %p The natural and holistic pet food space is growing rapidly, driven by rising demand for minimally processed, human-grade nutrition that aligns with wellness trends. More pet owners now prioritize whole-food ingredients, clean labels, and sustainability, with many owners willing to pay more for premium products.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                $57.2B
+                                            %p.bubble-label
+                                                projected global organic and natural pet food market by 2033, up 82% from 2024
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                55%
+                                            %p.bubble-label
+                                                of millennial pet owners open to holistic supplements before conventional medication
+                                    .column
+                                        .insights-bubble.b1
+                                            %p.bubble-number
+                                                60%
+                                            %p.bubble-label
+                                                more likely for Millenials to purchase organic pet food than other generations
+                            .industry-insights__bullets
+                                %ul
+                                    %li.b1
+                                        %span
+                                            This is a growing market with growing expectations.
+                                        A category projected to nearly double by 2033 means more competition arriving alongside more informed buyers. The brand that earns trust digitally wins.
+                                    %li.b1
+                                        %span
+                                            Millennials are values-driven.
+                                        Over half prioritize holistic approaches and are willing to pay more for products that align with their values. They respond to authenticity and proof.
+                                    %li.b1
+                                        %span
+                                            The buyer is already converted. 
+                                        The holistic pet food shopper arrives having done the research. Ingredient transparency and sourcing specificity are the conversion levers. The site's job is to confirm they made the right choice.
+                        .industry-insights__section
+                            %p.insights-header Pet owner digital behavior
+                            %p Understanding how pet owners shop, research, and decide shaped the navigation structure, content hierarchy, and the product quiz feature priority.
+                            .industry-insights__stats
+                                .columns
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                +113%
+                                            %p.bubble-label
+                                                rise in searches for low-calorie pet food. Frozen and fresh options searches are up 111%
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                61%
+                                            %p.bubble-label
+                                                of pet parents prioritize ingredient transparency when choosing pet food
+                                    .column
+                                        .insights-bubble.b2
+                                            %p.bubble-number
+                                                59%
+                                            %p.bubble-label
+                                                of organic and natural pet food purchases in the US are made online, through subscriptions or pet-specific platforms
+                            .industry-insights__bullets
+                                %ul
+                                    %li.b2
+                                        %span
+                                            Decision fatigue is real in this category. 
+                                        With raw, frozen, dehydrated, and fresh options all competing, customers get overwhelmed. A product quiz reduces friction and increases confidence at the moment of purchase.
+                                    %li.b2
+                                        %span
+                                            Ingredient transparency is a baseline expectation.
+                                        Nearly two thirds of pet parents are scrutinizing labels before purchasing. Content hierarchy and ingredient visibility are conversion requirements.
+                                    %li.b2
+                                        %span
+                                            The purchase journey is digital.
+                                        With nearly 6 in 10 natural pet food purchases happening online, the website is the primary storefront.
         .case-study__competitive-audit
             .anchor#audit
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 Competitive Audit
+                        %p.eyebrow Competitive Audit
                         %h3 Understanding the market
                     .column.is-8.is-offset-1-desktop
-                        %p To understand how Dr. Harvey's compares within the pet nutrition and wellness space, we conducted a competitive audit of both direct and indirect competitors. The analysis focused on presentation, features and educational content. This helped reveal common strengths, areas where competitors fell short, and opportunities for Dr. Harvey's to stand out.
-                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/dr-harveys-market.png"
+                        %p Direct and indirect competitors in the holistic and natural pet food space were analyzed across product presentation, ingredient transparency, educational content, and shopping experience.
+                        %p The audit shows that across direct and indirect competitors alike, strong ingredient transparency, smooth product discovery, and educational content have become table stakes in the holistic pet food space. The opportunity for Dr. Harvey's is to close the design and UX gap before the brand's authentic story gets buried by competitors with bigger budgets and cleaner sites.
+                .competitive-audit__table
+                    %table
+                        %thead
+                            %tr
+                                %th Competitor
+                                %th Type
+                                %th Design quality
+                                %th Ingredient Transparency
+                                %th Educational Content
+                                %th Product Discovery
+                                %th Handcrafted Feel
+                        %tbody
+                            %tr
+                                %td The Honest Kitchen
+                                %td Direct
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Good
+                                %td.mid Partial
+                            %tr
+                                %td Open Farm
+                                %td Direct
+                                %td.good Excellent
+                                %td.good Strong
+                                %td.good Strong
+                                %td.good Strong
+                                %td.mid Partial
+                            %tr
+                                %td Chewy
+                                %td Indirect
+                                %td.good Good
+                                %td.mid Partial
+                                %td.weak Weak
+                                %td.good Excellent
+                                %td.weak None
+                            %tr
+                                %td Blue Buffalo
+                                %td Indirect
+                                %td.good Strong
+                                %td.mid Partial
+                                %td.mid Partial
+                                %td.good Strong
+                                %td.weak None
+                .competitive-audit__analysis
+                    .analysis__tier-1  
+                        %p.tier-title   
+                            Tier 1 — Direct Competitors
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.blue
+                                            %p Strongest Rival
+                                        %p.card-title The Honest Kitchen
+                                        %p.card-subtitle thehonestkitchen.com
+                                        %p.card-text
+                                            The closest competitor in positioning. Human-grade ingredients, strong educational content, and a clear brand story. Product pages lead with ingredients and feeding instructions. Their pet quiz is well-executed and reduces decision fatigue effectively.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Sets the standard for a transparent, education-first holistic pet food site. The redesign needs to match this quality while preserving Dr. Harvey's handcrafted, family-owned differentiation.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.green
+                                            %p Best Design Quality
+                                        %p.card-title Open Farm
+                                        %p.card-subtitle openfarmpet.com
+                                        %p.card-text
+                                            The most visually polished site in the competitive set. Clean, modern, premium feel with strong sourcing transparency, with each product links to the specific farm it came from. Strong sustainability narrative throughout.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Premium visual quality and sourcing specificity are not mutually exclusive with warmth. You can look polished and still communicate genuine care.
+                    .analysis__tier-2 
+                        %p.tier-title   
+                            Tier 2 — Indirect Competitors
+                        .columns
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.yellow
+                                            %p Discovery UX Reference
+                                        %p.card-title Chewy
+                                        %p.card-subtitle chewy.com
+                                        %p.card-text
+                                            Excellent product filtering and discovery. Brand feels corporate but the shopping experience is smooth. Lacks meaningful educational content for first-time buyers. The brand site must offer something Chewy cannot like deeper story, preparation guidance, and a direct community relationship.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Chewy dominates discovery but cannot offer a brand relationship. The opportunity is in everything a retailer cannot do: story, education, and community.
+                            .column
+                                .analysis__card
+                                    .card-top
+                                        .card-label.pink
+                                            %p Mass Market Cautionary Tale
+                                        %p.card-title Blue Buffalo
+                                        %p.card-subtitle bluebuffalo.com
+                                        %p.card-text
+                                            The most recognized name in natural pet food, now owned by General Mills. The site is polished with strong product filtering and life-stage navigation, but the corporate ownership shows. Ingredient messaging is repetitive and surface-level, and the handcrafted identity is essentially gone.
+                                    .card-takeaway
+                                        %p
+                                            %span Takeaway:
+                                            Polish increased when it scaled up but the authenticity that holistic buyers respond to got diluted. Dr. Harvey's independence is a direct competitive advantage, but only if the site communicates it clearly.
         .case-study__user-interviews
             .anchor#users
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
-                        %h5 User Research
+                        %p.eyebrow User Research
                         %h3 Understanding users
                     .column.is-8.is-offset-1
-                        %p To better understand the needs and behaviors of users interested in holistic pet nutrition, we analyzed industry research, customer feedback shared with Dr. Harvey's, and insights from past user testing. Here are the main conclusions:
-                        .case-study__takeaways
+                        %p To understand what Dr. Harvey's customers need from the site, industry research, customer feedback, and past user testing were analyzed. Four recurring themes emerged that directly shaped the design direction.
+                        .case-study__interview-quotes
                             .columns.is-multiline.is-variable.is-3-desktop
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Clarity
-                                        %p Users want clear, simple guidance on how to prepare and serve the products. Many feel uncertain about portions, mixing instructions, or how the food fits into their pet's routine.
+                                    .case-study-quote.green
+                                        .case-study__quote-label.c1
+                                            %p Clarity
+                                        %p Preparation confusion is the most commonly cited friction point. Customers who love the product frequently report needing external resources like YouTube videos, forums, or direct customer service to feel confident about portions and preparation before committing to a purchase.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Trustpilot, and pet food forums
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Emotional Connection
-                                        %p Buyers want to feel emotionally connected to the brands they choose. They're drawn to authenticity, care, and shared values around pet wellbeing.
+                                    .case-study-quote.pink
+                                        .case-study__quote-label.c2
+                                            %p Emotional Connection
+                                        %p Reviewers consistently describe Dr. Harvey's in personal, relationship-driven language. The founder story and family-owned identity surface repeatedly as reasons for trust. The gap between that emotional product experience and the website's ability to reflect it is a recurring theme.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Wag, and Hepper
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Ingredients
-                                        %p Users often check the ingredient list first to see what's in the product. This shows the importance of displaying ingredients near the top of the page and keeping them easy to find to build trust.
+                                    .case-study-quote.blue
+                                        .case-study__quote-label.c3
+                                            %p Ingredients
+                                        %p Ingredient quality is the primary purchase driver across reviews. Customers cite whole food ingredients, human-grade sourcing, and the absence of artificial additives as the deciding factors. When ingredient information is hard to find or buried, it stalls the decision entirely.
+                                        .case-study-quote__source
+                                            %p Observed across Chewy reviews, Dog Food Advisor, and Dogster
                                 .column.is-6
-                                    .case-study-quote
-                                        %h4 Trust Signals
-                                        %p Users look for reassurance early in their journey. Visible trust signals such as certifications, vet endorsements, and customer reviews help them feel confident before exploring further.
+                                    .case-study-quote.yellow
+                                        .case-study__quote-label.c4
+                                            %p Trust Signals
+                                        %p Vet guidance comes up frequently in the context of specialized diets, kidney disease, and chronic conditions. Customers with health-specific needs actively look for professional endorsement or credentials before spending at this price point.
+                                        .case-study-quote__source
+                                            %p Observed across Trustpilot, Pet Health Pros, and Hepper
         .case-study__problem-statement
             .anchor#problem
             .container
                 .columns
                     .column.is-3
-                        %h5 Challenges
+                        %p.eyebrow Challenges
                         %h3 Problem Statement
                     .column.is-8.is-offset-1-desktop
                         %p Many shoppers do not fully understand what holistic pet food is or why it costs more than conventional options. Dr. Harvey's products are not an impulse buy but an intentional investment in a pet's long-term health, usually chosen after careful research and consideration. The challenge was to redesign the website to communicate this value clearly while keeping the brand's authentic, handcrafted feel. The site needed to make ingredient information, feeding guides, and educational content easy to find and search-friendly, helping new customers feel informed and confident. At the same time, the user experience had to support higher conversions and repeat purchases through clear, honest flows and thoughtful upsells, never resorting to pushy tactics. Finally, the mobile experience needed to be seamless, so loyal customers could easily reorder and manage their accounts anytime, anywhere.
@@ -182,52 +341,723 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Challenges
-                        %h3 Main Concerns
+                        %p.eyebrow Main Concerns
+                        %h3 Key Challenges
                     .column.is-8.is-offset-1-desktop
                         .main-concerns__concerns-wrapper
+                            %p Four recurring challenges from user research and competitive analysis shaped the design priorities for the redesign.
                             .columns.is-multiline.is-variable.is-8-desktop
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/heart-icon.png"
-                                        %h4 Authenticity
-                                        %p The design needed to feel warm, personal, and craft-inspired, not overly slick or generic, helping create a tone that feels personal, compassionate and transparent to build loyalty and turn purchases into a relationship rooted in trust.
+                                            %p 📋
+                                        %h4 Preparation complexity
+                                        %p Dr. Harvey's products require preparation: mixing, rehydrating, portioning. Users who don't understand how to prepare the food abandon the purchase. Preparation guides need to be central to the product page experience, not an afterthought.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-02.png"
-                                        %h4 Education
-                                        %p The site needs to educate without overwhelming. Clear visuals, step-by-step instructions, and real examples can reduce confusion and help users feel more confident about using the product correctly.
+                                            %p 🤍
+                                        %h4 Emotional authenticity
+                                        %p The brand's handcrafted, family-owned identity is its strongest differentiator. The previous site felt generic and didn't communicate the 40-year story or the personal care behind the products. Redesigning with warmth and authenticity was a core constraint.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-03.png"
-                                        %h4 Sales Without Gimmicks
-                                        %p The goal was to boost trial sign-ups and sales while staying true to Dr. Harvey's transparent, no-gimmicks approach. This meant designing persuasive flows (like upsells and cart nudges) that felt honest, not manipulative.
+                                            %p 🔍
+                                        %h4 Information overload
+                                        %p Dr. Harvey's has a wide product range across multiple formats and dietary philosophies. Without clear filtering, categorization, and guided discovery, users get overwhelmed and default to familiar brands.
                                 .column.is-6
                                     .main-concerns__concerns-box
                                         .concerns-box__img-wrapper
-                                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/concerns-icon-01.png"
-                                        %h4 Usability
-                                        %p The site needed a clear, frictionless checkout and account experience on all devices — making it easy to reorder, try new products, or manage auto-ship, without confusing interfaces or hidden barriers.
+                                            %p 💰
+                                        %h4 Trust at a premium price
+                                        %p Dr. Harvey's products cost significantly more than conventional pet food. At that price point, every trust signal matters like vet endorsements, certifications, sourcing transparency, customer reviews.
         .case-study__personas
             .anchor#personas
             .container
                 .case-study__personas-text
-                    %h5 Users
+                    %p.eyebrow Users
                     %h3 Personas
-                    %p Through our research, we developed four core user personas that represent different approaches to feeding pets holistically. While their lifestyles and experience levels vary, they all value transparency, real ingredients, and guidance that helps them feel confident they're making the right choice for their dogs.
+                    %p Four personas were developed from user research, industry data, and customer feedback to represent the primary Dr. Harvey's buyer segments.
             .swiper.personasSwiper
                 .swiper-wrapper
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/personas-drh-01.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.jpeg", :class => "emma-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The Health-Conscious Pet Parent
+                                    %p.swiper-persona__description
+                                        Emma is a 31-year-old wellness blogger from Boulder who applies the same ingredient standards to her dogs' food that she applies to her own. She researches extensively before buying and is deeply skeptical of vague marketing language.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Confirm all ingredients are clean and human-grade
+                                                %li Find clear preparation and feeding instructions
+                                                %li Understand which product is right for each dog
+                                                %li Buy confidently without feeling sold to
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Ingredient lists hard to find or vaguely worded
+                                                %li No clear feeding guide for different dog sizes
+                                                %li Preparation instructions buried or missing
+                                                %li Site feels generic, not aligned with brand values
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            31
+                                        %p.demographics__line
+                                            %span Location:
+                                            Boulder, CO
+                                        %p.demographics__line
+                                            %span Job:
+                                            Wellness Blogger, Yoga Instructor
+                                        %p.demographics__line
+                                            %span Pets:
+                                            2 dogs
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p New customer, high intent. Will become a loyal repeat buyer if trust is established and information is clear.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Pinterest
+                                            %li Yuka
+                                            %li AllTrails
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/personas-drh-02.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.jpeg", :class => "david-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Senior Dog Owner
+                                    %p.swiper-persona__description
+                                        David is a 58-year-old retired teacher from Portland whose 11-year-old Lab mix has been having joint and digestive issues. His vet recommended a whole-food diet. He is not a natural food evangelist, he is a concerned pet owner following professional advice and feels overwhelmed by the options.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Find a product suited for senior dogs
+                                                %li Understand how to transition from kibble
+                                                %li See vet or professional endorsement
+                                                %li Get straightforward preparation instructions
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Too many products with no filter for life stage
+                                                %li No transition guide for switching food types
+                                                %li Preparation instructions assume prior knowledge
+                                                %li Hard to find professional endorsements
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            58
+                                        %p.demographics__line
+                                            %span Location:
+                                            Portland, OR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Retired Teacher
+                                        %p.demographics__line
+                                            %span Pets:
+                                            1 senior Lab mix
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p New customer referred by vet. Needs extensive guidance before purchasing. Professional credibility is the primary trust driver.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Facebook
+                                            %li Google Search
+                                            %li Chewy Reviews
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/personas-drh-03.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.jpeg", :class => "sarah-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Loyal Repeat Buyer
+                                    %p.swiper-persona__description
+                                        Sarah is a 44-year-old marketing manager from Chicago who has been buying Dr. Harvey's for three years. She knows the products well and has a set routine. Her main friction points are around reordering, she wants a faster checkout, autoship options, and to easily discover new products without researching from scratch.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Reorder quickly without multiple clicks
+                                                %li Set up autoship for her regular products
+                                                %li Discover new products that fit her routine
+                                                %li Feel recognized as a loyal customer
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li No autoship or subscription option
+                                                %li Reorder process requires too many steps
+                                                %li No loyalty program or recognition
+                                                %li Discovering new products is as hard as the first time
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            44
+                                        %p.demographics__line
+                                            %span Location:
+                                            Chicago, IL
+                                        %p.demographics__line
+                                            %span Job:
+                                            Marketing Manager
+                                        %p.demographics__line
+                                            %span Pets:
+                                            2 cats, 1 dog
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p 3-year loyal customer and active brand advocate. High churn risk if the reorder experience remains friction-heavy.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Spotify
+                                            %li Amazon
+                                            %li Whole Foods App
                     .swiper-slide
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/personas-drh-04.png"
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.jpeg", :class => "jade-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 04
+                                    %p.swiper-persona__name
+                                        The First-Time Dog Owner
+                                    %p.swiper-persona__description
+                                        Jade is a 24-year-old graphic designer from Austin who just adopted her first dog, a rescue mix named Miso, six months after moving into her own apartment. She wants to feed Miso well and has seen Dr. Harvey's on TikTok and Reddit, but she doesn't fully understand what dehydrated food means or how to prepare it. She's eager to do the right thing but easily overwhelmed by options and jargon.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Understand what dehydrated food actually is
+                                                %li Find a simple starter product with clear prep instructions
+                                                %li Feel confident she is making a good choice for Miso
+                                                %li Get guidance without having to research for hours
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Too much jargon with no plain-language explanation
+                                                %li No beginner-friendly entry point or starter guide
+                                                %li Preparation instructions assume prior knowledge
+                                                %li Hard to know which product is right for a young dog
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            24
+                                        %p.demographics__line
+                                            %span Location:
+                                            Austin, TX
+                                        %p.demographics__line
+                                            %span Job:
+                                            Graphic Designer
+                                        %p.demographics__line
+                                            %span Pets:
+                                            1 dog
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p Discovered via TikTok and Reddit. High curiosity, low confidence. The pet quiz is her ideal entry point, she needs to be guided.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Tiktok
+                                            %li Reddit
+                                            %li Instagram
+                                            %li Youtube
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.jpeg", :class => "emma-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 01
+                                    %p.swiper-persona__name
+                                        The Health-Conscious Pet Parent
+                                    %p.swiper-persona__description
+                                        Emma is a 31-year-old wellness blogger from Boulder who applies the same ingredient standards to her dogs' food that she applies to her own. She researches extensively before buying and is deeply skeptical of vague marketing language.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Confirm all ingredients are clean and human-grade
+                                                %li Find clear preparation and feeding instructions
+                                                %li Understand which product is right for each dog
+                                                %li Buy confidently without feeling sold to
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Ingredient lists hard to find or vaguely worded
+                                                %li No clear feeding guide for different dog sizes
+                                                %li Preparation instructions buried or missing
+                                                %li Site feels generic, not aligned with brand values
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            31
+                                        %p.demographics__line
+                                            %span Location:
+                                            Boulder, CO
+                                        %p.demographics__line
+                                            %span Job:
+                                            Wellness Blogger, Yoga Instructor
+                                        %p.demographics__line
+                                            %span Pets:
+                                            2 dogs
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p New customer, high intent. Will become a loyal repeat buyer if trust is established and information is clear.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Pinterest
+                                            %li Yuka
+                                            %li AllTrails
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.jpeg", :class => "david-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 02
+                                    %p.swiper-persona__name
+                                        The Senior Dog Owner
+                                    %p.swiper-persona__description
+                                        David is a 58-year-old retired teacher from Portland whose 11-year-old Lab mix has been having joint and digestive issues. His vet recommended a whole-food diet. He is not a natural food evangelist, he is a concerned pet owner following professional advice and feels overwhelmed by the options.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Find a product suited for senior dogs
+                                                %li Understand how to transition from kibble
+                                                %li See vet or professional endorsement
+                                                %li Get straightforward preparation instructions
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Too many products with no filter for life stage
+                                                %li No transition guide for switching food types
+                                                %li Preparation instructions assume prior knowledge
+                                                %li Hard to find professional endorsements
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            58
+                                        %p.demographics__line
+                                            %span Location:
+                                            Portland, OR
+                                        %p.demographics__line
+                                            %span Job:
+                                            Retired Teacher
+                                        %p.demographics__line
+                                            %span Pets:
+                                            1 senior Lab mix
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                                .dot.empty
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p New customer referred by vet. Needs extensive guidance before purchasing. Professional credibility is the primary trust driver.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Facebook
+                                            %li Google Search
+                                            %li Chewy Reviews
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.jpeg", :class => "sarah-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 03
+                                    %p.swiper-persona__name
+                                        The Loyal Repeat Buyer
+                                    %p.swiper-persona__description
+                                        Sarah is a 44-year-old marketing manager from Chicago who has been buying Dr. Harvey's for three years. She knows the products well and has a set routine. Her main friction points are around reordering, she wants a faster checkout, autoship options, and to easily discover new products without researching from scratch.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Reorder quickly without multiple clicks
+                                                %li Set up autoship for her regular products
+                                                %li Discover new products that fit her routine
+                                                %li Feel recognized as a loyal customer
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li No autoship or subscription option
+                                                %li Reorder process requires too many steps
+                                                %li No loyalty program or recognition
+                                                %li Discovering new products is as hard as the first time
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            44
+                                        %p.demographics__line
+                                            %span Location:
+                                            Chicago, IL
+                                        %p.demographics__line
+                                            %span Job:
+                                            Marketing Manager
+                                        %p.demographics__line
+                                            %span Pets:
+                                            2 cats, 1 dog
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p 3-year loyal customer and active brand advocate. High churn risk if the reorder experience remains friction-heavy.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Instagram
+                                            %li Spotify
+                                            %li Amazon
+                                            %li Whole Foods App
+                    .swiper-slide
+                        .columns.is-gapless.is-multiline
+                            .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
+                                .swiper-persona__img
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.jpeg", :class => "jade-img"
+                            .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
+                                .swiper-persona__information
+                                    %p.swiper-persona__eyebrow
+                                        Persona 04
+                                    %p.swiper-persona__name
+                                        The First-Time Dog Owner
+                                    %p.swiper-persona__description
+                                        Jade is a 24-year-old graphic designer from Austin who just adopted her first dog, a rescue mix named Miso, six months after moving into her own apartment. She wants to feed Miso well and has seen Dr. Harvey's on TikTok and Reddit, but she doesn't fully understand what dehydrated food means or how to prepare it. She's eager to do the right thing but easily overwhelmed by options and jargon.
+                                    .swiper-persona__bullets
+                                        .swiper-persona__goals
+                                            %p.goals__title Goals
+                                            %ul
+                                                %li Understand what dehydrated food actually is
+                                                %li Find a simple starter product with clear prep instructions
+                                                %li Feel confident she is making a good choice for Miso
+                                                %li Get guidance without having to research for hours
+                                        .swiper-persona__frustrations
+                                            %p.frustrations__title Frustrations
+                                            %ul
+                                                %li Too much jargon with no plain-language explanation
+                                                %li No beginner-friendly entry point or starter guide
+                                                %li Preparation instructions assume prior knowledge
+                                                %li Hard to know which product is right for a young dog
+                            .column.is-4-tablet.is-4-desktop.is-12
+                                .swiper-persona__summary
+                                    .swiper-persona__demographics
+                                        %p.demographics__title
+                                            Demographics
+                                        %p.demographics__line
+                                            %span Age:
+                                            24
+                                        %p.demographics__line
+                                            %span Location:
+                                            Austin, TX
+                                        %p.demographics__line
+                                            %span Job:
+                                            Graphic Designer
+                                        %p.demographics__line
+                                            %span Pets:
+                                            1 dog
+                                    .swiper-persona__technology
+                                        %p.technology__title
+                                            Technology
+                                        .tech-row
+                                            %p.technology__label Mobile
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Online Shopping
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                        .tech-row
+                                            %p.technology__label Social Media
+                                            .tech-dots
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.filled
+                                                .dot.empty
+                                    .swiper-persona__relationship
+                                        %p.relationship__title
+                                            Brand relationship
+                                        .relationship__summary
+                                            %p Discovered via TikTok and Reddit. High curiosity, low confidence. The pet quiz is her ideal entry point, she needs to be guided.
+                                    .swiper-persona__platforms
+                                        %p.platform__title
+                                            Favorite platforms
+                                        %ul
+                                            %li Tiktok
+                                            %li Reddit
+                                            %li Instagram
+                                            %li Youtube
                 .swiper-button-next
                 .swiper-button-prev
         .case-study__project-goals
@@ -235,115 +1065,253 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Objectives
+                        %p.eyebrow Objectives
                         %h3 Revewing project goals
                     .column.is-8.is-offset-1
-                        %p Dr. Harvey's primary business objectives centered on increasing conversions and building long-term customer loyalty through a shopping experience that felt as honest and handcrafted as the products themselves. Through user research, we identified where those objectives aligned with what pet owners actually needed from the site, and found that the two were closely matched. Customers who understood what they were buying, trusted the brand behind it, and could easily navigate to the right product for their pet were exactly the customers most likely to return.
-                        %p Our goal was to redesign the experience around that intersection: transparent ingredient information, intuitive product discovery, and a tone that educates without overwhelming, turning first-time visitors into confident, informed buyers and long-term advocates for the brand.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/dr-harveys-goals.png"
+                        %p Dr. Harvey's business goals around conversions and repeat purchases aligned closely with what users needed: a site that educates, builds trust, and makes shopping feel easy and authentic. The project focused on designing toward that intersection.
+                        .project-goals__graph
+                            .columns
+                                .column
+                                    .graph__business-title
+                                        %p Business goals
+                                .column
+                                    .graph__mutual-title
+                                        %p Project goals
+                                .column
+                                    .graph__user-title
+                                        %p User goals
+                            .columns.is-vcentered.graph-columns
+                                .column
+                                    .graph__business-goals
+                                        %ul
+                                            %li Increase conversions
+                                            %li Boost repeat loans
+                                            %li Build brand awareness
+                                            %li Grow autoship revenue
+                                            %li Grow upsale revenue
+                                            %li Boost CEO visits
+                                .column
+                                    .graph__mutual-goals
+                                        %ul
+                                            %li Trust and transparency
+                                            %li Seamless shopping
+                                            %li Educated customers
+                                            %li Long-term customers
+                                .column
+                                    .graph__user-goals
+                                        %ul
+                                            %li Shop with confidence
+                                            %li Transparent ingredients
+                                            %li Build trust in brand
+                                            %li Improve pet health
+                                            %li Find the right products
         .case-study__brainstorming
             .anchor#brainstorming
             .container
                 .columns
                     .column.is-3
-                        %h5 Brainstorming
+                        %p.eyebrow Brainstorming
                         %h3 Organizing Ideas and the solution
                     .column.is-8.is-offset-1
                         %p
-                            Considering our research and the goals and frustrations of our personas, I categorized the insights into four spectrums to aid in generating ideas.
+                            Considering the research and the goals and frustrations of the personas, the insights were categorized into four areas to aid in generating ideas.
                 .columns
                     .column.is-3
                         %h4 Opportunities
                         .brainstorming-card.opportunities
-                            %p Clean ingredients
+                            %p Clean, human-grade ingredients as a core differentiator
                         .brainstorming-card.opportunities
-                            %p Transparency
+                            %p 40-year family-owned story with genuine brand heritage
                         .brainstorming-card.opportunities
-                            %p Talk with customer service directly, no automated services
+                            %p No major competitor with both premium quality and authentic warmth
                         .brainstorming-card.opportunities
-                            %p Try a free trial, no commitment, one time shipping charge only
+                            %p Vet-endorsed products that can be foregrounded as trust signals
                         .brainstorming-card.opportunities
-                            %p Quiz for best products for pets
+                            %p Growing Gen Z first-time pet owner audience
                         .brainstorming-card.opportunities
-                            %p Customizable recipes
-                        .brainstorming-card.opportunities
-                            %p Great reviews for dogs with certain illnesses
-                        .brainstorming-card.opportunities
-                            %p certifications from accredited organizations
-                        .brainstorming-card.opportunities
-                            %p easy to build a bowl
-                        .brainstorming-card.opportunities
-                            %p researched backed, created in collaboration with vets
+                            %p Autoship and loyalty program as untapped retention tools
                     .column.is-3
                         %h4 Pain Points
                         .brainstorming-card.pain-points
-                            %p Lack of understanding of products, their differences and how to prepare them
+                            %p Preparation instructions missing or buried on product pages
                         .brainstorming-card.pain-points
-                            %p Lack of information about ingredient benefits
+                            %p Ingredients hard to find and vaguely described
                         .brainstorming-card.pain-points
-                            %p Information overload
+                            %p No beginner-friendly entry point for first-time owners
                         .brainstorming-card.pain-points
-                            %p Difficult to browse products with no filters
+                            %p No recommendation tool for pairing products together
                         .brainstorming-card.pain-points
-                            %p Inconvenient reordering, no autoship or loyalty program
+                            %p Trust signals not visible above the fold
                         .brainstorming-card.pain-points
                             %p No blog for easy discovery of the brand
                         .brainstorming-card.pain-points
                             %p Slow loading times
                         .brainstorming-card.pain-points
-                            %p Appealing to emotion but not enough to factual benefits
-                        .brainstorming-card.pain-points
-                            %p No research backing food is displayed anywhere
+                            %p No filters by age or needs
                     .column.is-3
                         %h4 Considerations
                         .brainstorming-card.considerations
-                            %p First time buyers lack information about the food and its benefits and will do extensive research before buying so list objective benefits
+                            %p Visual identity must feel warm and handcrafted, not clinical
                         .brainstorming-card.considerations
-                            %p People will focus on clean ingredients and expect them to be listed transparently
+                            %p Copywriting and visual assets handled by client team
                         .brainstorming-card.considerations
-                            %p Users buy primarily on mobile
+                            %p Product range is wide and complex, filtering is critical
                         .brainstorming-card.considerations
-                            %p Brand wants to remain authentic to its handcrafted, holistic and family owned look
+                            %p Premium price point requires premium digital quality
                         .brainstorming-card.considerations
-                            %p No aggressive countdowns or misleading tactics that could damage trust.
+                            %p Avoid aggressive sales tactics, authenticity over conversion pressure
                         .brainstorming-card.considerations
-                            %p Users will google ingredients, brands and research about pet food because of this there should be more focus on SEO.
+                            %p Ingredient-level and condition-specific SEO ensures Dr. Harvey's appears during the research phase
                     .column.is-3
                         %h4 Solutions
                         .brainstorming-card.solutions
-                            %p Communicate value clearly
+                            %p Ingredient lists and preparation guides prominent on every product page
                         .brainstorming-card.solutions
-                            %p Make ingredient lists, feeding guides, and educational resources easy to find
+                            %p Pet profile quiz as the primary entry point for new buyers
                         .brainstorming-card.solutions
-                            %p Show real ingredient sourcing, certifications, and product details to strengthen credibility
+                            %p Plain-language beginner guide for first-time dehydrated food buyers
                         .brainstorming-card.solutions
-                            %p Build upsell popup or section tailored to specific diets based on customer choices
+                            %p Founder story and brand heritage on homepage and about page
                         .brainstorming-card.solutions
-                            %p Build a blog for SEO
+                            %p Autoship and subscription option on all product pages
                         .brainstorming-card.solutions
-                            %p Use blog to display research efforts
+                            %p Vet endorsements and certifications visible above the fold
                         .brainstorming-card.solutions
-                            %p Implement a flexible autoship subscription
-                        .brainstorming-card.solutions
-                            %p Create page that shows the value and sourcing of the food
+                            %p Suggestions of good product pairings on product pages 
         .case-study__features
             .anchor#features
             .container
                 .columns
                     .column.is-3
-                        %h5 Feature Roadmap
-                        %h3 Transforming needs into features
+                        %p.eyebrow Feature Roadmap
+                        %h3 Transforming Needs into Features
                     .column.is-8.is-offset-1
                         %p
-                            Informed by user behaviors, goals, and pain points, this feature set prioritizes experiences that reduce friction, build trust, and make holistic pet food easier to understand and shop for.
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/features-drh.png"
+                            Informed by user needs, pain points, and project goals, this feature set prioritizes experiences that reduce friction, build trust, and make holistic pet food easier to understand and shop for.
+                .features__features-table
+                    %table
+                        %thead
+                            %tr
+                                %th Page / Feature
+                                %th Priority
+                                %th Description
+                                %th Goal
+                        %tbody
+                            %tr
+                                %td Homepage
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Welcoming homepage communicating brand mission and real-food philosophy. Highlights featured products, displays trust signals, shows the pet profile quiz for easy access, and includes customer reviews above the fold.
+                                %td.goal
+                                    %span.trust Build Trust
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Navigation
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Intuitive navigation browsable by pet type, size or age, and dietary needs. Clear path to the pet quiz from the nav. No more than two levels deep.
+                                %td.goal
+                                    %span.nav Easy Navigation
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Pet profile quiz
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td An interactive quiz matching a dog's age, size, and dietary needs with the most suitable food options. The primary entry point for first-time and overwhelmed buyers.
+                                %td.goal
+                                    %span.nav Easy Navigation
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Product collection
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Product collection page with robust filters by pet type, life stage, dietary need, and format. Quick-shop functionality and all flavor options visible within each product card.
+                                %td.goal
+                                    %span.nav Easy Navigation
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Product detail page
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td Ingredients listed prominently at the top. Preparation and feeding guide immediately below. Benefits, certifications, and vet guidance visible before reviews. Autoship option alongside one-time purchase.
+                                %td.goal
+                                    %span.trust Build Trust
+                                    %br
+                                    %span.sales Sales
+                                    %br
+                                    %span.education Education
+                            %tr
+                                %td Brand story page
+                                %td.phase
+                                    %span.p1 P1 — Must Have
+                                %td A page communicating the 40-year company history, founding philosophy, ingredient standards, sourcing commitment, and family-owned values.
+                                %td.goal
+                                    %span.trust Build Trust
+                            %tr
+                                %td Beginner's guide
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td A plain-language guide explaining what dehydrated food is, how to prepare it, how to transition from kibble, and what to expect in the first weeks. Directly addresses the biggest barrier for first-time buyers.
+                                %td.goal
+                                    %span.education Education
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Autoship and subscriptions
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Subscription and autoship options on all product pages with clear savings callout. Directly addresses the biggest friction point for repeat buyers.
+                                %td.goal
+                                    %span.retention Retention
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Personalized product pairings
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Based on a product a customer is viewing or has purchased before, the site surfaces complementary products like supplements, toppers, or treats that work well together. Reduces decision fatigue for returning buyers and drives discovery of the wider product range.
+                                %td.goal
+                                    %span.retention Retention
+                                    %br
+                                    %span.sales Sales
+                            %tr
+                                %td Feeding guides and blog
+                                %td.phase
+                                    %span.p2 P2 — Good to Have
+                                %td Educational content on holistic nutrition, feeding guidance, preparation instructions, and ingredient benefits. Positions Dr. Harvey's as an authority in the space.
+                                %td.goal
+                                    %span.education Education
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Ingredient explorer
+                                %td.phase
+                                    %span.p3 P3 — Nice to Have
+                                %td Clickable ingredient definitions explaining what each ingredient is, why it's included, where it's sourced from, and what benefit it provides.
+                                %td.goal
+                                    %span.education Education
+                                    %br
+                                    %span.trust Build Trust
+                            %tr
+                                %td Loyalty program
+                                %td.phase
+                                    %span.p3 P3 — Nice to Have
+                                %td A rewards program letting customers earn points through purchases and referrals, encouraging long-term engagement and word of mouth.
+                                %td.goal
+                                    %span.retention Retention
+                                    %br
+                                    %span.sales Sales
         .case-study__user-flows
             .anchor#flows
             .container
                 .columns
                     .column.is-3
-                        %h5 User Flows
-                        %h3 How users shop for dog food
+                        %p.eyebrow User Flows
+                        %h3 How Users Shop for Dog Food
                     .column.is-8.is-offset-1
                         %p To design an experience that actually works for dog owners, I needed to understand how they shop, what they know walking in, what they're unsure about, and where they might get stuck. Mapping these flows helped ensure every path feels intuitive and leads to the right food for their dog.
                         %h4 Ways to Start Shopping
@@ -358,7 +1326,7 @@
                         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/buy-again-flow.png", :class => "user-flows__img"
         .case-study__lofi-wireframes
             .anchor#lowfi
-            %h5 Design
+            %p.eyebrow Design
             %h3 Lo-fi Wireframes
             = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Wireframes-drh.png"
         .case-study__desing-system
@@ -366,7 +1334,7 @@
             .container
                 .columns
                     .column.is-3
-                        %h5 Design
+                        %p.eyebrow Design
                         %h3 Design System & Style guide
                     .column.is-8.is-offset-1
                         =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrHaveys-Colors.png"
@@ -375,7 +1343,7 @@
             .anchor#highfi
             .hifi-wireframes__main-visual
                 .container
-                    %h5 High-fi Wireframes
+                    %p.eyebrow High-fi Wireframes
                     %h3 Introducing Dr. Harvey's
                     %p A refreshed experience built around clarity, warmth, and ease, guiding pet parents through intuitive paths, straightforward choices, and helpful information exactly when and where they need it.
                     .img__wrapper

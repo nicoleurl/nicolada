@@ -33,7 +33,7 @@ html,
     }
 
     p {
-        font-family: "Inter", sans-serif;
+        font-family: "DM Sans", sans-serif;
         font-weight: 400;
     }
     a {
@@ -50,7 +50,7 @@ html,
       .btn__wrapper {
         text-align: center;
         .btn {
-            font-family: "Inter", sans-serif;
+            font-family: "DM Sans", sans-serif;
             text-decoration: none;
             font-weight: 600;
             display: inline-block;
@@ -506,47 +506,28 @@ header {
 .about-home__wrapper {
     background-color: $beige;
     border-bottom: 3px solid $black;
-    .image-wrapper {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        border-left: 3px solid $black;
-        img {
-            display: block;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            @media (max-width: 768px) {
-                background-position: 50% 350px;
-                border-top: 3px solid $black;
-            }
-        }
-    }
+    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/About-BG1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .about-home__text-wrapper {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 500px;
-        padding: 32px;
-        margin-left: 8%;
+        padding: 120px 32px;
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+        h3 {
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
         p {
-            max-width: 500px;
             color: #000;
+            margin-top: 0px;
         }
         .btn__wrapper {
-            text-align: left;
-        }
-        @media (max-width: 1120px) {
-            margin-left: 0px;
+            text-align: center;
         }
         @media (max-width: 768px) {
-            border-right: none;
-            justify-content: flex-start;
-            padding: 32px;
-            height: 100%;
-            p {
-                max-width: 100%;
-            }
+            padding: 72px 32px;
         }
     }
 }
