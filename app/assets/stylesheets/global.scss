@@ -11,6 +11,11 @@ $gray: #8E8E8E;
 
 
 /* global styles */
+
+:root {
+    color-scheme: only light;
+}
+
 html,    
     body {
     scroll-behavior: smooth;
