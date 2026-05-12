@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light" data-color-scheme="light">
   <head>
     <title><%= content_for(:title) || "Nicolada" %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light only">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#fff9ef">
     <meta property="og:image" content="https://i.ibb.co/q1rc5gB/nicolada-logo-meta.png"/>
@@ -23,7 +24,7 @@
     <link rel="apple-touch-icon" href="/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css", "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css", "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200", "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css", "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css", "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200", "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
