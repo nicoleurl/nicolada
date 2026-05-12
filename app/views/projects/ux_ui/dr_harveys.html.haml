@@ -1587,9 +1587,10 @@
                                 =image_tag "arrow-right", :class => "arrow-right"
 %script{src: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"}
 :javascript
-    document.addEventListener('turbo:load', function() {
+    function initSwiper() {
         var swiperEl = document.querySelector('.personasSwiper')
         if (!swiperEl) return
+        if (swiperEl.swiper) return
         requestAnimationFrame(function() {
             new Swiper('.personasSwiper', {
                 slidesPerView: 1.5,
@@ -1605,4 +1606,6 @@
                 observeParents: true,
             })
         })
-    })
+    }
+    document.addEventListener('turbo:load', initSwiper)
+    initSwiper()

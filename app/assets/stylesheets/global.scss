@@ -226,7 +226,7 @@ header {
 
 
 .footer {
-    background-color: $beige;
+    background-color: $beige !important;
     overflow: hidden;
     border-top: 3px solid black;
     h6 {
@@ -280,14 +280,14 @@ header {
     overflow: hidden;
     border-bottom: 3px solid $black;
     background-color: $beige;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-bg.png");
+    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-background-desktop.webp");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
     @media (max-width: 1023px) {
         padding: 32px;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-bg-touch.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-bg-touch.webp");
     }
     .hero__text {
         padding: 240px 0px 50px 0px;
@@ -522,7 +522,7 @@ header {
 .about-home__wrapper {
     background-color: $beige;
     border-bottom: 3px solid $black;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/About-BG1.png");
+    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/About-BG.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -577,13 +577,13 @@ header {
 .contact-home__wrapper {
     overflow: hidden;
     padding: 72px 0px;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg.png");
+    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg.webp");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
     @media (max-width: 1023px) {
         padding: 32px;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg-touch.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg-touch.webp");
     }
     @media (max-width: 768px) {
         padding: 32px;
