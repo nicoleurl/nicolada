@@ -1,3 +1,5 @@
+- @load_swiper = true
+
 .case-study__wrapper.case-study__dr-harveys
     .case-study__cover-wrapper
         = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drharveyscover.png", :class => "cover__img drh-web__hero"
@@ -1585,7 +1587,7 @@
                                 %span
                                     Next: Island Finance
                                 =image_tag "arrow-right", :class => "arrow-right"
-%script{src: "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"}
+
 :javascript
     function initSwiper() {
         var swiperEl = document.querySelector('.personasSwiper')
