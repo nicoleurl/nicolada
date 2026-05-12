@@ -497,6 +497,7 @@ header {
                 color: $black;
                 display: inline-block;
                 padding: 0px 8px;
+                margin: 0px 8px;
                 @media (max-width: 768px) {
                     font-size: 24px;
                 }
@@ -504,7 +505,9 @@ header {
             span {
                 svg {
                     max-width: 25px;
+                    max-width: 25px;
                     display: inline-block;
+                    margin-top: 2px;
                     @media (max-width: 768px) {
                         max-width: 16px;
                     }
