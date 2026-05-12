@@ -33,7 +33,10 @@
                         %p.case-study__introduction
                             In order to maintain their position as a top personal loan company, Island Finance recognized the need to update their website to create a digital product that represents their values and vision and adapted their service to present-day needs.
                         %p.case-study__introduction
-                            Our goal with this project was to create a seamless and intuitive website to increase conversion and optimize customers’ existing experience based on user research and UX opportunities.
+                            Our goal with this project was to create a seamless and intuitive website to increase conversion and optimize customers' existing experience based on user research and UX opportunities.
+                        %p.case-study__introduction
+                            %strong Note:
+                            This project was completed independently. Research, personas, and designs are my own work and not affiliated with or commissioned by Island Finance. Some design elements were implemented; the majority shown are exploratory concepts.
         .case-study__short-introduction
             .container
                 .short-introduction__section
@@ -384,11 +387,14 @@
                     .column.is-8.is-offset-1
                         %p To truly support users, we needed to understand how they actually got things done, how they navigate, what they expect, and where they might hesitate. Mapping their steps helped us design flows that feel natural, supportive, and frustration-free.
                         %h4 Applying for a loan through nav bar button:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-1.png", :class => "user-flows__img"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-1.png", :class => "user-flows__img", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
                         %h4 Applying for a loan through the calculator:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-2.png", :class => "user-flows__img"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-2.png", :class => "user-flows__img", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
                         %h4 Making a payment:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.png", :class => "user-flows__img"
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.png", :class => "user-flows__img", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
         .case-study__desing-system
             .anchor#design
             .container
@@ -397,8 +403,10 @@
                         %p.eyebrow Design
                         %h3 Design System & Style guide
                     .column.is-8.is-offset-1
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.png"
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/style-guide-if.png"
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.png", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/style-guide-if.png", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
         .case-study__hifi-wireframes
             .anchor#highfi
             .hifi-wireframes__main-visual
@@ -418,7 +426,8 @@
                     .columns
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Options.jpg"
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Options.jpg", :loading => 'lazy'
+        .case-studies__navigation-wrapper.if-web
                         .column.is-8
                             .img__wrapper
                                 = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Personal-Loans.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
@@ -433,10 +442,10 @@
                             %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
                     .column.is-5
                         .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png", :loading => 'lazy'
                     .column.is-5-fullhd.is-4-widescreen
                         .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img"
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img", :loading => 'lazy'
             .hifi-wireframes__loan-calculator.is-hidden-desktop
                 .columns.is-variable.is-multiline
                     .column.is-12
@@ -448,10 +457,10 @@
                             %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
                     .column.is-6
                         .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png"
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.png", :loading => 'lazy'
                     .column.is-6
                         .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img"
+                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.png", :class => "hifi__signup-img", :loading => 'lazy'
             .hifi-wireframes__loan-application
                 .container
                     .loan-application__text-wrapper
@@ -460,10 +469,10 @@
                     .columns.is-multiline
                         .column.is-8
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Loan+Information.png"
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Loan+Information.png", :loading => 'lazy'
                         .column.is-4.is-hidden-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Application.jpg"
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Application.jpg", :loading => 'lazy'
 
             .hifi-wireframes__account.short
                 .container
@@ -476,13 +485,13 @@
                                         %p To help users avoid feeling lost after their loan is approved and improve self-service, we designed a dashboard that gives them full visibility and control over their account. Users can easily track payments, review documents, manage autopay, and adjust settings, all in one space. This helps prevent missed payments and builds confidence in managing their finances.
                                 .column.is-12
                                     .img__wrapper
-                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Dashboard.png"
+                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Dashboard.png", :loading => 'lazy'
                                 .column.is-12
                                     .img__wrapper
-                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Payment.png"
+                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Payment.png", :loading => 'lazy'
                         .column.is-6
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.png"
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.png", :loading => 'lazy'
         .case-studies__navigation-wrapper.if-web-short
             .container
                 .columns.is-mobile

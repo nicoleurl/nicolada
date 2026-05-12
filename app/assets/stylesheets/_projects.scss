@@ -286,7 +286,8 @@ $wyndham-red: #9b4939;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 2px solid $black;
+        border-top: 3px solid $black;
+        border-bottom: 3px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover-mobile.png");
         }
