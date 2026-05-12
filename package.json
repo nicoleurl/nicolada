@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "bulma": "^1.0.4",
     "jquery": "^3.7.1",
     "swiper": "^12.1.2"
   }
