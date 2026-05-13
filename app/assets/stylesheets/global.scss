@@ -36,9 +36,14 @@ html,
         color: $black;
     }
 
-    h3 {
+    h3, p.projects__title {
         font-size: 32px;
         margin-bottom: 32px;
+    }
+    p.projects__title {
+        font-family: "Bricolage Grotesque", serif !important;
+        font-weight: 600 !important;
+        color: $black !important;
     }
 
     p {
@@ -149,7 +154,7 @@ header {
                 justify-content: flex-start;
             }
             .header__link {
-                font-family: "Inter", sans-serif;
+                font-family: "DM Sans", sans-serif;
                 text-decoration: none;
                 color: $black !important;
                 font-weight: 600;
@@ -194,7 +199,7 @@ header {
     .btn__wrapper {
         text-align: right;
         .btn {
-            font-family: "Inter", sans-serif;
+            font-family: "DM Sans", sans-serif;
             text-decoration: none;
             font-weight: 600;
             display: block;
@@ -229,18 +234,17 @@ header {
     background-color: $beige !important;
     overflow: hidden;
     border-top: 3px solid black;
-    h6 {
-        text-transform: uppercase;
-        font-family: "Inter", sans-serif;
-        font-size: 12px;
-        font-weight: 800;
-        margin-bottom: 16px;
+    .footer-title {
+        text-transform: uppercase !important;
+        font-family: "DM Sans", sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 800 !important;
+        margin-bottom: 16px !important;
     }
-
     ul {
         list-style-type: none;
         li {
-            font-family: "Inter", sans-serif;
+            font-family: "DM Sans", sans-serif !important;
             margin-bottom: 16px;
             a {
                 color: #000000;
@@ -268,8 +272,8 @@ header {
             margin-top: 20px;
         }
     }
-
 }
+
 
 
 /* home page */
@@ -319,7 +323,7 @@ header {
     .hero__small-text {
         p {
             padding-left: 10px;
-            font-family: "Inter", sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-size: 32px;
             color: $black;
             line-height: 1.1;
@@ -453,7 +457,7 @@ header {
             padding: 4px 12px;
             border-radius: 16px;
             border: 1.5px solid lightgray;
-            font-family: "Inter", sans-serif;
+            font-family: "DM Sans", sans-serif;
             font-weight: 600;
             color: $gray;
             margin: 16px 8px 16px 0px;
@@ -610,8 +614,8 @@ header {
     100% {transform: translateX(-100%);}
 }
 
-@import url(_about.scss);
-@import url(_contact.scss);
-@import url(_projects.scss);
-@import url(_case_studies.scss);
-@import url(_case_studies_new.scss);
+@import "about";
+@import "contact";
+@import "projects";
+@import "case_studies";
+@import "case_studies_new";
