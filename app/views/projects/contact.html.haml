@@ -1,6 +1,8 @@
+- content_for :body_class, "page--contact"
+
 .contact__wrapper
     .container
-        %h1
+        %h1.contact__title
             %span
                 Reach out to
             %br
@@ -11,13 +13,12 @@
                 .contact__text-wrapper
                     %p Nicole Salazar
                     %p New York City, NY
-                    %p itsnicolada@gmail.com
+                    %p nmsguzman@gmail.com
                     %p +1 (787) 989-0210
 
             .column.is-3-desktop.is-4-tablet
                 .contact__link-wrapper
                     = link_to "Email Me", "mailto:nmsguzman@gmail.com", :class => "contact__email-link"
-                    = link_to "Call Me", "tel:17879890210", :class => "contact__phone-link"
                     = link_to "LinkedIn", "https://www.linkedin.com/in/nicolada", :class => "contact__linkedin-link"
                     = link_to "Download CV", "https://nicolada-website.s3.us-east-1.amazonaws.com/Nicole_Salazar_Resume.pdf", :target => "blank", :rel => "noopener", :class => "contact__cv-link"
-            
+    = image_tag asset_path("spiral.svg"), alt: "Black Spiral", class: "contact__spiral" 

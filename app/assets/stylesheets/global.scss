@@ -1,5 +1,7 @@
+/* colors */
+
 $beige: #FFF9EF;
-$black: #000000;
+$black: #2A2A2A;
 $white: #FFFFFF;
 $pink: #F98DE2;
 $green: #ADEA07;
@@ -8,7 +10,194 @@ $blue: #4431FE;
 $yellow: #FECE00;
 $red: #FF7664;
 $gray: #8E8E8E;
+$text-secondary: #555;
+$text-muted-1: #666;
+$text-muted-2: #777;
+$text-muted-3: #888;
+$text-muted-4: #aaa;
+$text-muted-5: #bbb;
 
+/* titles */
+
+@mixin title-preset-1 {
+    font-family: "Obviously", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+}
+@mixin title-preset-1--bold {
+    @include title-preset-1;
+    font-weight: 700;
+}
+@mixin title-preset-2 {
+    font-family: "Obviously", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+}
+@mixin title-preset-2--bold {
+    @include title-preset-2;
+    font-weight: 700;
+}
+@mixin title-preset-3 {
+    font-family: "Obviously", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+@mixin title-preset-3--bold {
+    @include title-preset-3;
+    font-weight: 700;
+}
+@mixin title-preset-4 {
+    font-family: "Obviously", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+@mixin title-preset-4--bold {
+    @include title-preset-4;
+    font-weight: 700;
+}
+@mixin title-preset-5 {
+    font-family: "Obviously", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+@mixin title-preset-5--bold {
+    @include title-preset-5;
+    font-weight: 700;
+}
+@mixin title-preset-6 {
+    font-family: "Obviously", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin title-preset-6--bold {
+    @include title-preset-6;
+    font-weight: 700;
+}
+@mixin title-preset-7 {
+    font-family: "Obviously", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin title-preset-7--bold {
+    @include title-preset-7;
+    font-weight: 700;
+}
+
+/* texts */
+
+@mixin text-preset-1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+}
+@mixin text-preset-1--bold {
+    @include text-preset-1;
+    font-weight: 900;
+}
+@mixin text-preset-2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.48px;
+}
+@mixin text-preset-2--bold {
+    @include text-preset-2;
+    font-weight: 900;
+}
+@mixin text-preset-3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+@mixin text-preset-3--bold {
+    @include text-preset-3;
+    font-weight: 900;
+}
+@mixin text-preset-4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+@mixin text-preset-4--bold {
+    @include text-preset-4;
+    font-weight: 900;
+}
+@mixin text-preset-5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+@mixin text-preset-5--bold {
+    @include text-preset-5;
+    font-weight: 900;
+}
+@mixin text-preset-6 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin text-preset-6--bold {
+    @include text-preset-6;
+    font-weight: 900;
+}
+@mixin text-preset-7 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin text-preset-7--bold {
+    @include text-preset-7;
+    font-weight: 900;
+}
+@mixin text-preset-8 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin text-preset-8--bold {
+    @include text-preset-8;
+    font-weight: 900;
+}
 
 /* global styles */
 
@@ -29,63 +218,42 @@ html,
     color: #000;
 }
 
-.nicolada__wrapper {
-    h1, h2, h3, h4, h5 {
-        font-family: "Bricolage Grotesque", serif;
-        font-weight: 600;
-        color: $black;
-    }
-
-    h3, p.projects__title {
-        font-size: 32px;
-        margin-bottom: 32px;
-    }
-    p.projects__title {
-        font-family: "Bricolage Grotesque", serif !important;
-        font-weight: 600 !important;
-        color: $black !important;
-    }
-
-    p {
-        font-family: "DM Sans", sans-serif;
-        font-weight: 400;
-    }
-    a {
+.btn__wrapper {
+    text-align: center;
+    .btn {
+        @include text-preset-6--bold;
         text-decoration: none;
-        color: $black;
-    }
+        display: inline-block;
+        color: $beige;
+        background-color: $black;
+        border: 2px solid $black;
+        padding: 8px 24px;
+        border-radius: 24px;
+        transition: 0.1s ease-in;
+        margin: 0 auto;
+        will-change: background-color;
+        &:hover {
+            background-color: $beige;
+            border: 2px solid $black;
+            color: $black;
+        }
+        &:active {
+            transform: scale(0.92);
+        }
+    }  
+}
+
+
+.nicolada__wrapper {
     .material-symbols-outlined {
         font-variation-settings:
         'FILL' 0,
         'wght' 500,
         'GRAD' 0,
         'opsz' 24
-      }
-    .btn__wrapper {
-        text-align: center;
-        .btn {
-            font-family: "DM Sans", sans-serif;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            color: $white;
-            background-color: $black;
-            border: 3px solid $black;
-            padding: 6px 28px;
-            border-radius: 24px;
-            transition: 0.1s ease-in;
-            margin: 0 auto;
-            margin-top: 30px;
-            will-change: background-color;
-            &:hover {
-                background-color: $white;
-                border: 3px solid $black;
-                color: $black;
-            }
-            &:active {
-                transform: scale(0.92);
-            }
-        }  
+    }
+    a {
+        color: $black
     }
 }
 
@@ -93,8 +261,11 @@ html,
 
 header {
     overflow: hidden;
-    padding: 20px;
+    padding: 24px 0px;
     background-color: $beige;
+    @media (max-width: 1344px) {
+        padding: 24px;
+    }
     @media (max-width: 1023px) {
         padding: 0px;
     }
@@ -110,13 +281,14 @@ header {
         }
         .navbar-brand {
             align-items: center;
-            svg {
-                color: #000000;
-                max-width: 140px;
+            img {
+                max-width: 50px;
+                max-height: 50px;
                 width: 100%;
+                height: 100%;
             }
             @media (max-width: 1023px) {
-                padding: 20px 20px 20px 40px;
+                padding: 24px;
             }
         }
         .navbar-menu {
@@ -130,7 +302,7 @@ header {
                 transition: max-height 0.5s ease-out;
             }
             &.is-active {
-                border-bottom: 3px solid $black;
+                border-bottom: 2px solid $black;
                 max-height: 400px;
                 transition: max-height 0.5s ease-in;
                 .btn {
@@ -142,7 +314,7 @@ header {
         }
         .navbar-item {
             @media (max-width: 1023px) {
-                padding: 20px 0px 20px 40px;
+                padding: 16px 24px;
             }
         }
         .navbar-start {
@@ -154,14 +326,13 @@ header {
                 justify-content: flex-start;
             }
             .header__link {
-                font-family: "DM Sans", sans-serif;
+                @include text-preset-6--bold;
                 text-decoration: none;
                 color: $black !important;
-                font-weight: 600;
                 display: block;
                 position: relative;
                 text-align: center;
-                margin: 0px 16px;
+                margin: 0px 24px;
                 @media (max-width: 1023px) {
                     margin: 0px;
                 }
@@ -198,32 +369,46 @@ header {
     }
     .btn__wrapper {
         text-align: right;
-        .btn {
-            font-family: "DM Sans", sans-serif;
-            text-decoration: none;
-            font-weight: 600;
-            display: block;
-            position: relative;
-            color: $beige;
-            background-color: $black;
-            border: 3px solid $black;
-            padding: 6px 28px;
-            border-radius: 24px;
-            display: inline-block;
-            transition: 0.2s ease-in;
-            cursor: pointer;
-            &:hover {
-                background-color: $beige;
-                border: 3px solid $black;
-                color: $black;
-                cursor: pointer;
-            }
-            &:active {
-                transform: scale(0.92);
-            }
-        }
         @media (max-width: 1023px) {
             text-align: left;
+        }
+    }
+}
+.page--contact {
+    header {
+        background-color: $pink;
+        .navbar {
+            background-color: $pink;
+            .header__link {
+                &:hover {
+                    background-color: $pink;
+                }
+            }
+            .btn__wrapper {
+
+                .btn {
+                    &:hover {
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+        .navbar-burger {
+            &:hover {
+                background-color: darken($color: $pink, $amount: 10);
+            }
+        }
+        .navbar-menu {
+            @media (max-width: 1023px) {
+                background-color: darken($color: $pink, $amount: 10);
+            }
+            &.is-active {
+                .btn {
+                    &:hover {
+                        background-color: darken($color: $beige, $amount: 10)
+                    }
+                }
+            }
         }
     }
 }
@@ -232,44 +417,154 @@ header {
 
 .footer {
     background-color: $beige !important;
-    overflow: hidden;
-    border-top: 3px solid black;
-    .footer-title {
+    position: relative;
+    z-index: 1;
+    padding: 0px 16px 16px ;
+    .footer__bouncy-top {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        pointer-events: none;
+        overflow: visible;
+        z-index: -1;
+        @media (max-width: 1023px) {
+            top: -24px;
+            height: 100px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        #bouncy-path {
+            fill: $beige;
+        }
+        #bouncy-line {
+            fill: none;
+            stroke: black;
+            stroke-width: 2;
+        }
+    }
+    .footer__header-wrapper {
+        height: 100%;
+        position: relative;
+        @media (max-width: 1023px) {
+            padding: 16px 0px 32px;
+        }
+        @media (max-width: 768px) {
+            padding: 16px 0px;
+        }
+        .footer__header {
+            @include title-preset-3--bold;
+            position: relative;
+            color: $black;
+            padding-bottom: 8px;
+        }
+        .footer__cta {
+            @include text-preset-6;
+            color: $black;
+        }
+        .footer__email {
+            @include text-preset-6--bold;
+            color: $black;
+            text-decoration: underline;
+            &:hover {
+                color: $purple;
+            }
+        }
+        .footer__yellow-asterisk {
+            position: absolute;
+            width: 32px;
+            left: 260px;
+            bottom: 50%;
+            @media (max-width: 1023px) {
+                left: 480px;
+                bottom: 40%;
+            }
+            @media (max-width: 768px) {
+                left: 260px;
+                bottom: 48%;
+            }
+        }
+        .footer__pink-asterisk {
+            position: absolute;
+            width: 24px;
+            left: 280px;
+            top: 10%;
+            @media (max-width: 1023px) {
+                left: 520px;
+                top: 20%;
+            }
+            @media (max-width: 768px) {
+                left: 280px;
+                top: 16%;
+            }
+        }
+    }
+    .footer__links-wrapper {
+        justify-content: space-evenly;
+    }
+    .footer__title {
+        @include text-preset-6;
         text-transform: uppercase !important;
-        font-family: "DM Sans", sans-serif !important;
-        font-size: 12px !important;
-        font-weight: 800 !important;
+        font-weight: 900 !important;
         margin-bottom: 16px !important;
+        color: $black;
     }
     ul {
         list-style-type: none;
         li {
-            font-family: "DM Sans", sans-serif !important;
             margin-bottom: 16px;
             a {
-                color: #000000;
-                font-size: 14px;
+                @include text-preset-6;
+                color: $black;
+                &:hover {
+                    color: $purple;
+                }
             }
 
         }
     }
-    .footer__logo {
-        text-align: right;
-        display: block;
-        @media (max-width: 768px) {
-            text-align: left;
-            margin-top: 20px;
+    .footer__credits-wrapper {
+        .columns {
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
         }
-        svg {
-            max-width: 116px;
-            display: inline-block;
+        hr {
+            background-color: $text-muted-5;
+            height: 1px;
         }
-    }
-    .footer_signature {
-        text-align: right;
-        @media (max-width: 768px) {
-            text-align: left;
-            margin-top: 20px;
+        .footer_copyright {
+            @include text-preset-8;
+            color: $text-muted-3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .footer__logo {
+            text-align: right;
+            display: block;
+            @media (max-width: 768px) {
+                text-align: left;
+                margin-top: 20px;
+            }
+            svg {
+                max-width: 120px;
+                display: inline-block;
+            }
+        }
+        .footer_signature {
+            @include text-preset-8;
+            text-align: right;
+            color: $text-muted-3;
+            @media (max-width: 768px) {
+                text-align: left;
+            }
         }
     }
 }
@@ -277,85 +572,159 @@ header {
 
 
 /* home page */
-
 /* hero */
 
 .hero__wrapper {
     overflow: hidden;
-    border-bottom: 3px solid $black;
+    border-bottom: 2px solid $black;
     background-color: $beige;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-background-desktop.webp");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
     @media (max-width: 1023px) {
         padding: 32px;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/hero-bg-touch.webp");
     }
     .hero__text {
-        padding: 240px 0px 50px 0px;
-        max-width: 900px;
-        margin-left: 0px;
-        @media (max-width: 1023px) {
-            padding: 80px 0px 50px 0px;;
-        }
-        @media (max-width: 768px) {
-            padding: 120px 0px 50px 0px;;
-        }
-    }
-    .hero__wave-wrapper {
-        @media (max-width: 1023px) {
-            text-align: center;
-        }
-        .wave-wrapper__wave-img {
-            max-width: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        .hero__artboard-label-hint {
+            @include text-preset-8--bold;
+            color: $text-muted-3;
+            text-align: left;
+            max-width: 1100px;
             width: 100%;
-            @media (max-width: 1023px) {
-                max-width: 52px;
-                margin-bottom: 20px;
-            }
-            @media (max-width: 768px) {
-                max-width: 32px;
-            }
         }
-    }
-    .hero__small-text {
-        p {
-            padding-left: 10px;
-            font-family: "DM Sans", sans-serif;
-            font-size: 32px;
-            color: $black;
-            line-height: 1.1;
-            @media (max-width: 1023px) {
-                text-align: center;  
-                margin-bottom: 8px;
-            }
-            @media (max-width: 768px) {
-                font-size: 16px;
-            }
-        }
-    }
-    .hero__big-text {
-        font-family: "Bricolage Grotesque", serif;
-        font-weight: 600;
-        font-size: 72px;
-        color: $black;
-        line-height: 1.1;
-        #hero__variable-text {
+        .hero__h1-wrapper {
             display: inline-block;
-            text-align: center;
-            width: 280px;
-            border-bottom: 3px solid $black;
+            position: relative;
+            .hero__big-text {
+                @include title-preset-1--bold;
+                text-transform: uppercase;
+                padding: 24px;
+                text-align: center;
+                color: $black;
+                border: 2px solid $black;
+                display: inline-block;
+                max-width: 1100px;
+                @media (max-width: 768px) {
+                    @include title-preset-2--bold;
+                    text-transform: uppercase;
+                }
+                @media (max-width: 480px) {
+                    @include title-preset-3--bold;
+                    text-transform: uppercase;
+                }
+            }
         }
-        @media (max-width: 1023px) {
+        .hero__subtitle {
+            @include title-preset-4;
             text-align: center;
-            line-height: 1.2;
+            @media (max-width: 768px) {
+                @include title-preset-5;
+            }
         }
-        @media (max-width: 768px) {
-            font-size: 32px;
-            #hero__variable-text {
+        .hero__square-top-left, .hero__square-top-right, .hero__square-bottom-left, .hero__square-bottom-right {
+            height: 24px;
+            width: 24px;
+            border: 2px solid $black;
+            position: absolute;
+            background-color: $white;
+            cursor: grab;
+            user-select: none;
+            &:active {
+                cursor: grabbing;
+            }
+        }
+        .hero__square-top-left {
+            top: -12px;
+            left: -12px;
+        }
+        .hero__square-top-right {
+            top: -12px;
+            right: -12px;
+        }
+        .hero__square-bottom-left {
+            bottom: -12px;
+            left: -12px;
+        }
+        .hero__square-bottom-right {
+            bottom: -12px;
+            right: -12px;
+        }
+        .svg-wrapper__hello {
+            position: absolute;
+            top: -32px;
+            left: 50%;
+            width: 160px;
+            height: auto;
+            transform: translate(-50%, 0%) rotate(-8deg);
+            svg {
+                tspan {
+                    fill: $black;
+                }
+                ellipse {
+                    fill: $pink;
+                }
+            }
+            @media (max-width: 768px) {
                 width: 120px;
+                top:-16px;
+            }
+        }
+        .svg-wrapper__flower {
+            position: absolute;
+            bottom: -64px;
+            left: 16%;
+            width: 72px;
+            height: auto;
+            svg {
+                path {
+                    fill: $purple;
+                }
+            }
+            @media (max-width: 1024px) {
+                visibility: hidden;
+            }
+        }
+        .svg-wrapper__diamond-circle {
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%) rotate(8deg);
+            right: -40px;
+            width: 80px;
+            height: auto;
+            svg {
+                .cls-1 {
+                    stroke: none;
+                    fill: $black;
+                }
+            }
+            @media (max-width: 1024px) {
+                width: 48px;
+                right: -20px;
+            }
+        }
+        .svg-wrapper__star {
+            position: absolute;
+            top: 20%;
+            left: -40px;
+            width: 80px;
+            height: auto;
+            transform: rotate(16deg);
+            svg {
+                .cls-1 {
+                    fill: $yellow;
+                    stroke: $black;
+                }
+            }
+            @media (max-width: 1024px) {
+                width: 48px;
+                left: -20px;
             }
         }
     }
@@ -363,20 +732,26 @@ header {
 
 /* projects */
 
-.projects__wrapper {
+.projects__wrapper, .projects-page__wrapper {
     background-color: $white;
     padding: 72px 0px;
-    border-top: 3px solid $black;
+    border-bottom: 2px solid $black;
     overflow: hidden;
     transform: translateZ(0);
     isolation: isolate; 
     @media (max-width: 1023px) {
         padding: 32px;
     }
+    .projects__title {
+        @include title-preset-3--bold;
+        margin-bottom: 32px;
+        color: $black;
+    }
     .projects__cover-wrapper {
         position: relative;
         width: 100%;
         height: fit-content;
+        margin-bottom: 16px;
         img {
             display: block;
             height: 100%;
@@ -390,7 +765,7 @@ header {
             width: 16%;
             height: 16%;
             border-radius: 60px;
-            border: 3px solid $black;
+            border: 2px solid $black;
             transition: 200ms ease-in-out;
             &.red {
                 circle {
@@ -432,22 +807,25 @@ header {
 
     }
 
-    h3 {
-        font-family: "Bricolage Grotesque", serif;
-        font-weight: 600;
-        font-size: 32px;
-        margin-bottom: 32px;
-    }
     .project__project-summary {
         position: relative;
-        h4 {
-            font-family: "Bricolage Grotesque", serif;
-            font-weight: 600;
-            font-size: 24px;
-            padding: 12px 0px;
-
+        h2, h3 {
+            @include text-preset-4--bold;
+        }
+        .projects__project-description {
+            @include text-preset-6;
         }
     }
+
+    .btn__wrapper {
+        margin-top: 32px;
+        .btn {
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+
     .tags__wrapper {
         display: flex;
         flex-direction: row;
@@ -476,8 +854,7 @@ header {
     position: relative;
     overflow: hidden;
     background-color: $purple;
-    border-top: 3px solid $black;
-    border-bottom: 3px solid $black;
+    border-bottom: 2px solid $black;
     padding: 8px 0px;
     white-space: nowrap;
     display: flex;
@@ -495,13 +872,13 @@ header {
         .scrolling-text__item {
             white-space: nowrap;
             p {
-                font-family: "Bricolage Grotesque", serif;
+                @include title-preset-3;
                 text-transform: uppercase;
-                font-size: 32px;
                 color: $black;
                 display: inline-block;
                 padding: 0px 8px;
                 margin: 0px 8px;
+                line-height: 1;
                 @media (max-width: 768px) {
                     font-size: 24px;
                 }
@@ -524,41 +901,86 @@ header {
 /* about home */
 
 .about-home__wrapper {
-    background-color: $beige;
-    border-bottom: 3px solid $black;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/About-BG.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    .about-home__text-wrapper {
-        padding: 120px 32px;
-        max-width: 800px;
-        text-align: center;
-        margin: 0 auto;
-        transform: translateZ(0);
-        isolation: isolate; 
-        h3 {
-            line-height: 1.1;
-            margin-bottom: 16px;
-        }
-        p {
-            color: #000;
-            margin-top: 0px;
-        }
-        .btn__wrapper {
-            text-align: center;
-            .btn {
-                &:hover {
-                    background-color: $beige;
-                }
-            }
-        }
+    background-color: $yellow;
+    border-bottom: 2px solid $black;
+    padding: 72px 0px;
+    @media (max-width: 1023px) {
+        padding: 32px;
+    }
+    .about-home__title-wrapper {
+        width: 100%;
+        border: 2px solid $black;
+        padding: 16px 32px;
+        border-radius: 100px;
+        background-color: $pink;
+        margin-bottom: 32px;
         @media (max-width: 768px) {
-            padding: 72px 32px;
+           margin-bottom: 16px;
+           padding: 8px 24px;
+        }
+        .about__title {
+            @include title-preset-5;
+            text-transform: uppercase;
+            line-height: 1;
+            @media (max-width: 768px) {
+                @include title-preset-6()
+             }
         }
     }
+    .about-home__img-wrapper {
+        width: 100%;
+        height: 100%;
+        border: 2px solid $black;
+        border-radius: 16px;
+        overflow: hidden;
+        max-height: 800px;
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .about-home__text-wrapper {
+        width: 100%;
+        height: 100%;
+        border: 2px solid $black;
+        border-radius: 16px;
+        padding: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        background-color: $beige;
+        @media (max-width: 768px) {
+            padding: 24px;
+        }
+        .about__highlight {
+            @include title-preset-3--bold;
+            color: $black;
+            @media (max-width: 768px) {
+                @include title-preset-4--bold;
+            }
+            .text-mask {
+                overflow: hidden;
+                display: block;
+            }
+        }
+        p {
+            @include text-preset-6;
+            color: $black;
+            .text-mask {
+                overflow: hidden;
+                display: block;
+            }
+        }
+    }
+
 }
 
+
+/* brands home */
 .brands-home__wrapper {
     background-color: $white;
     overflow: hidden;
@@ -576,35 +998,68 @@ header {
     @media (max-width: 1023px) {
         padding: 32px;
     }
+    .brands__title {
+        @include title-preset-3--bold;
+        margin-bottom: 32px;
+        color: $black;
+    }
 }
+
+/* contact home */
 
 .contact-home__wrapper {
     overflow: hidden;
-    padding: 72px 0px;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg.webp");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 72px 0px 112px;
+    background-color: $green;
+    position: relative;
     @media (max-width: 1023px) {
-        padding: 32px;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-bg-touch.webp");
-    }
-    @media (max-width: 768px) {
         padding: 32px;
     }
     h2 {
-        font-size: 52px;
-        line-height: 1.1;
+        width: 100%;
+        text-align: center;
+        color: $black;
+        @include title-preset-2--bold;
+        margin-bottom: 24px;
         @media (max-width: 768px) {
-            font-size: 32px;
+            @include title-preset-3--bold;
         }
     }
     .btn__wrapper {
-        text-align: left;
          .btn {
             &:hover {
                 background-color: $green;
             }
+        }
+    }
+    .svg-wrapper__flower-1, .svg-wrapper__flower-2 {
+        width: 320px;
+        position: absolute;
+        svg {
+            .cls-1 {
+                stroke: $black;
+                fill: $pink;
+                stroke-width: 1px;
+            }
+        }
+        @media (max-width: 1023px) {
+            width: 160px
+        }
+    }
+    .svg-wrapper__flower-1 {
+        bottom: -200px;
+        left: -280px;
+        @media (max-width: 1023px) {
+            bottom: -120px;
+            left: -120px;
+        }
+    }
+    .svg-wrapper__flower-2 {
+        top: -200px;
+        right: -280px;
+        @media (max-width: 1023px) {
+            top: -120px;
+            right: -120px;
         }
     }
 }
@@ -619,3 +1074,4 @@ header {
 @import "projects";
 @import "case_studies";
 @import "case_studies_new";
+@import "work";

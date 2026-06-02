@@ -1,5 +1,5 @@
 $beige: #FFF9EF;
-$black: #000000;
+$black: #2A2A2A;
 $white: #FFFFFF;
 $pink: #F98DE2;
 $green: #ADEA07;
@@ -13,12 +13,118 @@ $ipink: #A00251;
 $os-red: #b12024;
 $os-blue: #272f5e;
 $wyndham-red: #9b4939;
+$text-secondary: #555;
+$text-muted-1: #666;
+$text-muted-2: #777;
+$text-muted-3: #888;
+$text-muted-4: #aaa;
+$text-muted-5: #bbb;
 
+/* titles */
+
+@mixin title-preset-2 {
+    font-family: "Obviously", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.48px;
+}
+@mixin title-preset-2--bold {
+    @include title-preset-2;
+    font-weight: 700;
+}
+@mixin title-preset-3 {
+    font-family: "Obviously", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+@mixin title-preset-3--bold {
+    @include title-preset-3;
+    font-weight: 700;
+}
+@mixin title-preset-6 {
+    font-family: "Obviously", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin title-preset-6--bold {
+    @include title-preset-6;
+    font-weight: 700;
+}
+@mixin title-preset-7 {
+    font-family: "Obviously", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin title-preset-7--bold {
+    @include title-preset-7;
+    font-weight: 700;
+}
+
+/* texts */
+
+@mixin text-preset-4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+@mixin text-preset-4--bold {
+    @include text-preset-4;
+    font-weight: 900;
+}
+@mixin text-preset-5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+@mixin text-preset-5--bold {
+    @include text-preset-5;
+    font-weight: 900;
+}
+@mixin text-preset-6 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin text-preset-6--bold {
+    @include text-preset-6;
+    font-weight: 900;
+}
+@mixin text-preset-7 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin text-preset-7--bold {
+    @include text-preset-7;
+    font-weight: 900;
+}
 
 .project-details__wrapper {
     .project-details__cover-wrapper{
         height: 700px;
-        border-bottom: 3px solid $black;
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             height: 400px;
         }
@@ -30,43 +136,44 @@ $wyndham-red: #9b4939;
                 padding: 24px 0px ;
             }
             h1 {
-                font-size: 40px;
-                line-height: 1;
+                @include title-preset-2--bold;
+                color: $black;
                 margin-bottom: 32px;
                 @media (max-width: 768px) {
-                    font-size: 32px;
+                    @include title-preset-3--bold;
+                }
+            }
+            .project-details__line {
+                margin-bottom: 24px;
+                .project-details__subtitle {
+                    @include title-preset-7--bold;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+                .project-details__subtitle-text {
+                    @include text-preset-6;
+                    color: $black;
                 }
             }
             .project-details__intro-text-wrapper {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            }
-            .project-details__line {
-                margin-top: 20px;
-                font-size: 14px;
-                &:first-child {
-                    margin-top: 0px;
-                }
-                h2 {
-                    text-transform: uppercase;
-                    font-weight: 700;
+                p {
+                    @include text-preset-6;
+                    margin-bottom: 16px;
                 }
             }
         }
         .eyebrow {
-            font-weight: 800;
-            font-family: "DM Sans", sans-serif;
-            text-transform: uppercase;
-            font-size: 14px;
+            @include text-preset-7--bold;
             margin-bottom: 4px;
+            color: $text-muted-3;
+            text-transform: uppercase;
             &::before {
                 content: '✦';
                 margin-right: 5px;
+                color: $text-muted-3;
             }
         }
         .project-details__gallery-wrapper {
-            margin-bottom: 40px;
             .projects__img-wrapper {
                 padding: 0px 0px 6px;
                 height: 100%;
@@ -79,20 +186,11 @@ $wyndham-red: #9b4939;
                 margin: 72px 0px;
             }
             .projects__middle-text {
-                font-weight: 400;
-                @media (max-width: 768px) {
-                    font-size: 16px;
-                }
+                @include text-preset-6;
             }
-            h3 {
-                font-size: 28px;
-                line-height: 1.1;
-            }
-            h5 {
-                font-family: "DM Sans", sans-serif !important;
-                font-weight: 600; 
-                color: $gray !important;
-                font-size: 16px !important;
+            h2 {
+                @include title-preset-3--bold;
+                color: $black;
             }
         }
         .project-details__colors-wrapper {
@@ -103,13 +201,12 @@ $wyndham-red: #9b4939;
                 &:last-child {
                     margin-bottom: 0px;
                 }
-                h3 {
+                h2 {
                     margin-bottom: 0px;
                     font-size: 52px;
                 }
-                h4 {
+                h3 {
                     font-size: 24px;
-                    
                 }
                 p {
                     letter-spacing: 4px;
@@ -143,9 +240,11 @@ $wyndham-red: #9b4939;
             padding: 32px
         }
         .project-details__navigation-wrapper {
-            margin-bottom: 32px;
+            margin-bottom: 64px;
+            @media (max-width: 1023px) {
+                margin-bottom: 16px;
+            }
             .navigation-button {
-
                 p {
                     padding: 20px;
                     display: flex;
@@ -185,20 +284,14 @@ $wyndham-red: #9b4939;
 
 /* Cause x Effect */
 .project__cause-x-effect {
-    border-top: 3px solid $black;
-    .eyebrow {
-        color: $cxegreen;
-        &::before {
-            color: $cxegreen;
-        }
-    }
+    border-top: 2px solid $black;
     .project-details__cover-wrapper {
         background-color: #4E786A;
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 3px solid $black;
+        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover-mobile.png");
         }
@@ -211,19 +304,19 @@ $wyndham-red: #9b4939;
         }
         .project-details_font{
             &.font1 {
-                h3, h4, p {
-                    font-weight: 800;
+                h2, h3, p {
+                    font-weight: 900;
                 }
             }
             &.font2 {
-                h3, h4, p {
-                    font-weight: 800;
+                h3, p {
+                    font-weight: 900;
                     font-style: italic;
                 }
             }
             &.font3 {
-                h3, h4, p {
-                    font-weight: 500;
+                h3, p {
+                    font-weight: 400;
                 }
             }
         }
@@ -257,22 +350,16 @@ $wyndham-red: #9b4939;
 /* intimates */
 
 .project__intimates {
-    border: 3px solid $black;
-    .eyebrow {
-        color: $ipink;
-        &::before {
-            color: $ipink;
-        }
-    }
+    border-top: 2px solid $black;
     .project-details__cover-wrapper {
         background-color: #F2F2F2;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover-mobile.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        color: 3px solid $black;
+        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
-            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover-mobile.png");
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover.webp");
         }
     }
 }
@@ -282,14 +369,14 @@ $wyndham-red: #9b4939;
 .project__everybodys-free {
     .project-details__cover-wrapper {
         background-color: #FFFFFF;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-top: 3px solid $black;
-        border-bottom: 3px solid $black;
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
-            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover-mobile.png");
+            background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover-mobile.webp");
         }
     }
     .project-details__colors-wrapper {
@@ -297,14 +384,13 @@ $wyndham-red: #9b4939;
         border-bottom: 2px solid $black;
         .project-details_font {
             &.font1 {
-                h3, h4, p {
+                h2, h3, p {
                     font-family: "Barlow Semi Condensed", sans-serif;
                     font-weight: 700;
-                    font-style: italic;
                 }
             }
             &.font2 {
-                h3, h4, p {
+                h2, h3, p {
                     font-family: "Barlow", sans-serif;
                     font-weight: 400;
                 }
@@ -344,38 +430,45 @@ $wyndham-red: #9b4939;
 /* social media */
 
 .project__social-media {
-    border-top: 3px solid $black;
     .project-details__cover-wrapper {
         background-color: #E7DDFB;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialscover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/socialscover.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 3px solid $black;
+        border-bottom: 2px solid $black;
     }
     .project-details__company-wrapper {
         border-top: 2px solid $black;
-        padding-top: 72px;
-        h3 {
-            font-size: 28px;
+        padding: 72px 0px;
+        h2 {
+            @include title-preset-3--bold;
+            margin-bottom: 16px;
+            color: $black;
         }
-        h4 {
-            font-size: 16px;
-            font-weight: 600;
-            font-family: "DM Sans" sans-serif;
+        h3 {
+            @include text-preset-7--bold;
+            text-transform: uppercase;
+            color: $black;
         }
         .project-details__description-wrapper {
             margin-bottom: 72px;
             h4 {
-                margin-top: 16px;
+                @include text-preset-6--bold;
+                color: $black;
             }
             p {
+                @include text-preset-6;
                 margin-bottom: 12px;
+                color: $black;
             }
             ul {
                 li {
+                    @include text-preset-6;
                     margin-top: 16px;
+                    color: $black;
                     strong {
+                        @include text-preset-6--bold;
                         text-decoration: underline;
                     }
                     &::before {
@@ -444,14 +537,8 @@ $wyndham-red: #9b4939;
 /* wyndham */
 
 .project__wyndham {
-    .eyebrow {
-        color: $wyndham-red;
-        &::before {
-            color: $wyndham-red;
-        }
-    }
     .project-details__cover-wrapper {
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover.png");
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/wyndham-cover.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -476,54 +563,40 @@ $wyndham-red: #9b4939;
 /* ocean spray */
 
 .project__ocean-spray {
-    border-top: 3px solid $black;
-    .eyebrow {
-        color: $os-red;
-        &::before {
-            color: $os-red;
-        }
-    }
     .project-details__cover-wrapper {
-        background-color: #BCD3E7;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Ocean-spray-cover.png");
+        background-color: $os-red;
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/Ocean-spray-cover.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
+    }
+    .project-details__introduction-wrapper {
+        border-bottom: 2px solid $text-muted-4;
+        margin-bottom: 72px;
     }
     .project-details__gallery-wrapper {
-        h3 {
-            margin: 0px;
-        }
         .project-details__objectives-wrapper {
-            background-color: lighten($color: $os-red, $amount: 55);
             padding: 72px 0px;
+            position: relative;
             h3 {
                 color: $os-red;
             }
             .project-details_objectives {
                 padding: 24px;
-                border: 3px solid $os-red;
+                border: 2px solid $black;
                 border-radius: 16px;
-                height: 100%;
-                text-align: center;
-                svg {
-                    max-width: 50px;
-                    display: block;
-                    margin: 20px auto;
-                    fill: $os-red;
-                }
-                h4 {
+                margin-bottom: 24px;
+                h3 {
+                    @include text-preset-7--bold;
                     text-transform: uppercase;
-                    font-size: 20px;
-                    margin-bottom: 12px;
-                    font-weight: 800;
-                    color: $os-red;
-                    font-family: "DM Sans", sans-serif !important;;
+                    color: $black;
+                    margin-bottom: 8px
                 }
                 p { 
-                    max-width: 350px;
-                    margin: 0px auto 20px;
-                    color: $os-red;
+                    @include text-preset-6;
+                    color: $black;
                 }
 
             }
@@ -566,12 +639,12 @@ $wyndham-red: #9b4939;
                 object-position: 50% 70%;
             }
         }
-        .carrousel {
+        .carousel {
             padding: 0px 24px;
         }
-        .mmp {
+        .carousel-img {
             margin-top: 155px;
-            max-width: 370px;
+            max-width: 330px;
             width: 100%;
             @media (max-width: 1406px) {
                 max-width: 310px;

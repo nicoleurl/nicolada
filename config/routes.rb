@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/about" => "projects#about"
   get "/graphic-design" => "projects#graphic_design"
   get "/ux-ui" => "projects#ux_ui"
+  get "/work" => "projects#work"
   get "/contact" => "projects#contact"
   get "/graphic-design/cause-x-effect" => "projects/graphic_design#cause_x_effect", as: "cause_x_effect"
   get "/graphic-design/intimates" => "projects/graphic_design#intimates", as: "intimates"

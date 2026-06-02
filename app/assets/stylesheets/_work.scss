@@ -1,0 +1,249 @@
+$beige: #FFF9EF;
+$black: #2A2A2A;
+$white: #FFFFFF;
+$pink: #F98DE2;
+$green: #ADEA07;
+$purple: #9067F3;
+$blue: #4431FE;
+$yellow: #FECE00;
+$red: #FF7664;
+$gray: #8E8E8E;
+$text-secondary: #555;
+$text-muted-1: #666;
+$text-muted-2: #777;
+$text-muted-3: #888;
+$text-muted-4: #aaa;
+$text-muted-5: #bbb;
+
+/* titles */
+
+@mixin title-preset-1 {
+    font-family: "Obviously", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+}
+@mixin title-preset-1--bold {
+    @include title-preset-1;
+    font-weight: 700;
+}
+@mixin title-preset-2 {
+    font-family: "Obviously", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -0.48px;
+}
+@mixin title-preset-2--bold {
+    @include title-preset-2;
+    font-weight: 700;
+}
+@mixin title-preset-3 {
+    font-family: "Obviously", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+@mixin title-preset-3--bold {
+    @include title-preset-3;
+    font-weight: 700;
+}
+@mixin title-preset-4 {
+    font-family: "Obviously", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+}
+@mixin title-preset-4--bold {
+    @include title-preset-4;
+    font-weight: 700;
+}
+@mixin title-preset-5 {
+    font-family: "Obviously", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+@mixin title-preset-5--bold {
+    @include title-preset-5;
+    font-weight: 700;
+}
+@mixin title-preset-6 {
+    font-family: "Obviously", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin title-preset-6--bold {
+    @include title-preset-6;
+    font-weight: 700;
+}
+@mixin title-preset-7 {
+    font-family: "Obviously", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin title-preset-7--bold {
+    @include title-preset-7;
+    font-weight: 700;
+}
+
+/* texts */
+@mixin text-preset-1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+}
+@mixin text-preset-1--bold {
+    @include text-preset-1;
+    font-weight: 900;
+}
+@mixin text-preset-2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.48px;
+}
+@mixin text-preset-2--bold {
+    @include text-preset-2;
+    font-weight: 900;
+}
+@mixin text-preset-3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+@mixin text-preset-3--bold {
+    @include text-preset-3;
+    font-weight: 900;
+}
+@mixin text-preset-4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+@mixin text-preset-4--bold {
+    @include text-preset-4;
+    font-weight: 900;
+}
+@mixin text-preset-5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.8px;
+}
+@mixin text-preset-5--bold {
+    @include text-preset-5;
+    font-weight: 900;
+}
+@mixin text-preset-6 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+@mixin text-preset-6--bold {
+    @include text-preset-6;
+    font-weight: 900;
+}
+@mixin text-preset-7 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin text-preset-7--bold {
+    @include text-preset-7;
+    font-weight: 900;
+}
+@mixin text-preset-8 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.24px;
+}
+@mixin text-preset-8--bold {
+    @include text-preset-8;
+    font-weight: 900;
+}
+
+.projects-page__wrapper {
+    border-top: 2px solid $black;
+    padding-bottom: 100px;
+    background-color: $white;
+    position: relative;
+    .filter {
+        margin-bottom: 24px;
+        .filter__button {
+            text-align: center;
+            @include text-preset-6--bold;
+            text-decoration: none;
+            display: inline-block;
+            color: $text-muted-3;
+            background-color: $white;
+            border: 2px solid $text-muted-3;
+            padding: 8px 24px;
+            border-radius: 24px;
+            transition: 0.1s ease-in;
+            margin: 0 auto;
+            will-change: border;
+            &:hover {
+                border: 2px solid $black;
+                color: $black;
+            }
+            &:active, &.is-active {
+                background-color: $pink;
+                border: 2px solid $black;
+                color: $black;
+            }
+        }
+    }
+    .filtered-columns {
+        transition: height 0.5s ease;
+        overflow: hidden;
+        align-content: flex-start;
+        .column {
+            align-self: flex-start;
+            flex-grow: 0;
+            display: none;
+        }
+        .column[data-category="uxui"] {
+            display: block;
+        }
+        .column.is-visible-filter {
+            display: block !important;
+        }
+        .column.is-hidden-filter {
+            display: none !important;
+        }
+    }
+}
