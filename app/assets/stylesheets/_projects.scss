@@ -15,6 +15,9 @@ $os-blue: #272f5e;
 $wyndham-red: #9b4939;
 
 
+.case-study__wrapper {
+    overflow-x: hidden;
+}
 .project-details__wrapper {
     .project-details__cover-wrapper{
         height: 700px;
