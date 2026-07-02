@@ -132,6 +132,9 @@ $text-muted-5: #bbb;
     font-weight: 900;
 }
 
+.case-study__wrapper {
+    overflow-x: hidden;
+}
 .project-details__wrapper {
     .project-details__cover-wrapper{
         height: 600px;
