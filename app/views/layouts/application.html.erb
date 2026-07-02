@@ -7,7 +7,7 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#fff9ef">
     <meta name="description" content="<%= content_for(:description) || 'Nicole Salazar is a Product Designer and Art Director with 7+ years of experience in UX/UI design, graphic design, and art direction.' %>">
-    <meta property="og:image" content="nicolada-meta-img.png"/>
+    <meta property="og:image" content="<%= image_url('nicolada-meta-img.png') %>"/>
     <meta property="og:description" content="<%= content_for(:og_description) || content_for(:description) || 'Nicole Salazar is a Product Designer and Art Director with 7+ years of experience. Explore her portfolio of digital and visual work.' %>">
     <meta property="og:url" content="<%= request.original_url %>"/>
     <meta property="og:image:width" content="1200"/>
