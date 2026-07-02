@@ -222,6 +222,7 @@ html,
     text-align: center;
     .btn {
         @include text-preset-6--bold;
+        text-align: center;
         text-decoration: none;
         display: inline-block;
         color: $beige;
@@ -576,7 +577,7 @@ header {
 
 .hero__wrapper {
     overflow: hidden;
-    border-bottom: 2px solid $black;
+    // border-bottom: 2px solid $black;
     background-color: $beige;
     height: 600px;
     display: flex;
@@ -735,7 +736,7 @@ header {
 .projects__wrapper, .projects-page__wrapper {
     background-color: $white;
     padding: 72px 0px;
-    border-bottom: 2px solid $black;
+    // border-bottom: 2px solid $black;
     overflow: hidden;
     transform: translateZ(0);
     isolation: isolate; 
@@ -854,7 +855,7 @@ header {
     position: relative;
     overflow: hidden;
     background-color: $purple;
-    border-bottom: 2px solid $black;
+    // border-bottom: 2px solid $black;
     padding: 8px 0px;
     white-space: nowrap;
     display: flex;
@@ -889,6 +890,7 @@ header {
                     max-width: 25px;
                     display: inline-block;
                     margin-top: 2px;
+                    fill: $black;
                     @media (max-width: 768px) {
                         max-width: 16px;
                     }
@@ -902,7 +904,7 @@ header {
 
 .about-home__wrapper {
     background-color: $yellow;
-    border-bottom: 2px solid $black;
+    // border-bottom: 2px solid $black;
     padding: 72px 0px;
     @media (max-width: 1023px) {
         padding: 32px;
@@ -985,7 +987,7 @@ header {
     background-color: $white;
     overflow: hidden;
     padding: 72px 0px;
-    border-bottom: 3px solid $black;
+    // border-bottom: 3px solid $black;
     .brands-home__img-wrapper {
         text-align: center;
         .logo-img {
@@ -1012,6 +1014,7 @@ header {
     padding: 72px 0px 112px;
     background-color: $green;
     position: relative;
+    border-top: 2px solid $black;
     @media (max-width: 1023px) {
         padding: 32px;
     }
