@@ -22,6 +22,11 @@
                                 Tools
                             %p.project-details__subtitle-text
                                 Illustrator, Photoshop
+                        .project-details__line
+                            %h2.project-details__subtitle
+                                Type
+                            %p.project-details__subtitle-text
+                                Client Work
                     .column.is-8.is-offset-1-desktop
                         .project-details__intro-text-wrapper
                             .project-details__introduction
@@ -34,86 +39,86 @@
                 .columns
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-1.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-1.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-2.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-2.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-3.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-3.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-4.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/poster-4.webp", :class => "gallery__media", loading: 'lazy'
                 .project-details__description-wrapper
                     .columns.is-variable.is-6
                         .column.is-4
                             %p.eyebrow Strategy
-                            %h3 Concept
+                            %h2 Concept
                         .column.is-8
                             %p.projects__middle-text
                                 The campaign reimagined the hotel as a captivating new world. By framing images within squares to resemble windows, we provided a glimpse into this oasis. Each square invited viewers to peer into the hotel, highlighting the accommodations, stunning landscapes, and exceptional amenities that awaited on the other side.
                 .columns.is-multiline
                     .column.is-12
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/billboard-1.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/billboard+1.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-4
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/billboard-2.png", :class => "gallery__media billboard", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Billboard-2.webp", :class => "gallery__media billboard", loading: 'lazy'
                     .column.is-8
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/billboard-3.png", :class => "gallery__media billboard", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bilboard-3.webp", :class => "gallery__media billboard", loading: 'lazy'
                 .columns
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-01.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-01.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-03.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-03.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-02.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-02.webp", :class => "gallery__media", loading: 'lazy'
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-04.png", :class => "gallery__media", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/stories-04.webp", :class => "gallery__media", loading: 'lazy'
                 .project-details__description-wrapper
                     .columns.is-variable.is-6
                         .column.is-4
                             %p.eyebrow Strategy
-                            %h3 Social Media
+                            %h2 Social Media
                         .column.is-8
                             %p.projects__middle-text
                                 Building on the concept of a serene escape, the campaign introduced 15-second social media videos showcasing the landscapes nearby, such as El Yunque, the beach, sunrises, and the clouds viewed from your hotel balcony. Each video invited viewers to take a momentary break from their scrolling to relax and be transported into the tranquil beauty of the surroundings, allowing them to experience the essence of what it feels like to stay at the hotel.
                 .columns.is-centered.is-vcentered
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-2.gif", :class => "gallery__media timelapse"
+                            = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-2.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :playsinline => "true" )
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-1.gif", :class => "gallery__media"
+                            = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-1.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :playsinline => "true" )
                     .column.is-3
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-3.gif", :class => "gallery__media timelapse"
+                            = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/timelapse-3.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :playsinline => "true" )
                 .project-details__description-wrapper
                     .columns.is-variable.is-6
                         .column.is-4
                             %p.eyebrow Strategy
-                            %h3 Bucket List
+                            %h2 Bucket List
                         .column.is-8
                             %p.projects__middle-text
                                 Throughout transformation, Wyndham Grand Rio Mar expanded its rebuilding efforts to benefit the surrounding community. In support of this initiative, we curated a list of 100 must-do experiences at one of TIME's 100 World's Greatest Places, designed for social media engagement and encouraging UGC. This list, crafted from a local perspective, provides unique insights into Puerto Rican life, revealing hidden gems and activities that only residents would know. By showcasing the advantages of staying in Río Grande over other popular tourist destinations, this effort not only enhanced the hotel’s image but also reinforced its commitment to supporting the local community.
                 .columns.is-multiline    
                     .column.is-6
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-02.png", :class => "gallery__media bucket-list", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-02.webp", :class => "gallery__media bucket-list", loading: 'lazy'
                     .column.is-6
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-01.png", :class => "gallery__media bucket-list", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-01.webp", :class => "gallery__media bucket-list", loading: 'lazy'
                     .column.is-6
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-04.png", :class => "gallery__media bucket-list", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-04.webp", :class => "gallery__media bucket-list", loading: 'lazy'
                     .column.is-6
                         .project-details__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-03.png", :class => "gallery__media bucket-list", loading: 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/bucket-list-03.webp", :class => "gallery__media bucket-list", loading: 'lazy'
             .project-details__navigation-wrapper
                 .columns.is-mobile
                     .column.is-4

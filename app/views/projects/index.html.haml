@@ -1,57 +1,26 @@
 .hero__wrapper
     .container
         .hero__text
-            .h2
-                .columns.is-variable.is-gapless.is-multiline
-                    .column.is-narrow-desktop.is-12-touch.hero__wave-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/wave.svg', alt: 'wave', class: 'wave-wrapper__wave-img'
-                    .column.is-narrow-desktop.is-12-touch.hero__small-text
-                        %p Hi, my name is Nicole Salazar and I'm a...
-            %h1.hero__big-text
-                #hero__variable-text
-                %span
-                    Designer &
-                %br
-                    Front End Developer
-
-.projects__wrapper
-    .container
-        %p.projects__title Projects
-        .columns.is-variable.is-5
-            .column.is-4-desktop.is-6-tablet
-                = link_to "/ux-ui/island-finance-web", :class => "project-button" do
-                    .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/islandfinance-preview.webp', width: 800, height: 800, alt: 'Island Finance Case Study', loading: 'lazy'
-                        .projects__arrow.blue
-                            = inline_svg('arrow.svg')
-                    .project__project-summary
-                        %h4 Island Finance
-                        %p.projects__project-description
-                            A website redesign for Puerto Rico's go-to personal loan provider, built around clarity, trust, and financial accessibility. 
-            .column.is-4-desktop.is-6-tablet
-                = link_to "/ux-ui/dr-harveys", :class => "project-button" do
-                    .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/drharveys-preview.webp', width: 800, height: 800, alt: 'Dr.Harveys Case Study', loading: 'lazy'
-                        .projects__arrow.pink
-                            = inline_svg('arrow.svg')
-                    .project__project-summary
-                        %h4 Dr. Harvey's
-                        %p.projects__project-description
-                            How a cleaner, more intentional web presence helped Dr. Harvey's communicate trust, transparency, and wholesome care.
-            .column.is-4-desktop.is-hidden-tablet-only	
-                = link_to "/graphic-design/ocean-spray", :class => "project-button" do
-                    .projects__cover-wrapper
-                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/oceanspray-preview.webp', width: 800, height: 800, alt: 'Ocean Spray', loading: 'lazy'
-                        .projects__arrow.red
-                            = inline_svg('arrow.svg')
-                    .project__project-summary
-                        %h4 Ocean Spray
-                        %p.projects__project-description
-                            Marketing campaign for Ocean Spray designed to introduce the brand to health-conscious consumers and promote its wholesome benefits.
-        .btn__wrapper
-            = link_to "View All Projects", "/ux-ui", :class => "btn"
-
-
+            .hero__artboard-label-hint
+                %span Hero Artboard
+                %span — Try moving things around
+            .hero__h1-wrapper
+                %h1.hero__big-text
+                    I design for users
+                    and build for developers
+                .hero__square-top-left
+                .hero__square-top-right
+                .hero__square-bottom-right
+                .hero__square-bottom-left
+                .svg-wrapper__hello
+                    = inline_svg('hello.svg')
+                .svg-wrapper__flower
+                    = inline_svg('flower.svg')
+                .svg-wrapper__diamond-circle
+                    = inline_svg('diamond-circle.svg')
+                .svg-wrapper__star
+                    = inline_svg('star-yellow.svg')
+            %p.hero__subtitle Sometimes I'm both.
 .scrolling-text__wrapper
     .scrolling-text__items
         .scrolling-text__item
@@ -129,17 +98,61 @@
                 UX Research
                 %span
                     = inline_svg('design-icon.svg')
+.projects__wrapper
+    .container
+        %h2.projects__title Projects
+        .columns.is-variable.is-4
+            .column.is-4-desktop.is-6-tablet
+                = link_to "/ux-ui/island-finance-web", :class => "project-button" do
+                    .projects__cover-wrapper
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/islandfinance-preview.webp', width: 800, height: 800, alt: 'Island Finance Case Study', loading: 'lazy'
+                        .projects__arrow.blue
+                            = inline_svg('arrow.svg')
+                    .project__project-summary
+                        %h3 Island Finance
+                        %p.projects__project-description
+                            A website redesign for Puerto Rico's go-to personal loan provider, built around clarity, trust, and financial accessibility. 
+            .column.is-4-desktop.is-6-tablet
+                = link_to "/ux-ui/dr-harveys", :class => "project-button" do
+                    .projects__cover-wrapper
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/drharveys-preview.webp', width: 800, height: 800, alt: 'Dr.Harveys Case Study', loading: 'lazy'
+                        .projects__arrow.pink
+                            = inline_svg('arrow.svg')
+                    .project__project-summary
+                        %h3 Dr. Harvey's
+                        %p.projects__project-description
+                            How a cleaner, more intentional web presence helped Dr. Harvey's communicate trust, transparency, and wholesome care.
+            .column.is-4-desktop.is-hidden-tablet-only	
+                = link_to "/graphic-design/ocean-spray", :class => "project-button" do
+                    .projects__cover-wrapper
+                        = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/oceanspray-preview.webp', width: 800, height: 800, alt: 'Ocean Spray', loading: 'lazy'
+                        .projects__arrow.red
+                            = inline_svg('arrow.svg')
+                    .project__project-summary
+                        %h3 Ocean Spray
+                        %p.projects__project-description
+                            Marketing campaign for Ocean Spray designed to introduce the brand to health-conscious consumers and promote its wholesome benefits.
+        .btn__wrapper
+            = link_to "View All Projects", "/work", :class => "btn"
 .about-home__wrapper
-    .container 
-        .about-home__text-wrapper
-            %p.projects__title I'm Nicole, a designer and front end developer from Dominican Republic, based in New Jersey.
-            %p
-                I specialize in Graphic and UX/UI Design and Front End Development. In over 6 years I've worked with a range of clients across wellness, finance, tech, and entertainment. Because I understand both sides of the process, I create work that is as thoughtful as it is functional. I bring a meticulous eye, a love for experimentation, and a commitment to creating work that is engaging, and leaves a lasting impression. 
-            .btn__wrapper
-                = link_to "Get to Know Me", "/about", :class => "btn"
+    .container
+        .about-home__title-wrapper
+            %h2.about__title About Me 
+        .columns.is-variable.is-4-desktop.is-multiline
+            .column.is-6-desktop.is-12-tablet.is-hidden-touch
+                .about-home__img-wrapper
+                    = image_tag 'https://nicolada-website.s3.us-east-1.amazonaws.com/Nicole-Salazar-Img.webp', width: 1080, height: 1440, alt: 'Nicole Salazar Portrait', loading: 'lazy'
+            .column.is-6-desktop.is-12-tablet
+                .about-home__text-wrapper
+                    %h3.about__highlight
+                        I'm Nicole, a designer and front end developer from Dominican Republic, based in New Jersey.
+                    %p
+                        I specialize in Graphic and UX/UI Design and Front End Development. In over 6 years I've worked with a range of clients across wellness, finance, tech, and entertainment. Because I understand both sides of the process, I create work that is as thoughtful as it is functional. I bring a meticulous eye, a love for experimentation, and a commitment to creating work that is engaging, and leaves a lasting impression. 
+                    .btn__wrapper
+                        = link_to "Get to Know Me", "/about", :class => "btn"
 .brands-home__wrapper
     .container
-        %p.projects__title Brands I've Worked With
+        %h2.brands__title Brands I've Worked With
         .columns.is-multiline.is-variable.is-6.is-mobile.is-centered
             .column.is-one-fifth-desktop.is-one-fourth-tablet.is-half-mobile
                 .brands-home__img-wrapper
@@ -222,6 +235,10 @@
         %h2 Ready to work together?
         .btn__wrapper
             = link_to "Get Started", "/contact", :class => "btn"
+        .svg-wrapper__flower-1
+            = inline_svg('flower.svg')
+        .svg-wrapper__flower-2
+            = inline_svg('flower.svg')
 
         
 

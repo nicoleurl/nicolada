@@ -23,6 +23,11 @@
                                 Tools
                             %p.project-details__subtitle-text
                                 InDesign, Illustrator
+                        .project-details__line
+                            %h2.project-details__subtitle
+                                Type
+                            %p.project-details__subtitle-text
+                                Personal Project
                     .column.is-8.is-offset-1-desktop
                         .project-details__intro-text-wrapper
                             %p.project-details__introduction
@@ -36,15 +41,15 @@
             .project-details__colors-wrapper
                 .columns
                     .column.is-6
-                        .project-details_font.font1
-                            %h3 Aa
-                            %h4 Barlow Semi Condensed Bold Italic
+                        .project-details_font.font2
+                            %h2 Aa
+                            %h3 Barlow
                             %p.uppercase abcdefghijklmnopqrstuvwxyz
                             %p abcdefghijklmnopqrstuvwxyz
                             %p
                                 = render plain: "123456789!?/@#$%&()"
-                        .project-details_font.font2
-                            %h4 Montserrat Black Italic
+                        .project-details_font.font1
+                            %h3 Barlow Semi Condensed Bold
                             %p.uppercase abcdefghijklmnopqrstuvwxyz
                             %p abcdefghijklmnopqrstuvwxyz
                             %p
@@ -67,19 +72,19 @@
             .project-details__gallery-wrapper
                 .columns
                     .column.is-6
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-cover.png", :class => "shadow-img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-cover.webp", :class => "shadow-img", :loading => 'lazy'
                     .column.is-6
                         .projects__img-wrapper
-                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-back.png", :class => "shadow-img", :loading => 'lazy'
+                            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-back.webp", :class => "shadow-img", :loading => 'lazy'
                 .columns
                     .column.is-12
                         %p.projects__middle-text
                 .columns
                     .column.is-12
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-open.png", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-open.webp", :loading => 'lazy'
                 .columns
                     .column.is-12
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-poster.png", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/everybodys-free-poster.webp", :loading => 'lazy'
             .project-details__navigation-wrapper
                 .columns.is-mobile
                     .column.is-4

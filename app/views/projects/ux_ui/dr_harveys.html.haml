@@ -2,7 +2,7 @@
 
 .case-study__wrapper.case-study__dr-harveys
     .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drharveyscover.png", :class => "cover__img drh-web__hero"
+        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drhcover.webp", :class => "cover__img drh-web__hero", :width => 1920, :height => 600
     .case-study__content-wrapper
         .container
             .columns.is-centered.is-variable.is-6-desktop
@@ -10,22 +10,22 @@
                     .case-study__details-wrapper
                         %h1 Dr. Harvey's
                         .case-study__details-line
-                            %h2.case-study__subtitle
+                            .case-study__subtitle
                                 Role
                             %p.case-study__subtitle-text
                                 UX Researcher, UX/UI Designer, User Testing, Front End Developer
                         .case-study__details-line
-                            %h2.case-study__subtitle
+                            .case-study__subtitle
                                 Industry
                             %p.case-study__subtitle-text
                                 Pet Food & Supplies, E-commerce
                         .case-study__details-line
-                            %h2.pcase-study__subtitle
+                            .case-study__subtitle
                                 Tools
                             %p.case-study__subtitle-text
                                 Figma, VWO, RubyMine
                         .case-study__details-line
-                            %h2.pcase-study__subtitle
+                            .case-study__subtitle
                                 Languages
                             %p.case-study__subtitle-text
                                 Haml, Sass, Javascript
@@ -40,18 +40,20 @@
                         %p.case-study__introduction
                             To stay competitive in the growing holistic pet food market, the website was modernized to improve usability and visual appeal while keeping the handmade feel that reflects the brand's values. The project focused on increasing conversions with transparency and trust, avoiding aggressive sales tactics, and creating a welcoming, authentic experience for pet owners who value natural and honest products.
                         %p.case-study__introduction
-                            %strong Notes:
-                            Most copywriting and visual assets (graphics and illustrations) were handled by the client's graphic design and marketing teams. I also collaborated with a full-stack developer to implement and refine several front-end features. This project was completed independently. Research, personas, and designs are my own work and not affiliated with or commissioned by Dr.Harvey's. Some design elements were implemented; the majority shown are exploratory concepts.
+                            %em
+                                %strong Notes:
+                                Most copywriting and visual assets (graphics and illustrations) were handled by the client's graphic design and marketing teams. I also collaborated with a full-stack developer to implement and refine several front-end features. The research shown here is my own and was not commissioned. The designs represent the original pitch. Some were implemented, others were not.
 
         .case-study__project-scope-wrapper
             .container
                 .case-study__project-scope
-                    %h3 Project Scope
+                    %h2 Project Scope
                     .columns.is-centered.is-variable.is-8-widescreen
                         .column.is-3
                             .case-study__step
-                                = inline_svg('discover-icon.svg')
-                                %h4 Discover
+                                .svg__wrapper
+                                    = inline_svg('discover-icon.svg')
+                                %h3 Discover
                                 %ul
                                     %li
                                         = link_to "Industry Insights", "#insights"
@@ -61,8 +63,9 @@
                                         = link_to "User Research", "#users"
                         .column.is-3
                             .case-study__step
-                                = inline_svg('define-icon.svg')
-                                %h4 Define
+                                .svg__wrapper
+                                    = inline_svg('define-icon.svg')
+                                %h3 Define
                                 %ul
                                     %li
                                         = link_to "Problem Statement", "#problem"
@@ -74,8 +77,9 @@
                                         = link_to "Project Goals", "#goals"
                         .column.is-3
                             .case-study__step
-                                = inline_svg('ideate-icon.svg')
-                                %h4 Ideate
+                                .svg__wrapper
+                                    = inline_svg('ideate-icon.svg')
+                                %h3 Ideate
                                 %ul
                                     %li
                                         = link_to "Brainstorming", "#brainstorming"
@@ -85,13 +89,14 @@
                                         = link_to "User Flows", "#flows"
                         .column.is-3
                             .case-study__step
-                                = inline_svg('design-icon.svg')
-                                %h4 Design
+                                .svg__wrapper
+                                    = inline_svg('design-icon.svg')
+                                %h3 Design
                                 %ul
                                     %li
                                         = link_to "Low-fi Wireframes", "#lowfi"
                                     %li
-                                        = link_to "Design System", "#system"
+                                        = link_to "Design System", "#design"
                                     %li
                                         = link_to "Final Designs", "#highfi"
         .case-study__industry-insights
@@ -100,31 +105,39 @@
                 .columns.is-variable.is-6-desktop
                     .column.is-3
                         %p.eyebrow Industry Insights
-                        %h3 Holistic Pet Food & Buyer Behavior
+                        %h2 Holistic Pet Food & Buyer Behavior
                     .column.is-8.is-offset-1-desktop
                         .industry-insights__section
                             %p.insights-header The holistic pet food market
                             %p The natural and holistic pet food space is growing rapidly, driven by rising demand for minimally processed, human-grade nutrition that aligns with wellness trends. More pet owners now prioritize whole-food ingredients, clean labels, and sustainability, with many owners willing to pay more for premium products.
                             .industry-insights__stats
-                                .columns
-                                    .column
-                                        .insights-bubble.b1
+                                .columns.is-variable.is-1
+                                    .column.is-6
+                                        .insights-bubble.bubble--stretch.bubble--faded-pink
                                             %p.bubble-number
-                                                $57.2B
+                                                %span{ data: { count: 57, prefix: "$", suffix: "B" } }$0B
                                             %p.bubble-label
                                                 projected global organic and natural pet food market by 2033, up 82% from 2024
-                                    .column
-                                        .insights-bubble.b1
-                                            %p.bubble-number
-                                                55%
-                                            %p.bubble-label
-                                                of millennial pet owners open to holistic supplements before conventional medication
-                                    .column
-                                        .insights-bubble.b1
-                                            %p.bubble-number
-                                                60%
-                                            %p.bubble-label
-                                                more likely for Millenials to purchase organic pet food than other generations
+                                            %p.bubble-source
+                                                IMARC Group
+                                    .column.is-6
+                                        .columns.is-multiline
+                                            .column.is-12
+                                                .insights-bubble.bubble--pink
+                                                    %p.bubble-number
+                                                        %span{ data: { count: 55, suffix: "%" } } 0%
+                                                    %p.bubble-label
+                                                        of millennial pet owners open to holistic supplements before conventional medication
+                                                    %p.bubble-source
+                                                        Packaged Facts
+                                            .column.is-12
+                                                .insights-bubble.bubble--lightpink
+                                                    %p.bubble-number
+                                                        %span{ data: { count: 69, suffix: "%" } } 0%
+                                                    %p.bubble-label
+                                                        of millennial pet owners are more likely to consider foods using naturally-made ingredients
+                                                    %p.bubble-source
+                                                        Freedonia Group
                             .industry-insights__bullets
                                 %ul
                                     %li.b1
@@ -143,25 +156,33 @@
                             %p.insights-header Pet owner digital behavior
                             %p Understanding how pet owners shop, research, and decide shaped the navigation structure, content hierarchy, and the product quiz feature priority.
                             .industry-insights__stats
-                                .columns
-                                    .column
-                                        .insights-bubble.b2
+                                .columns.is-variable.is-1
+                                    .column.is-6
+                                        .insights-bubble.bubble--stretch.bubble--faded-blue
                                             %p.bubble-number
-                                                +113%
+                                                %span{ data: { count: 113, prefix: "+", suffix: "%" } } +0%
                                             %p.bubble-label
-                                                rise in searches for low-calorie pet food. Frozen and fresh options searches are up 111%
-                                    .column
-                                        .insights-bubble.b2
-                                            %p.bubble-number
-                                                61%
-                                            %p.bubble-label
-                                                of pet parents prioritize ingredient transparency when choosing pet food
-                                    .column
-                                        .insights-bubble.b2
-                                            %p.bubble-number
-                                                59%
-                                            %p.bubble-label
-                                                of organic and natural pet food purchases in the US are made online, through subscriptions or pet-specific platforms
+                                                rise in searches for low-calorie pet food. Frozen options searches are up 111%
+                                            %p.bubble-source
+                                                Pet Food Processing
+                                    .column.is-6
+                                        .columns.is-multiline
+                                            .column.is-12
+                                                .insights-bubble.bubble--blue
+                                                    %p.bubble-number
+                                                        %span{ data: { count: 60, suffix: "%" } }  0%
+                                                    %p.bubble-label
+                                                        consider transparency very important, with US consumers feeling particularly strongly at 68%
+                                                    %p.bubble-source
+                                                        PETS International
+                                            .column.is-12
+                                                .insights-bubble.bubble--lightblue
+                                                    %p.bubble-number
+                                                        %span{ data: { count: 40, suffix: "%" } } 0%
+                                                    %p.bubble-label
+                                                        of pet food purchases in the US are made online
+                                                    %p.bubble-source
+                                                        Packaged Facts
                             .industry-insights__bullets
                                 %ul
                                     %li.b2
@@ -182,7 +203,7 @@
                 .columns.is-variable.is-6-desktop
                     .column.is-3
                         %p.eyebrow Competitive Audit
-                        %h3 Understanding the market
+                        %h2 Understanding the market
                     .column.is-8.is-offset-1-desktop
                         %p Direct and indirect competitors in the holistic and natural pet food space were analyzed across product presentation, ingredient transparency, educational content, and shopping experience.
                         %p The audit shows that across direct and indirect competitors alike, strong ingredient transparency, smooth product discovery, and educational content have become table stakes in the holistic pet food space. The opportunity for Dr. Harvey's is to close the design and UX gap before the brand's authentic story gets buried by competitors with bigger budgets and cleaner sites.
@@ -231,73 +252,77 @@
                                 %td.good Strong
                                 %td.weak None
                 .competitive-audit__analysis
-                    .analysis__tier-1  
-                        %p.tier-title   
-                            Tier 1 — Direct Competitors
+                    .analysis
+                        %hr
                         .columns
                             .column
                                 .analysis__card
-                                    .card-top
-                                        .card-label.blue
+                                    .card__title-wrapper.blue
+                                        .card-label
                                             %p Strongest Rival
                                         %p.card-title The Honest Kitchen
                                         %p.card-subtitle thehonestkitchen.com
-                                        %p.card-text
-                                            The closest competitor in positioning. Human-grade ingredients, strong educational content, and a clear brand story. Product pages lead with ingredients and feeding instructions. Their pet quiz is well-executed and reduces decision fatigue effectively.
-                                    .card-takeaway
-                                        %p
-                                            %span Takeaway:
-                                            Sets the standard for a transparent, education-first holistic pet food site. The redesign needs to match this quality while preserving Dr. Harvey's handcrafted, family-owned differentiation.
+                                    .card__info-wrapper
+                                        .card-top
+                                            %p.card-text
+                                                The closest competitor in positioning. Human-grade ingredients, strong educational content, and a clear brand story. Product pages lead with ingredients and feeding instructions. Their pet quiz is well-executed and reduces decision fatigue effectively.
+                                        .card-takeaway.blue
+                                            %p
+                                                %span Takeaway:
+                                                Sets the standard for a transparent, education-first holistic pet food site. The redesign needs to match this quality while preserving Dr. Harvey's handcrafted, family-owned differentiation.
                             .column
                                 .analysis__card
-                                    .card-top
-                                        .card-label.green
+                                    .card__title-wrapper.green
+                                        .card-label
                                             %p Best Design Quality
                                         %p.card-title Open Farm
                                         %p.card-subtitle openfarmpet.com
-                                        %p.card-text
-                                            The most visually polished site in the competitive set. Clean, modern, premium feel with strong sourcing transparency, with each product links to the specific farm it came from. Strong sustainability narrative throughout.
-                                    .card-takeaway
-                                        %p
-                                            %span Takeaway:
-                                            Premium visual quality and sourcing specificity are not mutually exclusive with warmth. You can look polished and still communicate genuine care.
-                    .analysis__tier-2 
-                        %p.tier-title   
-                            Tier 2 — Indirect Competitors
+                                    .card__info-wrapper
+                                        .card-top
+                                            %p.card-text
+                                                The most visually polished site in the competitive set. Clean, modern, premium feel with strong sourcing transparency, with each product links to the specific farm it came from. Strong sustainability narrative throughout.
+                                        .card-takeaway.green
+                                            %p
+                                                %span Takeaway:
+                                                Premium visual quality and sourcing specificity are not mutually exclusive with warmth. You can look polished and still communicate genuine care.
                         .columns
                             .column
                                 .analysis__card
-                                    .card-top
-                                        .card-label.yellow
+                                    .card__title-wrapper.yellow
+                                        .card-label
                                             %p Discovery UX Reference
                                         %p.card-title Chewy
                                         %p.card-subtitle chewy.com
-                                        %p.card-text
-                                            Excellent product filtering and discovery. Brand feels corporate but the shopping experience is smooth. Lacks meaningful educational content for first-time buyers. The brand site must offer something Chewy cannot like deeper story, preparation guidance, and a direct community relationship.
-                                    .card-takeaway
-                                        %p
-                                            %span Takeaway:
-                                            Chewy dominates discovery but cannot offer a brand relationship. The opportunity is in everything a retailer cannot do: story, education, and community.
+                                    .card__info-wrapper
+                                        .card-top
+                                            %p.card-text
+                                                Excellent product filtering and discovery. Brand feels corporate but the shopping experience is smooth. Lacks meaningful educational content for first-time buyers. The brand site must offer something Chewy cannot like deeper story, preparation guidance, and a direct community relationship.
+                                        .card-takeaway.yellow
+                                            %p
+                                                %span Takeaway:
+                                                Chewy dominates discovery but cannot offer a brand relationship. The opportunity is in everything a retailer cannot do: story, education, and community.
                             .column
                                 .analysis__card
-                                    .card-top
-                                        .card-label.pink
-                                            %p Mass Market Cautionary Tale
+                                    .card__title-wrapper.pink
+                                        .card-label
+                                            %p Mass Market Reference
                                         %p.card-title Blue Buffalo
                                         %p.card-subtitle bluebuffalo.com
-                                        %p.card-text
-                                            The most recognized name in natural pet food, now owned by General Mills. The site is polished with strong product filtering and life-stage navigation, but the corporate ownership shows. Ingredient messaging is repetitive and surface-level, and the handcrafted identity is essentially gone.
-                                    .card-takeaway
-                                        %p
-                                            %span Takeaway:
-                                            Polish increased when it scaled up but the authenticity that holistic buyers respond to got diluted. Dr. Harvey's independence is a direct competitive advantage, but only if the site communicates it clearly.
+                                    .card__info-wrapper
+                                        .card-top
+                                            %p.card-text
+                                                The most recognized name in natural pet food, now owned by General Mills. The site is polished with strong product filtering and life-stage navigation, but the corporate ownership shows. Ingredient messaging is repetitive and surface-level, and the handcrafted identity is essentially gone.
+                                        .card-takeaway.pink
+                                            %p
+                                                %span Takeaway:
+                                                Polish increased when it scaled up but the authenticity that holistic buyers respond to got diluted. Dr. Harvey's independence is a direct competitive advantage, but only if the site communicates it clearly.
         .case-study__user-interviews
             .anchor#users
             .container
                 .columns.is-variable.is-6-desktop
                     .column.is-3
                         %p.eyebrow User Research
-                        %h3 Understanding users
+                        %h2 Understanding users
                     .column.is-8.is-offset-1
                         %p To understand what Dr. Harvey's customers need from the site, industry research, customer feedback, and past user testing were analyzed. Four recurring themes emerged that directly shaped the design direction.
                         .case-study__interview-quotes
@@ -317,14 +342,14 @@
                                         .case-study-quote__source
                                             %p Observed across Chewy reviews, Wag, and Hepper
                                 .column.is-6
-                                    .case-study-quote.blue
+                                    .case-study-quote.yellow
                                         .case-study__quote-label.c3
                                             %p Ingredients
                                         %p Ingredient quality is the primary purchase driver across reviews. Customers cite whole food ingredients, human-grade sourcing, and the absence of artificial additives as the deciding factors. When ingredient information is hard to find or buried, it stalls the decision entirely.
                                         .case-study-quote__source
                                             %p Observed across Chewy reviews, Dog Food Advisor, and Dogster
                                 .column.is-6
-                                    .case-study-quote.yellow
+                                    .case-study-quote.blue
                                         .case-study__quote-label.c4
                                             %p Trust Signals
                                         %p Vet guidance comes up frequently in the context of specialized diets, kidney disease, and chronic conditions. Customers with health-specific needs actively look for professional endorsement or credentials before spending at this price point.
@@ -336,7 +361,7 @@
                 .columns
                     .column.is-3
                         %p.eyebrow Challenges
-                        %h3 Problem Statement
+                        %h2 Problem Statement
                     .column.is-8.is-offset-1-desktop
                         %p Many shoppers do not fully understand what holistic pet food is or why it costs more than conventional options. Dr. Harvey's products are not an impulse buy but an intentional investment in a pet's long-term health, usually chosen after careful research and consideration. The challenge was to redesign the website to communicate this value clearly while keeping the brand's authentic, handcrafted feel. The site needed to make ingredient information, feeding guides, and educational content easy to find and search-friendly, helping new customers feel informed and confident. At the same time, the user experience had to support higher conversions and repeat purchases through clear, honest flows and thoughtful upsells, never resorting to pushy tactics. Finally, the mobile experience needed to be seamless, so loyal customers could easily reorder and manage their accounts anytime, anywhere.
         .case-study__main-concerns
@@ -345,41 +370,33 @@
                 .columns
                     .column.is-3
                         %p.eyebrow Main Concerns
-                        %h3 Key Challenges
+                        %h2 Key Challenges
                     .column.is-8.is-offset-1-desktop
                         .main-concerns__concerns-wrapper
                             %p Four recurring challenges from user research and competitive analysis shaped the design priorities for the redesign.
-                            .columns.is-multiline.is-variable.is-8-desktop
+                            .columns.is-multiline.is-variable.is-4
                                 .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            %p 📋
-                                        %h4 Preparation complexity
+                                    .main-concerns__concerns-box.green
+                                        %h3 Preparation complexity
                                         %p Dr. Harvey's products require preparation: mixing, rehydrating, portioning. Users who don't understand how to prepare the food abandon the purchase. Preparation guides need to be central to the product page experience, not an afterthought.
                                 .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            %p 🤍
-                                        %h4 Emotional authenticity
+                                    .main-concerns__concerns-box.pink
+                                        %h3 Emotional authenticity
                                         %p The brand's handcrafted, family-owned identity is its strongest differentiator. The previous site felt generic and didn't communicate the 40-year story or the personal care behind the products. Redesigning with warmth and authenticity was a core constraint.
                                 .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            %p 🔍
-                                        %h4 Information overload
+                                    .main-concerns__concerns-box.yellow
+                                        %h3 Information overload
                                         %p Dr. Harvey's has a wide product range across multiple formats and dietary philosophies. Without clear filtering, categorization, and guided discovery, users get overwhelmed and default to familiar brands.
                                 .column.is-6
-                                    .main-concerns__concerns-box
-                                        .concerns-box__img-wrapper
-                                            %p 💰
-                                        %h4 Trust at a premium price
+                                    .main-concerns__concerns-box.blue
+                                        %h3 Trust at a premium price
                                         %p Dr. Harvey's products cost significantly more than conventional pet food. At that price point, every trust signal matters like vet endorsements, certifications, sourcing transparency, customer reviews.
         .case-study__personas
             .anchor#personas
             .container
                 .case-study__personas-text
                     %p.eyebrow Users
-                    %h3 Personas
+                    %h2 Personas
                     %p Four personas were developed from user research, industry data, and customer feedback to represent the primary Dr. Harvey's buyer segments.
             .swiper.personasSwiper
                 .swiper-wrapper
@@ -387,7 +404,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.jpeg", :class => "emma-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.webp", :class => "emma-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -472,7 +489,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.jpeg", :class => "david-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.webp", :class => "david-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -556,7 +573,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.jpeg", :class => "sarah-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.webp", :class => "sarah-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -641,7 +658,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.jpeg", :class => "jade-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.webp", :class => "jade-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -726,7 +743,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.jpeg", :class => "emma-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Emma.webp", :class => "emma-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -811,7 +828,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.jpeg", :class => "david-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/David.webp", :class => "david-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -895,7 +912,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.jpeg", :class => "sarah-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sarah.webp", :class => "sarah-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -980,7 +997,7 @@
                         .columns.is-gapless.is-multiline
                             .column.is-3-fullhd.is-12-tablet.is-12-desktop.is-12
                                 .swiper-persona__img
-                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.jpeg", :class => "jade-img", :loading => 'lazy'
+                                    = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Jade.webp", :class => "jade-img", :loading => 'lazy', :width => 1080, :height => 720
                             .column.is-8-tablet.is-8-desktop.is-5-fullhd.is-12
                                 .swiper-persona__information
                                     %p.swiper-persona__eyebrow
@@ -1069,125 +1086,128 @@
                 .columns
                     .column.is-3
                         %p.eyebrow Objectives
-                        %h3 Revewing project goals
+                        %h2 Revewing project goals
                     .column.is-8.is-offset-1
                         %p Dr. Harvey's business goals around conversions and repeat purchases aligned closely with what users needed: a site that educates, builds trust, and makes shopping feel easy and authentic. The project focused on designing toward that intersection.
                         .project-goals__graph
-                            .columns
-                                .column
-                                    .graph__business-title
-                                        %p Business goals
-                                .column
-                                    .graph__mutual-title
-                                        %p Project goals
-                                .column
-                                    .graph__user-title
-                                        %p User goals
-                            .columns.is-vcentered.graph-columns
-                                .column
-                                    .graph__business-goals
-                                        %ul
-                                            %li Increase conversions
-                                            %li Boost repeat loans
-                                            %li Build brand awareness
-                                            %li Grow autoship revenue
-                                            %li Grow upsale revenue
-                                            %li Boost CEO visits
-                                .column
-                                    .graph__mutual-goals
-                                        %ul
-                                            %li Trust and transparency
-                                            %li Seamless shopping
-                                            %li Educated customers
-                                            %li Long-term customers
-                                .column
-                                    .graph__user-goals
-                                        %ul
-                                            %li Shop with confidence
-                                            %li Transparent ingredients
-                                            %li Build trust in brand
-                                            %li Improve pet health
-                                            %li Find the right products
+                            .columns.is-variable.is-gapless.is-multiline
+                                .column.is-12.is-4-widescreen
+                                    .graph__business-wrapper
+                                        .graph__business-title
+                                            %p Business goals
+                                        .graph__business-goals
+                                            %ul
+                                                %li Increase conversions
+                                                %li Boost repeat loans
+                                                %li Build brand awareness
+                                                %li Grow autoship revenue
+                                                %li Grow upsale revenue
+                                                %li Boost CEO visits
+                                .column.is-12.is-4-widescreen
+                                    .graph__mutual-wrapper
+                                        .graph__mutual-title
+                                            %p Project goals
+                                        .graph__mutual-goals
+                                            %ul
+                                                %li Trust and transparency
+                                                %li Seamless shopping
+                                                %li Educated customers
+                                                %li Long-term customers
+                                .column.is-12.is-4-widescreen
+                                    .graph__user-wrapper
+                                        .graph__user-title
+                                            %p User goals
+                                        .graph__user-goals
+                                            %ul
+                                                %li Shop with confidence
+                                                %li Transparent ingredients
+                                                %li Build trust in brand
+                                                %li Improve pet health
+                                                %li Find the right products
         .case-study__brainstorming
             .anchor#brainstorming
             .container
                 .columns
                     .column.is-3
                         %p.eyebrow Brainstorming
-                        %h3 Organizing Ideas and the solution
+                        %h2 Organizing Ideas and the solution
                     .column.is-8.is-offset-1
                         %p
                             Considering the research and the goals and frustrations of the personas, the insights were categorized into four areas to aid in generating ideas.
                 .columns
                     .column.is-3
-                        %h4 Opportunities
-                        .brainstorming-card.opportunities
-                            %p Clean, human-grade ingredients as a core differentiator
-                        .brainstorming-card.opportunities
-                            %p 40-year family-owned story with genuine brand heritage
-                        .brainstorming-card.opportunities
-                            %p No major competitor with both premium quality and authentic warmth
-                        .brainstorming-card.opportunities
-                            %p Vet-endorsed products that can be foregrounded as trust signals
-                        .brainstorming-card.opportunities
-                            %p Growing Gen Z first-time pet owner audience
-                        .brainstorming-card.opportunities
-                            %p Autoship and loyalty program as untapped retention tools
+                        .opportunities__wrapper
+                            %h3 Opportunities
+                            .brainstorming-card.opportunities
+                                %p Clean, human-grade ingredients as a core differentiator
+                            .brainstorming-card.opportunities
+                                %p 40-year family-owned story with genuine brand heritage
+                            .brainstorming-card.opportunities
+                                %p No major competitor with both premium quality and authentic warmth
+                            .brainstorming-card.opportunities
+                                %p Vet-endorsed products that can be foregrounded as trust signals
+                            .brainstorming-card.opportunities
+                                %p Growing Gen Z first-time pet owner audience
+                            .brainstorming-card.opportunities
+                                %p Autoship and loyalty program as untapped retention tools
                     .column.is-3
-                        %h4 Pain Points
-                        .brainstorming-card.pain-points
-                            %p Preparation instructions missing or buried on product pages
-                        .brainstorming-card.pain-points
-                            %p Ingredients hard to find and vaguely described
-                        .brainstorming-card.pain-points
-                            %p No beginner-friendly entry point for first-time owners
-                        .brainstorming-card.pain-points
-                            %p No recommendation tool for pairing products together
-                        .brainstorming-card.pain-points
-                            %p Trust signals not visible above the fold
-                        .brainstorming-card.pain-points
-                            %p No blog for easy discovery of the brand
-                        .brainstorming-card.pain-points
-                            %p Slow loading times
-                        .brainstorming-card.pain-points
-                            %p No filters by age or needs
+                        .pain-points__wrapper
+                            %h3 Pain Points
+                            .brainstorming-card.pain-points
+                                %p Preparation instructions missing or buried on product pages
+                            .brainstorming-card.pain-points
+                                %p Ingredients hard to find and vaguely described
+                            .brainstorming-card.pain-points
+                                %p No beginner-friendly entry point for first-time owners
+                            .brainstorming-card.pain-points
+                                %p No recommendation tool for pairing products together
+                            .brainstorming-card.pain-points
+                                %p Trust signals not visible above the fold
+                            .brainstorming-card.pain-points
+                                %p No blog for easy discovery of the brand
+                            .brainstorming-card.pain-points
+                                %p Slow loading times
+                            .brainstorming-card.pain-points
+                                %p No filters by age or needs
                     .column.is-3
-                        %h4 Considerations
-                        .brainstorming-card.considerations
-                            %p Visual identity must feel warm and handcrafted, not clinical
-                        .brainstorming-card.considerations
-                            %p Copywriting and visual assets handled by client team
-                        .brainstorming-card.considerations
-                            %p Product range is wide and complex, filtering is critical
-                        .brainstorming-card.considerations
-                            %p Premium price point requires premium digital quality
-                        .brainstorming-card.considerations
-                            %p Avoid aggressive sales tactics, authenticity over conversion pressure
-                        .brainstorming-card.considerations
-                            %p Ingredient-level and condition-specific SEO ensures Dr. Harvey's appears during the research phase
+                        .considerations__wrapper
+                            %h3 Considerations
+                            .brainstorming-card.considerations
+                                %p Visual identity must feel warm and handcrafted, not clinical
+                            .brainstorming-card.considerations
+                                %p Copywriting and visual assets handled by client team
+                            .brainstorming-card.considerations
+                                %p Product range is wide and complex, filtering is critical
+                            .brainstorming-card.considerations
+                                %p Premium price point requires premium digital quality
+                            .brainstorming-card.considerations
+                                %p Avoid aggressive sales tactics, authenticity over conversion pressure
+                            .brainstorming-card.considerations
+                                %p Ingredient-level and condition-specific SEO ensures Dr. Harvey's appears during the research phase
                     .column.is-3
-                        %h4 Solutions
-                        .brainstorming-card.solutions
-                            %p Ingredient lists and preparation guides prominent on every product page
-                        .brainstorming-card.solutions
-                            %p Pet profile quiz as the primary entry point for new buyers
-                        .brainstorming-card.solutions
-                            %p Plain-language beginner guide for first-time dehydrated food buyers
-                        .brainstorming-card.solutions
-                            %p Founder story and brand heritage on homepage and about page
-                        .brainstorming-card.solutions
-                            %p Autoship and subscription option on all product pages
-                        .brainstorming-card.solutions
-                            %p Vet endorsements and certifications visible above the fold
-                        .brainstorming-card.solutions
-                            %p Suggestions of good product pairings on product pages 
+                        .solutions__wrapper
+                            %h3 Solutions
+                            .brainstorming-card.solutions
+                                %p Ingredient lists and preparation guides prominent on every product page
+                            .brainstorming-card.solutions
+                                %p Pet profile quiz as the primary entry point for new buyers
+                            .brainstorming-card.solutions
+                                %p Plain-language beginner guide for first-time dehydrated food buyers
+                            .brainstorming-card.solutions
+                                %p Founder story and brand heritage on homepage and about page
+                            .brainstorming-card.solutions
+                                %p Autoship and subscription option on all product pages
+                            .brainstorming-card.solutions
+                                %p Vet endorsements and certifications visible above the fold
+                            .brainstorming-card.solutions
+                                %p Suggestions of good product pairings on product pages 
         .case-study__features
             .anchor#features
             .container
                 .columns
                     .column.is-3
                         %p.eyebrow Feature Roadmap
-                        %h3 Transforming Needs into Features
+                        %h2 Transforming Needs into Features
                     .column.is-8.is-offset-1
                         %p
                             Informed by user needs, pain points, and project goals, this feature set prioritizes experiences that reduce friction, build trust, and make holistic pet food easier to understand and shop for.
@@ -1314,57 +1334,57 @@
                 .columns
                     .column.is-3
                         %p.eyebrow User Flows
-                        %h3 How Users Shop for Dog Food
+                        %h2 How Users Shop for Dog Food
                     .column.is-8.is-offset-1
                         %p To design an experience that actually works for dog owners, I needed to understand how they shop, what they know walking in, what they're unsure about, and where they might get stuck. Mapping these flows helped ensure every path feels intuitive and leads to the right food for their dog.
                         %h4 Ways to Start Shopping
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/entry-points.png", :class => "user-flows__img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/entry-points.webp", :class => "user-flows__img", :loading => 'lazy', :width => 1920, :height => 1080
                         %h4 Browsing through navigation
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/nav-bar-flow.png", :class => "user-flows__img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/nav-bar-flow.webp", :class => "user-flows__img", :loading => 'lazy', :width => 1344, :height => 150
                         %h4 Shopping by best sellers
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/best-sellers-flow.png", :class => "user-flows__img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/best-sellers-flow.webp", :class => "user-flows__img", :loading => 'lazy', :width => 1344, :height => 300
                         %h4 Shopping by personalized recommendations
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/recommended-flow.png", :class => "user-flows__img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/recommended-flow.webp", :class => "user-flows__img", :loading => 'lazy', :width => 1344, :height => 200
                         %h4 Returning to buy again
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/buy-again-flow.png", :class => "user-flows__img", :loading => 'lazy'
+                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/buy-again-flow.webp", :class => "user-flows__img", :loading => 'lazy', :width => 1344, :height => 200
         .case-study__lofi-wireframes
             .anchor#lowfi
             %p.eyebrow Design
-            %h3 Lo-fi Wireframes
-            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Wireframes-drh.png", :loading => 'lazy'
+            %h2 Lo-fi Wireframes
+            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Wireframes-drh.webp", :loading => 'lazy', :width => 1344, :height => 1400
         .case-study__desing-system
             .anchor#design
             .container
                 .columns
                     .column.is-3
                         %p.eyebrow Design
-                        %h3 Design System & Style guide
+                        %h2 Design System & Style guide
                     .column.is-8.is-offset-1
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrHaveys-Colors.png", :loading => 'lazy'
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drh-styles.png", :loading => 'lazy'
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrHaveys-Colors.webp", :loading => 'lazy', :width => 1920, :height => 1080
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drh-styles.webp", :loading => 'lazy', :width => 1080, :height => 2000
         .case-study__hifi-wireframes
             .anchor#highfi
             .hifi-wireframes__main-visual
                 .container
                     %p.eyebrow High-fi Wireframes
-                    %h3 Introducing Dr. Harvey's
+                    %h2 Introducing Dr. Harvey's
                     %p A refreshed experience built around clarity, warmth, and ease, guiding pet parents through intuitive paths, straightforward choices, and helpful information exactly when and where they need it.
                     .img__wrapper
                         = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Home-New+User.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
             .hifi-wireframes__section-description
                 .container
-                    %h4 Designing the First Impression
+                    %h3 Designing the First Impression
                     %p Whether someone is visiting for the first time or returning to reorder, the experience was designed to feel clear and tailored from the start. New and returning users are met with entry points designed around their needs. First-time visitors are eased into what fresh feeding is all about, while returning users can quickly pick up where they left off. This structure keeps the journey intuitive, building familiarity and confidence that makes it easy to move from exploration to action.
             .hifi-wireframes__sign-up
                 .columns.is-gapless
                     .column
                         .column__sign-up
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sign+Up.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sign+Up.webp", :loading => 'lazy', :width => 1920, :height => 1080
                     .column
                         .column__log-in
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Log+In.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Log+In.webp", :loading => 'lazy', :width => 1920, :height => 1080
             .hifi-wireframes__home-existing-user
                 .img__wrapper
                     = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Home-existing-user.webm", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto", type: "video/webm"
@@ -1373,14 +1393,14 @@
                     .column.is-6
                         .column-left
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Menu-New.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Menu-New.webp", :loading => 'lazy', :width => 1080, :height => 1080
                     .column.is-6
                         .column-right
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Menu-Existing.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Menu-Existing.webp", :loading => 'lazy', :width => 1080, :height => 1080
             .hifi-wireframes__section-description
                 .container
-                    %h4 Education & Trust Building
+                    %h3 Education & Trust Building
                     %p Pet parents exploring holistic nutrition usually have a lot of questions before they're ready to buy. These pages are designed to meet them there, bringing together education, brand values, and real customer stories in a way that feels honest and reassuring. By the time someone finishes exploring, the goal is that they feel informed enough to take the next step with confidence.
             .hifi-wireframes__education
                 .feed-fresh__desktop
@@ -1390,28 +1410,28 @@
                     .columns.is-gapless.is-multiline
                         .column.is-6
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/factory-img.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/factory-img.webp", :loading => 'lazy', :width => 1080, :height => 1080
                         .column.is-6
                             .feed-fresh__mobile-home
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-1.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-1.webp", :loading => 'lazy', :width => 1080, :height => 1920
                 .feed-fresh__mobile-scroll
                     .columns.is-multiline.is-mobile.is-centered
                         .column.is-one-fifth-tablet.is-6-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-2.png", :class => "feed-fresh__img-1", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-2.webp", :class => "feed-fresh__img-1", :loading => 'lazy', :width => 1080, :height => 1920
                         .column.is-one-fifth-tablet.is-6-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-3.png", :class => "feed-fresh__img-2", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-3.webp", :class => "feed-fresh__img-2", :loading => 'lazy', :width => 1080, :height => 1920
                         .column.is-one-fifth-tablet.is-6-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-4.png", :class => "feed-fresh__img-3", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-4.webp", :class => "feed-fresh__img-3", :loading => 'lazy', :width => 1080, :height => 1920
                         .column.is-one-fifth-tablet.is-6-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-5.png", :class => "feed-fresh__img-4", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-5.webp", :class => "feed-fresh__img-4", :loading => 'lazy', :width => 1080, :height => 1920
                         .column.is-one-fifth-tablet.is-6-mobile
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-6.png", :class => "feed-fresh__img-5", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-6.webp", :class => "feed-fresh__img-5", :loading => 'lazy', :width => 1080, :height => 1920
                 .education__company    
                     .container
                         .img__wrapper
@@ -1421,66 +1441,66 @@
                         .column.is-6
                             .company-reviews__success-stories
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Pet-Stories.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Pet-Stories.webp", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-6
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/garden-veggies-img.webp", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/garden-veggies-img.webp", :loading => 'lazy', :width => 1080, :height => 1080
                 .company__reviews
                     .columns.is-gapless    
                         .column.is-6
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Veg-To-Bowl_img.webp", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Veg-To-Bowl_img.webp", :loading => 'lazy', :width => 1080, :height => 1080
                         .column.is-6
                             .company-reviews__all-reviews
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Reviews.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Reviews.webp", :loading => 'lazy', :width => 1920, :height => 1080
                 .company__blog
                     .columns.is-vcentered
                         .column
                             .company-blog__tablet
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog.webp", :loading => 'lazy', :width => 1920, :height => 1080
                         .column
                             .company-blog__mobile
                                 .columns.is-mobile.is-gapless
                                     .column
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-1.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-1.webp", :loading => 'lazy', :width => 1080, :height => 1920
                                     .column
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-2.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-2.webp", :loading => 'lazy', :width => 1080, :height => 1920
                                     .column
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-3.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-3.webp", :loading => 'lazy', :width => 1080, :height => 1920
             .hifi-wireframes__section-description
                 .container
-                    %h4 Product Discovery
+                    %h3 Product Discovery
                     %p The discovery experience was designed to make choosing feel simple. The Meal Matchmaker points users toward the right products for their pet, while filtering and clear organization keep browsing stress-free. On the Product Details Page, educational content gives users the context they need to feel good about their decision. Touchpoints like Find a Store round out the experience by offering flexible ways to buy, so no matter where someone is in their journey, the path forward always feels clear.
             .hifi-wireframes__product-discovery
                 .product-discovery__matchmaker
                     .columns.is-gapless
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker.png", :class => "matchmaker__img1", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker.webp", :class => "matchmaker__img1", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-1.png", :class => "matchmaker__img2", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-1.webp", :class => "matchmaker__img2", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-6.png", :class => "matchmaker__img3", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-6.webp", :class => "matchmaker__img3", :loading => 'lazy', :width => 1920, :height => 1080
                     .columns.is-gapless
                         .column.is-2
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-7.png", :class => "matchmaker__img4", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-7.webp", :class => "matchmaker__img4", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-2.png", :class => "matchmaker__img5", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-2.webp", :class => "matchmaker__img5", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-4
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-3.png", :class => "matchmaker__img6", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-3.webp", :class => "matchmaker__img6", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-2
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-4.png", :class => "matchmaker__img7", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Meal-Matchmaker-4.webp", :class => "matchmaker__img7", :loading => 'lazy', :width => 1920, :height => 1080
 
                 .product-discovery__all-products
                     .container
@@ -1490,10 +1510,10 @@
                     .columns.is-gapless 
                         .column.is-6
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product+Details.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product+Details.webp", :loading => 'lazy', :width => 1920, :height => 1600
                         .column.is-6
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product-Details.gif", :class => "product-details__img"
+                                = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product-Details.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
                 .product-discovery__store-finder
                     .columns.is-gapless
                         .column.is-7
@@ -1501,10 +1521,10 @@
                                 = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Store-Finder.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto", :class => "store-finder__video"
                         .column.is-5
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Store+Finder+Results.png", :class => "store-finder__img", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Store+Finder+Results.webp", :class => "store-finder__img", :loading => 'lazy', :width => 1920, :height => 1080
             .hifi-wireframes__section-description
                 .container
-                    %h4 Guided Conversions
+                    %h3 Guided Conversions
                     %p Once a product is selected, the focus shifts to making checkout feel like a natural next step. The Free Trial page offers a low-pressure way in, while personalized upsells in the cart gently guide users toward options that feel relevant rather than pushy. From there, a streamlined checkout keeps things moving smoothly, so by the time someone reaches the final step, they feel confident in what they're getting.
             .hifi-wireframes__conversions
                 .conversions__free-trial
@@ -1515,16 +1535,16 @@
                     .columns.is-gapless
                         .column.is-6
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/brand-img.webp", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/brand-img.webp", :loading => 'lazy', :width => 1080, :height => 1080
                         .column.is-6
                             .free-trial-mobile__mockups
                                 .columns.is-mobile
                                     .column
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-1.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-1.webp", :loading => 'lazy', :width => 1920, :height => 1080
                                     .column
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-2.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-2.webp", :loading => 'lazy', :width => 1920, :height => 1080
                 .conversions__upsell-cart
                     .columns.is-gapless
                         .column
@@ -1532,22 +1552,22 @@
                                 .columns
                                     .column.is-6
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart+Upsell.png", :class => "upsell-img", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart+Upsell.webp", :class => "upsell-img", :loading => 'lazy', :width => 1920, :height => 1080
                                     .column.is-6
                                         .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart-Upsell-Mobile.png", :loading => 'lazy'
+                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart-Upsell-Mobile.webp", :loading => 'lazy', :width => 1920, :height => 1080
                         .column
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Raw-Vibrance.webp", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Raw-Vibrance.webp", :loading => 'lazy', :width => 1080, :height => 1080
                 .conversions__upsell-checkout
                     .container
                         .columns.is-centered.is-vcentered
                             .column.is-3
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Checkout-Upsell-Mobile.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Checkout-Upsell-Mobile.webp", :loading => 'lazy', :width => 1080, :height => 1920
                             .column.is-9
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Checkout-Upsell-Ipad.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Checkout-Upsell-Ipad.webp", :loading => 'lazy', :width => 1920, :height => 1080
                 .conversions__checkout
                     .container
                         .img__wrapper
@@ -1557,13 +1577,13 @@
                         .columns.is-centered.is-vcentered
                             .column.is-9
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Post-Checkout.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Post-Checkout.webp", :loading => 'lazy', :width => 1920, :height => 1080
                             .column.is-3
                                 .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Post+Checkout+Mobile.png", :loading => 'lazy'
+                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Post+Checkout+Mobile.webp", :loading => 'lazy', :width => 1080, :height => 1920
             .hifi-wireframes__section-description
                 .container
-                    %h4 Supporting the Relationship Beyond Checkout
+                    %h3 Supporting the Relationship Beyond Checkout
                     %p The experience doesn't end at purchase. Dedicated support pages make it easy for customers to find answers, resolve issues, and reach the team when needed, ensuring help is always within reach and reinforcing long-term trust and loyalty.
             .hifi-wireframes__support
                 .support__customer-service
@@ -1574,10 +1594,10 @@
                     .columns.is-gapless.is-vcentered
                         .column.is-6
                             .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Contact.png", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Contact.webp", :loading => 'lazy', :width => 1920, :height => 1080
                         .column.is-6
                             .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/customer-service-img.webp", :loading => 'lazy'
+                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/customer-service-img.webp", :loading => 'lazy', :width => 1920, :height => 1080
         .case-studies__navigation-wrapper.dr-harveys
             .container
                 .columns.is-mobile

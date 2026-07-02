@@ -9,4 +9,6 @@ class ProjectsController < ApplicationController
     end
     def contact
     end
+    def work
+    end
 end

@@ -1,46 +1,100 @@
-$black: #000000;
+$black: #2A2A2A;
 $blue: #4431FE;
 $beige: #FFF9EF;
 $green: #ADEA07;
+$pink: #F98DE2;
+
+@mixin title-preset-1 {
+    font-family: "Obviously", sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -1.44px;
+}
+@mixin title-preset-1--bold {
+    @include title-preset-1;
+    font-weight: 700;
+}
+@mixin title-preset-3 {
+    font-family: "Obviously", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+@mixin title-preset-3--bold {
+    @include title-preset-3;
+    font-weight: 700;
+}
+
+@mixin text-preset-5 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+}
+@mixin text-preset-5--bold {
+    @include text-preset-5;
+    font-weight: 700;
+}
 
 .contact__wrapper {
+    background-color: $pink;
     height: 550px;
     display: flex;
     align-items: center;
-    background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-page-bg.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right center;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
     @media (max-width: 1023px) {
+        height: 100%;
         align-items: flex-start;
-        padding: 40px 32px;
-        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/contact-page-bg-touch.webp");
+        padding: 40px 32px 80px;
     }
-    h1 {
-        font-size: 72px;
+    .contact__title {
+        @include title-preset-1--bold;
         color: $black;
-        line-height: 1.1;
         margin-bottom: 40px;
-        color: $beige !important;
-        @media (max-width: 1023px) {
-            line-height: 1.2;
-        }
         @media (max-width: 768px) {
-            font-size: 36px;
+            @include title-preset-3--bold;
+        }
+        #contact__variable-text {
+            width: 500px;
+            display: inline-block;
+            @media (max-width: 768px) {
+                width: unset;
+            }
         }
     }
     .contact__text-wrapper {
         p {
+            @include text-preset-5;
             margin-bottom: 12px;
-            color: $beige;
+            color: $black;
         }
     }
     .contact__link-wrapper{
         a {
+            @include text-preset-5--bold;
             display: block;
             margin-bottom: 12px;
-            font-weight: 600;
-            color: $green;
+            color: $black;
+            text-decoration: underline;
+        }
+    }
+    .contact__spiral {
+        position: absolute;
+        right: -32px;
+        bottom: 24px;
+        @media (max-width: 1407px) {
+            width: 320px;
+            bottom: 12px;
+        }
+        @media (max-width: 768px) {
+            width: 240px;
+            bottom: 12px;
         }
     }
 }
