@@ -278,7 +278,7 @@ $if-bg-red: #FDEAE6;
 .case-study__content-wrapper {
     margin: 72px 0px 0px;
     @media (max-width: 768px) {
-        padding: 24px 16px 0px;
+        padding: 24px 0px 0px;
     }
     .anchor {
         scroll-margin-top: 100px;
@@ -1228,6 +1228,7 @@ $if-bg-red: #FDEAE6;
                     &.phase,&.goal {
                         span {
                             @include text-preset-7--bold;
+                            white-space: nowrap;
                             padding: 4px 16px;
                             border-radius: 16px;
                             text-align: center !important;
