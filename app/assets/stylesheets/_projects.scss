@@ -138,8 +138,6 @@ $text-muted-5: #bbb;
 .project-details__wrapper {
     .project-details__cover-wrapper{
         height: 600px;
-        border-top: 2px solid $black;
-        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             height: 400px;
         }
@@ -299,14 +297,12 @@ $text-muted-5: #bbb;
 
 /* Cause x Effect */
 .project__cause-x-effect {
-    border-top: 2px solid $black;
     .project-details__cover-wrapper {
         background-color: #4E786A;
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/causexeffect-cover-mobile.png");
         }
@@ -365,14 +361,12 @@ $text-muted-5: #bbb;
 /* intimates */
 
 .project__intimates {
-    border-top: 2px solid $black;
     .project-details__cover-wrapper {
         background-color: #F2F2F2;
         background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover-mobile.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/intimates-cover.webp");
         }
@@ -388,8 +382,6 @@ $text-muted-5: #bbb;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-top: 2px solid $black;
-        border-bottom: 2px solid $black;
         @media (max-width: 768px) {
             background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/everybodysfree-cover-mobile.webp");
         }
@@ -451,7 +443,6 @@ $text-muted-5: #bbb;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 2px solid $black;
     }
     .project-details__company-wrapper {
         border-top: 2px solid $black;
@@ -584,8 +575,6 @@ $text-muted-5: #bbb;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-top: 2px solid $black;
-        border-bottom: 2px solid $black;
     }
     .project-details__introduction-wrapper {
         border-bottom: 2px solid $text-muted-4;
