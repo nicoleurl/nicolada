@@ -25,9 +25,12 @@ Rails.application.routes.draw do
   get "/graphic-design/social-media" => "projects/graphic_design#social_media", as: "social_media"
   get "/graphic-design/wyndham-grand-rio-mar" => "projects/graphic_design#wyndham", as: "wyndham"
   get "/graphic-design/ocean-spray" => "projects/graphic_design#ocean_spray", as: "ocean_spray"
+  get "/graphic-design/badia" => "projects/graphic_design#badia", as: "badia"
+  get "/graphic-design/pr_open" => "projects/graphic_design#pr_open", as: "pr_open"
+  get "/graphic-design/boris_bilbraut" => "projects/graphic_design#boris_bilbraut", as: "boris_bilbraut"
   get "/ux-ui/island-finance-web" => "projects/ux_ui#if_web", as: "if_web"
   get "/ux-ui/island-finance-web-abbreviated" => "projects/ux_ui#if_web_short", as: "if_web_short"
   get "/ux-ui/dr-harveys" => "projects/ux_ui#dr_harveys", as: "dr_harveys"
   get "/ux-ui/dr-harveys-abbreviated" => "projects/ux_ui#dr_harveys_short", as: "dr_harveys_short"
-  get "/ux-ui/pr-open" => "projects/ux_ui#pr_open", as: "pr_open"
+  get "/ux-ui/pr-open-web" => "projects/ux_ui#pr_open", as: "pr_open_web"
 end

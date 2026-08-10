@@ -7,6 +7,6 @@ class Projects::UxUiController < ApplicationController
     end
     def dr_harveys_short
     end
-    def pr_open
+    def pr_open_web
     end
 end

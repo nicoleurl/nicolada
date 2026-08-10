@@ -11,4 +11,10 @@ class Projects::GraphicDesignController < ApplicationController
   end
   def ocean_spray
   end
+  def badia
+  end
+  def pr_open
+  end
+  def boris_bilbraut
+  end
 end

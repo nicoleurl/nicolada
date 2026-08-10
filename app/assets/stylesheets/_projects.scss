@@ -13,6 +13,10 @@ $ipink: #A00251;
 $os-red: #b12024;
 $os-blue: #272f5e;
 $wyndham-red: #9b4939;
+$badia-dark-green: #01733f;
+$badia-orange: #ea4a26;
+$badia-lime: #b7cd44;
+$badia-purple: #4e244a;
 $text-secondary: #555;
 $text-muted-1: #666;
 $text-muted-2: #777;
@@ -143,8 +147,9 @@ $text-muted-5: #bbb;
         }
     }
     .project-details__content-wrapper {
+        padding: 32px 16px !important;
         .project-details__introduction-wrapper {
-            padding: 72px 0px;
+            padding: 72px px;
             @media (max-width: 768px) {
                 padding: 24px 0px ;
             }
@@ -667,5 +672,88 @@ $text-muted-5: #bbb;
         }
 
         
+    }
+}
+
+/* badia */
+
+.project__badia {
+    .project-details__cover-wrapper {
+        background-color: $badia-dark-green;
+        background-image: url("https://nicolada-website.s3.us-east-1.amazonaws.com/badia-cover-desktop.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .project-details__introduction-wrapper {
+        border-bottom: 2px solid $text-muted-4;
+        margin-bottom: 72px;
+        padding-bottom: 32px;
+    }
+    .project-details__opportunity-wrapper {
+        padding: 72px 16px;
+        margin: 72px 0px;
+        background-color: $badia-dark-green;
+        .eyebrow {
+            color: $badia-lime;
+            text-transform: uppercase;
+            &::before {
+                content: '✦';
+                margin-right: 5px;
+                color: $badia-lime;
+            }
+        }
+        h2 {
+            color: $white !important;
+        }
+        p.projects__middle-text {
+            color: $white;
+        }
+    }
+    .project-details__routes-wrapper {
+        .routes__wrapper {
+            padding: 32px 0px;
+            .routes__card {
+                border-radius: 16px;
+                padding: 24px;
+                &.green {
+                    background-color: $badia-dark-green;
+                }
+                &.orange {
+                    background-color: $badia-orange;
+                }
+                .routes__label {
+                    @include text-preset-8--bold;
+                    text-transform: uppercase;
+                    &.green {
+                        color: #bfd8a7;
+                    }
+                    &.orange {
+                        color: lighten($color: $badia-orange, $amount: 40);
+                    }
+                }
+                .routes__title {
+                    @include text-preset-5--bold;
+                    color: $white;
+                }
+                .routes__translation {
+                    @include text-preset-7;
+                    color: $white;
+                }
+                .routes__description {
+                    @include text-preset-6;
+                    color: $white;
+                    padding-top: 8px;
+                }
+            }
+        }
+    }
+    .project-details__gallery-wrapper {
+        .badia-display {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+        }
     }
 }
