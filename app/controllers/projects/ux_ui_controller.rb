@@ -1,11 +1,11 @@
 class Projects::UxUiController < ApplicationController
-    def if_web
+    def island_finance_web_full
     end
-    def if_web_short
+    def island_finance_web_full
+    end
+    def dr_harveys_full
     end
     def dr_harveys
-    end
-    def dr_harveys_short
     end
     def pr_open_web
     end

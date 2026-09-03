@@ -1,270 +1,291 @@
 .case-study__wrapper.case-study__if-web
-    .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/ifcover.webp", :class => "cover__img if-web__hero"
+    .container
+        .case-study__cover-wrapper
+            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/ifcover.webp", :class => "cover__img if-web__hero"
     .case-study__content-wrapper
         .container
-            .columns.is-centered.is-variable.is-6-desktop
-                .column.column.is-3
-                    .case-study__details-wrapper
-                        %h1 Island Finance Website
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Role
-                            %p.case-study__subtitle-text
-                                UX Research, Product Design, UX/UI Design
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Industry
-                            %p.case-study__subtitle-text
+            .case-study__title-wrapper
+                %h1 
+                    Clarity
+                    %span at Island Finance
+                %p.project-description A borrowing experience built around transparency
+                .btn__wrapper
+                    = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn"
+            .case-study__details-wrapper
+                .columns.is-mobile.is-multiline
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Team
+                        %ul
+                            %li.case-study__subtitle-text
+                                1 Designer (me)
+                            %li.case-study__subtitle-text
+                                1 Project Manager
+                            %li.case-study__subtitle-text
+                                4 Developers
+                            %li.case-study__subtitle-text
+                                1 Copywriter
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Skills
+                        %ul
+                            %li.case-study__subtitle-text
+                                User Research
+                            %li.case-study__subtitle-text
+                                UX Strategy
+                            %li.case-study__subtitle-text
+                                UI Design
+                            %li.case-study__subtitle-text
+                                Design QA
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Tools
+                        %ul
+                            %li.case-study__subtitle-text
+                                Figma
+                            %li.case-study__subtitle-text
+                                Adobe XD
+                            %li.case-study__subtitle-text
+                                Whimsical
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Industry
+                        %ul
+                            %li.case-study__subtitle-text
                                 Finance
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Tools
-                            %p.case-study__subtitle-text
-                                Adobe XD, Whimsical
-                        .btn__wrapper
-                            = link_to "View Full Case Study", "/ux-ui/island-finance-web", :class => "btn"
-                .column.is-8.is-offset-1-desktop
-                    .case-study__intro-text-wrapper
-                        %p.case-study__introduction
-                            Island Finance has a long history in Puerto Rico, with its roots dating back to 1959. It has distinguished itself by playing a vital role in the economic development of Puerto Rico, successfully establishing itself as a leader in personal loans across the Island. Today, they have 49 branches all around the country.
-                        %p.case-study__introduction
-                            As a customer-focused personal loan company, Island Finance is committed to understanding and meeting the needs of its customers through digital transformation and innovative solutions. Their mission is to simplify the process of borrowing for a wide range of consumer purposes by taking the hassle out of getting a loan.
-                        %p.case-study__introduction
-                            In order to maintain their position as a top personal loan company, Island Finance recognized the need to update their website to create a digital product that represents their values and vision and adapted their service to present-day needs.
-                        %p.case-study__introduction
-                            Our goal with this project was to create a seamless and intuitive website to increase conversion and optimize customers' existing experience based on user research and UX opportunities.
-        .case-study__short-introduction
-            .container
-                .columns.is-variable.is-6-desktop
-                    .column.is-3
-                        %p.eyebrow Snapshot
-                        %h2 Overview
-                    .column.is-8.is-offset-1-desktop
-                        .insight__wrapper
-                            %p.insights-header
-                                Problem
-                            %p The existing website was outdated, difficult to navigate, and inconsistent in both structure and tone. Users struggled to find information about loans, eligibility, and partner services, leading to frustration and feeling taken advantage of. From a business perspective, the site also lacked flexibility for new content, promotions, and compliance updates.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Constraints
-                            %p Island Finance's platform ran on outdated infrastructure, so a full rebuild was necessary instead of incremental updates. The old system had a trust problem as much as a technical one, so decisions were weighed against what would restore credibility fastest while laying the foundation for later features. Time was tight, leaving little room to iterate once things were in progress. Budget was limited too, which meant prioritizing ruthlessly and being deliberate about scope and tooling throughout.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Solution
-                            %p The solution focused on transparency and control. Fees and disclaimers are shown upfront, copy throughout the site avoids jargon, and a new blog breaks down personal finance topics in plain language so people understand what they're getting into. A new dashboard lets borrowers manage their loan, track payments, and stay on top of their balance without visiting a branch, and payment notifications help people avoid unexpected fees.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Impact
-                            %ul
-                                %li
-                                    %span Credibility before the application.
-                                    Transparent APR and cost information on every loan page earns trust before users commit to anything.
-                                %li
-                                    %span Self-service reduces branch dependency.
-                                    Borrowers can manage payments, check balances, and track their loan entirely online.
-                                %li
-                                    %span Education closes the literacy gap.
-                                    Plain-language content and a blog gives borrowers the context to make confident financial decisions.
-        .case-study__background
-            .container
-                .columns.is-variable.is-6-desktop
-                    .column.is-3
-                        %p.eyebrow Discovery
-                        %h2 Research
-                    .column.is-8.is-offset-1-desktop
-                        .research__wrapper
-                            .subheader
-                                Industry Insights
-                            %h3 Personal Loans Market
-                            .columns.is-variable.is-2
-                                .column
-                                    .bubble__wrapper.blue
-                                        .bubble__number{ data: { count: 67, suffix: "%" } } 0%
-                                        %p.bubble__text
-                                            of consumers prefer managing finances digitally over visiting a branch
-                                        .bubble__source
-                                            J.D. Power 2024
-                                .column
-                                    .bubble__wrapper.light-blue
-                                        .bubble__number{ data: { count: 47, suffix: "%" } } 0%
-                                        %p.bubble__text
-                                            of prospective customers abandon digital onboarding mid-process
-                                        .bubble__source
-                                            Capgemini 2025
-                                .column
-                                    .bubble__wrapper.orange
-                                        .bubble__number{ data: { count: 51, suffix: "%" } } 0%
-                                        %p.bubble__text
-                                            of borrowers use personal loans to consolidate debt or refinance credit cards
-                                        .bubble__source
-                                            Lendingtree 2026
-                            %p The personal loan market in the US and Puerto Rico shaped every content and trust decision in this project. Borrowers don't impulse-apply, they research, compare, and arrive skeptical. These numbers reinforced three priorities: transparent fee communication from the first page, a mobile experience that doesn't break mid-flow, and content that educates rather than overwhelms.
-                        %hr
-                        .research__wrapper
-                            .subheader
-                                Competitive Audit
-                            %h3 Where Island Finance Stands
-                            %p Six competitors were audited across usability, trust communication, digital features, and content clarity. The pattern was consistent: transparent APR, soft-pull prequalification, and clear loan calculators have become baseline expectations, largely set by US digital lenders that local Puerto Rico banks are now racing to match.
-                            %ul
-                                %li
-                                    %span Kiwi Credito targets the same underserved borrowers
-                                    but relies on vague reviews and has no calculator, no financial education, and no physical presence. Island Finance has higher loan amounts, 49 branches, and a founding mission Kiwi can't replicate.
-                                %li
-                                    %span LendingClub is the digital benchmark.
-                                    Transparent rates from the first page, a clear calculator, and a step-by-step application flow prove that surfacing key information early removes hesitation before a form ever appears.
-                                %li
-                                    %span Banco Popular has the strongest local digital experience
-                                    but is built for breadth, not focus. Island Finance can win on single-product clarity and a borrower-first flow.
-                        %hr
-                        .research__wrapper
-                            .subheader
-                                Users
-                            %h3 Understanding Users
-                            %p The website was designed for people in Puerto Rico, mainly middle aged, who were looking for personal loans. Many of them were managing tight budgets, facing unexpected expenses, or working to rebuild their credit. Some users were not very comfortable navigating financial websites or understanding loan terms.
-        .case-study__features
-            .anchor#features
-            .container
+                            %li.case-study__subtitle-text
+                                Personal Loans
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Timeline
+                        %p.case-study__subtitle-text
+                            2024-Present
+            .case-study__intro-text-wrapper
                 .columns
-                    .column.is-3
-                        %p.eyebrow Features
-                        %h2 Transforming Needs into Features
-                    .column.is-8.is-offset-1
-                        %p
-                            Based on the user needs identified during the empathizing phase, we decided to focus on a few key features to enhance customer's experience.
-                .columns.is-multiline.is-variable.is-3-desktop
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.green
-                            %h4.green Loan Calculator
-                            %h3 Explore options before committing
-                            %p Helps users explore their options risk free. It clearly presents loan details, prevents surprises about future charges, and builds trust.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.blue
-                            %h4.blue Online Application
-                            %h3 Apply anytime, from any device
-                            %p Makes it easy for users to apply anytime, from any device. It guides them through each step with clear instructions and built-in validation to reduce errors and confusion.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.orange
-                            %h4.orange Blog & Financial Education
-                            %h3 Know what you're getting into
-                            %p Gives users the context to make confident financial decisions before they apply. Articles break down loan terms, interest, and common borrowing mistakes in plain language, so first-time borrowers aren't learning how their loan works after they've already signed.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.navy
-                            %h4.navy Loan Dashboard
-                            %h3 Manage loans without a branch visit
-                            %p Gives users a complete view of their account in one place. They can track balances, upcoming payments, and loan history, make payments securely from any device, and stay on top of due dates without visiting a branch.
-        .case-study__user-flows
-            .anchor#flows
+                    .column
+                        %p.case-study__introduction
+                            Island Finance has spent over 65 years as one of Puerto Rico's leading personal loan providers, with 49 branches across the island. This redesign brought that legacy into a digital experience where borrowers understand exactly what they're signing up for from the start, with simple, self-service ways to manage their loan and access their information after signing.
+                    .column
+                        %p.case-study__introduction
+                            I redesigned Island Finance's website to bring clarity into a lending experience that had grown outdated and hard to navigate. I led research, UX strategy, and design across the full borrower journey, focused on making every step feel straightforward and easy to follow.
+        .case-study__problem
             .container
-                .columns
-                    .column.is-3
-                        %p.eyebrow User Flows
-                        %h2 Identifying how users complete tasks
-                    .column.is-8.is-offset-1
-                        %p To truly support users, we needed to understand how they actually got things done, how they navigate, what they expect, and where they might hesitate. Mapping their steps helped us design flows that feel natural, supportive, and frustration-free.
-                        %h4 Applying for a loan through nav bar button:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-1.webp", :class => "user-flows__img", :loading => 'lazy'
-                        %h4 Applying for a loan through the calculator:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Request-a-loan-2.webp", :class => "user-flows__img", :loading => 'lazy'
-                        %h4 Making a payment:
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Make-a-payment.webp", :class => "user-flows__img", :loading => 'lazy'
-        .case-study__desing-system
-            .anchor#design
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 What wasn't working?
+                .problem__pill-wrapper
+                    .columns.is-mobile.is-multiline.is-variable.is-1
+                        .column.is-narrow
+                            .pill.blue-3
+                                %p Hidden Fees
+                        .column.is-narrow
+                            .pill.blue-2
+                                %p Confusing account changes
+                        .column.is-narrow
+                            .pill.blue-3
+                                %p Billing mistakes borrowers pay for
+                        .column.is-narrow
+                            .pill.blue-2
+                                %p Branch Dependency
+                .section__statement-wrapper
+                    %p Island Finance's old website made it easy to misunderstand your own loan. Fees were buried. Changing a payment date could quietly affect what someone owed, with no clear explanation of the impact. And because managing a loan meant calling in or visiting a branch, even small mistakes on Island Finance's end, like a phone payment processed a few cents short, could leave a borrower on the hook for interest they never should have owed.
+                
+        .case-study__solution-wrapper
             .container
-                .columns
-                    .column.is-3
-                        %p.eyebrow Design
-                        %h2 Design System & Style guide
-                    .column.is-8.is-offset-1
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/if-web-colors.webp", :loading => 'lazy'
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/style-guide-if.webp", :loading => 'lazy'
-        .case-study__hifi-wireframes
-            .anchor#highfi
-            .hifi-wireframes__main-visual
-                .container
-                    %p.eyebrow High-fi Wireframes
-                    %h2 Introducing Island Finance
-                    %p A personal loan experience designed to feel simple, clear, and trustworthy. From the first screen to the final step, every detail was crafted to guide users smoothly and make financial decisions less intimidating.
-                    .btn__wrapper
-                        = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn", :target => "blank"
-                    .img__wrapper
-                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Home.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
-            .hifi-wireframes__loan-options
-                .container
-                    %h3 Simplifying the Loan Decision Journey
-                    %p To make the decision-making process feel easy and transparent and help users feel supported, we designed this page to balance education, reassurance, and action. It starts by answering the first thing most users want to know: “Is this loan actually a good fit for me?” with a quick breakdown of the key benefits.
-                    %p From there, we added customer reviews to build trust. A simple “what you'll need” checklist sets expectations early, reducing stress or potential abandonment later in the flow. The 3-step overview keeps the process approachable, and the FAQs address common concerns upfront so users don't have to hunt for answers.
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 How did we solve it?
+                .section__statement-wrapper
+                    %p Every decision here got checked against three things: could a borrower see the real cost before committing to anything, could they fix a problem themselves without needing to call in, and could the flow survive someone doing it on a phone, distracted, mid-errand. 
+                .columns.is-vcentered.is-reversed.is-mobile.is-multiline
+                    .column.is-4-tablet.is-12-mobile
+                        .solution__text-wrapper
+                            %h3 Fees Upfront
+                            %p Rather than revealing rates after someone finished an application, the calculator shows aproximate rates and payments upfront, before a borrower commits to anything. We also expanded Island Finance's blog with plain-language guides on APR, fees, and credit, so borrowers encountering these terms for the first time had somewhere to actually understand what the calculator was showing them.
+                    .column.is-8-tablet.is-12-mobile
+                .columns.is-vcentered.is-mobile.is-multiline
+                    .column.is-8-tablet.is-12-mobile
+                    .column.is-4-tablet.is-12-mobile
+                        .solution__text-wrapper
+                            %h3 Confirmation at key moments
+                            %p Borrowers get a notification when they finish an application and when a payment goes through.
+                .columns.is-vcentered.is-reversed.is-mobile.is-multiline
+                    .column.is-4-tablet.is-12-mobile
+                        .solution__text-wrapper
+                            %h3 Self-service account management
+                            %p Borrowers can now make payments online and pick up a saved application right where they left off. Full account-based management is planned for the next phase.
+                    .column.is-8-tablet.is-12-mobile
+                .columns.is-vcentered.is-mobile.is-multiline
+                    .column.is-8-tablet.is-12-mobile
+                    .column.is-4-tablet.is-12-mobile
+                        .solution__text-wrapper
+                            %h3 Clear impact of every change
+                            %p Changing a payment date is meant to show a borrower exactly what that change costs before they confirm it. This is proposed for the next phase alongside the dashboard.
+        .case-study__impact-wrapper
+            .container
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 What did we accomplish?
+                .quote__wrapper
+                    .columns.is-is-vcentered.is-mobile.is-variable.is-1
+                        .column.is-narrow
+                            = inline_svg('comment.svg')
+                        .column
+                            %p From a customer review, before the redesign, reworded for privacy
+                    .quote__text-wrapper
+                        %p "Was charged a late fee after a payment was processed a few cents short, an error made by the cashier, not the customer."
+                .impact__card-wrapper
                     .columns
-                        .column.is-4
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Options.webp", :loading => 'lazy'
-                        .column.is-8
-                            .img__wrapper
-                                = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Island-Finance-Personal-Loans.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
-            .hifi-wireframes__loan-calculator.is-hidden-touch
-                .columns.is-variable.is-gapless
-                    .column.is-2-fullhd.is-3-widescreen
-                        .loan-calculator__text-wrapper
-                            %h3
-                                Designing a Win–Win
-                                %br
-                                Loan Calculator Experience
-                            %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
-                    .column.is-5
-                        .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.webp", :loading => 'lazy'
-                    .column.is-5-fullhd.is-4-widescreen
-                        .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.webp", :class => "hifi__signup-img", :loading => 'lazy'
-            .hifi-wireframes__loan-calculator.is-hidden-desktop
-                .columns.is-variable.is-multiline
-                    .column.is-12
-                        .loan-calculator__text-wrapper
-                            %h3
-                                Designing a Win–Win
-                                %br
-                                Loan Calculator Experience
-                            %p We designed a loan calculator that lets users explore estimated payments without affecting their credit, paired with a transparent breakdown of rates and fees. After checking their rate, users can create an account to save their progress and later manage their loan online. From a business side, collecting contact details at this stage helps nurture potential applicants and improve conversions.
-                    .column.is-6
-                        .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/IF-Calculator.webp", :loading => 'lazy'
-                    .column.is-6
-                        .img__wrapper
-                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Sign+Up.webp", :class => "hifi__signup-img", :loading => 'lazy'
-            .hifi-wireframes__loan-application
-                .container
-                    .loan-application__text-wrapper
-                        %h3 Making Applications Feel Easy
-                        %p Form fatigue is common in financial applications, so we focused on making a step-by-step loan application that helps users see their progress and stay engaged. At the end, transparent fees and flexible loan options help users choose what best fits their needs and budget.
-                    .columns.is-multiline
-                        .column.is-8
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Loan+Information.webp", :loading => 'lazy'
-                        .column.is-4.is-hidden-mobile
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Loan+Application.webp", :loading => 'lazy'
+                        .column
+                            .impact-bullet
+                                .pill.blue-3
+                                    %p Trasparency
+                                %h3 Every Fee Is Shown Upfront
+                                %p before a borrower even applies
+                        .column
+                            .impact-bullet
+                                .pill.blue-2
+                                    %p Paying a loan
+                                %h3 Paying a loan takes one click
+                                %p and no longer require a phone call or a branch visit
+                        .column
+                            .impact-bullet
+                                .pill.yellow-2
+                                    %p Confidence
+                                %h3 A blog that explains fees
+                                %p plain-language guides on fees, APR, and credit
 
-            .hifi-wireframes__account.short
-                .container
-                    .columns.masonry
-                        .column.is-6
-                            .columns.is-multiline
-                                .column.is-12
-                                    .account__text-wrapper
-                                        %h3 Helping Users Stay in Control After Approval
-                                        %p To help users avoid feeling lost after their loan is approved and improve self-service, we designed a dashboard that gives them full visibility and control over their account. Users can easily track payments, review documents, manage autopay, and adjust settings, all in one space. This helps prevent missed payments and builds confidence in managing their finances.
-                                .column.is-12
-                                    .img__wrapper
-                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Dashboard.webp", :loading => 'lazy'
-                                .column.is-12
-                                    .img__wrapper
-                                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Payment.webp", :loading => 'lazy'
-                        .column.is-6
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.webp", :loading => 'lazy'
+        .case-study__research
+            .container
+                .columns
+                    .column.is-5
+                        .section-heading__wrapper
+                            .columns.is-vcentered.is-variable.is-1.is-mobile
+                                .column.is-narrow
+                                    = inline_svg('search.svg')
+                                .column
+                                    %h2 What did the research tell us?
+                    .column.is-7
+                        .intro__wrapper
+                            %p Three findings shaped every decision that followed, from what to show first to how much control to hand borrowers.
+                        .research__card-wrapper
+                            .research__card.red-4
+                                = inline_svg('user-x.svg')
+                                %h3 Drop Off
+                                %p Most personal loan applicants abandon before finishing, with rates as high as 67% industry-wide
+                                .card__solution-wrapper
+                                    .columns.is-variable.is-1.is-mobile
+                                        .column.is-narrow
+                                            = inline_svg('arrow-right.svg')
+                                        .column
+                                            %p
+                                                We 
+                                                %span surfaced fees early, expanded the blog
+                                                to build trust, and let people 
+                                                %span save their application
+                                                and return
+                            .research__card.yellow-4
+                                = inline_svg('device.svg')
+                                %h3 Preference
+                                %p 55% of bank customers manage accounts primarily through a mobile app, versus 8% who prefer a branch
+                                .card__solution-wrapper
+                                    .columns.is-variable.is-1.is-mobile
+                                        .column.is-narrow
+                                            = inline_svg('arrow-right.svg')
+                                        .column
+                                            %p
+                                                We 
+                                                %span moved payments online,
+                                                with full self-service account management planned next
+                            .research__card.green-4
+                                = inline_svg('scale.svg')
+                                %h3 The gap
+                                %p Digital-first lenders had already made upfront APR and calculators standard, a bar local competitors hadn't met
+                                .card__solution-wrapper
+                                    .columns.is-variable.is-1.is-mobile
+                                        .column.is-narrow
+                                            = inline_svg('arrow-right.svg')
+                                        .column
+                                            %p
+                                                We
+                                                %span rebuilt the calculator
+                                                to show all fees upfront
+            
+        
+        .case-study__gallery
+            .container
+                .section-heading__wrapper
+                    %h2 Introducing Island Finance
+                .gallery__home        
+                    .gallery__home-img-wrapper
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.webp", :loading => 'lazy', :width => 1344, :height => 560, :class => "home-img"
+                    %h3 Homepage
+                    %p The homepage had one job: get a skeptical borrower to trust this enough to keep going. Instead of leading with a sales pitch, it opens with the exact loan range and a way to start estimating a payment immediately, so the first thing a visitor does is get real numbers.
+                .gallery-section.gallery__calculator
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-6-table.is-12-mobile
+                        .column.is-6-table.is-12-mobile
+                            %h3 Loan calculator
+                            %p This is where the "transparent rates as baseline" gap gets closed directly. Every fee and rate shows before a borrower commits to anything, and checking a rate doesn't affect their credit. Someone can walk away at this stage with real numbers and no risk, which is exactly what the research said borrowers needed before they'd trust a lender enough to apply.
+                .gallery-section.gallery__application
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-6-table.is-12-mobile
+                            %h3 Application
+                            %p Since two out of three loan applicants abandon before finishing industry-wide, every unnecessary step in the flow was a place to lose someone. The application was simplified into fewer, clearer steps, and progress now saves automatically as a borrower moves through it, so they don't need to start over.
+                        .column.is-6-table.is-12-mobile
+                .gallery-section.gallery__dashboard
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-6-table.is-12-mobile
+                        .column.is-6-table.is-12-mobile
+                            %h3 Dashboard
+                            %p This was designed to solve a real, documented problem, managing a loan by phone or branch visit was inconvenient, and in one case, exactly where a billing error happened. It didn't make it into this launch; the platform's codebase needs updates to support it first. In the meantime, moving payments online and surfacing fees earlier in the calculator addressed part of what the dashboard was meant to solve, with the fuller fix planned for a future phase.
+                .gallery-section.gallery__payments
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-6-table.is-12-mobile
+                            %h3 Payments & settings
+                            %p Confirmation notifications for finishing an application and completing a payment mean a borrower never has to wonder whether something went through. Full due-date reminders and account-based alerts are part of what the dashboard phase would add.
+                        .column.is-6-table.is-12-mobile
+                .gallery-section.gallery__blog
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-6-table.is-12-mobile
+                        .column.is-6-table.is-12-mobile
+                            %h3 Blog
+                            %p Many of Island Finance's borrowers are people traditional banks had turned away, often without much prior exposure to how loans, APR, or credit actually work. Reaching underserved communities with financial literacy content is a growing focus across the lending industry, and Island Finance's own mission put that responsibility directly on this redesign. Expanding the blog gave borrowers a place to actually understand fees and terms before they had to ask.
+        .case-study__takeaways
+            .container
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 What did I learn along the way?
+                .takeaways__wrapper
+                    .columns
+                        .column
+                            %h3 Trust-building doesn't have to wait for the full system
+                            %p The dashboard and full account creation were core to the original design, but the platform's outdated codebase and the project's timeline meant they couldn't ship in this phase. Rather than let that mean the underlying problems went unsolved, we found smaller ways to address the same needs: payments moved online, applications save progress automatically, and the calculator surfaces fees earlier in the process. None of these fully replace what the dashboard was meant to do, but borrowers weren't left with the original problem while that work is planned for a future phase.
+                        .column
+                            %h3 Legacy infrastructure is a design constraint
+                            %p I came into this project focused on the borrower experience. What I learned is that a redesign is only as good as the codebase it has to live in, some of the highest-value fixes here got blocked not by the design, but by what the platform could actually support. I'd scope future phases with that reality earlier, rather than designing the ideal first and negotiating it down later.
+                %p This project is ongoing, and the dashboard remains the highest priority for the next phase, it's the piece most directly tied to preventing the kind of billing error that had already cost a real borrower money.
+        .case-study__link
+            .container
+                .columns.is-vcentered
+                    .column
+                    .column
+                        %h3 Want the full picture?
+                        %p This is the story at a glance, the decisions, the research, and what shipped. The full case study goes deeper: the complete competitive audit, every persona, and the full screen-by-screen walkthrough.
+                        .btn__wrapper
+                            = link_to "View Full Case Study", "/ux-ui/island-finance-web-full", :class => "btn"
         .case-studies__navigation-wrapper.if-web-short
             .container
                 .columns.is-mobile

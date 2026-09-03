@@ -150,8 +150,7 @@ document.addEventListener('turbo:load', () => {
                 if (footerTop < window.innerHeight * 0.95) playBounce();
             }, 300);
         }
-    
-        // Case study + project page animations
+    // Case study + project page animations
         const animateCaseStudy = (wrapper, selectors) => {
             if (!document.querySelector(wrapper)) return;
             selectors.forEach(({ el, y = 30, stagger }) => {
