@@ -34,7 +34,7 @@ $nicolada-blue-1: #0909C9;
 
 //Nicolada Colors Medium
 $nicolada-red-2: #FF7664;
-$nicolada-pink-2: F98DE2;
+$nicolada-pink-2: #F98DE2;
 $nicolada-green-2: #ADEA07;
 $nicolada-yellow-2: #FECE00;
 $nicolada-purple-2: #9067F3;
@@ -388,6 +388,7 @@ $if-bg-red: #FDEAE6;
         text-align: left;
         padding: 16px 32px;
         border-radius: 100px;
+        margin-bottom: 24px;
         h2 {
             @include text-preset-4--bold;
             color: $char;
@@ -554,6 +555,62 @@ $if-bg-red: #FDEAE6;
             }
         }
     }
+    .case-study__feature {
+        padding: 72px 0px;
+        margin: 72px 0px;
+        @media (max-width: 768px) {
+            padding: 32px 0px;
+            margin: 32px 0px;
+        }
+        .columns-replaced {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px; 
+        }
+        .column-left {
+            width: 33%;
+            flex-shrink: 0;
+            align-self: stretch;
+        }
+        .column-right {
+            width: 67%;
+        }
+        .feature__text-wrapper {
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid $text-muted-4;
+            &:last-child {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+                border-bottom: 0px;
+            }
+            h3 {
+                @include text-preset-5--bold;
+                color: $char;
+                margin-bottom: 8px
+            }
+            p {
+                @include text-preset-6;
+                color: $char
+            }
+
+        }
+        .features__impact {
+            padding: 16px;
+            border: 2px solid $char;
+            border-radius: 16px;
+            text-align: center;
+            span {
+                width: 100%;
+                @include title-preset-4--bold;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                @include text-preset-6;
+            }
+        }
+    }
     .case-study__solution-wrapper {
         margin: 72px 0px;
         @media (max-width: 768px) {
@@ -561,7 +618,7 @@ $if-bg-red: #FDEAE6;
         }
         .solution__text-wrapper {
             h3 {
-                @include text-preset-4--bold;
+                @include text-preset-5--bold;
                 color: $char;
                 margin-bottom: 8px;
             }
@@ -611,6 +668,9 @@ $if-bg-red: #FDEAE6;
                 }
             }
         }
+        .impact-p {
+            padding: 24px 0px;
+        }
     }
 
     .case-study__research {
@@ -620,23 +680,30 @@ $if-bg-red: #FDEAE6;
         }
         .intro__wrapper {
             padding-bottom: 24px;
+            margin-bottom: 24px;
             border-bottom: 1px solid $text-muted-4;
         }
         .research__card-wrapper {
             .research__card {
                 padding: 16px;
                 border-radius: 16px;
-                margin-top: 24px;
+                margin-bottom: 24px;
                 border: 2px solid $char;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
                 svg {
                     width: 24px;
                     height: 24px;
                 }
                 h3 {
-                    @include text-preset-6--bold;
+                    @include text-preset-5--bold;
                 }
                 p {
                     @include text-preset-6;
+                    span {
+                        @include text-preset-6--bold;
+                    }
                 }
                 .card__solution-wrapper {
                     svg {
@@ -648,6 +715,38 @@ $if-bg-red: #FDEAE6;
                         span {
                             @include text-preset-7--bold;
                         }
+                    }
+                }
+            }
+        }
+    }
+    .case-study__gallery {
+        padding: 72px 0px;
+        @media (max-width: 768px) {
+            padding: 32px 0px;
+        }
+        h3 {
+            @include text-preset-5--bold;
+            margin-bottom: 8px;
+        }
+        p {
+            @include text-preset-6;
+        }
+        img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+                border: 2px solid $char;
+                border-radius: 16px;
+        }
+        .gallery-section {
+            padding: 12px 0px;
+            .columns {
+                @media (max-width: 768px) {
+                    &.is-reversed {
+                        flex-direction: column-reverse;
                     }
                 }
             }
@@ -1722,37 +1821,10 @@ $if-bg-red: #FDEAE6;
     .case-study__gallery {
         .gallery__home {
             .gallery__home-img-wrapper {
-                margin-top: 24px;
                 height: 560px;
                 width: 100%;
                 overflow: hidden;
                 margin-bottom: 24px
-            }
-        }
-        h3 {
-            @include text-preset-6--bold;
-            margin-bottom: 8px;
-        }
-        p {
-            @include text-preset-6;
-        }
-        img {
-                display: block;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                object-position: 50% 50%;
-                border: 2px solid $char;
-                border-radius: 16px;
-        }
-        .gallery-section {
-            padding: 12px 0px;
-            .columns {
-                @media (max-width: 768px) {
-                    &.is-reversed {
-                        flex-direction: column-reverse;
-                    }
-                }
             }
         }
     }
@@ -2242,58 +2314,59 @@ $if-bg-red: #FDEAE6;
             fill: $drh-pink;
         }
     }
-    .case-study__short-introduction {
-        background-color: $drh-pink-100;
-        .insights-header {
-            color: $drh-pink;
+    .case-study__feature {
+        &.pink {
+            background-color: $nicolada-pink-4;
         }
-        .eyebrow {
-            color: $drh-pink;
-            &::before {
-                color: $drh-pink;
-            }
+        .features__impact {
+            background-color: $nicolada-pink-3;
         }
-        hr {
-            background-color: lighten($color: $drh-pink, $amount: 40);
-            height: 1px;
-        }
-        ul {
-            li {
-                &::before {
-                    color: $drh-pink;
+    }
+    .case-study__impact-wrapper {
+        .impact__card-wrapper {
+            .impact-bullet {
+                .pill {
+                    &.pink-3 {
+                        background-color: $nicolada-pink-3;
+                        p {
+                            color: $char;
+                        }
+                    }
+                    &.pink-2 {
+                        background-color: $nicolada-pink-2;
+                        p {
+                            color: $char;
+                        }
+                    }
+                    &.pink-4 {
+                        background-color: $nicolada-pink-4;
+                        p {
+                            color: $char;
+                        }
+                    }
                 }
             }
         }
     }
-    .case-study__background {
-        .research__wrapper {
-            .bubble__wrapper {
-                &.blue {
-                    background-color: $drh-blue;
-                    .bubble__number, .bubble__source, .bubble__text {
-                        color: $white
-                    }
+    .case-study__research {
+        background-color: $nicolada-pink-4;
+        .research__card-wrapper {
+            .research__card {
+                &.pink-4 {
+                    background-color: $nicolada-pink-4;
                 }
-                &.pink {
-                    background-color: $drh-pink;
-                    .bubble__number, .bubble__source, .bubble__text {
-                        color: $white
-                    }
+                &.pink-3 {
+                    background-color: $nicolada-pink-3;
                 }
-                &.green {
-                    background-color: $drh-green;
-                    .bubble__number, .bubble__source, .bubble__text {
-                        color: $white
-                    }
-                }
-            }    
-        }
-        ul {
-            li {
-                &::before {
-                    color: $drh-pink;
+                &.pink-2 {
+                    background-color: $nicolada-pink-2;
                 }
             }
+        }
+    }
+    .case-study__gallery {
+        &.pending {
+            background-color: $nicolada-pink-4;
         }
     }
     .case-study__industry-insights {

@@ -1,330 +1,285 @@
 .case-study__wrapper.case-study__dr-harveys
-    .case-study__cover-wrapper
-        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drhcover.webp", :class => "cover__img drh-web__hero"
+    .container
+        .case-study__cover-wrapper
+            = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drhcover.webp", :class => "cover__img drh-web__hero"
     .case-study__content-wrapper
         .container
-            .columns.is-centered.is-variable.is-6-desktop
-                .column.column.is-3
-                    .case-study__details-wrapper
-                        %h1 Dr. Harvey's
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Role
-                            %p.case-study__subtitle-text
-                                UX Researcher, UX/UI Designer, User Testing, Front End Developer
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Industry
-                            %p.case-study__subtitle-text
-                                Pet Food & Supplies, E-commerce
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Tools
-                            %p.case-study__subtitle-text
-                                Figma, VWO, RubyMine
-                        .case-study__details-line
-                            %h2.case-study__subtitle
-                                Languages
-                            %p.case-study__subtitle-text
-                                Haml, Sass, Javascript
+            .case-study__title-wrapper
+                %h1 
+                    Warmth
+                    %span at Dr. Harvey's
+                %p.project-description Growing a business without losing its handmade feel.
+                .btn__wrapper
+                    = link_to "View Wireframes", "https://xd.adobe.com/view/1e1ff4df-ea06-42fb-9f58-5e2db1da0c82-4b4c/", :class => "btn"
+            .case-study__details-wrapper
+                .columns.is-mobile.is-multiline
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Team
+                        %ul
+                            %li.case-study__subtitle-text
+                                1 UX/UI Designer & Front-End Developer (me)
+                            %li.case-study__subtitle-text
+                                1 Full Stack Developer
+                            %li.case-study__subtitle-text
+                                1 Project Manager (CTO/VP)
+                            %li.case-study__subtitle-text
+                                1 Graphic Designer (photography, illustrations, vectors)
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Skills
+                        %ul
+                            %li.case-study__subtitle-text
+                                UX/UI Design
+                            %li.case-study__subtitle-text
+                                Front-End Development
+                            %li.case-study__subtitle-text
+                                Conversion Optimization
+                            %li.case-study__subtitle-text
+                                Design QA
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Tools
+                        %ul
+                            %li.case-study__subtitle-text
+                                Figma
+                            %li.case-study__subtitle-text
+                                VWO
+                            %li.case-study__subtitle-text
+                                RubyMine
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Industry
+                        %ul
+                            %li.case-study__subtitle-text
+                                Pet Food
+                            %li.case-study__subtitle-text
+                                E-Commerce
+                    .column.is-one-fifth-tablet.is-6-mobile
+                        %h2.case-study__subtitle
+                            Timeline
+                        %p.case-study__subtitle-text
+                            2021-2024
+            .case-study__intro-text-wrapper
+                .columns
+                    .column
+                        %p.case-study__introduction
+                            Dr. Harvey's was founded in 1980 by Dr. Harvey Cohen, a holistic nutritionist who set out to make all-natural, human-grade pet food without preservatives or artificial additives, groundbreaking at the time. More than 40 years later, it's still a family-owned business built on the same values.
+                        %p.case-study__introduction
+                            This was an ongoing relationship spanning nearly three years, shipping features and improvements in phases as priorities came up. I worked as both UX/UI designer and front-end developer, building in Figma and shipping in HAML, SASS, and JavaScript, alongside a full-stack developer, a PM who doubled as the company's CTO, and a separate designer responsible for the site's photography, graphics, and vector illustrations.
+                    .column
+                        %p.case-study__introduction
+                            Every phase shared the same underlying goal, and the same constraint: grow conversions without ever feeling pushy. Dr. Harvey's wanted customers to buy what genuinely worked for their pet, and every claim on the site had to hold up against National Animal Supplement Council and USDA guidelines. Trust was both a a brand value, and a regulatory one.
+                        %p.case-study__introduction
+                            This case study covers three of the most impactful features from that work, along with the testing that shaped each one.
+                        %p.case-study__introduction
+                            (A few internal tools, order fulfillment views, a blog CMS, warehouse dashboards, were also part of this work but aren't shown here for confidentiality.)
+        .case-study__feature.pink
+            .container
+                .columns-replaced
+                    .column-left
+                        .section-heading__wrapper
+                            %h2 Upsells
+                    .column-right
+                        .feature__text-wrapper
+                            %h3 What was getting in the way of upsells?
+                            %p Customers often bought a single product without realizing what paired well with it. Discovery was the main barrier, which meant lower average order value and missed opportunities to introduce customers to products that could genuinely help their pet.
+                        .feature__text-wrapper
+                            %h3 What did I build?
+                            %p An upsell popup appears the moment a product is added to cart, and the same recommendations stay visible in the cart itself. Both surfaces pull from the same "Bundle & Save" promotion, adding a paired item at a discount. Pairings came from customer service agents' direct feedback on what customers actually bought and used together and our own knowledge of what was meant to be used in combination with each other. It doubled as product discovery and a savings opportunity.
+                        .feature__text-wrapper
+                            %h3 What did testing reveal?
+                            %p Early A/B testing and heatmaps showed underwhelming engagement but the reason wasn't the offer itself. Dr. Harvey's customer base skews middle-aged and not especially mobile-savvy, and a lot of customers never realized the recommendation carousel was swipeable on mobile, there were no visible arrows, and the next card wasn't peeking into view. Once I added visible arrows and made the next item partially visible, engagement increased immediately. The fix was making sure people could actually see there was more to look at.
+                        .features__impact
+                            %span +10%
+                            %p
+                                increase in bundled purchases
+        .case-study__feature
+            .container
+                .columns-replaced
+                    .column-left
+                        .section-heading__wrapper
+                            %h2 Trial Page
+                    .column-right
+                        .feature__text-wrapper
+                            %h3 Why weren't trials converting?
+                            %p Trial bags already existed, but only buried inside individual product pages, there was no dedicated place for a new customer to even find them. And even someone who did stumble onto a trial option still faced the harder problem: Dr. Harvey's has a full lineup of complete foods and base mixes, and nothing helped a first-time buyer figure out which one actually fit their pet.
+                        .feature__text-wrapper
+                            %h3 What did I build for first-time buyers?
+                            %p I built a standalone trial page where customers could filter food by type, complete foods versus base mixes, and read the difference between them before choosing. Every product card included a built-in ordering widget for a trial bag, so browsing and ordering happened in the same place. I also surfaced the Meal Matchmaker here, a tool that helped narrow down the right food for a specific pet, which hadn't been visible anywhere else on the site before this page existed.
+                        .feature__text-wrapper
+                            %h3 What we got wrong about how much information people wanted
+                            %p I assumed showing this much information, product details, the complete-vs-base-mix breakdown, filtering, the Matchmaker, would overwhelm a new buyer and hurt conversion. Testing showed the opposite. This audience does research before buying pet food, and giving them more to read helped them commit.
+                        .features__impact
+                            %span +2%
+                            %p
+                                increase in trial orders, compared to the previous trial page.
+        .case-study__feature.pink
+            .container
+                .columns-replaced
+                    .column-left
+                        .section-heading__wrapper
+                            %h2 Checkout
+                    .column-right
+                        .feature__text-wrapper
+                            %h3 Where was checkout losing people?
+                            %p Returning customers had to re-enter their information, and managing saved payments and addresses took far more clicks than it should have. The page itself lacked clear hierarchy, so even filling out a first-time order felt more effortful than it needed to be. I also saw an opportunity to let customers opt into order update and marketing notifications right at the natural end of the flow.
+                        .feature__text-wrapper
+                            %h3 What I simplified
+                            %p Checkout now starts by asking for an email. From there, customers can sign in or sign up, and their information autofills automatically, no more re-entering the same details on every order. Saved cards and addresses became simpler to select, with far fewer clicks than before. I also added a notification opt-in at the end of the flow.
+                        .feature__text-wrapper
+                            %h3 What customers told us
+                            %p Customer service consistently reported that customers preferred the new flow, fewer complaints about re-entering information, and an easier experience choosing saved payment methods and addresses.
+        .case-study__impact-wrapper
+            .container
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 What did these changes add up to?
+                %p.impact-p Three different features, three different problems, but the same throughline: growth that came from removing friction and confusion instead of pushing harder.
+                .impact__card-wrapper
+                    .columns
+                        .column
+                            .impact-bullet
+                                .pill.pink-4
+                                    %p Upsells
+                                %h3 +10%
+                                %p increase in bundled purchases, once customers could actually discover what paired well with what they'd already chosen
+                        .column
+                            .impact-bullet
+                                .pill.pink-3
+                                    %p Trial Sign Ups
+                                %h3 +2%
+                                %p increase in trial orders, once first-time buyers had a dedicated place to research and compare before committing
+                        .column
+                            .impact-bullet
+                                .pill.pink-2
+                                    %p Checkout
+                                %h3 Fewer complaints, faster checkout
+                                %p consistently better experience reported directly by customer service
+                %p.impact-p
+                    None of these came from urgency tactics, countdown timers, aggressive pop-ups, the things Dr. Harvey's specifically didn't want. Every improvement here came from making it easier for customers to find what already worked for their pet, which is exactly the kind of growth that holds up over time instead of eroding trust to get there.
+        .case-study__research
+            .container
+                .columns
+                    .column.is-5
+                        .section-heading__wrapper
+                            .columns.is-vcentered.is-variable.is-1.is-mobile
+                                .column.is-narrow
+                                    = inline_svg('search.svg')
+                                .column
+                                    %h2 What did the research tell us?
+                    .column.is-7
+                        .research__card-wrapper
+                            .research__card.pink-4
+                                %h3 The buyer is already convinced by the time they arrive
+                                %p
+                                    55% of millennial pet owners are open to holistic approaches before conventional medication, and this audience does real research before buying, they're not shopping on impulse.
+                                    %span The site's job is to confirm someone made the right choice.
+                            .research__card.pink-3
+                                %h3 Overwhelm is the default
+                                %p 
+                                    With raw, frozen, dehydrated, and fresh options all competing, searches for specific dietary needs (like low-calorie options, up 113%) show just how many variables a pet owner is trying to sort through.
+                                    %span Reducing options to the right ones matters.
+                            .research__card.pink-2
+                                %h3 Transparency is the entry fee
+                                %p 
+                                    68% of US consumers say transparency is very important when choosing pet food.
+                                    %span Ingredient visibility and sourcing specificity are what a values-driven buyer checks for before trusting a brand at all.
+        .case-study__gallery
+            .container
+                .section-heading__wrapper
+                    %h2 Introducing Dr. Harvey's
+                .gallery__upsell 
+                    .gallery__upsell-img-wrapper
+                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Island+Finance+Settings.webp", :loading => 'lazy', :width => 1344, :height => 560, :class => "home-img"
+                    %h3 Bundle & Save popup
+                    %p The moment someone added a product to their cart was the best moment to introduce something that paired with it, we did this through a discount that rewarded discovering something new. Every recommendation here came from real customer service feedback on what people actually bought together and our vets recommendations.
+                .gallery-section.gallery__cart
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-8-tablet.is-12-mobile
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Cart with persistent upsell
+                            %p The same recommendation stays visible while someone reviews their order, since the moment right before checkout is often when a customer is most open to adding one more thing, if it's genuinely useful to them.
+                .gallery-section.gallery__application
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Trial page
+                            %p Trial bags existed before, but buried inside individual product pages with no dedicated home. This page gave first-time buyers a place to actually compare complete foods against base mixes before choosing what to try.
+                        .column.is-8-tablet.is-12-mobile
+                .gallery-section.gallery__matchmaker
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-8-tablet.is-12-mobile
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Meal Matchmaker
+                            %p Surfaced here for the first time anywhere on the site, this tool narrowed down Dr. Harvey's full lineup to what actually fit a specific pet, cutting through decision fatigue for a buyer who'd never ordered before.
+                .gallery-section.gallery__checkout
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Checkout, email recognition
+                            %p Starting checkout with just an email let returning customers get recognized immediately and skip re-entering information they'd already given before, without forcing anyone into a full account system upfront.
+                        .column.is-8-tablet.is-12-mobile
+                .gallery-section.gallery__blog
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-8-tablet.is-12-mobile
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Checkout, saved cards/addresses
+                            %p Selecting a saved payment method or address went from a clunky, multi-click process to something straightforward, cutting friction right at the step where customers were most likely to abandon.
+        .case-study__gallery.pending
+            .container
+                .section-heading__wrapper
+                    %h2 What was still in progress
+                .gallery-section.gallery__application
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Product Listing & Detail Pages
+                            %p Two consistent insights came out of testing: customers wanted ingredients visible high on the page, and since Dr. Harvey's food isn't ready-to-serve like typical kibble, people needed clear instructions on how to prepare it. Balancing that against a genuinely simple layout was the hard part, this category asks for both minimal friction and a lot of information at once, and those two needs don't naturally sit together on a page.
+                        .column.is-8-tablet.is-12-mobile
+                .gallery-section.gallery__matchmaker
+                    .columns.is-vcentered.is-mobile.is-multiline
+                        .column.is-8-tablet.is-12-mobile
+                        .column.is-4-tablet.is-12-mobile
+                            %p On the product listing page specifically, we added filters and quick-shop buttons, letting customers add to cart with one click instead of visiting each product page individually. The idea was that this would make shopping faster. In testing, none of the redesigned versions converted better than the original, simpler listing page, and customers actually had more difficulty adding items to their cart than before. We couldn't pin down a single clear cause, the leading hypothesis is that the added complexity, more visible options, more decisions on one page, worked against the category's actual buying behavior rather than for it. That work stayed in progress.
+                .gallery-section.gallery__checkout
+                    .columns.is-reversed.is-vcentered.is-mobile.is-multiline
+                        .column.is-4-tablet.is-12-mobile
+                            %h3 Why Dr. Harvey's
+                            %p A page designed to make the direct case for holistic pet food to skeptical or undecided buyers, addressing the "why does this matter, and why should I trust it" question head-on. It was fully designed but never built or tested, so unlike the product page work, there's no data behind it, just a clear rationale for why it existed.
+                        .column.is-8-tablet.is-12-mobile
+        .case-study__takeaways
+            .container
+                .section-heading__wrapper
+                    .columns.is-vcentered.is-variable.is-1.is-mobile
+                        .column.is-narrow
+                            = inline_svg('search.svg')
+                        .column
+                            %h2 What this work taught me
+                %p Because this wasn't one continuous redesign but nearly three years of separate features, each one had to earn its place on its own merits. That mostly worked in my favor, I could focus on each user need individually and make sure it was solved as its own story, and the swipe fix on Upsell and the information-density reversal on Trial Signup both came from testing what I assumed instead of trusting it.
+                .columns
+                    .column
+                        .takeaways__wrapper
+                            %h3 Adoption is a design problem
+                            %p The upsell carousel idea wasn't a fail, people just couldn't tell it was swipeable. My first instinct would've been to explain it better, add a tooltip, some hint text. But that's not what fixed it. What worked was making the interaction obvious enough that no explanation was needed in the first place. People had just never seen the pattern before.
+                    .column
+                        .takeaways__wrapper
+                            %h3 Designing for accessibility meant designing for whoever knows the least
+                            %p Dr. Harvey's customers skew older and less tech-savvy, and that shaped almost every decision I made: bigger touch targets, plainer language, sometimes more steps instead of fewer, if it meant each one was unmistakable. It became the lens I ran everything through before it shipped.
+                    .column
+                        .takeaways__wrapper
+                            %h3 Not every well-reasoned feature works
+                            %p The PLP/PDP redesign went through the same process as everything else, research, constraints, testing. It still didn't convert better, and I have some theories as to why but nothing concrete. I could've left it out, or spun it into something it wasn't. I didn't, because knowing when a result is inconclusive is part of the job. The features that didn't land tell you as much info as the wins.
+                %p At its core, this work proved something I've always believed in: growth and integrity don't have to be in tension. Everything that worked here came from removing friction, not adding pressure, the numbers backed that up, right alongside the one feature that's a reminder that good instincts don't always pan out.
+        .case-study__link
+            .container
+                .columns.is-vcentered
+                    .column
+                    .column
+                        %h3 Want the full picture?
+                        %p This is the story at a glance, the decisions, the research, and what shipped. The full case study goes deeper: the complete competitive audit, every persona, and the full screen-by-screen walkthrough.
                         .btn__wrapper
                             = link_to "View Full Case Study", "/ux-ui/dr-harveys-full", :class => "btn"
-                .column.is-8.is-offset-1-desktop
-                    .case-study__intro-text-wrapper
-                        %p.case-study__introduction
-                            Dr. Harvey's was founded in 1980 by Dr. Harvey Cohen, a holistic nutritionist and lifelong animal lover. He created the company to offer all-natural, human-grade pet food without preservatives or artificial additives, which was groundbreaking at the time.
-                        %p.case-study__introduction
-                            More than 40 years later, Dr. Harvey's remains a family-owned business that provides holistic pet products focused on real, whole-food ingredients, nutrient-rich formulas, and transparent sourcing. The company is dedicated to helping pet owners make informed choices for their pets' health and wellbeing.
-                        %p.case-study__introduction
-                            To stay competitive in the growing holistic pet food market, the website was modernized to improve usability and visual appeal while keeping the handmade feel that reflects the brand's values. The project focused on increasing conversions with transparency and trust, avoiding aggressive sales tactics, and creating a welcoming, authentic experience for pet owners who value natural and honest products.
-                        %p.case-study__introduction
-                            %em
-                                %strong Notes:
-                                Most copywriting and visual assets (graphics and illustrations) were handled by the client's graphic design and marketing teams. I also collaborated with a full-stack developer to implement and refine several front-end features.
-        .case-study__short-introduction
-            .container
-                .columns.is-variable.is-6-desktop
-                    .column.is-3
-                        %p.eyebrow Snapshot
-                        %h2 Overview
-                    .column.is-8.is-offset-1-desktop
-                        .insight__wrapper
-                            %p.insights-header
-                                Problem
-                            %p This audience have high standards and low tolerance for anything that feels generic or salesy. They want enough information to feel confident but not so much that the page feels overwhelming. Trust has to be built visually, not just through copy, and since most of them are landing from social on mobile, the experience needs to hold up on a small screen. The challenge is making a handcrafted, ingredient-driven brand feel premium online without losing the warmth that makes it feel different.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Constraints
-                            %p We had to work within an existing style guide, so this wasn't a from-scratch brand exercise. Working with a small internal team, every decision also had to be realistic to actually build. Compliance tied to our certifications meant certain claims or language were off the table, and the brand voice always had to feel transparent and natural, never sales-y or pushy. Our customers also weren't especially tech savvy, so everything had to be obvious and self-explanatory, otherwise we'd see conversions drop or people struggle to understand how to use a feature.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Solution
-                            %p The solution focused on making information and interactions as clear and accessible as possible, without ever feeling like a hard sell. We made next steps obvious, from explicit CTAs to visible carousel buttons once we realized customers didn't know they could scroll manually. Information customers first looked at, like ingredients, product duration, and prep instructions, was surfaced so they didn't have to dig for it. We also refined the food-matching quiz to reduce decision fatigue, and built a free trial page detailing every food so customers could explore and choose with confidence. Visually, we kept the experience feeling handmade, staying true to the brand's natural, transparent tone. Upsells were personalized to complement what a customer already bought or was considering, so they read as helpful guidance rather than a sales push.
-                            %hr
-                        .insight__wrapper
-                            %p.insights-header
-                                Impact
-                            %ul
-                                %li
-                                    %span Increased upsells
-                                    through personalized recommendations that felt like guidance, not a sales pitch
-                                %li
-                                    %span Grew autoship signups,
-                                    showing customers trusted the recommendations enough to commit long term
-                                %li
-                                    %span Boosted free trial signups,
-                                    giving more people a low-risk way to try the food before buying in
-                                %li
-                                    %span  Improved SEO and launched a blog,
-                                    driving more organic traffic and new customers discovering the brand
-        .case-study__background
-            .container
-                .columns.is-variable.is-6-desktop
-                    .column.is-3
-                        %p.eyebrow Discovery
-                        %h2 Research
-                    .column.is-8.is-offset-1-desktop
-                        .research__wrapper
-                            .subheader
-                                Industry Insights
-                            %h3 Holistic Pet Food
-                            .columns.is-variable.is-2
-                                .column
-                                    .bubble__wrapper.pink
-                                        .bubble__number{ data: { count: 57, prefix: "$", suffix: "B" } }$0B
-                                        %p.bubble__text
-                                            projected global organic and natural pet food market by 2033, up 82% from 2024
-                                        .bubble__source
-                                            IMARC Group
-                                .column
-                                    .bubble__wrapper.blue
-                                        .bubble__number{ data: { count: 68, suffix: "%" } } 0%
-                                        %p.bubble__text
-                                            of US consumers say ingredient transparency is very important when choosing pet food
-                                        .bubble__source
-                                            PETS International
-                                .column
-                                    .bubble__wrapper.green
-                                        .bubble__number{ data: { count: 40, suffix: "%" } } 0%
-                                        %p.bubble__text
-                                            of pet food purchases in the US are already made online
-                                        .bubble__source
-                                            Packaged Facts
-                            %p The holistic pet food market is growing fast, and so are customer expectations. Buyers are more informed, more values-driven, and more likely to scrutinize ingredients before they ever add something to cart. With nearly 40% of purchases happening online, the website isn't just a storefront, it's often the deciding factor. That meant our job wasn't to convince people holistic food was worth it, most already believed that. It was to build a site that could earn trust quickly, cut through decision fatigue with too many product types to choose from, and make transparency and confidence part of the actual experience.
-                        %hr
-                        .research__wrapper
-                            .subheader
-                                Competitive Audit
-                            %h3 Where Dr. Harvey's Stands
-                            %p Four competitors were audited across design quality, ingredient transparency, educational content, product discovery, and handcrafted feel. The pattern was consistent: ingredient transparency and educational content have become baseline expectations, largely set by direct competitors that Dr. Harvey's now has to match while retailers raise the bar on product discovery alone.
-                            %ul
-                                %li
-                                    %span Ingredient transparency and educational content
-                                    have become the baseline expectation in this category. Competitors leading with ingredients, sourcing, and content set the floor Dr. Harvey's needs to meet.
-                                %li
-                                    %span Retailers win on discovery but can't offer relationship.
-                                    Story, community, and trust are advantages only a brand site can deliver.
-                                %li
-                                    %span Scale often comes at the cost of authenticity.
-                                    The brands that grew biggest lost the handcrafted feel that holistic buyers respond to, making Dr. Harvey's independence a real edge if the site communicates it clearly.
-                        %hr
-                        .research__wrapper
-                            .subheader
-                                Users
-                            %h3 Understanding Users
-                            %p Dr. Harvey's target audience is health-conscious pet owners who treat their animals as an extension of their own wellness lifestyle. The core buyer is a Millennial or Gen Z pet parent, aged 18–38. They're skeptical of conventional options, willing to pay a premium for clean-label, human-grade ingredients, and quick to do their research before buying. Higher-income households round out the audience, drawn in by the brand's transparency and premium positioning. What ties everyone together is a distrust of processed food, a demand for clean labels, and a genuine belief that better nutrition means a healthier, longer life for their pet.
-        .case-study__features
-            .anchor#features
-            .container
-                .columns
-                    .column.is-3
-                        %p.eyebrow Features
-                        %h2 Transforming needs into features
-                    .column.is-8.is-offset-1
-                        %p
-                            Based on the user needs identified during the empathizing phase, we decided to focus on a few key features to enhance customer's experience.
-                .columns.is-multiline.is-variable.is-3-desktop
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.pink
-                            %h4.pink Pet profile quiz
-                            %h3 A guided entry point for first-time buyers
-                            %p An interactive quiz matching a dog's age, size, and dietary needs to the most suitable products. Reduces overwhelm and replaces a complex product range with a clear, personalized starting point.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.green
-                            %h4.green Product detail page
-                            %h3 Ingredients and preparation front and center
-                            %p Ingredient lists, feeding guides, and vet guidance visible before reviews. Directly addresses the most common reason customers leave before purchasing — not knowing how to prepare the food.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.yellow 
-                            %h4.yellow Feeding Guides & Blog
-                            %h3 Build confidence and show up in search
-                            %p Educational content covering holistic nutrition, preparation instructions, ingredient benefits, and transition guidance. Keeps first-time buyers on site instead of sending them elsewhere, and positions Dr. Harvey's as an authority in searches buyers are already making.
-                    .column.is-3-desktop.is-6-tablet
-                        .case-study-feature.blue 
-                            %h4.blue Autoship & Subscriptions
-                            %h3 Make it easy to stay a customer
-                            %p Subscription and autoship options on all product pages with a clear savings callout. Directly addresses the biggest friction point for repeat buyers and reduces the chance a loyal customer drifts to a retailer for convenience.
-        .case-study__user-flows
-            .anchor#flows
-            .container
-                .columns
-                    .column.is-3
-                        %p.eyebrow User Flows
-                        %h2 How users shop for dog food
-                    .column.is-8.is-offset-1
-                        %p To design an experience that actually works for dog owners, I needed to understand how they shop, what they know walking in, what they're unsure about, and where they might get stuck. Mapping these flows helped ensure every path feels intuitive and leads to the right food for their dog.
-                        %h4 Browsing through navigation
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/nav-bar-flow.webp", :class => "user-flows__img", :loading => 'lazy'
-                        %h4 Shopping by best sellers
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/best-sellers-flow.webp", :class => "user-flows__img", :loading => 'lazy'
-                        %h4 Shopping by personalized recommendations
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/recommended-flow.webp", :class => "user-flows__img", :loading => 'lazy'
-                        %h4 Returning to buy again
-                        = image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/buy-again-flow.webp", :class => "user-flows__img", :loading => 'lazy'
-        .case-study__desing-system
-            .anchor#design
-            .container
-                .columns
-                    .column.is-3
-                        %p.eyebrow Design
-                        %h2 Design System & Style guide
-                    .column.is-8.is-offset-1
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrHaveys-Colors.webp", :loading => 'lazy'
-                        =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/drh-styles.webp", :loading => 'lazy'
-        .case-study__hifi-wireframes
-            .anchor#highfi
-            .hifi-wireframes__main-visual
-                .container
-                    %p.eyebrow High-fi Wireframes
-                    %h2 Introducing Dr. Harvey's
-                    %p A refreshed experience built around clarity, warmth, and ease, guiding pet parents through intuitive paths, straightforward choices, and helpful information exactly when and where they need it.
-                    .img__wrapper
-                        = video_tag("https://nicolada-website.s3.us-east-1.amazonaws.com/Home-New+User.mp4", :autobuffer => "true", :autoplay => "true", :loop => "true", :muted => "true", :controls => "true", :playsinline => "true" )
-            .hifi-wireframes__section-description
-                .container
-                    %h3 Designing the First Impression
-                    %p Whether someone is visiting for the first time or returning to reorder, the experience was designed to feel clear and tailored from the start. New and returning users are met with entry points designed around their needs. First-time visitors are eased into what fresh feeding is all about, while returning users can quickly pick up where they left off. This structure keeps the journey intuitive, building familiarity and confidence that makes it easy to move from exploration to action.
-            .hifi-wireframes__sign-up
-                .columns.is-gapless
-                    .column
-                        .column__sign-up
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Sign+Up.webp", :loading => 'lazy'
-                    .column
-                        .column__log-in
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Log+In.webp", :loading => 'lazy'
-            .hifi-wireframes__home-existing-user
-                .img__wrapper
-                    = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Home-existing-user.webm", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto", type: "video/webm"
-            .hifi-wireframes__section-description
-                .container
-                    %h3 Education & Trust Building
-                    %p Pet parents exploring holistic nutrition usually have a lot of questions before they're ready to buy. These pages are designed to meet them there, bringing together education, brand values, and real customer stories in a way that feels honest and reassuring. By the time someone finishes exploring, the goal is that they feel informed enough to take the next step with confidence.
-            .hifi-wireframes__education
-                .feed-fresh__desktop
-                    .img__wrapper
-                        = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Why-Dr-Harveys.webm", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto", type: "video/webm"
-                .feed-fresh__mobile    
-                    .columns.is-gapless.is-multiline
-                        .column.is-6
-                            .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/factory-img.webp", :loading => 'lazy'
-                        .column.is-6
-                            .feed-fresh__mobile-home
-                                .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Feed-Fresh-1.webp", :loading => 'lazy'
-                .education__company    
-                    .container
-                        .img__wrapper
-                            = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/About-the-Company.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
-                .company__reviews
-                    .columns.is-gapless    
-                        .column.is-6
-                            .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Veg-To-Bowl_img.webp", :loading => 'lazy'
-                        .column.is-6
-                            .company-reviews__all-reviews
-                                .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Reviews.webp", :loading => 'lazy'
-                .company__blog
-                    .columns.is-vcentered
-                        .column
-                            .company-blog__tablet
-                                .img__wrapper
-                                    =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog.webp", :loading => 'lazy'
-                        .column
-                            .company-blog__mobile
-                                .columns.is-mobile.is-gapless
-                                    .column
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-1.webp", :loading => 'lazy'
-                                    .column
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-2.webp", :loading => 'lazy'
-                                    .column
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/DrH-Blog-Mobile-3.webp", :loading => 'lazy'
-            .hifi-wireframes__section-description
-                .container
-                    %h3 Product Discovery
-                    %p The discovery experience was designed to make choosing feel simple. The Meal Matchmaker points users toward the right products for their pet, while filtering and clear organization keep browsing stress-free. On the Product Details Page, educational content gives users the context they need to feel good about their decision. Touchpoints like Find a Store round out the experience by offering flexible ways to buy, so no matter where someone is in their journey, the path forward always feels clear.
-            .hifi-wireframes__product-discovery
-                .product-discovery__all-products
-                    .container
-                        .img__wrapper
-                            = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/All-Products.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
-                .product-discovery__product-details
-                    .columns.is-gapless 
-                        .column.is-6
-                            .img__wrapper
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product+Details.webp", :loading => 'lazy'
-                        .column.is-6
-                            .img__wrapper
-                                = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Product-Details.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
-            .hifi-wireframes__section-description
-                .container
-                    %h3 Guided Conversions
-                    %p Once a product is selected, the focus shifts to making checkout feel like a natural next step. The Free Trial page offers a low-pressure way in, while personalized upsells in the cart gently guide users toward options that feel relevant rather than pushy. From there, a streamlined checkout keeps things moving smoothly, so by the time someone reaches the final step, they feel confident in what they're getting.
-            .hifi-wireframes__conversions
-                .conversions__free-trial
-                    .container
-                        .img__wrapper
-                            = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
-                .conversions__free-trial-mobile
-                    .columns.is-gapless
-                        .column.is-6
-                            .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/brand-img.webp", :loading => 'lazy'
-                        .column.is-6
-                            .free-trial-mobile__mockups
-                                .columns.is-mobile
-                                    .column
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-1.webp", :loading => 'lazy'
-                                    .column
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Free-Trial-2.webp", :loading => 'lazy'
-                .conversions__upsell-cart
-                    .columns.is-gapless
-                        .column
-                            .upsell-cart__mockups
-                                .columns
-                                    .column.is-6
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart+Upsell.webp", :class => "upsell-img"
-                                    .column.is-6
-                                        .img__wrapper
-                                            =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Cart-Upsell-Mobile.webp", :loading => 'lazy'
-                        .column
-                            .brand__img
-                                =image_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Raw-Vibrance.webp", :loading => 'lazy'
-                .conversions__checkout
-                    .container
-                        .img__wrapper
-                            = video_tag "https://nicolada-website.s3.us-east-1.amazonaws.com/Checkout.mp4", autoplay: true, loop: true, muted: true, controls: true, playsinline: true, preload: "auto"
         .case-studies__navigation-wrapper.dr-harveys
             .container
                 .columns.is-mobile
